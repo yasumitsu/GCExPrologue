@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="plegstest">
+	<inherit entity="Female" mesh_ref="mesh"/>
+	<state id="_mesh">
+		<mesh_ref ref="mesh"/>
+	</state>
+	<mesh_description id="mesh">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/plegstest_mesh.m.hgm"/>
+			<material file="Materials/plegstest_mesh.mtl"/>
+			<bsphere value="-1.540,-0.133,56.193,58.394"/>
+			<box min="-17.479,-18.471,-0.009" max="14.398,18.205,112.394"/>
+			<src file="C:/Users/kenji/AppData/Roaming/Jagged Alliance 3/ModAssets/FBX/.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>
