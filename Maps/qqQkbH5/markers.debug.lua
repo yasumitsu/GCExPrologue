@@ -68,25 +68,6 @@
 	},
 	{
 		Groups = {
-			"East",
-		},
-		handle = 1043809254,
-		items = {
-			{
-				editor_view_abridged = "if Completed",
-				filter_type = "quest",
-				reference_id = "GCEx_01_Landing",
-				type = "QuestIsVariableBool",
-				var = set( "Completed" ),
-			},
-		},
-		map = "qqQkbH5",
-		name = "ExitZoneInteractable#254 (East)",
-		path = "ExitZoneInteractable ",
-		type = "ExitZoneInteractable",
-	},
-	{
-		Groups = {
 			"MERCNpcs",
 		},
 		handle = 1109704454,
@@ -102,48 +83,6 @@
 		name = "UnitMarker#454 (MERCNpcs)",
 		path = "UnitMarker ",
 		type = "UnitMarker",
-	},
-	{
-		Groups = {
-			"South",
-		},
-		handle = 1145806057,
-		items = {
-			{
-				editor_view_abridged = "if Completed",
-				filter_type = "quest",
-				reference_id = "GCEx_01_Landing",
-				type = "QuestIsVariableBool",
-				var = set( "Completed" ),
-			},
-		},
-		map = "qqQkbH5",
-		name = "Entrance#057 (South)",
-		path = "Entrance ",
-		type = "Entrance",
-	},
-	{
-		BanterTriggerEffects = {
-			PlaceObj('PlayBanterEffect', {
-				Banters = {
-					"Erny2",
-				},
-			}),
-		},
-		Groups = false,
-		handle = 1183569003,
-		items = {
-			{
-				editor_view_abridged = "Play banter(s): Erny2",
-				filter_type = "banter",
-				reference_id = "Erny2",
-				type = "PlayBanterEffect",
-			},
-		},
-		map = "qqQkbH5",
-		name = 'CustomInteractable#003 PartyErny2Banter "Examine"',
-		path = "CustomInteractable PartyErny2Banter",
-		type = "CustomInteractable",
 	},
 	{
 		Groups = {
@@ -165,6 +104,13 @@
 			{
 				editor_view_abridged = "if Completed",
 				filter_type = "quest",
+				reference_id = "GCEx_01_Landing",
+				type = "QuestIsVariableBool",
+				var = set( "Completed" ),
+			},
+			{
+				editor_view_abridged = "if Completed",
+				filter_type = "quest",
 				reference_id = "GearUp",
 				type = "QuestIsVariableBool",
 				var = set( "Completed" ),
@@ -174,29 +120,6 @@
 		name = "ExitZoneInteractable#680 (North)",
 		path = "ExitZoneInteractable ",
 		type = "ExitZoneInteractable",
-	},
-	{
-		BanterTriggerEffects = {
-			PlaceObj('PlayBanterEffect', {
-				Banters = {
-					"Erny1",
-				},
-			}),
-		},
-		Groups = false,
-		handle = 1295355871,
-		items = {
-			{
-				editor_view_abridged = "Play banter(s): Erny1",
-				filter_type = "banter",
-				reference_id = "Erny1",
-				type = "PlayBanterEffect",
-			},
-		},
-		map = "qqQkbH5",
-		name = 'CustomInteractable#871 BannerErny1Banter "Examine"',
-		path = "CustomInteractable BannerErny1Banter",
-		type = "CustomInteractable",
 	},
 	{
 		Groups = {
@@ -296,25 +219,6 @@
 	},
 	{
 		Groups = {
-			"South",
-		},
-		handle = 1491537679,
-		items = {
-			{
-				editor_view_abridged = "if Completed",
-				filter_type = "quest",
-				reference_id = "GCEx_01_Landing",
-				type = "QuestIsVariableBool",
-				var = set( "Completed" ),
-			},
-		},
-		map = "qqQkbH5",
-		name = "ExitZoneInteractable#679 (South)",
-		path = "ExitZoneInteractable ",
-		type = "ExitZoneInteractable",
-	},
-	{
-		Groups = {
 			"BiffWait",
 		},
 		handle = 1529900802,
@@ -356,29 +260,6 @@
 		name = "UnitMarker#405 (MERCNpcs)",
 		path = "UnitMarker ",
 		type = "UnitMarker",
-	},
-	{
-		BanterTriggerEffects = {
-			PlaceObj('PlayBanterEffect', {
-				Banters = {
-					"Erny3",
-				},
-			}),
-		},
-		Groups = false,
-		handle = 1696346830,
-		items = {
-			{
-				editor_view_abridged = "Play banter(s): Erny3",
-				filter_type = "banter",
-				reference_id = "Erny3",
-				type = "PlayBanterEffect",
-			},
-		},
-		map = "qqQkbH5",
-		name = "Position#830 BanterNearBiff",
-		path = "Position BanterNearBiff",
-		type = "Position",
 	},
 	{
 		Groups = {

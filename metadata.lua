@@ -5,10 +5,10 @@ return PlaceObj('ModDef', {
 	'external_links', {
 		"https://github.com/yasumitsu/GCExPrologue",
 	},
-	'last_changes', "-- new Brian dialog",
+	'last_changes', "-- fixed lot of stuff",
 	'id', "GCExPrologue",
 	'author', "Sir Ni",
-	'version', 1201,
+	'version', 1253,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -55,7 +55,7 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1720864408,
+	'saved', 1720949818,
 	'code_hash', -7573367671379325284,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {

@@ -878,7 +878,7 @@ return {
 	South = false,
 	West = true,
 }),
-				'BlockTravelRiver', set( "East", "North", "South" ),
+				'BlockTravelRiver', set(),
 				'image', "UI/SatelliteView/SectorImages/H02.dds",
 				'Events', {
 					PlaceObj('SE_OnEnterMapVisual', {
@@ -892,6 +892,7 @@ return {
 							PlaceObj('QuestSetVariableBool', {
 								Prop = "NotStarted",
 								QuestId = "GCEx_01_Landing",
+								Set = false,
 							}),
 						},
 					}),
@@ -928,7 +929,7 @@ return {
 	South = false,
 	West = false,
 }),
-				'BlockTravelRiver', set( "South", "West" ),
+				'BlockTravelRiver', set(),
 				'image', "UI/SatelliteView/SectorImages/H03.dds",
 			}),
 			PlaceObj('SatelliteSector', {
@@ -1009,7 +1010,7 @@ return {
 	South = true,
 	West = true,
 }),
-				'BlockTravelRiver', set( "East" ),
+				'BlockTravelRiver', set(),
 				'image', "UI/SatelliteView/SectorImages/I01.dds",
 			}),
 			PlaceObj('SatelliteSector', {
@@ -1033,7 +1034,7 @@ return {
 	South = true,
 	West = false,
 }),
-				'BlockTravelRiver', set( "East", "North", "West" ),
+				'BlockTravelRiver', set(),
 				'image', "UI/SatelliteView/SectorImages/I02.dds",
 			}),
 			PlaceObj('SatelliteSector', {
@@ -1057,7 +1058,7 @@ return {
 	South = true,
 	West = false,
 }),
-				'BlockTravelRiver', set( "North", "West" ),
+				'BlockTravelRiver', set(),
 				'image', "UI/SatelliteView/SectorImages/I03.dds",
 			}),
 			PlaceObj('SatelliteSector', {
@@ -1585,17 +1586,28 @@ return {
 			Chapter = "GCExAct1",
 			DevNotes = "Starting main quest. Resolved when you talk to  Corazone.",
 			DisplayName = T(135309888552, --[[ModItemQuestsDef GCEx_01_Landing DisplayName]] "Good Morning Grand Chien!"),
-			EffectOnChangeVarValue = {
-				PlaceObj('QuestEffectOnStatus', {
-					Prop = "Completed",
+			KillTCEsConditions = {
+				PlaceObj('QuestIsVariableBool', {
+					QuestId = "GCEx_01_Landing",
+					Vars = set( "Completed" ),
 				}),
 			},
+			LastNoteIdx = 4,
 			Main = true,
 			NoteDefs = {
-				LastNoteIdx = 1,
 				PlaceObj('QuestNote', {
 					HideConditions = {
-						PlaceObj('CheckOR', {
+						PlaceObj('QuestIsVariableBool', {
+							QuestId = "GCEx_01_Landing",
+							Vars = set( "Completed" ),
+							__eval = function ()
+								local quest = gv_Quests['01_Landing'] or QuestGetState('01_Landing')
+								return quest.Completed
+							end,
+						}),
+					},
+					ShowConditions = {
+						PlaceObj('AND', {
 							Conditions = {
 								PlaceObj('PlayerIsInSectors', {
 									Sectors = {
@@ -1604,35 +1616,16 @@ return {
 								}),
 								PlaceObj('QuestIsVariableBool', {
 									QuestId = "GCEx_01_Landing",
-									Vars = set( "Completed" ),
-									__eval = function ()
-										local quest = gv_Quests['01_Landing'] or QuestGetState('01_Landing')
-										return quest.Completed
-									end,
+									Vars = set({
+	NotStarted = false,
+}),
 								}),
 							},
 						}),
 					},
-					Idx = 6,
-					ShowConditions = {
-						PlaceObj('QuestIsVariableBool', {
-							QuestId = "GCEx_01_Landing",
-							Vars = set( "Given" ),
-							__eval = function ()
-								local quest = gv_Quests['01_Landing'] or QuestGetState('01_Landing')
-								return quest.Given
-							end,
-						}),
-					},
-					Text = T(383240213604, --[[ModItemQuestsDef GCEx_01_Landing Text]] "<color EmStyle>Biff </color>will meet the client in <color EmStyle>Flag Hill</color>"),
+					Text = T(299744099045, --[[ModItemQuestsDef GCEx_01_Landing Text]] "<color EmStyle>Biff </color>will meet the client in <color EmStyle>Flag Hill</color>"),
 				}),
 				PlaceObj('QuestNote', {
-					Badges = {
-						PlaceObj('QuestBadgePlacement', {
-							BadgeUnit = "GCExSantiago",
-							Sector = "J5",
-						}),
-					},
 					HideConditions = {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GCEx_01_Landing",
@@ -1643,21 +1636,34 @@ return {
 							end,
 						}),
 					},
-					Idx = 4,
+					Idx = 2,
 					ShowConditions = {
-						PlaceObj('PlayerIsInSectors', {
-							Sectors = {
-								"J5",
+						PlaceObj('AND', {
+							Conditions = {
+								PlaceObj('QuestIsVariableBool', {
+									QuestId = "GCEx_01_Landing",
+									Vars = set( "Given" ),
+								}),
+								PlaceObj('QuestIsVariableBool', {
+									QuestId = "GCEx_01_Landing",
+									Vars = set({
+	Completed = false,
+}),
+								}),
+								PlaceObj('PlayerIsInSectors', {
+									Sectors = {
+										"J5",
+									},
+								}),
 							},
 						}),
 					},
-					Text = T(363809867922, --[[ModItemQuestsDef GCEx_01_Landing Text]] "<color EmStyle>We should </color>talk to the team at <color EmStyle>Martha's Bar</color>"),
+					Text = T(970462746912, --[[ModItemQuestsDef GCEx_01_Landing Text]] "<color EmStyle>We should </color>talk to the team at <color EmStyle>Martha's Bar</color>"),
 				}),
 				PlaceObj('QuestNote', {
 					Badges = {
 						PlaceObj('QuestBadgePlacement', {
-							BadgeUnit = "SantiagoMeet",
-							PlaceOnAllOfGroup = true,
+							BadgeUnit = "GCExBiff",
 							Sector = "J5",
 						}),
 					},
@@ -1665,26 +1671,33 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GCEx_01_Landing",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['01_Landing'] or QuestGetState('01_Landing')
-								return quest.Completed
-							end,
 						}),
 					},
+					Idx = 3,
 					ShowConditions = {
-						PlaceObj('QuestIsVariableBool', {
-							QuestId = "GCEx_01_Landing",
-							Vars = set({
-	Completed = false,
+						PlaceObj('AND', {
+							Conditions = {
+								PlaceObj('PlayerIsInSectors', {
+									Sectors = {
+										"J5",
+									},
+								}),
+								PlaceObj('QuestIsVariableBool', {
+									QuestId = "GCEx_01_Landing",
+									Vars = set({
+	NotStarted = false,
 }),
+								}),
+							},
 						}),
 					},
-					Text = T(873990999505, --[[ModItemQuestsDef GCEx_01_Landing Text]] "<color EmStyle>We should</color> check on the Boss <color EmStyle>nearby East exit</color>"),
+					Text = T(927200449951, --[[ModItemQuestsDef GCEx_01_Landing Text]] "<color EmStyle>We should</color> check on the Boss <color EmStyle>nearby East exit</color>"),
 				}),
 				PlaceObj('QuestNote', {
 					AddInHistory = true,
 					Badges = {
 						PlaceObj('QuestBadgePlacement', {
+							BadgeUnit = "GCExBiff",
 							Sector = "J5",
 						}),
 					},
@@ -1692,28 +1705,19 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GCEx_01_Landing",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['01_Landing'] or QuestGetState('01_Landing')
-								return quest.Completed
-							end,
 						}),
 					},
-					Idx = 5,
+					Idx = 4,
 					ShowConditions = {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GCEx_01_Landing",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['01_Landing'] or QuestGetState('01_Landing')
-								return quest.Completed
-							end,
 						}),
 					},
 					ShowWhenCompleted = true,
-					Text = T(560664788018, --[[ModItemQuestsDef GCEx_01_Landing Text]] "<color EmStyle>Outcome:</color> Biff met with <color EmStyle>Corazon Santiago</color>"),
+					Text = T(182481213329, --[[ModItemQuestsDef GCEx_01_Landing Text]] "<color EmStyle>Outcome:</color> Biff met with <color EmStyle>Corazon Santiago</color>"),
 				}),
 			},
-			QuestGroup = "GCExAct1",
 			Variables = {
 				PlaceObj('QuestVarBool', {
 					Name = "Completed",
@@ -1814,7 +1818,6 @@ return {
 					Text = T(867240799827, --[[ModItemQuestsDef GearUp Text]] "Looted all the stashes to gear up for the mission."),
 				}),
 			},
-			QuestGroup = "GCExAct1",
 			QuestId = "GearUp",
 			TCEs = {
 				PlaceObj('TriggeredConditionalEvent', {
@@ -1958,7 +1961,6 @@ return {
 					Text = T(533469105013, --[[ModItemQuestsDef ReadyForRailings Text]] "Went to Diamond Red."),
 				}),
 			},
-			QuestGroup = "GCExAct1",
 			QuestId = "GearUp",
 			Variables = {
 				PlaceObj('QuestVarBool', {
@@ -1996,6 +1998,7 @@ return {
 			id = "ReadyForRailings",
 		}),
 		PlaceObj('ModItemQuestsDef', {
+			Chapter = "GCExAct1",
 			KillTCEsConditions = {
 				PlaceObj('QuestKillTCEsOnCompleted', {}),
 			},
@@ -2080,7 +2083,7 @@ return {
 				}),
 			},
 			campaign = "GCEXPrologue",
-			group = "BNBrian",
+			group = "GCExMain",
 			id = "BriansFuel",
 		}),
 		PlaceObj('ModItemQuestsDef', {
@@ -2143,7 +2146,6 @@ return {
 					Text = T(451831777966, --[[ModItemQuestsDef TropicalHeat Text]] "All members of the squad are stayin' alive, ha-ha-ha-ha stayin' alive!"),
 				}),
 			},
-			QuestGroup = "GCExAct2",
 			QuestId = "GearUp",
 			Variables = {
 				PlaceObj('QuestVarBool', {
@@ -2237,7 +2239,6 @@ return {
 					Text = T(697307621761, --[[ModItemQuestsDef ChurchOfBlood Text]] "The Chuch of blood is no more.!"),
 				}),
 			},
-			QuestGroup = "GCExAct2",
 			QuestId = "GearUp",
 			Variables = {
 				PlaceObj('QuestVarBool', {
@@ -4956,7 +4957,7 @@ return {
 	South = true,
 	West = true,
 }),
-					'BlockTravelRiver', set( "East" ),
+					'BlockTravelRiver', set(),
 					'image', "UI/SatelliteView/SectorImages/I01.dds",
 				}),
 			}),
@@ -4986,7 +4987,7 @@ return {
 	South = true,
 	West = false,
 }),
-					'BlockTravelRiver', set( "East", "North", "West" ),
+					'BlockTravelRiver', set(),
 					'image', "UI/SatelliteView/SectorImages/I02.dds",
 				}),
 			}),
@@ -5016,7 +5017,7 @@ return {
 	South = true,
 	West = false,
 }),
-					'BlockTravelRiver', set( "North", "West" ),
+					'BlockTravelRiver', set(),
 					'image', "UI/SatelliteView/SectorImages/I03.dds",
 				}),
 			}),
@@ -5051,7 +5052,7 @@ return {
 	South = false,
 	West = false,
 }),
-					'BlockTravelRiver', set( "South", "West" ),
+					'BlockTravelRiver', set(),
 					'image', "UI/SatelliteView/SectorImages/H03.dds",
 				}),
 			}),
@@ -5079,7 +5080,7 @@ return {
 	South = false,
 	West = true,
 }),
-					'BlockTravelRiver', set( "East", "North", "South" ),
+					'BlockTravelRiver', set(),
 					'image', "UI/SatelliteView/SectorImages/H02.dds",
 					'Events', {
 						PlaceObj('SE_OnEnterMapVisual', {
@@ -5093,6 +5094,7 @@ return {
 								PlaceObj('QuestSetVariableBool', {
 									Prop = "NotStarted",
 									QuestId = "GCEx_01_Landing",
+									Set = false,
 								}),
 							},
 						}),
@@ -9560,17 +9562,12 @@ return {
 			group = "GCExPrologue",
 			id = "GCExBiff",
 			PlaceObj('ConversationPhrase', {
-				CompleteQuests = {
-					"GCEx_01_Landing",
-				},
-				Conditions = {
-					PlaceObj('QuestIsVariableBool', {
+				Effects = {
+					PlaceObj('QuestSetVariableBool', {
+						Prop = "Completed",
 						QuestId = "GCEx_01_Landing",
-						Vars = set( "Given" ),
 						param_bindings = false,
 					}),
-				},
-				Effects = {
 					PlaceObj('GroupSetBehaviorExit', {
 						TargetUnit = "GCExBiff",
 						closest = true,
@@ -9588,9 +9585,9 @@ return {
 						TargetUnit = "GCEXFlo",
 						param_bindings = false,
 					}),
-					PlaceObj('QuestSetVariableBool', {
-						Prop = "Completed",
-						QuestId = "GCEx_01_Landing",
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExBiff",
+						PhraseId = "Greeting1",
 						param_bindings = false,
 					}),
 				},
@@ -9651,12 +9648,11 @@ return {
 				PlayGoToPhrase = true,
 				id = "Greeting",
 				param_bindings = false,
-				target_units = {},
+				target_units = {
+					nil,
+				},
 			}),
 			PlaceObj('ConversationPhrase', {
-				CompleteQuests = {
-					"GearUp",
-				},
 				Conditions = {
 					PlaceObj('QuestIsVariableBool', {
 						QuestId = "GCEx_01_Landing",
@@ -9664,6 +9660,7 @@ return {
 						param_bindings = false,
 					}),
 				},
+				Enabled = false,
 				GiveQuests = {
 					"ReadyForRailings",
 				},
@@ -9673,7 +9670,7 @@ return {
 				Lines = {
 					PlaceObj('ConversationLine', {
 						Character = "GCExBiff",
-						Text = T(359691937175, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting]] "So here's the deal. We leave next thing tomorrow morning, I arranged a boat.  We are heading north  to a mine called Diamond Red. Apparently a warlord is financing his personal Vendetta with diamond money"),
+						Text = T(359691937175, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting1]] "So here's the deal. We leave next thing tomorrow morning, I arranged a boat.  We are heading north  to a mine called Diamond Red. Apparently a warlord is financing his personal Vendetta with diamond money"),
 						param_bindings = false,
 					}),
 					PlaceObj('ConversationInterjectionList', {
@@ -9682,7 +9679,7 @@ return {
 								Lines = {
 									PlaceObj('ConversationLine', {
 										Character = "GCEXStogie",
-										Text = T(553373879540, --[[ModItemConversation GCExBiff Text voice:GCEXStogie section:GCExBiff keyword:Greeting]] "Any details on what resistance to expect? Squad size, position, gear?"),
+										Text = T(553373879540, --[[ModItemConversation GCExBiff Text voice:GCEXStogie section:GCExBiff keyword:Greeting1]] "Any details on what resistance to expect? Squad size, position, gear?"),
 										param_bindings = false,
 									}),
 								},
@@ -9693,11 +9690,11 @@ return {
 					}),
 					PlaceObj('ConversationLine', {
 						Character = "GCExBiff",
-						Text = T(476862176521, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting]] "No, not currently. We land south of that mine and gather some Intel first. It's said there is a communist cell currently fighting agains the warlord, who calls himself the Major.\nWhen all preparations are met, we'll be ready to set sails"),
+						Text = T(476862176521, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting1]] "No, not currently. We land south of that mine and gather some Intel first. It's said there is a communist cell currently fighting agains the warlord, who calls himself the Major.\nWhen all preparations are met, we'll be ready to set sails"),
 						param_bindings = false,
 					}),
 				},
-				id = "Greeting",
+				id = "Greeting1",
 				param_bindings = false,
 			}),
 			PlaceObj('ConversationPhrase', {
@@ -9915,9 +9912,6 @@ return {
 						param_bindings = false,
 					}),
 				},
-				GiveQuests = {
-					"GCEx_01_Landing",
-				},
 				GoTo = "<end conversation>",
 				Keyword = "Greeting",
 				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
@@ -9966,7 +9960,9 @@ return {
 				PlayGoToPhrase = true,
 				id = "Greeting",
 				param_bindings = false,
-				target_units = {},
+				target_units = {
+					nil,
+				},
 			}),
 		}),
 		PlaceObj('ModItemConversation', {
