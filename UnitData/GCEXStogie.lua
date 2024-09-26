@@ -1,5 +1,5 @@
-UndefineClass('GCEXStogie')
-DefineClass.GCEXStogie = {
+UndefineClass('GCExStogie')
+DefineClass.GCExStogie = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -19,13 +19,13 @@ DefineClass.GCEXStogie = {
 	Portrait = "Mod/GCExPrologue/Images/StogiePortrait",
 	BigPortrait = "Mod/GCExPrologue/Images/Stogie",
 	IsMercenary = true,
-	Name = T(112445946149, --[[ModItemUnitDataCompositeDef GCEXStogie Name]] 'Lt. "Stogie" Horge'),
-	Nick = T(297085285316, --[[ModItemUnitDataCompositeDef GCEXStogie Nick]] "Stogie"),
-	AllCapsNick = T(104451916638, --[[ModItemUnitDataCompositeDef GCEXStogie AllCapsNick]] "STOGIE"),
+	Name = T(112445946149, --[[ModItemUnitDataCompositeDef GCExStogie Name]] 'Lt. "Stogie" Horge'),
+	Nick = T(297085285316, --[[ModItemUnitDataCompositeDef GCExStogie Nick]] "Stogie"),
+	AllCapsNick = T(104451916638, --[[ModItemUnitDataCompositeDef GCExStogie AllCapsNick]] "STOGIE"),
 	Affiliation = "Secret",
-	Bio = T(703872402200, --[[ModItemUnitDataCompositeDef GCEXStogie Bio]] "Built like a tank, Lt. Horge's speciality is destroying them. Extremely skilled with heavy weapons, Stogie spent the last two years working as an independent mercenary in the Congo. He's one of the toughest grunts in the business, and M.E.R.C. is proud that he has chosen us as his first foray into agency representation, even if it is on a temporary trial basis.\n\nAdditional Info\nPlease hire Stogie. We don't want to lose him.\" -M.E.R.C. Dossier"),
+	Bio = T(703872402200, --[[ModItemUnitDataCompositeDef GCExStogie Bio]] "Built like a tank, Lt. Horge's speciality is destroying them. Extremely skilled with heavy weapons, Stogie spent the last two years working as an independent mercenary in the Congo. He's one of the toughest grunts in the business, and M.E.R.C. is proud that he has chosen us as his first foray into agency representation, even if it is on a temporary trial basis.\n\nAdditional Info\nPlease hire Stogie. We don't want to lose him.\" -M.E.R.C. Dossier"),
 	Nationality = "USA",
-	snype_nick = T(159796160036, --[[ModItemUnitDataCompositeDef GCEXStogie snype_nick]] "stogie"),
+	snype_nick = T(159796160036, --[[ModItemUnitDataCompositeDef GCExStogie snype_nick]] "stogie"),
 	Refusals = {},
 	Haggles = {},
 	Mitigations = {},
@@ -52,6 +52,7 @@ DefineClass.GCEXStogie = {
 		"Meltdown",
 	},
 	StartingPerks = {
+		"GruntForce",
 		"HeavyWeaponsTraining",
 		"BeefedUp",
 		"BreachAndClear",
@@ -72,5 +73,6 @@ DefineClass.GCEXStogie = {
 	Specialization = "Marksmen",
 	gender = "Male",
 	blocked_spots = set( "Weaponls", "Weaponrs" ),
+	VoiceResponseId = "GCExStogie",
 }
 

@@ -38,11 +38,11 @@ DefineClass.ByTheBook = {
 			end,
 		}),
 	},
-	DisplayName = T(824460473306, --[[ModItemCharacterEffectCompositeDef ByTheBook DisplayName]] "Grunt Force"),
-	Description = T(953669658099, --[[ModItemCharacterEffectCompositeDef ByTheBook Description]] "Gumpy can apply additional effects whenever he uses explosives."),
+	DisplayName = T(824460473306, --[[ModItemCharacterEffectCompositeDef ByTheBook DisplayName]] "By the Book"),
+	Description = T(953669658099, --[[ModItemCharacterEffectCompositeDef ByTheBook Description]] "Cougar can instruct it's allies in the battlefield making them less prone to take damage."),
 	OnAdded = function (self, obj)  end,
 	OnRemoved = function (self, obj)  end,
-	Icon = "Mod/GCExPrologue/Images/PerkCOUGARBlu 2.png",
+	Icon = "Mod/GCExPrologue/Images/PerkCOUGARBlu 2",
 	Tier = "Personal",
 }
 

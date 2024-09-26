@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="mesh"/>
+	</state>
+	<mesh_description id="mesh">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/Meat_mesh.m.hgm"/>
+			<material file="Materials/Meat_mesh.mtl"/>
+			<bsphere value="0.092,-0.213,4.523,4.742"/>
+			<box min="-4.644,-1.247,-0.194" max="4.827,0.821,9.240"/>
+			<src file="C:/Users/kenji/AppData/Roaming/Jagged Alliance 3/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

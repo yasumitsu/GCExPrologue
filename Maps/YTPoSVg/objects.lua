@@ -2,6 +2,13 @@ PlaceObj('Collection', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294966497,
+	'Name', "col_GridMarker",
+	'Index', 1709,
+}, nil, 1001342447)
+PlaceObj('Collection', {
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
 	'Name', "col_CoastalPlant_01_Tree_3",
 	'Index', 4086,
 }, nil, 1004293482)
@@ -190,6 +197,13 @@ PlaceObj('Collection', {
 	'Name', "col_Scaffolding_Planks_20",
 	'Index', 443,
 }, nil, 1129626000)
+PlaceObj('Collection', {
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
+	'Name', "col_BunkerInterior_GasCan_01",
+	'Index', 3956,
+}, nil, 1143046413)
 PlaceObj('Collection', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
@@ -623,6 +637,13 @@ PlaceObj('Collection', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294966497,
+	'Name', "col_CustomInteractable_1",
+	'Index', 1772,
+}, nil, 1610942295)
+PlaceObj('Collection', {
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
 	'Name', "col_TropicalPlant_04_Shrub_2",
 	'Index', 1996,
 }, nil, 1613222416)
@@ -664,6 +685,7 @@ PlaceObj('Collection', {
 PlaceObj('Collection', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
+	'CollectionIndex', 1772,
 	'AllowedMask', 4294966497,
 	'Name', "col_WeaponProp_Box_01",
 	'Index', 3745,
@@ -703,6 +725,13 @@ PlaceObj('Collection', {
 	'Name', "col_CoastalPlant_01_Tree_19",
 	'Index', 3070,
 }, nil, 1719922234)
+PlaceObj('Collection', {
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
+	'Name', "col_Decor_Explosion_Human_02",
+	'Index', 1670,
+}, nil, 1720061189)
 PlaceObj('Collection', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
@@ -1091,12 +1120,22 @@ PlaceObj('CustomInteractable', {
 		"BNBrian",
 		"BFuel",
 	},
+	'CollectionIndex', 3956,
 	'AllowedMask', 4294966497,
 	'DisplayName', T(730035527527, "Take"),
 	'TriggerConditions', {
 		PlaceObj('QuestIsVariableBool', {
 			QuestId = "BriansFuel",
 			Vars = set( "Given" ),
+		}),
+	},
+	'EnabledConditions', {
+		PlaceObj('QuestIsVariableBool', {
+			QuestId = "BriansFuel",
+			Vars = set({
+	Completed = false,
+	Given = true,
+}),
 		}),
 	},
 	'ConditionalEffects', {
@@ -1144,6 +1183,7 @@ PlaceObj('CustomInteractable', {
 	'Groups', {
 		"BStash",
 	},
+	'CollectionIndex', 1772,
 	'AllowedMask', 4294966497,
 	'DisplayName', T(841725681200, "Loot"),
 	'EnabledConditions', {
@@ -1158,7 +1198,6 @@ PlaceObj('CustomInteractable', {
 				"BrianChest",
 			},
 		}),
-		PlaceObj('DisableInteractionMarkerEffect', {}),
 		PlaceObj('QuestSetVariableBool', {
 			Prop = "LootedStash3",
 			QuestId = "GearUp",
@@ -1253,19 +1292,40 @@ PlaceObj('GridMarker', {
 	'AreaWidth', 5,
 	'AreaHeight', 5,
 }, nil, 1080932898)
-PlaceObj('CustomInteractable', {
-	'Pos', point(143400, 148200),
+PlaceObj('GridMarker', {
+	'Pos', point(142200, 148200),
+	'Groups', {
+		"EmeraldFieldBanter",
+	},
+	'CollectionIndex', 1709,
 	'AllowedMask', 4294966497,
-	'DisplayName', T(344080634861, "Investigate"),
-	'ConditionalEffects', {
+	'Type', "Logic",
+	'TriggerConditions', {
+		PlaceObj('UnitIsAroundMarkerOfGroup', {
+			MarkerGroup = "EmeraldFildBanter",
+			TargetUnit = "any",
+		}),
+	},
+	'TriggerEffects', {
 		PlaceObj('PlayBanterEffect', {
 			Banters = {
 				"Playground",
 			},
 		}),
-		PlaceObj('DisableInteractionMarkerEffect', {}),
 	},
-}, nil, 1331856637)
+}, nil, 1015140300)
+PlaceObj('GridMarker', {
+	'Pos', point(142200, 148200),
+	'Groups', {
+		"EmeraldFieldBanter",
+	},
+	'CollectionIndex', 1709,
+	'AllowedMask', 4294966497,
+	'AreaWidth', 5,
+	'AreaHeight', 5,
+	'TriggerConditions', {},
+	'TriggerEffects', {},
+}, nil, 1575332326)
 PlaceObj('GridMarker', {
 	'Pos', point(160200, 154200),
 	'Angle', 10800,
@@ -3813,9 +3873,13 @@ PlaceObj('TropicalFillerPlants_03', {
 }, nil, 1326530657)
 PlaceObj('BunkerInterior_GasCan_01', {
 	'Pos', point(83713, 109797),
+	'Groups', {
+		"BFuel",
+	},
 	'ColorModifier', RGBA(3, 19, 58, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
+	'CollectionIndex', 3956,
 	'AllowedMask', 4294967279,
 }, nil, 1517932838)
 PlaceObj('CameraCollider', {
@@ -3827,15 +3891,6 @@ PlaceObj('CameraCollider', {
 	'CollectionIndex', 2478,
 	'AllowedMask', 4294966497,
 }, nil, 1552628310)
-PlaceObj('NoteMarker', {
-	'Pos', point(83695, 111216),
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-	'Text', "BRIANS FUEL",
-	'TextColor', RGBA(0, 72, 130, 255),
-	'TextStyle', "DescriptionTextAPRed",
-}, nil, 1348580662)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(85371, 112221),
 	'Angle', 8883,
@@ -4713,15 +4768,6 @@ PlaceObj('CoastalPlant_01_Tree_02', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294967279,
 }, nil, 1257820991)
-PlaceObj('NoteMarker', {
-	'Pos', point(116598, 86646),
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-	'Text', "HIDDENSTASH BOBBYSPACKAGE (BRIAN QUEST)",
-	'TextColor', RGBA(0, 72, 130, 255),
-	'TextStyle', "DescriptionTextAPRed",
-}, nil, 1084469042)
 PlaceObj('WeaponProp_Box_01', {
 	'Pos', point(116154, 87342, 5747),
 	'Angle', 582,
@@ -5023,15 +5069,6 @@ PlaceObj('Shanty_WallDecor_01', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 0,
 }, nil, 1033522512)
-PlaceObj('NoteMarker', {
-	'Pos', point(107962, 107816),
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-	'Text', "DEEDEE DIA STASH",
-	'TextColor', RGBA(0, 72, 130, 255),
-	'TextStyle', "DescriptionTextAPRed",
-}, nil, 1865612630)
 PlaceObj('Shanty_BeerBottle_01', {
 	'Pos', point(114542, 109810),
 	'Saturation', 0,
@@ -23404,15 +23441,6 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 0,
 }, nil, 1185099499)
-PlaceObj('NoteMarker', {
-	'Pos', point(145229, 188411),
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-	'Text', "BRIAN DIA",
-	'TextColor', RGBA(0, 72, 130, 255),
-	'TextStyle', "DescriptionTextAPRed",
-}, nil, 1349439817)
 PlaceObj('Flies', {
 	'Pos', point(147314, 187066, 7094),
 	'AllowedMask', 4294966497,
@@ -24989,6 +25017,24 @@ PlaceObj('TropicalFillerPlants_06', {
 	'CollectionIndex', 781,
 	'AllowedMask', 0,
 }, nil, 1298646147)
+PlaceObj('CoastalPlant_01_Tree_03', {
+	'Pos', point(174454, 183965),
+	'Angle', 6624,
+	'Axis', point(315, 112, 4082),
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294967279,
+}, nil, 1005336741)
+PlaceObj('CoastalPlant_01_Tree_04', {
+	'Pos', point(175505, 183597),
+	'Angle', 6429,
+	'Scale', 99,
+	'Axis', point(-468, 654, 4016),
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294967279,
+}, nil, 1134722731)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(172127, 184578),
 	'Angle', 20626,
@@ -25032,7 +25078,7 @@ PlaceObj('CoastalPlant_01_Tree_02', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294967279,
-}, nil, 1094208451)
+}, nil, 1564789352)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(173067, 187281),
 	'Angle', 21134,
@@ -25062,14 +25108,14 @@ PlaceObj('TropicalFillerPlants_06', {
 	'AllowedMask', 0,
 }, nil, 1083782831)
 PlaceObj('CoastalPlant_01_Tree_01', {
-	'Pos', point(176730, 189985),
+	'Pos', point(176371, 190010),
 	'Angle', 6524,
 	'Scale', 123,
 	'Axis', point(-100, 56, 4094),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294967279,
-}, nil, 1519838095)
+}, nil, 1451229045)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(176906, 190273),
 	'Angle', 6429,
@@ -25079,15 +25125,16 @@ PlaceObj('CoastalPlant_01_Tree_04', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294967279,
-}, nil, 1727152729)
-PlaceObj('CoastalPlant_01_Tree_03', {
-	'Pos', point(177344, 189993),
-	'Angle', 6624,
-	'Axis', point(315, 112, 4082),
+}, nil, 1267325858)
+PlaceObj('TropicalFillerPlants_01', {
+	'Pos', point(178532, 189520),
+	'Angle', 6582,
+	'Scale', 98,
+	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294967279,
-}, nil, 1005336741)
+	'AllowedMask', 0,
+}, nil, 1080919677)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(181844, 164107),
 	'ForcedLODState', "Minimum",
@@ -39632,7 +39679,7 @@ p("TropicalRockAssembly_01",138046,160527,6689,14640,97,-205,130,4088,"terrainch
 p("TropicalRockAssembly_01",137233,162213,6255,15304,138,-631,253,4039,"terrainchunk",10,0,0,82,100,10,40,60,2228245)
 p("TropicalRockAssembly_01",138475,163207,6663,15581,89,-481,-356,4052,"terrainchunk",10,0,0,76,100,10,40,60,2228245)
 p("TropicalRockAssembly_01",140482,147814,6557,2712,88,1179,171,3918,"terrainchunk",10,0,0,89,100,10,40,60,2228245)
-p("Decor_Explosion_Human_02",142815,148539,1021,2097152)
+p("Decor_Explosion_Human_02",142815,148539,1021,1670,2097408)
 p("MilitaryCamp_BarbWire_01",142861,153860,6665,15960,108,-1017,1095,3813,2097173)
 p("DecJungleForest_01",142619,155427,6924,8492,152,3200,50,2098245)
 p("TropicalRockAssembly_01",144240,149926,6693,2701,81,-113,1217,3909,"terrainchunk",10,0,0,78,100,10,40,60,2228245)
@@ -40819,11 +40866,12 @@ p("TropicalPlant_Grass_03",173986,186973,6950,11160,103,3200,2097221)
 p("TropicalPlant_Grass_01",174236,185895,6976,96,3200,2097220)
 p("TropicalPlant_Grass_01",175517,185172,6950,16455,154,3200,2097221)
 p("TropicalPlant_Grass_03",175437,186657,6950,19343,127,3200,2097221)
-p("TropicalRockAssembly_04",175126,187138,6863,16200,106,-7,-65,4095,3200,"terrainchunk",10,0,0,75,100,10,40,60,2228309)
+p("TropicalPlant_Grass_03",176234,182375,6950,9778,108,3200,2097221)
 p("TropicalPlant_Grass_03",176988,183275,6950,843,127,3200,2097221)
 p("TropicalPlant_Grass_03",177432,183946,6950,15831,127,3200,2097221)
 p("TropicalPlant_Grass_03",178252,181736,6950,17312,127,3200,2097221)
 p("TropicalPlant_Grass_03",176628,185130,19343,127,3200,2097220)
+p("TropicalPlant_Grass_03",176642,186218,13020,92,3200,2097220)
 p("TropicalPlant_Grass_03",177095,186793,6950,19343,127,3200,2097221)
 p("TropicalPlant_Grass_03",176898,188381,6950,19343,127,3200,2097221)
 p("TropicalPlant_Grass_03",178444,185135,6950,15831,127,3200,2097221)
@@ -40841,7 +40889,6 @@ p("TropicalRockSharp_02",173673,192617,6337,11220,108,399,-48,4076,3200,781,"ter
 p("TropicalPlant_04_Shrub_01",172797,195752,8713,3120,200,-17,3004,2785,3200,781,2097493)
 p("TropicalPlant_04_Shrub_01",174866,193930,6592,11400,200,3200,2097221)
 p("TropicalPlant_04_Sapling_04",176015,192937,4740,3200,2097216)
-p("TropicalPlant_Grass_03",176141,188852,13020,92,3200,2097220)
 p("TropicalPlant_04_Shrub_01",176177,191375,4119,112,3264,2097220)
 p("TropicalPlant_Grass_01",177272,190702,17224,115,3200,2097220)
 p("TropicalPlant_Grass_01",177742,191474,17779,106,3200,2097220)
@@ -40920,9 +40967,7 @@ p("TropicalRockSharp_04",183937,178644,6949,19680,112,3200,"terrainchunk",10,0,0
 p("TropicalPlant_Grass_03",183692,179869,6949,129,3200,69)
 p("TropicalPlant_Grass_03",185232,172506,6950,7680,116,3200,2097221)
 p("TropicalPlant_Grass_03",185131,173265,7399,91,3200,2097220)
-p("TropicalPlant_Dead_01",187332,172933,6950,7740,168,4282136624,3200,2097229)
 p("DecJungleForest_03",186595,175032,17760,124,3200,2097220)
-p("TropicalPlant_Dead_01",187290,174125,6761,15840,168,4282136624,286,256,4077,3200,2097245)
 p("TropicalRockAssembly_03",184325,179724,6785,1320,3200,"terrainchunk",10,0,0,75,100,10,40,60,2228289)
 p("TropicalPlant_Grass_03",185572,179540,6949,18900,129,3200,2097221)
 p("TropicalPlant_Grass_03",188972,164394,6950,12093,119,3200,2097221)

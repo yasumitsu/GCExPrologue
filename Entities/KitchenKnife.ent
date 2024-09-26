@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="mesh"/>
+	</state>
+	<mesh_description id="mesh">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/KitchenKnife_mesh.m.hgm"/>
+			<material file="Materials/KitchenKnife_mesh.mtl"/>
+			<bsphere value="1.977,-0.511,6.419,16.232"/>
+			<box min="-1.316,-1.340,-9.730" max="5.271,0.318,22.568"/>
+			<src file="C:/Users/kenji/AppData/Roaming/Jagged Alliance 3/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

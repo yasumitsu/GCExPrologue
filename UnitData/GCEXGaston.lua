@@ -1,5 +1,5 @@
-UndefineClass('GCEXGaston')
-DefineClass.GCEXGaston = {
+UndefineClass('GCExGaston')
+DefineClass.GCExGaston = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -19,13 +19,13 @@ DefineClass.GCEXGaston = {
 	Portrait = "Mod/GCExPrologue/Images/GastonPortrait",
 	BigPortrait = "Mod/GCExPrologue/Images/Gaston",
 	IsMercenary = true,
-	Name = T(833359843240, --[[ModItemUnitDataCompositeDef GCEXGaston Name]] "Gaston Cavalier"),
-	Nick = T(513999821212, --[[ModItemUnitDataCompositeDef GCEXGaston Nick]] "Gaston"),
-	AllCapsNick = T(849984528283, --[[ModItemUnitDataCompositeDef GCEXGaston AllCapsNick]] "GASTON"),
+	Name = T(833359843240, --[[ModItemUnitDataCompositeDef GCExGaston Name]] "Gaston Cavalier"),
+	Nick = T(513999821212, --[[ModItemUnitDataCompositeDef GCExGaston Nick]] "Gaston"),
+	AllCapsNick = T(849984528283, --[[ModItemUnitDataCompositeDef GCExGaston AllCapsNick]] "GASTON"),
 	Affiliation = "Secret",
-	Bio = T(321537150794, --[[ModItemUnitDataCompositeDef GCEXGaston Bio]] "As a distinguished commando in the French Marine Corp (FMC), Gaston has played a distinguished role in many of the NATO and UN operations throughout this hostile world. A confident, field-proven, professional sharpshooter, Cavalier's addition to our roster is just another step in M.E.R.C.'s continuing effort to meet your needs.\n\nAdditional Info\n\nGaston operates best in the early hours of the morning. He is also rather apt at sniping from an elevated vantage point.\n\n-M.E.R.C. Dossier"),
+	Bio = T(321537150794, --[[ModItemUnitDataCompositeDef GCExGaston Bio]] "As a distinguished commando in the French Marine Corp (FMC), Gaston has played a distinguished role in many of the NATO and UN operations throughout this hostile world. A confident, field-proven, professional sharpshooter, Cavalier's addition to our roster is just another step in M.E.R.C.'s continuing effort to meet your needs.\n\nAdditional Info\n\nGaston operates best in the early hours of the morning. He is also rather apt at sniping from an elevated vantage point.\n\n-M.E.R.C. Dossier"),
 	Nationality = "France",
-	snype_nick = T(189826039300, --[[ModItemUnitDataCompositeDef GCEXGaston snype_nick]] "gaston.cavalier"),
+	snype_nick = T(189826039300, --[[ModItemUnitDataCompositeDef GCExGaston snype_nick]] "gaston.cavalier"),
 	Refusals = {},
 	Haggles = {},
 	Mitigations = {},
@@ -52,6 +52,7 @@ DefineClass.GCEXGaston = {
 		"Buns",
 	},
 	StartingPerks = {
+		"Gaston",
 		"NightOps",
 		"DeathFromAbove",
 		"Deadeye",

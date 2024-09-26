@@ -1,5 +1,5 @@
-UndefineClass('GCEXGumpy')
-DefineClass.GCEXGumpy = {
+UndefineClass('GCExGumpy')
+DefineClass.GCExGumpy = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -19,13 +19,13 @@ DefineClass.GCEXGumpy = {
 	Portrait = "Mod/GCExPrologue/Images/GumpyPortrait",
 	BigPortrait = "Mod/GCExPrologue/Images/IMG_8537 2",
 	IsMercenary = true,
-	Name = T(350774746706, --[[ModItemUnitDataCompositeDef GCEXGumpy Name]] 'Tim "Gumpy" Hillman'),
-	Nick = T(940139436494, --[[ModItemUnitDataCompositeDef GCEXGumpy Nick]] "Gumpy"),
-	AllCapsNick = T(284042248626, --[[ModItemUnitDataCompositeDef GCEXGumpy AllCapsNick]] "GUMPY"),
+	Name = T(350774746706, --[[ModItemUnitDataCompositeDef GCExGumpy Name]] 'Tim "Gumpy" Hillman'),
+	Nick = T(940139436494, --[[ModItemUnitDataCompositeDef GCExGumpy Nick]] "Gumpy"),
+	AllCapsNick = T(284042248626, --[[ModItemUnitDataCompositeDef GCExGumpy AllCapsNick]] "GUMPY"),
 	Affiliation = "Secret",
-	Bio = T(845088535160, --[[ModItemUnitDataCompositeDef GCEXGumpy Bio]] "Tim is a brilliant explosives expert who catches on quickly. When it comes to explosives though, there really isn't much room for error. Tim Hillman would probably still be enrolled in Harvard, doing graduate studies in electro-magnetic research, if it wasn't for a couple bouts of severe depression...possibly due to the constant exposure to EMF.\n\nAdditional Info:\n\nDue to acute allergies, Tim prefers to work in northern climates.\n\n- M.E.R.C. Dossier"),
+	Bio = T(845088535160, --[[ModItemUnitDataCompositeDef GCExGumpy Bio]] "Tim is a brilliant explosives expert who catches on quickly. When it comes to explosives though, there really isn't much room for error. Tim Hillman would probably still be enrolled in Harvard, doing graduate studies in electro-magnetic research, if it wasn't for a couple bouts of severe depression...possibly due to the constant exposure to EMF.\n\nAdditional Info:\n\nDue to acute allergies, Tim prefers to work in northern climates.\n\n- M.E.R.C. Dossier"),
 	Nationality = "USA",
-	snype_nick = T(140402586340, --[[ModItemUnitDataCompositeDef GCEXGumpy snype_nick]] "tim.hilman"),
+	snype_nick = T(140402586340, --[[ModItemUnitDataCompositeDef GCExGumpy snype_nick]] "tim.hilman"),
 	Refusals = {},
 	Haggles = {},
 	Mitigations = {},
@@ -45,8 +45,8 @@ DefineClass.GCEXGumpy = {
 	LegacyNotes = '"Tim is a brilliant explosives expert who catches on quickly. When it comes to explosives though, there really isn\'t much room for error. Tim Hillman would probably still be enrolled in Harvard, doing graduate studies in electro-magnetic research, if it wasn\'t for a couple bouts of severe depression...possibly due to the constant exposure to EMF.\n\nAdditional Info:\n\nDue to acute allergies, Tim prefers to work in northern climates."\n\n- M.E.R.C. Dossier',
 	MaxHitPoints = 82,
 	StartingPerks = {
-		"MrFixit",
 		"GumpySpecialPineapple",
+		"MrFixit",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

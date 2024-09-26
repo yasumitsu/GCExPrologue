@@ -20,7 +20,7 @@ DefineClass.NumbTalk = {
 	Description = T(302553154193, --[[ModItemCharacterEffectCompositeDef NumbTalk Description]] "Numb can taunt hand hit the nerves of anyone he can see."),
 	OnAdded = function (self, obj)  end,
 	OnRemoved = function (self, obj)  end,
-	Icon = "Mod/GCExPrologue/Images/PerkNUMBBlu 2.png",
+	Icon = "Mod/GCExPrologue/Images/PerkNUMBBlu 2",
 	Tier = "Personal",
 }
 

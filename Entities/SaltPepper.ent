@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="mesh"/>
+	</state>
+	<mesh_description id="mesh">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/SaltPepper_mesh.m.hgm"/>
+			<material file="Materials/SaltPepper_mesh.mtl"/>
+			<bsphere value="0.013,-0.011,3.208,5.777"/>
+			<box min="-3.179,-3.202,-1.679" max="3.204,3.181,8.094"/>
+			<src file="C:/Users/kenji/AppData/Roaming/Jagged Alliance 3/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

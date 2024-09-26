@@ -22,6 +22,31 @@
 		type = "InventoryItemSpawn",
 	},
 	{
+		BanterTriggerEffects = {
+			PlaceObj('PlayBanterEffect', {
+				Banters = {
+					"Playground",
+				},
+			}),
+		},
+		Groups = {
+			"EmeraldFieldBanter",
+		},
+		handle = 1015140300,
+		items = {
+			{
+				editor_view_abridged = "Play banter(s): Playground",
+				filter_type = "banter",
+				reference_id = "Playground",
+				type = "PlayBanterEffect",
+			},
+		},
+		map = "YTPoSVg",
+		name = "Logic#300 (EmeraldFieldBanter)",
+		path = "Logic ",
+		type = "Logic",
+	},
+	{
 		Groups = {
 			"BGoons",
 		},
@@ -115,29 +140,6 @@
 		name = "UnitMarker#240 (BGoons)",
 		path = "UnitMarker ",
 		type = "UnitMarker",
-	},
-	{
-		BanterTriggerEffects = {
-			PlaceObj('PlayBanterEffect', {
-				Banters = {
-					"Playground",
-				},
-			}),
-		},
-		Groups = false,
-		handle = 1331856637,
-		items = {
-			{
-				editor_view_abridged = "Play banter(s): Playground",
-				filter_type = "banter",
-				reference_id = "Playground",
-				type = "PlayBanterEffect",
-			},
-		},
-		map = "YTPoSVg",
-		name = 'CustomInteractable#637 "Investigate"',
-		path = "CustomInteractable ",
-		type = "CustomInteractable",
 	},
 	{
 		Groups = {
@@ -310,6 +312,16 @@
 				reference_id = "BriansFuel",
 				type = "QuestIsVariableBool",
 				var = set( "Given" ),
+			},
+			{
+				editor_view_abridged = "if not Completed and Given",
+				filter_type = "quest",
+				reference_id = "BriansFuel",
+				type = "QuestIsVariableBool",
+				var = set({
+	Completed = false,
+	Given = true,
+}),
 			},
 			{
 				editor_view_abridged = "Play banter(s): FuelFound",

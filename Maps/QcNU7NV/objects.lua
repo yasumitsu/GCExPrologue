@@ -580,6 +580,13 @@ PlaceObj('Collection', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294966497,
+	'Name', "col_TropicalRockSharp_5",
+	'Index', 1338,
+}, nil, 1623729967)
+PlaceObj('Collection', {
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
 	'Name', "col_TropicalFillerPlants_06",
 	'Index', 732,
 }, nil, 1624330045)
@@ -1064,20 +1071,6 @@ PlaceObj('UnitMarker', {
 		}),
 	},
 }, nil, 1830048647)
-PlaceObj('CustomInteractable', {
-	'Pos', point(168600, 107400),
-	'CollectionIndex', 1663,
-	'AllowedMask', 4294966497,
-	'DisplayName', T(552851249637, "Examine"),
-	'ConditionalEffects', {
-		PlaceObj('PlayBanterEffect', {
-			Banters = {
-				"RecentActivity",
-			},
-		}),
-		PlaceObj('DisableInteractionMarkerEffect', {}),
-	},
-}, nil, 1239312607)
 PlaceObj('GridMarker', {
 	'Pos', point(208200, 111000),
 	'Groups', {
@@ -4246,6 +4239,15 @@ PlaceObj('TropicalPlant_04_Tree_01', {
 	'CollectionIndex', 3740,
 	'AllowedMask', 4294967279,
 }, nil, 1700741505)
+PlaceObj('NoteMarker', {
+	'Pos', point(77853, 79401),
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
+	'Text', "LOOT",
+	'TextColor', RGBA(0, 72, 130, 255),
+	'TextStyle', "DescriptionTextAPRed",
+}, nil, 1016687151)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(79575, 78165),
 	'Angle', 14614,
@@ -4256,6 +4258,15 @@ PlaceObj('TropicalPlant_02_Tree_01', {
 	'CollectionIndex', 3040,
 	'AllowedMask', 4294967279,
 }, nil, 1178579493)
+PlaceObj('TropicalFillerPlants_01', {
+	'Pos', point(79803, 80002),
+	'Angle', 6582,
+	'Scale', 98,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1454357552)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(80312, 81034),
 	'Angle', 5277,
@@ -19948,15 +19959,6 @@ PlaceObj('TropicalFillerPlants_01', {
 	'CollectionIndex', 2787,
 	'AllowedMask', 0,
 }, nil, 1779437487)
-PlaceObj('NoteMarker', {
-	'Pos', point(185451, 73977),
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-	'Text', "SCRAPYARD",
-	'TextColor', RGBA(0, 72, 130, 255),
-	'TextStyle', "TalkingHeadTextBigger",
-}, nil, 1581355621)
 PlaceObj('TropicalFillerPlants_01', {
 	'DetailClass', "Eye Candy",
 	'Pos', point(187231, 79088),
@@ -27909,7 +27911,7 @@ PlaceObj('BunkerInterior_PropSet_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 1709,
-	'AllowedMask', 4294967279,
+	'AllowedMask', 782,
 }, nil, 1812635492)
 PlaceObj('TropicalPlant_04_Tree_02', {
 	'Pos', point(158614, 148172, 7000),
@@ -28805,15 +28807,6 @@ PlaceObj('Shanty_OvenProp_01', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294967279,
 }, nil, 1560664771)
-PlaceObj('NoteMarker', {
-	'Pos', point(149688, 170652),
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-	'Text', "ADONIS GUARD DIA",
-	'TextColor', RGBA(0, 72, 130, 255),
-	'TextStyle', "DescriptionTextAPRed",
-}, nil, 1309125461)
 PlaceObj('Shanty_CardboardBox_01', {
 	'ColorizationPalette', "",
 	'EditableColor1', RGBA(98, 91, 80, 255),
@@ -37554,12 +37547,26 @@ p("TropicalPlant_04_Shrub_01",79158,73306,11100,150,119,772,4021,3264,372,209749
 p("TropicalRockSharp_04",80676,71738,10800,3564,-2018,0,3200,372,2097488)
 p("TropicalRockSharp_04",81218,73094,21300,110,3200,372,2097476)
 p("TropicalPlant_04_Shrub_02",74522,77190,1560,116,-2056,1700,3108,3264,372,2097492)
+p("TropicalRockSharp_04",76594,75858,8545,13971,69,-2730,2198,2118,3200,1338,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockSharp_04",76546,76070,8939,10196,83,-340,456,4056,3200,1338,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockSharp_04",76557,76807,8906,14557,69,-2302,2420,2370,3200,1338,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("DecBunkerFloor_02",76353,77668,9289,16447,119,4282343424,120,-247,4086,3202,1338,98,2098525)
+p("TropicalRockSharp_04",76820,75861,8749,12704,65,-343,115,4079,3200,1338,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockSharp_04",77295,76037,8113,14483,130,-2945,1925,2096,3200,1338,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockSharp_04",77152,76405,8994,12042,74,378,2761,3002,3200,1338,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("DecBunkerFloor_02",77224,76382,9428,16377,94,4280046104,-221,-322,4077,3202,1338,98,2098525)
+p("DecBunkerFloor_02",76843,76850,9622,16379,119,4281287943,293,233,4078,3202,1338,98,2098525)
+p("TropicalRockSharp_04",76851,77412,8916,6445,64,-411,473,4047,3200,1338,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
 p("TropicalPlant_01_Shrub",75767,80191,18180,129,3200,372,2097476)
+p("TropicalRockSharp_02",76879,78544,8441,4635,50,-194,-4090,102,3200,1338,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockAssembly_04",77517,77978,8639,16200,106,-7,-65,4095,3200,"terrainchunk",10,0,0,75,100,10,40,60,2228309)
 p("TropicalRockSharp_04",80394,74446,19020,125,3200,372,2097476)
 p("TropicalPlant_04_Shrub_01",81259,74836,19620,112,1674,-815,3648,3264,372,2097492)
 p("TropicalPlant_04_Shrub_01",81020,76953,19620,173,1835,-731,3588,3264,372,2097492)
 p("TropicalPlant_04_Shrub_01",78893,77913,3720,182,3264,3040,2097476)
 p("TropicalPlant_04_Shrub_02",78718,81364,6660,134,-156,593,4050,3264,372,2097492)
+p("TropicalPlant_Dead_01",79303,80070,8726,7740,168,4282136624,3200,2097229)
+p("TropicalPlant_Dead_01",79080,80597,8537,15840,168,4282136624,286,256,4077,3200,2097245)
 p("TropicalRockAssembly_01",67020,83215,9805,1800,199,-742,1899,3553,3232,"terrainchunk",10,0,0,86,100,10,40,60,2228309)
 p("TropicalPlant_04_Shrub_01",68138,85555,85,3264,1611,324)
 p("TropicalPlant_01_Shrub",66965,86794,18060,144,3200,1611,2097476)

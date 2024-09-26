@@ -1,5 +1,211 @@
 return {
 	PlaceObj('ModItemFolder', {
+		'name', "Entities",
+	}, {
+		PlaceObj('ModItemEntity', {
+			'name', "StreetFoodCart",
+			'entity_name', "StreetFoodCart",
+			'material_type', "Metal_Props",
+			'material', {
+				"Materials/StreetFoodCart_idle",
+				"Materials/StreetFoodCart_mesh",
+				"Materials/StreetFoodCart_working",
+			},
+			'mesh', {
+				"Meshes/StreetFoodCart_idle.m",
+				"Meshes/StreetFoodCart_mesh.m",
+				"Meshes/StreetFoodCart_working.m",
+			},
+			'texture', {
+				"9417000",
+				"9417001",
+				"9417002",
+				"9417010",
+				"9417011",
+				"9417012",
+				"9417006",
+				"9417007",
+				"9417008",
+				"9417009",
+				"9417003",
+				"9417004",
+				"9417005",
+				"9417000",
+				"9417001",
+				"9417002",
+				"9417010",
+				"9417011",
+				"9417012",
+				"9417006",
+				"9417007",
+				"9417008",
+				"9417009",
+				"9417003",
+				"9417004",
+				"9417005",
+				"9417013",
+				"9417014",
+				"9417015",
+				"9417016",
+				"9417017",
+				"9417018",
+				"9417019",
+				"9417000",
+				"9417001",
+				"9417002",
+				"9417010",
+				"9417011",
+				"9417012",
+				"9417006",
+				"9417007",
+				"9417008",
+				"9417009",
+				"9417003",
+				"9417004",
+				"9417005",
+				"9417013",
+				"9417014",
+				"9417015",
+				"9417016",
+				"9417017",
+				"9417018",
+				"9417019",
+			},
+		}),
+		PlaceObj('ModItemEntity', {
+			'name', "Meat",
+			'entity_name', "Meat",
+			'material', {
+				"Materials/Meat_mesh",
+			},
+			'mesh', {
+				"Meshes/Meat_mesh.m",
+			},
+			'texture', {
+				"3391000",
+				"3391001",
+				"3391002",
+				"3391003",
+			},
+		}),
+		PlaceObj('ModItemEntity', {
+			'name', "Cigarrete",
+			'entity_name', "Cigarrete",
+			'material', {
+				"Materials/Cigarrete_mesh",
+			},
+			'mesh', {
+				"Meshes/Cigarrete_mesh.m",
+			},
+			'texture', {
+				"6418000",
+				"6418001",
+				"6418002",
+				"6418003",
+			},
+		}),
+		PlaceObj('ModItemEntity', {
+			'name', "SaltPepper",
+			'entity_name', "SaltPepper",
+			'material', {
+				"Materials/SaltPepper_mesh",
+			},
+			'mesh', {
+				"Meshes/SaltPepper_mesh.m",
+			},
+			'texture', {
+				"7024010",
+				"7024011",
+				"7024012",
+				"7024013",
+			},
+		}),
+		PlaceObj('ModItemEntity', {
+			'name', "Catcher",
+			'entity_name', "Catcher",
+			'material', {
+				"Materials/Catcher_mesh",
+			},
+			'mesh', {
+				"Meshes/Catcher_mesh.m",
+			},
+			'texture', {
+				"5198000",
+				"5198001",
+				"5198002",
+				"5198003",
+			},
+		}),
+		PlaceObj('ModItemEntity', {
+			'name', "Spatula",
+			'entity_name', "Spatula",
+			'material', {
+				"Materials/Spatula_mesh",
+			},
+			'mesh', {
+				"Meshes/Spatula_mesh.m",
+			},
+			'texture', {
+				"5230000",
+				"5230001",
+				"5230002",
+				"5230003",
+			},
+		}),
+		PlaceObj('ModItemEntity', {
+			'name', "KitchenKnife",
+			'entity_name', "KitchenKnife",
+			'material', {
+				"Materials/KitchenKnife_mesh",
+			},
+			'mesh', {
+				"Meshes/KitchenKnife_mesh.m",
+			},
+			'texture', {
+				"8203007",
+				"8203008",
+				"8203009",
+				"8203010",
+			},
+		}),
+		PlaceObj('ModItemEntity', {
+			'name', "Snack1",
+			'entity_name', "Snack1",
+			'material', {
+				"Materials/Snack1_mesh",
+			},
+			'mesh', {
+				"Meshes/Snack1_mesh.m",
+			},
+			'texture', {
+				"4545000",
+				"4545001",
+				"4545002",
+				"4545003",
+			},
+		}),
+		PlaceObj('ModItemEntity', {
+			'name', "Snack",
+			'CopyFiles', {
+				mod_content_path = "Mod/GCExPrologue/",
+				mod_id = "GCExPrologue",
+			},
+			'entity_name', "Snack",
+			'material', {
+				"Materials/Snack_mesh",
+			},
+			'mesh', {
+				"Meshes/Snack_mesh.m",
+			},
+			'texture', {
+				"3996000",
+				"3996001",
+				"3996002",
+				"3996003",
+			},
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
 		'name', "Change Property",
 	}, {
 		PlaceObj('ModItemChangeProp', {
@@ -24,9 +230,26 @@ return {
 			'TargetValue', T(501006798329, "Sir Ni"),
 		}),
 		}),
-	PlaceObj('ModItemCode', {
-		'CodeFileName', "Code/Script.lua",
-	}),
+	PlaceObj('ModItemFolder', {
+		'name', "Code",
+	}, {
+		PlaceObj('ModItemCode', {
+			'name', "SaveFix",
+			'CodeFileName', "Code/SaveFix.lua",
+		}),
+		PlaceObj('ModItemCode', {
+			'name', "VoicesGaston",
+			'CodeFileName', "Code/VoicesGaston.lua",
+		}),
+		PlaceObj('ModItemCode', {
+			'name', "VoicesCougar",
+			'CodeFileName', "Code/VoicesCougar.lua",
+		}),
+		PlaceObj('ModItemCode', {
+			'name', "VoicesStogie",
+			'CodeFileName', "Code/VoicesStogie.lua",
+		}),
+		}),
 	PlaceObj('ModItemCampaignPreset', {
 		Description = T(216617159958, --[[ModItemCampaignPreset GCEXPrologue Description]] "Grand Chien Expanded: Prologue"),
 		DisclaimerOnStart = T(320413019193, --[[ModItemCampaignPreset GCEXPrologue DisclaimerOnStart]] "In July 14 we commemorate 1 year of Jagged Alliance 3, A worthy successor for our beloved series. To celebrate a small group of modders decided to bring this small gift for our community."),
@@ -40,8 +263,8 @@ return {
 			end
 			
 			function GetTestCampaignSquad()
-				local starting_parties = { "GCEXNumb", "GCEXGumpy", "GCEXGasket",
-				"GCEXStogie", "GCEXCougar", "GCEXGaston" }
+				local starting_parties = { "GCExNumb", "GCExGumpy", "GCExGasket",
+				"GCExStogie", "GCExCougar", "GCExGaston" }
 				return starting_parties
 			end
 			local init_sector = "J5"
@@ -180,7 +403,7 @@ return {
 				'bidirectionalBlockApply', true,
 				'BlockTravel', set({
 	East = true,
-	North = true,
+	North = false,
 	South = false,
 	West = false,
 }),
@@ -1074,6 +1297,7 @@ return {
 				'MusicExploration', "Cursed_Exploration",
 			}),
 		},
+		comment = "Remember, don't place new unecessary markers, banters can be played in a lot of placed markers and be very careful when using effects",
 		group = "Default",
 		id = "GCEXPrologue",
 		map_file = "Mod/GCExPrologue/Images/Seagulla5.png",
@@ -1350,10 +1574,6 @@ return {
 							PlaceObj('QuestIsVariableBool', {
 								QuestId = "02_LiberateErnie",
 								Vars = set( "Completed" ),
-								__eval = function ()
-									local quest = gv_Quests['02_LiberateErnie'] or QuestGetState('02_LiberateErnie')
-									return quest.Completed
-								end,
 							}),
 							PlaceObj('QuestIsVariableNum', {
 								Condition = "==",
@@ -1501,10 +1721,6 @@ return {
 							PlaceObj('QuestIsVariableBool', {
 								QuestId = "TimedTrap",
 								Vars = set( "InitialInteractionDone" ),
-								__eval = function ()
-									local quest = gv_Quests['TimedTrap'] or QuestGetState('TimedTrap')
-									return quest.InitialInteractionDone
-								end,
 							}),
 						},
 						Effects = {
@@ -1533,10 +1749,6 @@ return {
 							PlaceObj('QuestIsVariableBool', {
 								QuestId = "TimedTrap",
 								Vars = set( "InitialInteractionDone", "SkillCheckSuccess" ),
-								__eval = function ()
-									local quest = gv_Quests['TimedTrap'] or QuestGetState('TimedTrap')
-									return quest.InitialInteractionDone and quest.SkillCheckSuccess
-								end,
 							}),
 						},
 						Effects = {
@@ -1581,10 +1793,24 @@ return {
 				group = "GCExUtility",
 				id = "TimedTrap",
 			}),
+			PlaceObj('ModItemQuestsDef', {
+				Chapter = "GCExUtility",
+				Variables = {
+					PlaceObj('QuestVarBool', {
+						Name = "ThugsHostile",
+					}),
+					PlaceObj('QuestVarBool', {
+						Name = "PaidToll",
+					}),
+				},
+				campaign = "GCEXPrologue",
+				group = "GCExUtility",
+				id = "FlagHillHostileTracker",
+			}),
 			}),
 		PlaceObj('ModItemQuestsDef', {
 			Chapter = "GCExAct1",
-			DevNotes = "Starting main quest. Resolved when you talk to  Corazone.",
+			DevNotes = "Starting main quest. Resolved when you talk to Corazon.",
 			DisplayName = T(135309888552, --[[ModItemQuestsDef GCEx_01_Landing DisplayName]] "Good Morning Grand Chien!"),
 			KillTCEsConditions = {
 				PlaceObj('QuestIsVariableBool', {
@@ -1600,10 +1826,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GCEx_01_Landing",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['01_Landing'] or QuestGetState('01_Landing')
-								return quest.Completed
-							end,
 						}),
 					},
 					ShowConditions = {
@@ -1630,10 +1852,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GCEx_01_Landing",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['01_Landing'] or QuestGetState('01_Landing')
-								return quest.Completed
-							end,
 						}),
 					},
 					Idx = 2,
@@ -1746,19 +1964,11 @@ return {
 				PlaceObj('QuestIsVariableBool', {
 					QuestId = "GearUp",
 					Vars = set( "LootedStash1", "LootedStash2", "LootedStash3", "LootedStash4", "LootedStash5" ),
-					__eval = function ()
-						local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-						return quest.Completed
-					end,
 				}),
 				PlaceObj('QuestIsVariableBool', {
 					Condition = "or",
 					QuestId = "GearUp",
 					Vars = set( "Completed" ),
-					__eval = function ()
-						local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-						return quest.Completed
-					end,
 				}),
 			},
 			LastNoteIdx = 4,
@@ -1770,10 +1980,6 @@ return {
 							Condition = "or",
 							QuestId = "GearUp",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.Failed or quest.FlayCampCombat_Flay or quest.FlayDead or quest.FlayHunting or quest.FlayPacified or quest.FlayRecruited
-							end,
 						}),
 					},
 					Idx = 3,
@@ -1782,13 +1988,9 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GearUp",
 							Vars = set( "Given" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.Given
-							end,
 						}),
 					},
-					Text = T(800199614144, --[[ModItemQuestsDef GearUp Text]] "Biff wants us to gear up by looting five (5) stashes on the island."),
+					Text = T(800199614144, --[[ModItemQuestsDef GearUp Text]] "Gear up and gather <color EmStyle> Provisions</color> for the mission. Investigate the Island and talk with the locals. There are <color EmStyle> five (5) Provisions </color>to be found."),
 				}),
 				PlaceObj('QuestNote', {
 					AddInHistory = true,
@@ -1796,10 +1998,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GearUp",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.FlayPacified
-							end,
 						}),
 					},
 					Idx = 4,
@@ -1808,10 +2006,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "GearUp",
 							Vars = set( "Completed", "TCE_LootedStashes" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.FlayPacified
-							end,
 						}),
 					},
 					ShowWhenCompleted = true,
@@ -1820,6 +2014,31 @@ return {
 			},
 			QuestId = "GearUp",
 			TCEs = {
+				PlaceObj('TriggeredConditionalEvent', {
+					Conditions = {
+						PlaceObj('PlayerIsInSectors', {
+							Sectors = {
+								"J6",
+							},
+						}),
+						PlaceObj('QuestIsVariableBool', {
+							QuestId = "GearUp",
+							Vars = set({
+	Completed = false,
+	Given = true,
+}),
+						}),
+					},
+					Effects = {
+						PlaceObj('PlayBanterEffect', {
+							Banters = {
+								"BiffRadio",
+							},
+						}),
+					},
+					ParamId = "RadioHintRust",
+					QuestId = "GearUp",
+				}),
 				PlaceObj('TriggeredConditionalEvent', {
 					Conditions = {
 						PlaceObj('QuestIsVariableBool', {
@@ -1895,6 +2114,9 @@ return {
 					QuestId = "GearUp",
 					Value = true,
 				}),
+				PlaceObj('QuestVarTCEState', {
+					Name = "RadioHintRust",
+				}),
 			},
 			campaign = "GCEXPrologue",
 			group = "GCExMain",
@@ -1902,7 +2124,7 @@ return {
 		}),
 		PlaceObj('ModItemQuestsDef', {
 			Chapter = "GCExAct1",
-			DevNotes = "Quest is unclea rin design doc. What completes it and what fails it?",
+			DevNotes = "Quest is unclea rin design doc. What completes it and what fails it?\nThis quest should be the quest that opens the exit to D4 -- Kenji",
 			DisplayName = T(922967157325, --[[ModItemQuestsDef ReadyForRailings DisplayName]] "Ready for the Railings"),
 			LastNoteIdx = 6,
 			Main = true,
@@ -1913,10 +2135,6 @@ return {
 							Condition = "or",
 							QuestId = "ReadyForRailings",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.Failed or quest.FlayCampCombat_Flay or quest.FlayDead or quest.FlayHunting or quest.FlayPacified or quest.FlayRecruited
-							end,
 						}),
 					},
 					Idx = 5,
@@ -1925,10 +2143,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "ReadyForRailings",
 							Vars = set( "Given" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.Given
-							end,
 						}),
 					},
 					Text = T(152767491086, --[[ModItemQuestsDef ReadyForRailings Text]] "Biff wants us to attack Diamond Red."),
@@ -1939,10 +2153,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "ReadyForRailings",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.FlayPacified
-							end,
 						}),
 					},
 					Idx = 6,
@@ -1951,10 +2161,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "ReadyForRailings",
 							Vars = set( "Given" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.FlayPacified
-							end,
 						}),
 					},
 					ShowWhenCompleted = true,
@@ -1999,9 +2205,11 @@ return {
 		}),
 		PlaceObj('ModItemQuestsDef', {
 			Chapter = "GCExAct1",
+			DevNotes = "dunno if it is main quest or not, it looks like a side quest but not completing leads to failing the main quest, so make up you mind guys, also is missing a display name -- Kenji",
 			KillTCEsConditions = {
 				PlaceObj('QuestKillTCEsOnCompleted', {}),
 			},
+			Main = true,
 			NoteDefs = {
 				LastNoteIdx = 4,
 				PlaceObj('QuestNote', {
@@ -2029,6 +2237,7 @@ return {
 					Text = T(567748918757, --[[ModItemQuestsDef BriansFuel Text]] "Find Brian's missing Fuel!"),
 				}),
 				PlaceObj('QuestNote', {
+					AddInHistory = true,
 					CompletionConditions = {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "BriansFuel",
@@ -2042,6 +2251,7 @@ return {
 							Vars = set( "Completed" ),
 						}),
 					},
+					ShowWhenCompleted = true,
 					Text = T(313584653673, --[[ModItemQuestsDef BriansFuel Text]] "You found Brian's Fuel."),
 				}),
 			},
@@ -2088,9 +2298,10 @@ return {
 		}),
 		PlaceObj('ModItemQuestsDef', {
 			Chapter = "GCExAct2",
-			DevNotes = "The only thing the quest must do is check for alive squad members?",
+			DevNotes = "The only thing the quest must do is check for alive squad members?\nnot all need to survive, the ending quest should be make to D5 with at least one merc alive, so they can be found in GCEx, perfect ending should be all alive, also the quest must fail after 6 months, I just don't know if this one is the ending quest -- Kenji",
 			DisplayName = T(842383797713, --[[ModItemQuestsDef TropicalHeat DisplayName]] "Tropical Heat"),
 			LastNoteIdx = 10,
+			Main = true,
 			NoteDefs = {
 				PlaceObj('QuestNote', {
 					HideConditions = {
@@ -2098,10 +2309,6 @@ return {
 							Condition = "or",
 							QuestId = "TropicalHeat",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.Failed or quest.FlayCampCombat_Flay or quest.FlayDead or quest.FlayHunting or quest.FlayPacified or quest.FlayRecruited
-							end,
 						}),
 					},
 					Idx = 9,
@@ -2110,10 +2317,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "TropicalHeat",
 							Vars = set( "Given" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.Given
-							end,
 						}),
 					},
 					Text = T(208573492159, --[[ModItemQuestsDef TropicalHeat Text]] "All members of the squad must survive!."),
@@ -2124,10 +2327,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "TropicalHeat",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.FlayPacified
-							end,
 						}),
 					},
 					Idx = 10,
@@ -2136,10 +2335,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "ReadyForRailings",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.FlayPacified
-							end,
 						}),
 					},
 					ShowWhenCompleted = true,
@@ -2180,9 +2375,10 @@ return {
 		}),
 		PlaceObj('ModItemQuestsDef', {
 			Chapter = "GCExAct2",
-			DevNotes = "Quest is unclear in the design doc. Fighting the voodoo people fails it, but what to do to complete it? option 2 is not in design doc.",
+			DevNotes = "Quest is unclear in the design doc. Fighting the voodoo people fails it, but what to do to complete it? option 2 is not in design doc.\nNeed you guys to review this with the storyline, this is a mess -- Kenji",
 			DisplayName = T(111229430937, --[[ModItemQuestsDef ChurchOfBlood DisplayName]] "The Church of Blood"),
 			LastNoteIdx = 12,
+			Main = true,
 			NoteDefs = {
 				LastNoteIdx = 1,
 				PlaceObj('QuestNote', {
@@ -2191,10 +2387,6 @@ return {
 							Condition = "or",
 							QuestId = "TropicalHeat",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.Failed or quest.FlayCampCombat_Flay or quest.FlayDead or quest.FlayHunting or quest.FlayPacified or quest.FlayRecruited
-							end,
 						}),
 					},
 					Idx = 11,
@@ -2203,10 +2395,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "TropicalHeat",
 							Vars = set( "Given" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.Given
-							end,
 						}),
 					},
 					Text = T(236496326025, --[[ModItemQuestsDef ChurchOfBlood Text]] "Follow Stitches to her flock!"),
@@ -2217,10 +2405,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "ChurchOfBlood",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.FlayPacified
-							end,
 						}),
 					},
 					Idx = 12,
@@ -2229,10 +2413,6 @@ return {
 						PlaceObj('QuestIsVariableBool', {
 							QuestId = "ReadyForRailings",
 							Vars = set( "Completed" ),
-							__eval = function ()
-								local quest = gv_Quests['HunterHunted'] or QuestGetState('HunterHunted')
-								return quest.FlayPacified
-							end,
 						}),
 					},
 					ShowWhenCompleted = true,
@@ -2324,7 +2504,7 @@ return {
 			}),
 			PlaceObj('SetpieceAssignFromGroup', {
 				AssignTo = "Merc1",
-				Group = "GCEXCougar",
+				Group = "GCExCougar",
 			}),
 			PlaceObj('SetpieceAssignFromParam', {
 				AssignTo = "Merc3",
@@ -2761,11 +2941,11 @@ return {
 					param_bindings = false,
 				}),
 			},
-			'DisplayName', T(705074527278, --[[ModItemCharacterEffectCompositeDef Gasket DisplayName]] "Not Caring"),
-			'Description', T(853579610940, --[[ModItemCharacterEffectCompositeDef Gasket Description]] "Due to his innate ability to not give a fuck, Haywire is immune to Panicked or Suppressed."),
+			'DisplayName', T(705074527278, --[[ModItemCharacterEffectCompositeDef Gasket DisplayName]] "Simple Minded"),
+			'Description', T(853579610940, --[[ModItemCharacterEffectCompositeDef Gasket Description]] "Gasket needs simple stuff to operate better, the simpler the better."),
 			'OnAdded', function (self, obj)  end,
 			'OnRemoved', function (self, obj)  end,
-			'Icon', "Mod/GCExPrologue/Images/PerkGASKETBlu 2.png",
+			'Icon', "Mod/GCExPrologue/Images/PerkGASKETBlu 2",
 			'Tier', "Personal",
 		}),
 		PlaceObj('ModItemCharacterEffectCompositeDef', {
@@ -2789,7 +2969,7 @@ return {
 			'Description', T(302553154193, --[[ModItemCharacterEffectCompositeDef NumbTalk Description]] "Numb can taunt hand hit the nerves of anyone he can see."),
 			'OnAdded', function (self, obj)  end,
 			'OnRemoved', function (self, obj)  end,
-			'Icon', "Mod/GCExPrologue/Images/PerkNUMBBlu 2.png",
+			'Icon', "Mod/GCExPrologue/Images/PerkNUMBBlu 2",
 			'Tier', "Personal",
 		}),
 		PlaceObj('ModItemCharacterEffectCompositeDef', {
@@ -2808,11 +2988,11 @@ return {
 					param_bindings = false,
 				}),
 			},
-			'DisplayName', T(337078449531, --[[ModItemCharacterEffectCompositeDef Gaston DisplayName]] "Taunt the pussies"),
-			'Description', T(730181381461, --[[ModItemCharacterEffectCompositeDef Gaston Description]] "Razor likes playing with it's targets, melee attacks also applies slow to the target."),
+			'DisplayName', T(337078449531, --[[ModItemCharacterEffectCompositeDef Gaston DisplayName]] "Techniques de Furtivité"),
+			'Description', T(730181381461, --[[ModItemCharacterEffectCompositeDef Gaston Description]] "Due to his special training, Gaston can use the environment to hide and prepare his attacks."),
 			'OnAdded', function (self, obj)  end,
 			'OnRemoved', function (self, obj)  end,
-			'Icon', "Mod/GCExPrologue/Images/PerkRAZORBlu 2.png",
+			'Icon', "Mod/GCExPrologue/Images/PerkRAZORBlu 2",
 			'Tier', "Personal",
 		}),
 		PlaceObj('ModItemCharacterEffectCompositeDef', {
@@ -2837,11 +3017,11 @@ return {
 					param_bindings = false,
 				}),
 			},
-			'DisplayName', T(353051786879, --[[ModItemCharacterEffectCompositeDef GumpySpecialPineapple DisplayName]] "Taunt the pussies"),
+			'DisplayName', T(353051786879, --[[ModItemCharacterEffectCompositeDef GumpySpecialPineapple DisplayName]] "Gumpy special pineapple"),
 			'Description', T(937824707742, --[[ModItemCharacterEffectCompositeDef GumpySpecialPineapple Description]] "Gumpy can apply additional effects whenever he uses explosives."),
 			'OnAdded', function (self, obj)  end,
 			'OnRemoved', function (self, obj)  end,
-			'Icon', "Mod/GCExPrologue/Images/PerkGUMPYBlu 2.png",
+			'Icon', "Mod/GCExPrologue/Images/PerkGUMPYBlu 2",
 			'Tier', "Personal",
 		}),
 		PlaceObj('ModItemCharacterEffectCompositeDef', {
@@ -2872,10 +3052,10 @@ return {
 				}),
 			},
 			'DisplayName', T(250195279118, --[[ModItemCharacterEffectCompositeDef GruntForce DisplayName]] "Grunt Force"),
-			'Description', T(216030389932, --[[ModItemCharacterEffectCompositeDef GruntForce Description]] "Gumpy can apply additional effects whenever he uses explosives."),
+			'Description', T(216030389932, --[[ModItemCharacterEffectCompositeDef GruntForce Description]] "Nothing can shake this man, Stogie gets heroic if bellow 50% HP."),
 			'OnAdded', function (self, obj)  end,
 			'OnRemoved', function (self, obj)  end,
-			'Icon', "Mod/GCExPrologue/Images/PerkSTOGIEBlu 2.png",
+			'Icon', "Mod/GCExPrologue/Images/PerkSTOGIEBlu 2",
 			'Tier', "Personal",
 		}),
 		PlaceObj('ModItemCharacterEffectCompositeDef', {
@@ -2917,12 +3097,4072 @@ return {
 					param_bindings = false,
 				}),
 			},
-			'DisplayName', T(824460473306, --[[ModItemCharacterEffectCompositeDef ByTheBook DisplayName]] "Grunt Force"),
-			'Description', T(953669658099, --[[ModItemCharacterEffectCompositeDef ByTheBook Description]] "Gumpy can apply additional effects whenever he uses explosives."),
+			'DisplayName', T(824460473306, --[[ModItemCharacterEffectCompositeDef ByTheBook DisplayName]] "By the Book"),
+			'Description', T(953669658099, --[[ModItemCharacterEffectCompositeDef ByTheBook Description]] "Cougar can instruct it's allies in the battlefield making them less prone to take damage."),
 			'OnAdded', function (self, obj)  end,
 			'OnRemoved', function (self, obj)  end,
-			'Icon', "Mod/GCExPrologue/Images/PerkCOUGARBlu 2.png",
+			'Icon', "Mod/GCExPrologue/Images/PerkCOUGARBlu 2",
 			'Tier', "Personal",
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
+		'name', "Appearance Presets",
+	}, {
+		PlaceObj('ModItemAppearancePreset', {
+			Body = "EquipmentGrizzly_Top",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor2', RGBA(60, 38, 8, 255),
+			}),
+			Hair = "EquipmentBarry_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(40, 26, 19, 255),
+				'EditableRoughness1', 24,
+				'EditableColor2', RGBA(33, 23, 18, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+				'EditableRoughness3', -128,
+			}),
+			Hat = "EquipmentFox_Glasses",
+			Head = "Head_Elliot",
+			Pants = "Faction_Thugs_Bottom_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(1, 28, 52, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(16, 9, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "MosesBaxterAppearance_2",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "NPCCostumeMale_Shirt_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(20, 9, 6, 255),
+				'EditableColor2', RGBA(30, 57, 78, 255),
+				'EditableColor3', RGBA(37, 43, 59, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat2 = "EquipmentIvan_Glasses",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 21, 28, 255),
+				'EditableColor2', RGBA(32, 38, 49, 255),
+				'EditableColor3', RGBA(38, 40, 43, 255),
+			}),
+			Head = "Male_Head_02",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "NPCCostumeMale_Pants_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(64, 55, 55, 255),
+				'EditableColor2', RGBA(15, 11, 7, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(19, 13, 7, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "BrianNPC",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "NPCTraditionalMale_Top_A_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(13, 11, 11, 255),
+				'EditableRoughness1', 106,
+				'EditableMetallic1', 87,
+				'EditableColor2', RGBA(0, 6, 12, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(0, 0, 0, 255),
+				'EditableRoughness3', -128,
+			}),
+			Hat = "NPCTraditionalMale_Hat_Pattern_01",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 3, 11, 255),
+				'EditableColor2', RGBA(0, 6, 12, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Male_Head_08",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "NPCTraditionalMale_Pants_Pattern_03",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 3, 11, 255),
+				'EditableColor2', RGBA(0, 6, 12, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "StephaneNPC",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(33, 12, 7, 255),
+				'EditableColor2', RGBA(123, 97, 10, 255),
+				'EditableColor3', RGBA(207, 207, 207, 255),
+			}),
+			Body = "Faction_Militia_Top_05",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(30, 40, 27, 255),
+				'EditableColor2', RGBA(29, 26, 26, 255),
+				'EditableColor3', RGBA(37, 34, 34, 255),
+				'EditableRoughness3', 44,
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "FactionMale_Hat_01",
+			Hat2 = "EquipmentLen_Glasses",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(170, 89, 23, 255),
+				'EditableColor2', RGBA(19, 15, 13, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Male_Head_04",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "Faction_Adonis_Bottom_02",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(30, 40, 27, 255),
+				'EditableColor2', RGBA(29, 26, 26, 255),
+				'EditableColor3', RGBA(37, 34, 34, 255),
+				'EditableRoughness3', 44,
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "SmurgeNPC",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Adonis_Top_Camo_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(43, 18, 13, 255),
+				'EditableColor2', RGBA(22, 29, 31, 255),
+				'EditableColor3', RGBA(37, 35, 35, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(4, 4, 4, 255),
+				'EditableColor2', RGBA(8, 8, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "FactionMale_Hat_01",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(20, 54, 198, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_M_Ca_NPC_Camo_01",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "Faction_Acc_Recon",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(4, 4, 4, 255),
+				'EditableColor2', RGBA(8, 8, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "Faction_Adonis_Bottom_Camo_02",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 29, 31, 255),
+				'EditableColor2', RGBA(20, 19, 19, 255),
+				'EditableColor3', RGBA(15, 14, 14, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "AdonisGuard1NPC",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Adonis_Top_Camo_03",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(28, 12, 9, 255),
+				'EditableColor2', RGBA(45, 58, 62, 255),
+				'EditableColor3', RGBA(12, 12, 12, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "FactionMale_Hat_12",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(55, 73, 78, 255),
+				'EditableColor2', RGBA(12, 12, 12, 255),
+				'EditableColor3', RGBA(12, 12, 12, 255),
+			}),
+			Head = "Male_Head_04",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "Faction_Acc_Stormer",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(4, 4, 4, 255),
+				'EditableColor2', RGBA(8, 8, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "Faction_Adonis_Bottom_Camo_02",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(45, 58, 62, 255),
+				'EditableColor2', RGBA(12, 12, 12, 255),
+				'EditableColor3', RGBA(12, 12, 12, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "AdonisGuard2NPC",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Infected_Top_F_02",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(190, 91, 52, 255),
+				'EditableColor2', RGBA(80, 81, 77, 255),
+				'EditableColor3', RGBA(61, 67, 41, 255),
+			}),
+			Chest = "",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(13, 15, 8, 255),
+				'EditableColor2', RGBA(13, 15, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hair = "EquipmentRaven_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "Faction_Infected_F_HeadBandage_01",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(189, 171, 149, 255),
+				'EditableColor3', RGBA(33, 2, 2, 255),
+			}),
+			HatSpot = "Origin",
+			Head = "Head_F_Senior_NPC_01",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(196, 107, 73, 255),
+				'EditableColor2', RGBA(196, 107, 73, 255),
+				'EditableColor3', RGBA(69, 58, 39, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(4, 4, 4, 255),
+				'EditableColor2', RGBA(8, 8, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4290132532,
+			Pants = "Faction_Infected_Bottom_F_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(190, 91, 52, 255),
+				'EditableColor2', RGBA(38, 31, 29, 255),
+				'EditableColor3', RGBA(33, 21, 17, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "Zombie1_F",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Infected_Top_M_02",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(190, 91, 52, 255),
+				'EditableColor2', RGBA(80, 81, 77, 255),
+				'EditableColor3', RGBA(61, 67, 41, 255),
+			}),
+			Chest = "",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(13, 15, 8, 255),
+				'EditableColor2', RGBA(13, 15, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hair = "EquipmentSteroid_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "Faction_Infected_M_HeadBandage_02",
+			Hat2 = "Faction_Infected_M_HeadBandage_02",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(79, 9, 5, 255),
+				'EditableColor2', RGBA(189, 171, 149, 255),
+				'EditableColor3', RGBA(79, 9, 5, 255),
+			}),
+			Hat2Spot = "Origin",
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(79, 9, 5, 255),
+				'EditableColor2', RGBA(189, 171, 149, 255),
+				'EditableColor3', RGBA(84, 11, 7, 255),
+			}),
+			HatSpot = "Origin",
+			Head = "Head_Infected_M_01",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(196, 107, 73, 255),
+				'EditableColor2', RGBA(196, 107, 73, 255),
+				'EditableColor3', RGBA(69, 58, 39, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(4, 4, 4, 255),
+				'EditableColor2', RGBA(8, 8, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4290132532,
+			Pants = "Faction_Infected_Bottom_M_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(190, 91, 52, 255),
+				'EditableColor2', RGBA(38, 31, 29, 255),
+				'EditableColor3', RGBA(33, 21, 17, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "Zombie2_M",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "NPCBastien_Top",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(40, 18, 11, 255),
+				'EditableColor2', RGBA(116, 16, 0, 255),
+				'EditableColor3', RGBA(250, 192, 15, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Comment = "Legion Jose",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "NPCBastien_Hat",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(12, 14, 18, 255),
+				'EditableColor2', RGBA(21, 47, 11, 255),
+				'EditableColor3', RGBA(246, 242, 239, 255),
+			}),
+			Head = "Head_M_Ca_NPC_01",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "NPCCostumeMale_Pants_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(16, 24, 14, 255),
+				'EditableColor2', RGBA(17, 14, 12, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "BastienPro",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "NPCDeedee_Top_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(33, 13, 6, 255),
+				'EditableColor2', RGBA(64, 70, 66, 255),
+				'EditableColor3', RGBA(30, 30, 32, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hair = "EquipmentBuns_Hair_Hat",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(96, 79, 21, 255),
+				'EditableColor2', RGBA(60, 45, 11, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "NPCDeedee_Glasses_01",
+			Hat2 = "EquipmentFemale_WW2Helmet",
+			Hat2AttachOffsetZ = 0,
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatAttachOffsetZ = -10,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_F_Af_NPC_04",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "NPCDeedee_Bottom_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(29, 17, 13, 255),
+				'EditableColor2', RGBA(6, 5, 5, 255),
+				'EditableColor3', RGBA(8, 10, 11, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "DeedeePro",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "NPCMarta_Top_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 7, 3, 255),
+				'EditableColor2', RGBA(6, 77, 147, 255),
+				'EditableColor3', RGBA(0, 11, 21, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hair = "",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(96, 79, 21, 255),
+				'EditableColor2', RGBA(60, 45, 11, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "NPCTraditionalFemale_Scarf_A_02",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 26, 47, 255),
+				'EditableColor2', RGBA(0, 26, 47, 255),
+				'EditableColor3', RGBA(0, 26, 47, 255),
+			}),
+			Head = "Head_F_Af_NPC_08",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "NPCMarta_Bottom_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 7, 3, 255),
+				'EditableColor2', RGBA(1, 38, 79, 255),
+				'EditableColor3', RGBA(0, 11, 21, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "MarthaPro",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "NPCHerman_Top_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(6, 3, 2, 255),
+				'EditableColor2', RGBA(255, 148, 84, 255),
+				'EditableColor3', RGBA(219, 151, 5, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "NPCHerman_Hat_01",
+			Hat2 = "NPCHerman_Glasses_01",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(35, 25, 13, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(67, 112, 39, 255),
+				'EditableColor2', RGBA(26, 22, 16, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Male_Head_07",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "NPCHerman_Bottom_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(6, 3, 2, 255),
+				'EditableColor2', RGBA(22, 20, 19, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "HermanPro",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_GrandChien_Top_08",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 9, 6, 255),
+				'EditableColor2', RGBA(208, 192, 174, 255),
+				'EditableColor3', RGBA(145, 88, 63, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "EquipmentBlood_Hat",
+			Hat2 = "",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(113, 70, 49, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatAttachOffsetY = 0,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(32, 52, 39, 255),
+				'EditableColor2', RGBA(85, 17, 17, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Faction_Rebels_M_HeadMedic",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(47, 24, 18, 255),
+				'EditableColor2', RGBA(7, 5, 5, 255),
+				'EditableColor3', RGBA(189, 171, 149, 255),
+			}),
+			Hip = "Faction_Acc_Soldier",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(15, 16, 15, 255),
+				'EditableColor2', RGBA(14, 14, 14, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4290132532,
+			Pants = "EquipmentLen_Bottom",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 9, 6, 255),
+				'EditableColor2', RGBA(41, 53, 69, 255),
+				'EditableColor3', RGBA(13, 14, 15, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 23, 24, 255),
+				'EditableColor2', RGBA(37, 38, 40, 255),
+				'EditableColor3', RGBA(22, 23, 24, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "Goon1Pro",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Legion_Top_06",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 9, 6, 255),
+				'EditableColor2', RGBA(208, 192, 174, 255),
+				'EditableColor3', RGBA(145, 88, 63, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "EquipmentPierre_Hat",
+			Hat2 = "EquipmentIvan_Glasses",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(113, 70, 49, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatAttachOffsetY = 0,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(32, 52, 39, 255),
+				'EditableColor2', RGBA(85, 17, 17, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_M_As_NPC_03",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(47, 24, 18, 255),
+				'EditableColor2', RGBA(7, 5, 5, 255),
+				'EditableColor3', RGBA(189, 171, 149, 255),
+			}),
+			Hip = "Faction_Acc_Soldier",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(15, 16, 15, 255),
+				'EditableColor2', RGBA(14, 14, 14, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4290132532,
+			Pants = "EquipmentOmryn_Bottom",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 9, 6, 255),
+				'EditableColor2', RGBA(41, 53, 69, 255),
+				'EditableColor3', RGBA(13, 14, 15, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 23, 24, 255),
+				'EditableColor2', RGBA(37, 38, 40, 255),
+				'EditableColor3', RGBA(22, 23, 24, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "Goon2Pro",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Legion_Top_10",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 9, 6, 255),
+				'EditableColor2', RGBA(208, 192, 174, 255),
+				'EditableColor3', RGBA(145, 88, 63, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat2 = "EquipmentNails_Headband",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(113, 70, 49, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatAttachOffsetY = 0,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(32, 52, 39, 255),
+				'EditableColor2', RGBA(85, 17, 17, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_Chimurenga",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(47, 24, 18, 255),
+				'EditableColor2', RGBA(7, 5, 5, 255),
+				'EditableColor3', RGBA(189, 171, 149, 255),
+			}),
+			Hip = "Faction_Acc_Soldier",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(15, 16, 15, 255),
+				'EditableColor2', RGBA(14, 14, 14, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4290132532,
+			Pants = "Faction_Legion_Bottom_05",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 9, 6, 255),
+				'EditableColor2', RGBA(41, 53, 69, 255),
+				'EditableColor3', RGBA(13, 14, 15, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 23, 24, 255),
+				'EditableColor2', RGBA(37, 38, 40, 255),
+				'EditableColor3', RGBA(22, 23, 24, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "Goon3Pro",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			Armor = "EquipmentFemale_FlackVest",
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(35, 38, 22, 255),
+				'EditableColor2', RGBA(88, 92, 68, 255),
+				'EditableColor3', RGBA(124, 130, 96, 255),
+			}),
+			Body = "Female_Body_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 7, 3, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hair = "EquipmentVicki_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(26, 23, 11, 255),
+				'EditableColor2', RGBA(10, 4, 2, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_F_As_NPC_10",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "Faction_Acc_Marksman",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(35, 38, 22, 255),
+				'EditableColor2', RGBA(88, 92, 68, 255),
+				'EditableColor3', RGBA(124, 130, 96, 255),
+			}),
+			NameColor = 4290132532,
+			Pants = "EquipmentCorazon_Bottom_BattleMod",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(35, 38, 22, 255),
+				'EditableColor2', RGBA(88, 92, 68, 255),
+				'EditableColor3', RGBA(124, 130, 96, 255),
+			}),
+			Shirt = "EquipmentFemale_Shirt_01",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(88, 92, 68, 255),
+				'EditableColor2', RGBA(60, 53, 39, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "Goon4Pro",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Adonis_Top_Camo_03",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(47, 24, 18, 255),
+				'EditableColor2', RGBA(38, 4, 4, 255),
+				'EditableColor3', RGBA(49, 47, 47, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hair = "EquipmentFidel_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(230, 222, 202, 255),
+			}),
+			HatAttachOffsetY = 0,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(32, 52, 39, 255),
+				'EditableColor2', RGBA(85, 17, 17, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_Faucheux",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(47, 24, 18, 255),
+				'EditableColor2', RGBA(7, 5, 5, 255),
+				'EditableColor3', RGBA(189, 171, 149, 255),
+			}),
+			Hip = "Faction_Acc_Artilery",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(15, 16, 15, 255),
+				'EditableColor2', RGBA(14, 14, 14, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4290132532,
+			Pants = "Faction_Adonis_Bottom_Camo_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 9, 6, 255),
+				'EditableColor2', RGBA(41, 53, 69, 255),
+				'EditableColor3', RGBA(13, 14, 15, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 23, 24, 255),
+				'EditableColor2', RGBA(37, 38, 40, 255),
+				'EditableColor3', RGBA(22, 23, 24, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "GoonCommander",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Male_Body_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(67, 22, 8, 255),
+				'EditableColor2', RGBA(44, 85, 105, 255),
+				'EditableColor3', RGBA(157, 166, 149, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 100, 0, 255),
+				'EditableColor2', RGBA(0, 100, 0, 255),
+				'EditableColor3', RGBA(0, 100, 0, 255),
+			}),
+			Hair = "EquipmentBiff_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(6, 1, 1, 255),
+				'EditableRoughness1', 40,
+				'EditableMetallic1', -128,
+				'EditableColor2', RGBA(10, 4, 2, 255),
+				'EditableRoughness2', 28,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(0, 0, 0, 255),
+				'EditableRoughness3', 74,
+				'EditableMetallic3', 127,
+			}),
+			HairParam1 = 24,
+			HairParam2 = 43,
+			HairParam3 = 92,
+			Hat = "",
+			Hat2 = "",
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(35, 27, 27, 255),
+				'EditableColor3', RGBA(105, 60, 60, 255),
+			}),
+			Head = "Head_M_Ca_NPC_03",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(128, 68, 68, 255),
+				'EditableColor2', RGBA(81, 26, 26, 255),
+				'EditableColor3', RGBA(61, 23, 23, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(249, 249, 219, 255),
+				'EditableColor2', RGBA(177, 22, 14, 255),
+				'EditableColor3', RGBA(222, 60, 75, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "Faction_Thugs_Bottom_02",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(255, 134, 53, 255),
+				'EditableColor2', RGBA(189, 171, 149, 255),
+				'EditableColor3', RGBA(48, 25, 14, 255),
+			}),
+			Shirt = "EquipmentMale_Shirt_02",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(107, 159, 185, 255),
+				'EditableColor2', RGBA(4, 90, 133, 255),
+				'EditableColor3', RGBA(53, 106, 36, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Haywire-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Thugs_Top_09",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(154, 76, 35, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(5, 6, 5, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 100, 0, 255),
+				'EditableColor2', RGBA(0, 100, 0, 255),
+				'EditableColor3', RGBA(0, 100, 0, 255),
+			}),
+			Hair = "NPCMale_Hair_01",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(176, 22, 36, 255),
+				'EditableRoughness1', 40,
+				'EditableMetallic1', -92,
+				'EditableColor2', RGBA(133, 17, 28, 255),
+				'EditableRoughness2', 81,
+				'EditableMetallic2', -49,
+				'EditableColor3', RGBA(81, 45, 57, 255),
+				'EditableRoughness3', 108,
+				'EditableMetallic3', -20,
+			}),
+			HairParam1 = 31,
+			HairParam2 = 19,
+			HairParam3 = 10,
+			Hat = "",
+			Hat2 = "",
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(35, 27, 27, 255),
+				'EditableColor3', RGBA(105, 60, 60, 255),
+			}),
+			Head = "Head_Igor",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(176, 46, 46, 255),
+				'EditableColor2', RGBA(125, 36, 36, 255),
+				'EditableColor3', RGBA(67, 11, 11, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(249, 249, 219, 255),
+				'EditableColor2', RGBA(177, 22, 14, 255),
+				'EditableColor3', RGBA(222, 60, 75, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "EquipmentBlood_Bottom",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(179, 104, 102, 255),
+				'EditableColor2', RGBA(83, 132, 156, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 100, 255),
+				'EditableColor3', RGBA(0, 0, 100, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Numb-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(50, 0, 0, 255),
+				'EditableColor2', RGBA(0, 50, 0, 255),
+				'EditableColor3', RGBA(0, 0, 50, 255),
+			}),
+			Body = "Faction_Legion_Top_02",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(160, 73, 16, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hair = "EquipmentFaucheux_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(30, 13, 6, 255),
+				'EditableRoughness1', 40,
+				'EditableMetallic1', -128,
+				'EditableColor2', RGBA(13, 6, 3, 255),
+				'EditableRoughness2', 28,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(0, 0, 0, 255),
+				'EditableRoughness3', 74,
+				'EditableMetallic3', 127,
+			}),
+			HairParam3 = 128,
+			Head = "Head_Faucheux",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(60, 3, 3, 255),
+				'EditableColor2', RGBA(0, 60, 0, 255),
+				'EditableColor3', RGBA(0, 0, 60, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(50, 0, 0, 255),
+				'EditableColor2', RGBA(0, 5, 0, 255),
+				'EditableColor3', RGBA(0, 0, 50, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "EquipmentBlood_Bottom",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(52, 14, 23, 255),
+				'EditableColor2', RGBA(12, 51, 11, 255),
+				'EditableColor3', RGBA(19, 18, 58, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Razor-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Male_Body_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(62, 28, 18, 255),
+				'EditableColor2', RGBA(44, 85, 105, 255),
+				'EditableColor3', RGBA(157, 166, 149, 255),
+			}),
+			Chest = "",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 16, 12, 255),
+				'EditableColor2', RGBA(20, 17, 15, 255),
+				'EditableColor3', RGBA(29, 23, 16, 255),
+			}),
+			Hair = "EquipmentBlood_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(40, 30, 20, 255),
+				'EditableRoughness1', 29,
+				'EditableMetallic1', 48,
+				'EditableColor2', RGBA(30, 15, 10, 255),
+				'EditableRoughness2', -37,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(30, 5, 5, 255),
+				'EditableRoughness3', -44,
+				'EditableMetallic3', 127,
+			}),
+			HairParam1 = 12,
+			HairParam2 = 26,
+			HairParam3 = 172,
+			Hat = "",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatAttachOffsetAngle = 2400,
+			HatAttachOffsetX = 10,
+			HatAttachOffsetY = -50,
+			HatAttachOffsetZ = 5,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(118, 6, 6, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_Biff",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "NPCJackhammer_Bottom_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(6, 5, 5, 255),
+				'EditableColor2', RGBA(34, 40, 32, 255),
+				'EditableColor3', RGBA(136, 153, 40, 255),
+			}),
+			Shirt = "EquipmentMale_Shirt_01",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 47, 108, 255),
+				'EditableColor2', RGBA(137, 111, 78, 255),
+				'EditableColor3', RGBA(137, 111, 78, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Gumpy-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Male_Body_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(67, 37, 27, 255),
+				'EditableColor2', RGBA(44, 85, 105, 255),
+				'EditableColor3', RGBA(157, 166, 149, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 100, 0, 255),
+				'EditableColor2', RGBA(0, 100, 0, 255),
+				'EditableColor3', RGBA(0, 100, 0, 255),
+			}),
+			Hair = "NPCMale_Hair_02",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(11, 5, 3, 255),
+				'EditableRoughness1', 40,
+				'EditableMetallic1', -128,
+				'EditableColor2', RGBA(10, 4, 2, 255),
+				'EditableRoughness2', 28,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(0, 0, 0, 255),
+				'EditableRoughness3', 74,
+				'EditableMetallic3', 127,
+			}),
+			HairParam3 = 128,
+			Hat = "",
+			Hat2 = "",
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(35, 27, 27, 255),
+				'EditableColor3', RGBA(105, 60, 60, 255),
+			}),
+			Head = "Head_Ivan",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(176, 46, 46, 255),
+				'EditableColor2', RGBA(125, 36, 36, 255),
+				'EditableColor3', RGBA(67, 11, 11, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(249, 249, 219, 255),
+				'EditableColor2', RGBA(177, 22, 14, 255),
+				'EditableColor3', RGBA(222, 60, 75, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "Faction_Thugs_Bottom_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(33, 55, 108, 255),
+				'EditableColor2', RGBA(87, 26, 32, 255),
+				'EditableColor3', RGBA(101, 55, 55, 255),
+			}),
+			Shirt = "EquipmentMale_Shirt_01",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(7, 35, 108, 255),
+				'EditableColor2', RGBA(137, 111, 78, 255),
+				'EditableColor3', RGBA(137, 111, 78, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Gasket-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Female_Body_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(100, 29, 7, 255),
+				'EditableColor2', RGBA(11, 13, 62, 255),
+				'EditableColor3', RGBA(101, 133, 210, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ChestSpot = "Origin",
+			Hair = "EquipmentFox_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(38, 15, 4, 255),
+				'EditableRoughness1', 76,
+				'EditableMetallic1', -82,
+				'EditableColor2', RGBA(59, 18, 4, 255),
+				'EditableRoughness2', -44,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(255, 255, 255, 255),
+				'EditableRoughness3', -25,
+				'EditableMetallic3', 127,
+			}),
+			HairParam1 = 61,
+			HairParam2 = 16,
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatAttachOffsetX = 8,
+			HatAttachOffsetY = -10,
+			HatAttachOffsetZ = 9,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(120, 200, 43, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_F_Ca_NPC_01",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "EquipmentIMPTrooper_Pants",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(55, 60, 28, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Shirt = "EquipmentFemale_Shirt_01",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(5, 23, 66, 255),
+				'EditableColor2', RGBA(12, 11, 11, 255),
+				'EditableColor3', RGBA(19, 18, 18, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Flo-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "NPCJackhammer_Top_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(50, 20, 20, 255),
+				'EditableColor2', RGBA(1, 5, 18, 255),
+				'EditableColor3', RGBA(22, 45, 18, 255),
+			}),
+			Chest = "",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 16, 12, 255),
+				'EditableColor2', RGBA(20, 17, 15, 255),
+				'EditableColor3', RGBA(29, 23, 16, 255),
+			}),
+			Hair = "EquipmentBlood_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(40, 30, 20, 255),
+				'EditableRoughness1', 29,
+				'EditableMetallic1', 48,
+				'EditableColor2', RGBA(30, 15, 10, 255),
+				'EditableRoughness2', -37,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(30, 5, 5, 255),
+				'EditableRoughness3', -44,
+				'EditableMetallic3', 127,
+			}),
+			HairParam1 = 12,
+			HairParam2 = 26,
+			HairParam3 = 172,
+			Hat = "",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatAttachOffsetAngle = 2400,
+			HatAttachOffsetX = 10,
+			HatAttachOffsetY = -50,
+			HatAttachOffsetZ = 5,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(118, 6, 6, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_M_Ca_NPC_08",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "NPCJackhammer_Bottom_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(7, 3, 3, 255),
+				'EditableColor2', RGBA(36, 47, 32, 255),
+				'EditableColor3', RGBA(142, 200, 84, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(12, 23, 9, 255),
+				'EditableColor2', RGBA(14, 34, 15, 255),
+				'EditableColor3', RGBA(30, 27, 24, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Bubba-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "EquipmentBiff_Top",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(187, 64, 35, 255),
+				'EditableColor2', RGBA(73, 8, 8, 255),
+				'EditableColor3', RGBA(109, 83, 55, 255),
+			}),
+			Chest = "Faction_Binocular_01",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(46, 35, 25, 255),
+				'EditableColor2', RGBA(16, 13, 9, 255),
+				'EditableColor3', RGBA(109, 83, 55, 255),
+			}),
+			Hair = "EquipmentBiff_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(221, 66, 30, 255),
+				'EditableMetallic1', 50,
+				'EditableColor2', RGBA(227, 70, 22, 255),
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(169, 62, 62, 255),
+				'EditableMetallic3', 127,
+			}),
+			HairParam2 = 20,
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(68, 48, 35, 255),
+				'EditableRoughness1', 60,
+				'EditableColor2', RGBA(40, 35, 25, 255),
+				'EditableColor3', RGBA(68, 48, 35, 255),
+			}),
+			HatAttachOffsetZ = -10,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_Biff",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "Faction_Acc_Stormer",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(11, 8, 6, 255),
+				'EditableColor2', RGBA(11, 8, 6, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "NPCCostumeMale_Pants_10",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(20, 24, 26, 255),
+				'EditableColor2', RGBA(12, 8, 4, 255),
+				'EditableColor3', RGBA(24, 14, 4, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "GCEXPrologueNPCs",
+			id = "Biff-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Thugs_Top_09",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(199, 87, 49, 255),
+				'EditableColor2', RGBA(2, 9, 0, 255),
+				'EditableColor3', RGBA(9, 31, 2, 255),
+			}),
+			Chest = "",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(22, 16, 12, 255),
+				'EditableColor2', RGBA(20, 17, 15, 255),
+				'EditableColor3', RGBA(29, 23, 16, 255),
+			}),
+			Hair = "NPCMale_Hair_02",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(71, 62, 60, 255),
+				'EditableRoughness1', 29,
+				'EditableMetallic1', 48,
+				'EditableColor2', RGBA(84, 74, 72, 255),
+				'EditableRoughness2', -37,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(30, 5, 5, 255),
+				'EditableRoughness3', -44,
+				'EditableMetallic3', 127,
+			}),
+			HairParam1 = 12,
+			HairParam2 = 26,
+			HairParam3 = 172,
+			Hat = "EquipmentFidel_Cigar",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatAttachOffsetAngle = 2400,
+			HatAttachOffsetX = 4,
+			HatAttachOffsetY = -50,
+			HatAttachOffsetZ = -6,
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(118, 6, 6, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_Igor",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "Faction_GrandChien_Bottom_04",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(42, 60, 33, 255),
+				'EditableColor2', RGBA(99, 48, 26, 255),
+				'EditableColor3', RGBA(25, 36, 22, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(12, 23, 9, 255),
+				'EditableColor2', RGBA(14, 34, 15, 255),
+				'EditableColor3', RGBA(30, 27, 24, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Stogie-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "NPCLuigy_Top_01",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(65, 25, 11, 255),
+				'EditableColor2', RGBA(189, 171, 149, 255),
+				'EditableColor3', RGBA(189, 171, 149, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 100, 0, 255),
+				'EditableColor2', RGBA(0, 100, 0, 255),
+				'EditableColor3', RGBA(0, 100, 0, 255),
+			}),
+			Hair = "NPCMale_Hair_05",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(38, 20, 10, 255),
+				'EditableRoughness1', 40,
+				'EditableMetallic1', -128,
+				'EditableColor2', RGBA(40, 22, 14, 255),
+				'EditableRoughness2', 28,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(0, 0, 0, 255),
+				'EditableRoughness3', 74,
+				'EditableMetallic3', 127,
+			}),
+			HairParam3 = 128,
+			Head = "Male_Head_01",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(78, 40, 38, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(32, 47, 33, 255),
+				'EditableColor2', RGBA(75, 63, 50, 255),
+				'EditableColor3', RGBA(249, 249, 219, 255),
+			}),
+			NameColor = 4292643868,
+			Pants = "NPCCostumeMale_Pants_07",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(10, 7, 5, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(91, 88, 88, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 100, 255),
+				'EditableColor2', RGBA(0, 0, 100, 255),
+				'EditableColor3', RGBA(0, 0, 100, 255),
+			}),
+			group = "GCEXPrologueMERCs",
+			id = "Cougar-Appearance",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Adonis_Top_05",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(126, 48, 21, 255),
+				'EditableColor2', RGBA(11, 15, 16, 255),
+				'EditableColor3', RGBA(11, 15, 16, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 100, 0, 255),
+				'EditableColor2', RGBA(0, 100, 0, 255),
+				'EditableColor3', RGBA(0, 100, 0, 255),
+			}),
+			Hair = "NPCMale_Hair_05",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(14, 12, 11, 255),
+				'EditableRoughness1', 40,
+				'EditableMetallic1', -128,
+				'EditableColor2', RGBA(120, 110, 109, 255),
+				'EditableRoughness2', 28,
+				'EditableMetallic2', -128,
+				'EditableColor3', RGBA(112, 112, 112, 255),
+				'EditableRoughness3', 74,
+				'EditableMetallic3', 127,
+			}),
+			HairParam3 = 128,
+			Head = "Head_Wolf",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(168, 121, 119, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(32, 47, 33, 255),
+				'EditableColor2', RGBA(75, 63, 50, 255),
+				'EditableColor3', RGBA(249, 249, 219, 255),
+			}),
+			Pants = "Faction_Adonis_Bottom_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(10, 7, 5, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(91, 88, 88, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 100, 255),
+				'EditableColor2', RGBA(0, 0, 100, 255),
+				'EditableColor3', RGBA(0, 0, 100, 255),
+			}),
+			group = "Default",
+			id = "Gaston-Appearance",
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
+		'name', "Voice Responses",
+	}, {
+		PlaceObj('ModItemVoiceResponse', {
+			ActivityFinished = TConcat({
+				T(837673202088, --[[ModItemVoiceResponse GCExStogie ActivityFinished VoiceResponse ActivityFinished - SatView activity finished voice:GCExStogie]] "I'm finished up.")
+			}),
+			ActivityStarted = TConcat({
+				T(824278376454, --[[ModItemVoiceResponse GCExStogie ActivityStarted VoiceResponse ActivityStarted - When an activity is started. Played by the firs merc associated with the task voice:GCExStogie]] "I'm on it.")
+			}),
+			AimAttack = TConcat({
+				T(935323515091, --[[ModItemVoiceResponse GCExStogie AimAttack VoiceResponse AimAttack - When aiming and there is a decent chance of hitting voice:GCExStogie]] "Target locked."),
+				T(268720292626, --[[ModItemVoiceResponse GCExStogie AimAttack VoiceResponse AimAttack - When aiming and there is a decent chance of hitting voice:GCExStogie]] "Time for you to drop dead."),
+				T(533799842900, --[[ModItemVoiceResponse GCExStogie AimAttack VoiceResponse AimAttack - When aiming and there is a decent chance of hitting voice:GCExStogie]] "You're about to be history.")
+			}),
+			AimAttackStealth = TConcat({
+				T(663703316938, --[[ModItemVoiceResponse GCExStogie AimAttackStealth VoiceResponse AimAttackStealth - When aiming and there is a decent chance of hitting. Used while Sneaking - voice should be shushed (except Steroid) voice:GCExStogie]] "Target locked."),
+				T(551641183755, --[[ModItemVoiceResponse GCExStogie AimAttackStealth VoiceResponse AimAttackStealth - When aiming and there is a decent chance of hitting. Used while Sneaking - voice should be shushed (except Steroid) voice:GCExStogie]] "Target locked.")
+			}),
+			AimAttack_Low = TConcat({
+				T(124448978136, --[[ModItemVoiceResponse GCExStogie AimAttack_Low VoiceResponse AimAttack_Low - When aiming and the CtH is less than 20% voice:GCExStogie]] "Ain't doable. No visuals."),
+				T(582565152734, --[[ModItemVoiceResponse GCExStogie AimAttack_Low VoiceResponse AimAttack_Low - When aiming and the CtH is less than 20% voice:GCExStogie]] "Not proud to say this, but trying is useless.")
+			}),
+			AimAttack_LowStealth = TConcat({
+				T(485956177147, --[[ModItemVoiceResponse GCExStogie AimAttack_LowStealth VoiceResponse AimAttack_LowStealth - When aiming and there is very low chance of hitting. Used while Sneaking - voice should be shushed (except Steroid) voice:GCExStogie]] "Ain't doable.")
+			}),
+			AmmoLow = TConcat({
+				T(752600906529, --[[ModItemVoiceResponse GCExStogie AmmoLow VoiceResponse AmmoLow - Played when there is less than 25% of clip size or a full reload cannot be made voice:GCExStogie]] "Running low on ammo.")
+			}),
+			AnimalFound = TConcat({
+				T(948098487812, --[[ModItemVoiceResponse GCExStogie AnimalFound VoiceResponse AnimalFound - Enemy animal spotted. voice:GCExStogie]] "Got four-legged trouble."),
+				T(623121365299, --[[ModItemVoiceResponse GCExStogie AnimalFound VoiceResponse AnimalFound - Enemy animal spotted. voice:GCExStogie]] "Inconvenience."),
+				T(774872942404, --[[ModItemVoiceResponse GCExStogie AnimalFound VoiceResponse AnimalFound - Enemy animal spotted. voice:GCExStogie]] "Sighting.")
+			}),
+			Autofire = TConcat({
+				T(549671299736, --[[ModItemVoiceResponse GCExStogie Autofire VoiceResponse Autofire - When using machine gun autofire attacks. Voice is played during the attack and gunfire sounds. voice:GCExStogie]] "(Laughing)")
+			}),
+			BandageDownedUnit = TConcat({
+				T(908049543453, --[[ModItemVoiceResponse GCExStogie BandageDownedUnit VoiceResponse BandageDownedUnit - When a downed unit is bandaged. Played by the unit that does the bandaging voice:GCExStogie]] "Patching you up.")
+			}),
+			BecomeHidden = TConcat({
+				T(220860190547, --[[ModItemVoiceResponse GCExStogie BecomeHidden VoiceResponse BecomeHidden - Played when entering Sneak mode. Voice should be shushed (except Steroid) voice:GCExStogie]] "Hiding."),
+				T(296123616719, --[[ModItemVoiceResponse GCExStogie BecomeHidden VoiceResponse BecomeHidden - Played when entering Sneak mode. Voice should be shushed (except Steroid) voice:GCExStogie]] "I'm out of sight.")
+			}),
+			BusySatView = TConcat({
+				T(739420035231, --[[ModItemVoiceResponse GCExStogie BusySatView VoiceResponse BusySatView - Played when merc is in an activity for more than 8 hours. Students and Patients excluded. Played once per activity. voice:GCExStogie]] "I'm still on it.")
+			}),
+			Climbing = TConcat({
+				T(762327550055, --[[ModItemVoiceResponse GCExStogie Climbing VoiceResponse Climbing - Emote. When unit is climbing over fences, on cliffs, etc. voice:GCExStogie]] "(climbing)"),
+				T(670515032031, --[[ModItemVoiceResponse GCExStogie Climbing VoiceResponse Climbing - Emote. When unit is climbing over fences, on cliffs, etc. voice:GCExStogie]] "(climbing_2)")
+			}),
+			CombatEndEnemiesRemain = TConcat({
+				T(656286093475, --[[ModItemVoiceResponse GCExStogie CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain - There are no more aware enemies but there are still enemies in the sector. voice:GCExStogie]] "They're not all bagged yet. Keep that in mind.")
+			}),
+			CombatEndEnemiesRetreated = TConcat({
+				T(347539429865, --[[ModItemVoiceResponse GCExStogie CombatEndEnemiesRetreated VoiceResponse CombatEndEnemiesRetreated - All enemies have retreated voice:GCExStogie]] "Someone musta yelled fire. They made for the exits.")
+			}),
+			CombatEndNoEnemies = TConcat({
+				T(315246386048, --[[ModItemVoiceResponse GCExStogie CombatEndNoEnemies VoiceResponse CombatEndNoEnemies - All enemies have been killed. voice:GCExStogie]] "It's looks just like they were never here."),
+				T(743173071570, --[[ModItemVoiceResponse GCExStogie CombatEndNoEnemies VoiceResponse CombatEndNoEnemies - All enemies have been killed. voice:GCExStogie]] "Well, that's what we came to do.")
+			}),
+			CombatMovement = TConcat({
+				T(828830919128, --[[ModItemVoiceResponse GCExStogie CombatMovement VoiceResponse CombatMovement - When ordering movement in combat. Up to one full sentence or two short ones. voice:GCExStogie]] "Right."),
+				T(432147012878, --[[ModItemVoiceResponse GCExStogie CombatMovement VoiceResponse CombatMovement - When ordering movement in combat. Up to one full sentence or two short ones. voice:GCExStogie]] "Got it."),
+				T(739615456527, --[[ModItemVoiceResponse GCExStogie CombatMovement VoiceResponse CombatMovement - When ordering movement in combat. Up to one full sentence or two short ones. voice:GCExStogie]] "Uh huh.")
+			}),
+			CombatMovementStealth = TConcat({
+				T(220066663004, --[[ModItemVoiceResponse GCExStogie CombatMovementStealth VoiceResponse CombatMovementStealth - When ordering movement while sneaking. Voice should be shushed (except Steroid) voice:GCExStogie]] "Silently."),
+				T(302825124788, --[[ModItemVoiceResponse GCExStogie CombatMovementStealth VoiceResponse CombatMovementStealth - When ordering movement while sneaking. Voice should be shushed (except Steroid) voice:GCExStogie]] "Quietly."),
+				T(643395447318, --[[ModItemVoiceResponse GCExStogie CombatMovementStealth VoiceResponse CombatMovementStealth - When ordering movement while sneaking. Voice should be shushed (except Steroid) voice:GCExStogie]] "Quietly.")
+			}),
+			CombatStartDetected = TConcat({
+				T(491222234287, --[[ModItemVoiceResponse GCExStogie CombatStartDetected VoiceResponse CombatStartDetected - When enemy detects a merc who was hiding. voice:GCExStogie]] "We're gonna see action here.")
+			}),
+			CombatStartPlayer = TConcat({
+				T(909334424092, --[[ModItemVoiceResponse GCExStogie CombatStartPlayer VoiceResponse CombatStartPlayer - When player initiates combat with shot. voice:GCExStogie]] "Let's show 'em what we got!"),
+				T(335613889824, --[[ModItemVoiceResponse GCExStogie CombatStartPlayer VoiceResponse CombatStartPlayer - When player initiates combat with shot. voice:GCExStogie]] "We're going in hot and heavy!")
+			}),
+			CombatTaskCompleted = TConcat({
+				T(332244748252, --[[ModItemVoiceResponse GCExStogie CombatTaskCompleted VoiceResponse CombatTaskCompleted - When the Combat Task issued by the merc is completed voice:GCExStogie]] "Well, that's what we came to do.")
+			}),
+			CombatTaskFailed = TConcat({
+				T(163758144801, --[[ModItemVoiceResponse GCExStogie CombatTaskFailed VoiceResponse CombatTaskFailed - When the Combat Task issued by the merc is failed voice:GCExStogie]] "That's never happened before.")
+			}),
+			CombatTaskGiven = TConcat({
+				T(659393450905, --[[ModItemVoiceResponse GCExStogie CombatTaskGiven VoiceResponse CombatTaskGiven - When the merc sets the player a new Combat Task voice:GCExStogie]] "Combat task received.")
+			}),
+			ContractExpired = TConcat({
+				T(971246475764, --[[ModItemVoiceResponse GCExStogie ContractExpired VoiceResponse ContractExpired - when the mercs contract expires and the player has not extended it voice:GCExStogie]] "Time's up. I'm out of here.")
+			}),
+			DeathBuddy1 = TConcat({
+				T(545347400980, --[[ModItemVoiceResponse GCExStogie DeathBuddy1 VoiceResponse DeathBuddy1 - Played on the death of Gus. voice:GCExStogie]] "Knowing Bull, he went hard.")
+			}),
+			DeathBuddy2 = TConcat({
+				T(406509239506, --[[ModItemVoiceResponse GCExStogie DeathBuddy2 VoiceResponse DeathBuddy2 - Played on the death of None. voice:GCExStogie]] "Biff is dead? He was like a pet to me.")
+			}),
+			DeathBuddy3 = TConcat({
+				T(358183649016, --[[ModItemVoiceResponse GCExStogie DeathBuddy3 VoiceResponse DeathBuddy3 - Played on the death of None. voice:GCExStogie]] "Gus was a good man.")
+			}),
+			DeathGeneral = TConcat({
+				T(473030305927, --[[ModItemVoiceResponse GCExStogie DeathGeneral VoiceResponse DeathGeneral - Played when a character that is neither liked or disliked dies voice:GCExStogie]] "Couple of drinks and I won't even remember it.")
+			}),
+			DoorLocked = TConcat({
+				T(351040977100, --[[ModItemVoiceResponse GCExStogie DoorLocked VoiceResponse DoorLocked - When a attempting to open locked door voice:GCExStogie]] "Locked.")
+			}),
+			Downed = TConcat({
+				T(536478240110, --[[ModItemVoiceResponse GCExStogie Downed VoiceResponse Downed - When entering Downed state. Voice should be as if losing consciousness voice:GCExStogie]] "(Downed)")
+			}),
+			Exhausted = TConcat({
+				T(902519213010, --[[ModItemVoiceResponse GCExStogie Exhausted VoiceResponse Exhausted - when the merc becomes Exhausted voice:GCExStogie]] "Time to get into my bag. I'm beat...")
+			}),
+			FriendlyFireGeneral = TConcat({
+				T(614480075475, --[[ModItemVoiceResponse GCExStogie FriendlyFireGeneral VoiceResponse FriendlyFireGeneral - Played on friendly fire by the unit hit if the hitting unit is neither Liked or Disliked voice:GCExStogie]] "Crap!")
+			}),
+			GasAreaSelection = TConcat({
+				T(481238148231, --[[ModItemVoiceResponse GCExStogie GasAreaSelection VoiceResponse GasAreaSelection - Unit receiving gas effect or starting round in one. voice:GCExStogie]] "(coughing)")
+			}),
+			GroupOrder = TConcat({
+				T(826968497196, --[[ModItemVoiceResponse GCExStogie GroupOrder VoiceResponse GroupOrder - When movement ordered in follow mode or multi selected with other mercs. voice:GCExStogie]] "Right."),
+				T(872976983250, --[[ModItemVoiceResponse GCExStogie GroupOrder VoiceResponse GroupOrder - When movement ordered in follow mode or multi selected with other mercs. voice:GCExStogie]] "Uh huh."),
+				T(304798019066, --[[ModItemVoiceResponse GCExStogie GroupOrder VoiceResponse GroupOrder - When movement ordered in follow mode or multi selected with other mercs. voice:GCExStogie]] "Uh huh.")
+			}),
+			HealReceived = TConcat({
+				T(701021394403, --[[ModItemVoiceResponse GCExStogie HealReceived VoiceResponse HealReceived - Bandaged by a merc or Metvirion used in Inventory voice:GCExStogie]] "Appreciate it.")
+			}),
+			HealReceivedSatView = TConcat({
+				T(598511745359, --[[ModItemVoiceResponse GCExStogie HealReceivedSatView VoiceResponse HealReceivedSatView - When a wound is removed by a Sector Operation. Uses HealReceived if blank. voice:GCExStogie]] "Appreciate it.")
+			}),
+			HeavilyWoundedSelection = TConcat({
+				T(148737194851, --[[ModItemVoiceResponse GCExStogie HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection - Selected or autoselected with less than 20% health voice:GCExStogie]] "Not good. Spraying blood like a keg.")
+			}),
+			HeavyBreathing = TConcat({
+				T(373545283412, --[[ModItemVoiceResponse GCExStogie HeavyBreathing VoiceResponse HeavyBreathing - During physical exertion voice:GCExStogie]] "(heavy breath)"),
+				T(586262377401, --[[ModItemVoiceResponse GCExStogie HeavyBreathing VoiceResponse HeavyBreathing - During physical exertion voice:GCExStogie]] "(heavy breath_2)")
+			}),
+			Idle = TConcat({
+				T(423071880692, --[[ModItemVoiceResponse GCExStogie Idle VoiceResponse Idle - Play every 4 hours during which a squad has been inactive.. Played by any of the mercs in the squad. voice:GCExStogie]] "Can't really relax unless I got a finger tugging at a trigger.")
+			}),
+			InteractableFound = TConcat({
+				T(654978732741, --[[ModItemVoiceResponse GCExStogie InteractableFound VoiceResponse InteractableFound - A custom interactable (quest related etc), herbs or salvage material found. voice:GCExStogie]] "There!"),
+				T(330533608886, --[[ModItemVoiceResponse GCExStogie InteractableFound VoiceResponse InteractableFound - A custom interactable (quest related etc), herbs or salvage material found. voice:GCExStogie]] "What's that?")
+			}),
+			InterestingSector = TConcat({
+				T(360769156175, --[[ModItemVoiceResponse GCExStogie InterestingSector VoiceResponse InterestingSector - Reached a sector that is marked as interesting. There is somethingin there the player should explore. voice:GCExStogie]] "There's something about this place.")
+			}),
+			ItemDeteriorates = TConcat({
+				T(290110327278, --[[ModItemVoiceResponse GCExStogie ItemDeteriorates VoiceResponse ItemDeteriorates - Played when a piece of equipment deteriotes to the point when it is in the Needs Repair condition voice:GCExStogie]] "Most of my stuff should be ditched in a lake.")
+			}),
+			ItemInPoorConditionEquipped = TConcat({
+				T(822311445647, --[[ModItemVoiceResponse GCExStogie ItemInPoorConditionEquipped VoiceResponse ItemInPoorConditionEquipped - Played in Inventory when player equips weapon/armor that is in Poor Condition voice:GCExStogie]] "Fraggin' piece of ham-dog this thing!")
+			}),
+			Jumping = TConcat({
+				T(813283808353, --[[ModItemVoiceResponse GCExStogie Jumping VoiceResponse Jumping - When jumping over small obstacles (e.g. puddles) voice:GCExStogie]] "(jumping over something)"),
+				T(560043575494, --[[ModItemVoiceResponse GCExStogie Jumping VoiceResponse Jumping - When jumping over small obstacles (e.g. puddles) voice:GCExStogie]] "(jumping over something_2)")
+			}),
+			KillFriendlyFireGeneral = TConcat({
+				T(700131743858, --[[ModItemVoiceResponse GCExStogie KillFriendlyFireGeneral VoiceResponse KillFriendlyFireGeneral - Played when a unit kills an ally with friendly fire and the dying unit is neither Liked nor Disliked voice:GCExStogie]] "I do what I do.")
+			}),
+			LevelUp = TConcat({
+				T(284777320433, --[[ModItemVoiceResponse GCExStogie LevelUp VoiceResponse LevelUp - Leveled up or a magazine is read. Only one played if multiple character level up. voice:GCExStogie]] "Comes with performance.")
+			}),
+			LockedItemMove = TConcat({
+				T(372821625987, --[[ModItemVoiceResponse GCExStogie LockedItemMove VoiceResponse LockedItemMove - Custom. Played when you try to move a personal item (e.g. Nails' jacket, Ivan's ushanka, and PierreMerc's weapon). Leave blank otherwise. voice:GCExStogie]] "Hope you weren't counting on it.")
+			}),
+			LootFound = TConcat({
+				T(715567080944, --[[ModItemVoiceResponse GCExStogie LootFound VoiceResponse LootFound - A loot container is nearby (e.g. dead body, crate,...) 10s cooldown voice:GCExStogie]] "There!"),
+				T(414794759028, --[[ModItemVoiceResponse GCExStogie LootFound VoiceResponse LootFound - A loot container is nearby (e.g. dead body, crate,...) 10s cooldown voice:GCExStogie]] "What's that?")
+			}),
+			LootOpened = TConcat({
+				T(659032585817, --[[ModItemVoiceResponse GCExStogie LootOpened VoiceResponse LootOpened - Loot container opened. Supressed by ValuableItemFound voice:GCExStogie]] "Hmm...")
+			}),
+			LowChanceShot = TConcat({
+				T(252397490105, --[[ModItemVoiceResponse GCExStogie LowChanceShot VoiceResponse LowChanceShot - Successful attack when the CtH is less than 20% voice:GCExStogie]] "Jackpot!"),
+				T(750552073074, --[[ModItemVoiceResponse GCExStogie LowChanceShot VoiceResponse LowChanceShot - Successful attack when the CtH is less than 20% voice:GCExStogie]] "Bingo!")
+			}),
+			ManyEnemiesSelection = TConcat({
+				T(453688501768, --[[ModItemVoiceResponse GCExStogie ManyEnemiesSelection VoiceResponse ManyEnemiesSelection - Selected when the unit sees 5+ units in line of fire voice:GCExStogie]] "This is gonna be more fun than I thought!"),
+				T(486635754039, --[[ModItemVoiceResponse GCExStogie ManyEnemiesSelection VoiceResponse ManyEnemiesSelection - Selected when the unit sees 5+ units in line of fire voice:GCExStogie]] "Ham-dog! I'm knee deep in it.")
+			}),
+			MeleeEnemiesClosing = TConcat({
+				T(269497786746, --[[ModItemVoiceResponse GCExStogie MeleeEnemiesClosing VoiceResponse MeleeEnemiesClosing - When enemy in melee range. Needs further clarification!!! voice:GCExStogie]] "Back off, I'm warning you!"),
+				T(126022865507, --[[ModItemVoiceResponse GCExStogie MeleeEnemiesClosing VoiceResponse MeleeEnemiesClosing - When enemy in melee range. Needs further clarification!!! voice:GCExStogie]] "This is about to get rough.")
+			}),
+			MineDisarmed = TConcat({
+				T(629451676378, --[[ModItemVoiceResponse GCExStogie MineDisarmed VoiceResponse MineDisarmed - Mine disarmed voice:GCExStogie]] "I'm finished up.")
+			}),
+			MineFound = TConcat({
+				T(696145780849, --[[ModItemVoiceResponse GCExStogie MineFound VoiceResponse MineFound - A mine (or other explosive trap) was found nearby voice:GCExStogie]] "Don't look right around here.")
+			}),
+			MineNearbySelection = TConcat({
+				T(934096133995, --[[ModItemVoiceResponse GCExStogie MineNearbySelection VoiceResponse MineNearbySelection - Selected when there is a trap nearby voice:GCExStogie]] "It ain't clean. Should be careful.")
+			}),
+			MissHighChance = TConcat({
+				T(902694629535, --[[ModItemVoiceResponse GCExStogie MissHighChance VoiceResponse MissHighChance - When a shot with 90%+ CtH was missed voice:GCExStogie]] "That's never happened before.")
+			}),
+			MissedByKillShot = TConcat({
+				T(668320196226, --[[ModItemVoiceResponse GCExStogie MissedByKillShot VoiceResponse MissedByKillShot - When character missed a by a shot that would've killed him/her. Shot must have had 50%+ CtH. voice:GCExStogie]] "Losers.")
+			}),
+			MockDislike1 = TConcat({
+				T(645769190907, --[[ModItemVoiceResponse GCExStogie MockDislike1 VoiceResponse MockDislike1 - Played on a high chance miss by Meltdown. voice:GCExStogie]] "Don't know what that Trevor's going on about. Couldn't give a kangaroos arse either. Just ditch him.")
+			}),
+			MockDislike2 = TConcat({
+				T(116643519648, --[[ModItemVoiceResponse GCExStogie MockDislike2 VoiceResponse MockDislike2 - Played on a high chance miss by None. voice:GCExStogie]] "That Meltdown has gotta be the ugliest looking thing I ever saw. Got an urge to shoot it, myself.")
+			}),
+			MockGeneral = TConcat({
+				T(185011501613, --[[ModItemVoiceResponse GCExStogie MockGeneral VoiceResponse MockGeneral - 20% chance to play when another merc misses a high chance shot voice:GCExStogie]] "Somebody's child...")
+			}),
+			MultiOpponentKilled = TConcat({
+				T(928251597971, --[[ModItemVoiceResponse GCExStogie MultiOpponentKilled VoiceResponse MultiOpponentKilled - When 2+ enemies are killed with the same attack voice:GCExStogie]] "That'll thin the herd. "),
+				T(549802085935, --[[ModItemVoiceResponse GCExStogie MultiOpponentKilled VoiceResponse MultiOpponentKilled - When 2+ enemies are killed with the same attack voice:GCExStogie]] "Took out a bunch."),
+				T(968245422361, --[[ModItemVoiceResponse GCExStogie MultiOpponentKilled VoiceResponse MultiOpponentKilled - When 2+ enemies are killed with the same attack voice:GCExStogie]] "Bingo!"),
+				T(337973117173, --[[ModItemVoiceResponse GCExStogie MultiOpponentKilled VoiceResponse MultiOpponentKilled - When 2+ enemies are killed with the same attack voice:GCExStogie]] "(Laughing)"),
+				T(323334353629, --[[ModItemVoiceResponse GCExStogie MultiOpponentKilled VoiceResponse MultiOpponentKilled - When 2+ enemies are killed with the same attack voice:GCExStogie]] "That was entertaining."),
+				T(910956606623, --[[ModItemVoiceResponse GCExStogie MultiOpponentKilled VoiceResponse MultiOpponentKilled - When 2+ enemies are killed with the same attack voice:GCExStogie]] "Looks like there's something to that big bang theory, after all.")
+			}),
+			NoAmmo = TConcat({
+				T(807402632324, --[[ModItemVoiceResponse GCExStogie NoAmmo VoiceResponse NoAmmo - No more ammo in the gun and no more bullets. voice:GCExStogie]] "I'm dry! Need some ammo now.")
+			}),
+			NotNow = TConcat({
+				T(742415382662, --[[ModItemVoiceResponse GCExStogie NotNow VoiceResponse NotNow - When interacting with a NPC while in combat voice:GCExStogie]] "Step away.")
+			}),
+			OpponentFound = TConcat({
+				T(572522821019, --[[ModItemVoiceResponse GCExStogie OpponentFound VoiceResponse OpponentFound - Enemy spotted. voice:GCExStogie]] "Inconvenience."),
+				T(639696666729, --[[ModItemVoiceResponse GCExStogie OpponentFound VoiceResponse OpponentFound - Enemy spotted. voice:GCExStogie]] "The targets are here."),
+				T(868205027415, --[[ModItemVoiceResponse GCExStogie OpponentFound VoiceResponse OpponentFound - Enemy spotted. voice:GCExStogie]] "Sighting.")
+			}),
+			OpponentKilled = TConcat({
+				T(202232936699, --[[ModItemVoiceResponse GCExStogie OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExStogie]] "Another one for the chaplain."),
+				T(501628582087, --[[ModItemVoiceResponse GCExStogie OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExStogie]] "Another one for the chaplain."),
+				T(949090438534, --[[ModItemVoiceResponse GCExStogie OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExStogie]] "Done."),
+				T(940125872892, --[[ModItemVoiceResponse GCExStogie OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExStogie]] "Done."),
+				T(254623371526, --[[ModItemVoiceResponse GCExStogie OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExStogie]] "Makes me warm inside.")
+			}),
+			OpponentKilledAnimal = TConcat({
+				T(157818209417, --[[ModItemVoiceResponse GCExStogie OpponentKilledAnimal VoiceResponse OpponentKilledAnimal - When animal is killed voice:GCExStogie]] "Done."),
+				T(284792452841, --[[ModItemVoiceResponse GCExStogie OpponentKilledAnimal VoiceResponse OpponentKilledAnimal - When animal is killed voice:GCExStogie]] "Critter's down."),
+				T(170345034003, --[[ModItemVoiceResponse GCExStogie OpponentKilledAnimal VoiceResponse OpponentKilledAnimal - When animal is killed voice:GCExStogie]] "Took care of that creature.")
+			}),
+			OpponentKilledHeadshot = TConcat({
+				T(573926912980, --[[ModItemVoiceResponse GCExStogie OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExStogie]] "He deserved to die slower, but what ya gonna do."),
+				T(805352246502, --[[ModItemVoiceResponse GCExStogie OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExStogie]] "Dropped him with a headshot."),
+				T(919003477663, --[[ModItemVoiceResponse GCExStogie OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExStogie]] "That is mind-blowing!"),
+				T(309505114824, --[[ModItemVoiceResponse GCExStogie OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExStogie]] "Bingo!")
+			}),
+			OpponentKilledMelee = TConcat({
+				T(159283829146, --[[ModItemVoiceResponse GCExStogie OpponentKilledMelee VoiceResponse OpponentKilledMelee - Played when killing a unit with melee weapon voice:GCExStogie]] "Step away. Ain't nothing to see here."),
+				T(606013104525, --[[ModItemVoiceResponse GCExStogie OpponentKilledMelee VoiceResponse OpponentKilledMelee - Played when killing a unit with melee weapon voice:GCExStogie]] "Now, that's how real men fight."),
+				T(379956209378, --[[ModItemVoiceResponse GCExStogie OpponentKilledMelee VoiceResponse OpponentKilledMelee - Played when killing a unit with melee weapon voice:GCExStogie]] "Back in my day, they were tougher."),
+				T(313707805628, --[[ModItemVoiceResponse GCExStogie OpponentKilledMelee VoiceResponse OpponentKilledMelee - Played when killing a unit with melee weapon voice:GCExStogie]] "(Laughing)"),
+				T(121966122692, --[[ModItemVoiceResponse GCExStogie OpponentKilledMelee VoiceResponse OpponentKilledMelee - Played when killing a unit with melee weapon voice:GCExStogie]] "That was entertaining.")
+			}),
+			OpponentKilledStealth = TConcat({
+				T(875038766648, --[[ModItemVoiceResponse GCExStogie OpponentKilledStealth VoiceResponse OpponentKilledStealth - Played when a Stealth kill happens. Voice should be shushed (except Steroid) voice:GCExStogie]] "Took 'em out quietly."),
+				T(933118500976, --[[ModItemVoiceResponse GCExStogie OpponentKilledStealth VoiceResponse OpponentKilledStealth - Played when a Stealth kill happens. Voice should be shushed (except Steroid) voice:GCExStogie]] "Silent takedown.")
+			}),
+			Order = TConcat({
+				T(486666701833, --[[ModItemVoiceResponse GCExStogie Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExStogie]] "Right."),
+				T(156217119729, --[[ModItemVoiceResponse GCExStogie Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExStogie]] "Got it."),
+				T(465264354974, --[[ModItemVoiceResponse GCExStogie Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExStogie]] "Uh huh."),
+				T(148834066622, --[[ModItemVoiceResponse GCExStogie Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExStogie]] "Got it."),
+				T(575869875010, --[[ModItemVoiceResponse GCExStogie Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExStogie]] "Right.")
+			}),
+			Overwatch = TConcat({
+				T(712303219539, --[[ModItemVoiceResponse GCExStogie Overwatch VoiceResponse Overwatch - When setting overwatch voice:GCExStogie]] "I got this area covered.")
+			}),
+			OverwatchSelection = TConcat({
+				T(955998801449, --[[ModItemVoiceResponse GCExStogie OverwatchSelection VoiceResponse OverwatchSelection - Selected when under Overwatch. voice:GCExStogie]] "I'm in their sights."),
+				T(943944252721, --[[ModItemVoiceResponse GCExStogie OverwatchSelection VoiceResponse OverwatchSelection - Selected when under Overwatch. voice:GCExStogie]] "Crap!")
+			}),
+			Pain = TConcat({
+				T(395427479206, --[[ModItemVoiceResponse GCExStogie Pain VoiceResponse Pain - Hit by an attack (if surrounded SurroundedPain is played instead). Short. These are emotes - disregard the written text. voice:GCExStogie]] "Agh."),
+				T(288610143179, --[[ModItemVoiceResponse GCExStogie Pain VoiceResponse Pain - Hit by an attack (if surrounded SurroundedPain is played instead). Short. These are emotes - disregard the written text. voice:GCExStogie]] "Ugh."),
+				T(169418491626, --[[ModItemVoiceResponse GCExStogie Pain VoiceResponse Pain - Hit by an attack (if surrounded SurroundedPain is played instead). Short. These are emotes - disregard the written text. voice:GCExStogie]] "Ugh.")
+			}),
+			PersonalPerk = TConcat({
+				T(378805848371, --[[ModItemVoiceResponse GCExStogie PersonalPerk VoiceResponse PersonalPerk - Custom use for personal perks. voice:GCExStogie]] "(Laughing)")
+			}),
+			PinDown = TConcat({
+				T(863977454820, --[[ModItemVoiceResponse GCExStogie PinDown VoiceResponse PinDown - When pinning down (sniper rifles only) voice:GCExStogie]] "Let us see them try to escape my sights. ")
+			}),
+			PraisesBuddy1 = TConcat({
+				T(381964088395, --[[ModItemVoiceResponse GCExStogie PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played on a successful kill by Gus. voice:GCExStogie]] "Bull knows the ropes.")
+			}),
+			PraisesBuddy2 = TConcat({
+				T(634436991547, --[[ModItemVoiceResponse GCExStogie PraisesBuddy2 VoiceResponse PraisesBuddy2 - Played on a successful kill by None. voice:GCExStogie]] "That boy makes me piss myself.")
+			}),
+			PraisesBuddy3 = TConcat({
+				T(835473736618, --[[ModItemVoiceResponse GCExStogie PraisesBuddy3 VoiceResponse PraisesBuddy3 - Played on a successful kill by None. voice:GCExStogie]] "There's a man with a couple of wars under his belt.")
+			}),
+			PraisesFemale = TConcat({
+				T(967843032520, --[[ModItemVoiceResponse GCExStogie PraisesFemale VoiceResponse PraisesFemale - Played when a female merc makes a kill (20% chance) voice:GCExStogie]] "Very nice!")
+			}),
+			PraisesMale = TConcat({
+				T(356105973786, --[[ModItemVoiceResponse GCExStogie PraisesMale VoiceResponse PraisesMale - Played when a male merc makes a kill (20% chance) voice:GCExStogie]] "Very nice!")
+			}),
+			SectorArrived = TConcat({
+				T(765350253196, --[[ModItemVoiceResponse GCExStogie SectorArrived VoiceResponse SectorArrived - SatView - new sector reached. Played by random merc in squad. voice:GCExStogie]] "I'm standing by. Want to change that?")
+			}),
+			Selection = TConcat({
+				T(202135185310, --[[ModItemVoiceResponse GCExStogie Selection VoiceResponse Selection - when selected or autoselected voice:GCExStogie]] "Uh huh."),
+				T(200591397940, --[[ModItemVoiceResponse GCExStogie Selection VoiceResponse Selection - when selected or autoselected voice:GCExStogie]] "Uh huh."),
+				T(620324279022, --[[ModItemVoiceResponse GCExStogie Selection VoiceResponse Selection - when selected or autoselected voice:GCExStogie]] "Uh huh.")
+			}),
+			SelectionStealth = TConcat({
+				T(968505299949, --[[ModItemVoiceResponse GCExStogie SelectionStealth VoiceResponse SelectionStealth - when selected or autoselected voice:GCExStogie]] "Hush."),
+				T(955630207643, --[[ModItemVoiceResponse GCExStogie SelectionStealth VoiceResponse SelectionStealth - when selected or autoselected voice:GCExStogie]] "Hush."),
+				T(786647792062, --[[ModItemVoiceResponse GCExStogie SelectionStealth VoiceResponse SelectionStealth - when selected or autoselected voice:GCExStogie]] "Hush.")
+			}),
+			SeriouslyWounded = TConcat({
+				T(863906117647, --[[ModItemVoiceResponse GCExStogie SeriouslyWounded VoiceResponse SeriouslyWounded - Unit is seriously wounded (3 or more wounds). Add a pain noise at the begining. voice:GCExStogie]] "Not good. Spraying blood like a keg.")
+			}),
+			SpecialThrowGrenade = TConcat({
+				T(611248210323, --[[ModItemVoiceResponse GCExStogie SpecialThrowGrenade VoiceResponse SpecialThrowGrenade - When throwing grenade voice:GCExStogie]] "Gonna nip this right in the butt right now!")
+			}),
+			Startled = TConcat({
+				T(425452129193, --[[ModItemVoiceResponse GCExStogie Startled VoiceResponse Startled - Startled by hearing a sudden noise voice:GCExStogie]] "Catchin' noise.")
+			}),
+			SurroundedPain = TConcat({
+				T(562614175687, --[[ModItemVoiceResponse GCExStogie SurroundedPain VoiceResponse SurroundedPain - hit by an attack when surrounded. Situation should be very dire voice:GCExStogie]] "This ain't over.")
+			}),
+			TacticalCareful = TConcat({
+				T(707147516622, --[[ModItemVoiceResponse GCExStogie TacticalCareful VoiceResponse TacticalCareful - The other team is making gains during the battle (inflicted 2+ wounds during their turn) voice:GCExStogie]] "This sucks eggs."),
+				T(767792663623, --[[ModItemVoiceResponse GCExStogie TacticalCareful VoiceResponse TacticalCareful - The other team is making gains during the battle (inflicted 2+ wounds during their turn) voice:GCExStogie]] "This is turning ugly real fast.")
+			}),
+			TacticalFocus = TConcat({
+				T(973387335046, --[[ModItemVoiceResponse GCExStogie TacticalFocus VoiceResponse TacticalFocus - The team has missed  3+ times voice:GCExStogie]] "We can't keep missing like this.")
+			}),
+			TacticalKilling = TConcat({
+				T(338645359210, --[[ModItemVoiceResponse GCExStogie TacticalKilling VoiceResponse TacticalKilling - The team is winning the battle  (2+ units have been downed/killed) voice:GCExStogie]] "Well, that's what we came to do.")
+			}),
+			TacticalLastEnemy = TConcat({
+				T(906291417202, --[[ModItemVoiceResponse GCExStogie TacticalLastEnemy VoiceResponse TacticalLastEnemy - A single enemy remains voice:GCExStogie]] "One more to go.")
+			}),
+			TacticalLoss = TConcat({
+				T(737524769818, --[[ModItemVoiceResponse GCExStogie TacticalLoss VoiceResponse TacticalLoss - The team is losing the battle (2+ units have been downed/killed) voice:GCExStogie]] "Ham-dog! What the hell happened?")
+			}),
+			TacticalPressing = TConcat({
+				T(204835503008, --[[ModItemVoiceResponse GCExStogie TacticalPressing VoiceResponse TacticalPressing - The team is making gains during the battle (2+ wounds have been inflicted) voice:GCExStogie]] "We're making progress. Stay on 'em.")
+			}),
+			TacticalReposition = TConcat({
+				T(825033184052, --[[ModItemVoiceResponse GCExStogie TacticalReposition VoiceResponse TacticalReposition - The team has not started shooting but is repositioning during the battle voice:GCExStogie]] "Finding better positions.")
+			}),
+			TacticalRevenge = TConcat({
+				T(428774639961, --[[ModItemVoiceResponse GCExStogie TacticalRevenge VoiceResponse TacticalRevenge - A unit from the team has been downed/killed voice:GCExStogie]] "You'll pay for that!")
+			}),
+			TacticalTaunt = TConcat({
+				T(965128761257, --[[ModItemVoiceResponse GCExStogie TacticalTaunt VoiceResponse TacticalTaunt - The team has visible enemies from the other team and is shouting things at them voice:GCExStogie]] "Posers. Poor imitations of fighting men that's what most of 'em are."),
+				T(270280851083, --[[ModItemVoiceResponse GCExStogie TacticalTaunt VoiceResponse TacticalTaunt - The team has visible enemies from the other team and is shouting things at them voice:GCExStogie]] "I like it when them snobs walk around with their noses way up in the air, gives me something to aim for.")
+			}),
+			TakeCover = TConcat({
+				T(872595016285, --[[ModItemVoiceResponse GCExStogie TakeCover VoiceResponse TakeCover - Played when the Take Cover action is used voice:GCExStogie]] "Taking cover.")
+			}),
+			ThreatSelection = TConcat({
+				T(249054129411, --[[ModItemVoiceResponse GCExStogie ThreatSelection VoiceResponse ThreatSelection - Selected when under Pinned Down or in the area of an incoming explosion. voice:GCExStogie]] "I'm in the hot zone!"),
+				T(202475285219, --[[ModItemVoiceResponse GCExStogie ThreatSelection VoiceResponse ThreatSelection - Selected when under Pinned Down or in the area of an incoming explosion. voice:GCExStogie]] "Crap!")
+			}),
+			ThrowGrenade = TConcat({
+				T(671241163962, --[[ModItemVoiceResponse GCExStogie ThrowGrenade VoiceResponse ThrowGrenade - When throwing grenade. Voiced line starts before the explosion. voice:GCExStogie]] "Gonna nip this right in the butt right now!")
+			}),
+			Tired = TConcat({
+				T(716390043804, --[[ModItemVoiceResponse GCExStogie Tired VoiceResponse Tired - when the merc becomes tired voice:GCExStogie]] "Sucking... on a... lung.")
+			}),
+			TrainingReceived = TConcat({
+				T(206066738739, --[[ModItemVoiceResponse GCExStogie TrainingReceived VoiceResponse TrainingReceived - Training received in SatView. Uses LevelUp if blank. voice:GCExStogie]] "Comes with performance.")
+			}),
+			Travelling = TConcat({
+				T(871537818486, --[[ModItemVoiceResponse GCExStogie Travelling VoiceResponse Travelling - When a squad is travelling and enters new sector that is not the final destination of the travel. Played by the squad leader voice:GCExStogie]] "Let's keep movin'.")
+			}),
+			ValuableItemFound = TConcat({
+				T(899965351892, --[[ModItemVoiceResponse GCExStogie ValuableItemFound VoiceResponse ValuableItemFound - Loot container opened with a valuable item inside voice:GCExStogie]] "Bingo!"),
+				T(228133105813, --[[ModItemVoiceResponse GCExStogie ValuableItemFound VoiceResponse ValuableItemFound - Loot container opened with a valuable item inside voice:GCExStogie]] "Very nice!")
+			}),
+			WeaponBroken = TConcat({
+				T(656255434949, --[[ModItemVoiceResponse GCExStogie WeaponBroken VoiceResponse WeaponBroken - When the player's weapon breaks voice:GCExStogie]] "Crap! Weapon's busted.")
+			}),
+			WeaponJammed = TConcat({
+				T(634460330156, --[[ModItemVoiceResponse GCExStogie WeaponJammed VoiceResponse WeaponJammed - When weapon has jammed voice:GCExStogie]] "Gun's jamming!")
+			}),
+			Wounded = TConcat({
+				T(784015432669, --[[ModItemVoiceResponse GCExStogie Wounded VoiceResponse Wounded - Unit is Wounded. (When the Wounded VR is played, the Pain VR should be suppressed.) Add a pain noise at the begining voice:GCExStogie]] "Got a low grade wound here."),
+				T(486583892311, --[[ModItemVoiceResponse GCExStogie Wounded VoiceResponse Wounded - Unit is Wounded. (When the Wounded VR is played, the Pain VR should be suppressed.) Add a pain noise at the begining voice:GCExStogie]] "Got a low grade wound here.")
+			}),
+			group = "GCExPrologueUnits",
+			id = "GCExStogie",
+		}),
+		PlaceObj('ModItemVoiceResponse', {
+			ActivityFinished = TConcat({
+				T(654811898545, --[[ModItemVoiceResponse GCExCougar ActivityFinished VoiceResponse ActivityFinished - SatView activity finished voice:GCExCougar]] "Assignment completed. Awaiting orders.")
+			}),
+			ActivityStarted = TConcat({
+				T(474669802563, --[[ModItemVoiceResponse GCExCougar ActivityStarted VoiceResponse ActivityStarted - When an activity is started. Played by the firs merc associated with the task voice:GCExCougar]] "Activity initiated. It's as good as done.")
+			}),
+			AimAttack = TConcat({
+				T(472163856394, --[[ModItemVoiceResponse GCExCougar AimAttack VoiceResponse AimAttack - When aiming and there is a decent chance of hitting voice:GCExCougar]] "Target in sight. Preparing to engage."),
+				T(911582256827, --[[ModItemVoiceResponse GCExCougar AimAttack VoiceResponse AimAttack - When aiming and there is a decent chance of hitting voice:GCExCougar]] "Aiming on target."),
+				T(615165398857, --[[ModItemVoiceResponse GCExCougar AimAttack VoiceResponse AimAttack - When aiming and there is a decent chance of hitting voice:GCExCougar]] "Ready to neutralize target.")
+			}),
+			AimAttackStealth = TConcat({
+				T(269988353676, --[[ModItemVoiceResponse GCExCougar AimAttackStealth VoiceResponse AimAttackStealth - When aiming and there is a decent chance of hitting. Used while Sneaking - voice should be shushed (except Steroid) voice:GCExCougar]] "Quietly aiming on target."),
+				T(330522438447, --[[ModItemVoiceResponse GCExCougar AimAttackStealth VoiceResponse AimAttackStealth - When aiming and there is a decent chance of hitting. Used while Sneaking - voice should be shushed (except Steroid) voice:GCExCougar]] "Quietly aiming to neutralize target.")
+			}),
+			AimAttack_Low = TConcat({
+				T(725702038152, --[[ModItemVoiceResponse GCExCougar AimAttack_Low VoiceResponse AimAttack_Low - When aiming and the CtH is less than 20% voice:GCExCougar]] "Tough bead to draw from here. "),
+				T(194234801887, --[[ModItemVoiceResponse GCExCougar AimAttack_Low VoiceResponse AimAttack_Low - When aiming and the CtH is less than 20% voice:GCExCougar]] "Low probability hit."),
+				T(284577762198, --[[ModItemVoiceResponse GCExCougar AimAttack_Low VoiceResponse AimAttack_Low - When aiming and the CtH is less than 20% voice:GCExCougar]] "Unlikely to hit target."),
+				T(931004786727, --[[ModItemVoiceResponse GCExCougar AimAttack_Low VoiceResponse AimAttack_Low - When aiming and the CtH is less than 20% voice:GCExCougar]] "That course of action would be foolish.")
+			}),
+			AimAttack_LowStealth = TConcat({
+				T(194934181521, --[[ModItemVoiceResponse GCExCougar AimAttack_LowStealth VoiceResponse AimAttack_LowStealth - When aiming and there is very low chance of hitting. Used while Sneaking - voice should be shushed (except Steroid) voice:GCExCougar]] "Stealth kill unlikely.")
+			}),
+			AmmoLow = TConcat({
+				T(607901155990, --[[ModItemVoiceResponse GCExCougar AmmoLow VoiceResponse AmmoLow - Played when there is less than 25% of clip size or a full reload cannot be made voice:GCExCougar]] "My firearm requires ammunition.")
+			}),
+			AnimalFound = TConcat({
+				T(621459942199, --[[ModItemVoiceResponse GCExCougar AnimalFound VoiceResponse AnimalFound - Enemy animal spotted. voice:GCExCougar]] "Target."),
+				T(274652289977, --[[ModItemVoiceResponse GCExCougar AnimalFound VoiceResponse AnimalFound - Enemy animal spotted. voice:GCExCougar]] "Reporting visual confirmation of a large nauseating creature."),
+				T(567442072208, --[[ModItemVoiceResponse GCExCougar AnimalFound VoiceResponse AnimalFound - Enemy animal spotted. voice:GCExCougar]] "Spotted the enemy."),
+				T(853925252206, --[[ModItemVoiceResponse GCExCougar AnimalFound VoiceResponse AnimalFound - Enemy animal spotted. voice:GCExCougar]] "These creatures from the depths of hell are starting to annoy me.")
+			}),
+			Autofire = TConcat({
+				T(530999299016, --[[ModItemVoiceResponse GCExCougar Autofire VoiceResponse Autofire - When using machine gun autofire attacks. Voice is played during the attack and gunfire sounds. voice:GCExCougar]] "(Laughing)")
+			}),
+			BandageDownedUnit = TConcat({
+				T(556860506176, --[[ModItemVoiceResponse GCExCougar BandageDownedUnit VoiceResponse BandageDownedUnit - When a downed unit is bandaged. Played by the unit that does the bandaging voice:GCExCougar]] "There should be no permanent damage.")
+			}),
+			BecomeHidden = TConcat({
+				T(756323548149, --[[ModItemVoiceResponse GCExCougar BecomeHidden VoiceResponse BecomeHidden - Played when entering Sneak mode. Voice should be shushed (except Steroid) voice:GCExCougar]] "Stealth mode activated."),
+				T(640671610451, --[[ModItemVoiceResponse GCExCougar BecomeHidden VoiceResponse BecomeHidden - Played when entering Sneak mode. Voice should be shushed (except Steroid) voice:GCExCougar]] "Vanishing act engaged."),
+				T(164461809301, --[[ModItemVoiceResponse GCExCougar BecomeHidden VoiceResponse BecomeHidden - Played when entering Sneak mode. Voice should be shushed (except Steroid) voice:GCExCougar]] "Blending into the shadows.")
+			}),
+			BusySatView = TConcat({
+				T(555703159066, --[[ModItemVoiceResponse GCExCougar BusySatView VoiceResponse BusySatView - Played when merc is in an activity for more than 8 hours. Students and Patients excluded. Played once per activity. voice:GCExCougar]] "I'm totally committed, sir.")
+			}),
+			Climbing = TConcat({
+				T(334131167108, --[[ModItemVoiceResponse GCExCougar Climbing VoiceResponse Climbing - Emote. When unit is climbing over fences, on cliffs, etc. voice:GCExCougar]] "(climbing)"),
+				T(110906255137, --[[ModItemVoiceResponse GCExCougar Climbing VoiceResponse Climbing - Emote. When unit is climbing over fences, on cliffs, etc. voice:GCExCougar]] "(climbing_2)")
+			}),
+			CombatEndEnemiesRemain = TConcat({
+				T(129634366112, --[[ModItemVoiceResponse GCExCougar CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain - There are no more aware enemies but there are still enemies in the sector. voice:GCExCougar]] "Enemies remain alive, sir, though they have proved difficult to locate.")
+			}),
+			CombatEndEnemiesRetreated = TConcat({
+				T(872857095633, --[[ModItemVoiceResponse GCExCougar CombatEndEnemiesRetreated VoiceResponse CombatEndEnemiesRetreated - All enemies have retreated voice:GCExCougar]] "The enemies have retreated, sir.")
+			}),
+			CombatEndNoEnemies = TConcat({
+				T(327195382170, --[[ModItemVoiceResponse GCExCougar CombatEndNoEnemies VoiceResponse CombatEndNoEnemies - All enemies have been killed. voice:GCExCougar]] "Enemy presence eliminated, sir.")
+			}),
+			CombatMovement = TConcat({
+				T(761471260607, --[[ModItemVoiceResponse GCExCougar CombatMovement VoiceResponse CombatMovement - When ordering movement in combat. Up to one full sentence or two short ones. voice:GCExCougar]] "Okey dokey."),
+				T(761471260608, --[[ModItemVoiceResponse GCExCougar CombatMovement VoiceResponse CombatMovement - When ordering movement in combat. Up to one full sentence or two short ones. voice:GCExCougar]] "Ten-four, Charlie!"),
+				T(313625047493, --[[ModItemVoiceResponse GCExCougar CombatMovement VoiceResponse CombatMovement - When ordering movement in combat. Up to one full sentence or two short ones. voice:GCExCougar]] "Sir."),
+				T(521639596393, --[[ModItemVoiceResponse GCExCougar CombatMovement VoiceResponse CombatMovement - When ordering movement in combat. Up to one full sentence or two short ones. voice:GCExCougar]] "Got it.")
+			}),
+			CombatMovementStealth = TConcat({
+				T(181685723419, --[[ModItemVoiceResponse GCExCougar CombatMovementStealth VoiceResponse CombatMovementStealth - When ordering movement while sneaking. Voice should be shushed (except Steroid) voice:GCExCougar]] "Moving in quietly."),
+				T(181685723420, --[[ModItemVoiceResponse GCExCougar CombatMovementStealth VoiceResponse CombatMovementStealth - When ordering movement while sneaking. Voice should be shushed (except Steroid) voice:GCExCougar]] "Quietly."),
+				T(427899644871, --[[ModItemVoiceResponse GCExCougar CombatMovementStealth VoiceResponse CombatMovementStealth - When ordering movement while sneaking. Voice should be shushed (except Steroid) voice:GCExCougar]] "Silently.")
+			}),
+			CombatStartDetected = TConcat({
+				T(154298831238, --[[ModItemVoiceResponse GCExCougar CombatStartDetected VoiceResponse CombatStartDetected - When enemy detects a merc who was hiding. voice:GCExCougar]] "We've been spotted, sir. Prepare to engage."),
+				T(684945441082, --[[ModItemVoiceResponse GCExCougar CombatStartDetected VoiceResponse CombatStartDetected - When enemy detects a merc who was hiding. voice:GCExCougar]] "Hostiles are aware of our presence. Initiating combat protocol.")
+			}),
+			CombatStartPlayer = TConcat({
+				T(534215502309, --[[ModItemVoiceResponse GCExCougar CombatStartPlayer VoiceResponse CombatStartPlayer - When player initiates combat with shot. voice:GCExCougar]] "Commencing assault. Weapons free."),
+				T(834859704959, --[[ModItemVoiceResponse GCExCougar CombatStartPlayer VoiceResponse CombatStartPlayer - When player initiates combat with shot. voice:GCExCougar]] "Initiating combat sequence. Fire at will.")
+			}),
+			CombatTaskCompleted = TConcat({
+				T(317600091365, --[[ModItemVoiceResponse GCExCougar CombatTaskCompleted VoiceResponse CombatTaskCompleted - When the Combat Task issued by the merc is completed voice:GCExCougar]] "Mission accomplished.")
+			}),
+			CombatTaskFailed = TConcat({
+				T(282600140383, --[[ModItemVoiceResponse GCExCougar CombatTaskFailed VoiceResponse CombatTaskFailed - When the Combat Task issued by the merc is failed voice:GCExCougar]] "This is embarrassing, sir, but I'm unable to do it.")
+			}),
+			CombatTaskGiven = TConcat({
+				T(994850695214, --[[ModItemVoiceResponse GCExCougar CombatTaskGiven VoiceResponse CombatTaskGiven - When the merc sets the player a new Combat Task voice:GCExCougar]] "Task initiated. Consider it done.")
+			}),
+			ContractExpired = TConcat({
+				T(766712338355, --[[ModItemVoiceResponse GCExCougar ContractExpired VoiceResponse ContractExpired - when the mercs contract expires and the player has not extended it voice:GCExCougar]] "Time's up. I'm heading back... Call me if you need me.")
+			}),
+			DeathBuddy1 = TConcat({
+				T(495364642397, --[[ModItemVoiceResponse GCExCougar DeathBuddy1 VoiceResponse DeathBuddy1 - Played on the death of Len. voice:GCExCougar]] "Wolf was a good man and a competent soldier who died in the line of duty, as he would have wanted. Too bad there's not enough left of him to bury. Okay, that's enough.")
+			}),
+			DeathBuddy2 = TConcat({
+				T(335973671601, --[[ModItemVoiceResponse GCExCougar DeathBuddy2 VoiceResponse DeathBuddy2 - Played on the death of Wolf. voice:GCExCougar]] "Len was a fine warrior. I learned a lot from him, and it was an honor to serve in his company. All right, enough sentimentality.")
+			}),
+			DeathGeneral = TConcat({
+				T(805290500435, --[[ModItemVoiceResponse GCExCougar DeathGeneral VoiceResponse DeathGeneral - Played when a character that is neither liked or disliked dies voice:GCExCougar]] "All right, enough sentimentality.")
+			}),
+			DoorLocked = TConcat({
+				T(800348359776, --[[ModItemVoiceResponse GCExCougar DoorLocked VoiceResponse DoorLocked - When a attempting to open locked door voice:GCExCougar]] "Locked.")
+			}),
+			Downed = TConcat({
+				T(195665264055, --[[ModItemVoiceResponse GCExCougar Downed VoiceResponse Downed - When entering Downed state. Voice should be as if losing consciousness voice:GCExCougar]] "(Downed)")
+			}),
+			Exhausted = TConcat({
+				T(873003923201, --[[ModItemVoiceResponse GCExCougar Exhausted VoiceResponse Exhausted - when the merc becomes Exhausted voice:GCExCougar]] "I can't go on without rest. I apologize for my weakness.")
+			}),
+			FriendlyFireGeneral = TConcat({
+				T(634929628573, --[[ModItemVoiceResponse GCExCougar FriendlyFireGeneral VoiceResponse FriendlyFireGeneral - Played on friendly fire by the unit hit if the hitting unit is neither Liked or Disliked voice:GCExCougar]] "F...fubble-duddle!")
+			}),
+			GasAreaSelection = TConcat({
+				T(116142827461, --[[ModItemVoiceResponse GCExCougar GasAreaSelection VoiceResponse GasAreaSelection - Unit receiving gas effect or starting round in one. voice:GCExCougar]] "(coughing)")
+			}),
+			GroupOrder = TConcat({
+				T(516623745442, --[[ModItemVoiceResponse GCExCougar GroupOrder VoiceResponse GroupOrder - When movement ordered in follow mode or multi selected with other mercs. voice:GCExCougar]] "Follow my lead."),
+				T(490499099711, --[[ModItemVoiceResponse GCExCougar GroupOrder VoiceResponse GroupOrder - When movement ordered in follow mode or multi selected with other mercs. voice:GCExCougar]] "On me, team."),
+				T(829346359090, --[[ModItemVoiceResponse GCExCougar GroupOrder VoiceResponse GroupOrder - When movement ordered in follow mode or multi selected with other mercs. voice:GCExCougar]] "Move it, team.")
+			}),
+			HealReceived = TConcat({
+				T(981697140544, --[[ModItemVoiceResponse GCExCougar HealReceived VoiceResponse HealReceived - Bandaged by a merc or Metvirion used in Inventory voice:GCExCougar]] "Much appreciated. Back in fighting shape.")
+			}),
+			HealReceivedSatView = TConcat({
+				T(698421196160, --[[ModItemVoiceResponse GCExCougar HealReceivedSatView VoiceResponse HealReceivedSatView - When a wound is removed by a Sector Operation. Uses HealReceived if blank. voice:GCExCougar]] "Much appreciated. Back in fighting shape.")
+			}),
+			HeavilyWoundedSelection = TConcat({
+				T(638680145878, --[[ModItemVoiceResponse GCExCougar HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection - Selected or autoselected with less than 20% health voice:GCExCougar]] "These wounds are badly in need of dressing... and I want some aspirin.")
+			}),
+			HeavyBreathing = TConcat({
+				T(499008565136, --[[ModItemVoiceResponse GCExCougar HeavyBreathing VoiceResponse HeavyBreathing - During physical exertion voice:GCExCougar]] "(heavy breath)"),
+				T(274668190145, --[[ModItemVoiceResponse GCExCougar HeavyBreathing VoiceResponse HeavyBreathing - During physical exertion voice:GCExCougar]] "(heavy breath_2)")
+			}),
+			Idle = TConcat({
+				T(803253095063, --[[ModItemVoiceResponse GCExCougar Idle VoiceResponse Idle - Play every 4 hours during which a squad has been inactive.. Played by any of the mercs in the squad. voice:GCExCougar]] "This is boring! I should have brought a book ... Ah, right! I did bring the military code of conduct.")
+			}),
+			InteractableFound = TConcat({
+				T(391221444732, --[[ModItemVoiceResponse GCExCougar InteractableFound VoiceResponse InteractableFound - A custom interactable (quest related etc), herbs or salvage material found. voice:GCExCougar]] "Check that out. "),
+				T(445829342061, --[[ModItemVoiceResponse GCExCougar InteractableFound VoiceResponse InteractableFound - A custom interactable (quest related etc), herbs or salvage material found. voice:GCExCougar]] "Something there.")
+			}),
+			InterestingSector = TConcat({
+				T(562522336160, --[[ModItemVoiceResponse GCExCougar InterestingSector VoiceResponse InterestingSector - Reached a sector that is marked as interesting. There is somethingin there the player should explore. voice:GCExCougar]] "I can't shake this feeling."),
+				T(562522336161, --[[ModItemVoiceResponse GCExCougar InterestingSector VoiceResponse InterestingSector - Reached a sector that is marked as interesting. There is somethingin there the player should explore. voice:GCExCougar]] "Let's explore the place.")
+			}),
+			ItemDeteriorates = TConcat({
+				T(821887756744, --[[ModItemVoiceResponse GCExCougar ItemDeteriorates VoiceResponse ItemDeteriorates - Played when a piece of equipment deteriotes to the point when it is in the Needs Repair condition voice:GCExCougar]] "Poor equipment gives poor results. This is not pleasant.")
+			}),
+			ItemInPoorConditionEquipped = TConcat({
+				T(444295652832, --[[ModItemVoiceResponse GCExCougar ItemInPoorConditionEquipped VoiceResponse ItemInPoorConditionEquipped - Played in Inventory when player equips weapon/armor that is in Poor Condition voice:GCExCougar]] "I don't appreciate being outfitted with factory seconds and poorly maintained equipment.")
+			}),
+			Jumping = TConcat({
+				T(333583583067, --[[ModItemVoiceResponse GCExCougar Jumping VoiceResponse Jumping - When jumping over small obstacles (e.g. puddles) voice:GCExCougar]] "(jumping over something)"),
+				T(129839976176, --[[ModItemVoiceResponse GCExCougar Jumping VoiceResponse Jumping - When jumping over small obstacles (e.g. puddles) voice:GCExCougar]] "(jumping over something_2)")
+			}),
+			KillFriendlyFireGeneral = TConcat({
+				T(730725633938, --[[ModItemVoiceResponse GCExCougar KillFriendlyFireGeneral VoiceResponse KillFriendlyFireGeneral - Played when a unit kills an ally with friendly fire and the dying unit is neither Liked nor Disliked voice:GCExCougar]] "I believe it was fully justified, sir.")
+			}),
+			LevelUp = TConcat({
+				T(952538939285, --[[ModItemVoiceResponse GCExCougar LevelUp VoiceResponse LevelUp - Leveled up or a magazine is read. Only one played if multiple character level up. voice:GCExCougar]] "There's always room for improvement.")
+			}),
+			LockedItemMove = TConcat({
+				T(842477242341, --[[ModItemVoiceResponse GCExCougar LockedItemMove VoiceResponse LockedItemMove - Custom. Played when you try to move a personal item (e.g. Nails' jacket, Ivan's ushanka, and PierreMerc's weapon). Leave blank otherwise. voice:GCExCougar]] "No, sir.")
+			}),
+			LootFound = TConcat({
+				T(307259422395, --[[ModItemVoiceResponse GCExCougar LootFound VoiceResponse LootFound - A loot container is nearby (e.g. dead body, crate,...) 10s cooldown voice:GCExCougar]] "Check that out."),
+				T(562494206774, --[[ModItemVoiceResponse GCExCougar LootFound VoiceResponse LootFound - A loot container is nearby (e.g. dead body, crate,...) 10s cooldown voice:GCExCougar]] "Something there.")
+			}),
+			LootOpened = TConcat({
+				T(287876555554, --[[ModItemVoiceResponse GCExCougar LootOpened VoiceResponse LootOpened - Loot container opened. Supressed by ValuableItemFound voice:GCExCougar]] "Hmm...")
+			}),
+			LowChanceShot = TConcat({
+				T(966659913619, --[[ModItemVoiceResponse GCExCougar LowChanceShot VoiceResponse LowChanceShot - Successful attack when the CtH is less than 20% voice:GCExCougar]] "Against all odds, target is down!")
+			}),
+			ManyEnemiesSelection = TConcat({
+				T(645978297587, --[[ModItemVoiceResponse GCExCougar ManyEnemiesSelection VoiceResponse ManyEnemiesSelection - Selected when the unit sees 5+ units in line of fire voice:GCExCougar]] "Okay, time to take the gloves off.")
+			}),
+			MeleeEnemiesClosing = TConcat({
+				T(195263336143, --[[ModItemVoiceResponse GCExCougar MeleeEnemiesClosing VoiceResponse MeleeEnemiesClosing - When enemy in melee range. Needs further clarification!!! voice:GCExCougar]] "Enemies are closing in.")
+			}),
+			MineDisarmed = TConcat({
+				T(195916456787, --[[ModItemVoiceResponse GCExCougar MineDisarmed VoiceResponse MineDisarmed - Mine disarmed voice:GCExCougar]] "Booby trap no more.")
+			}),
+			MineFound = TConcat({
+				T(133146425324, --[[ModItemVoiceResponse GCExCougar MineFound VoiceResponse MineFound - A mine (or other explosive trap) was found nearby voice:GCExCougar]] "Halt! Booby trap detected.")
+			}),
+			MineNearbySelection = TConcat({
+				T(956813323440, --[[ModItemVoiceResponse GCExCougar MineNearbySelection VoiceResponse MineNearbySelection - Selected when there is a trap nearby voice:GCExCougar]] "Caution! Chance to severely hurt ourselves over there, sir.")
+			}),
+			MissHighChance = TConcat({
+				T(502973665212, --[[ModItemVoiceResponse GCExCougar MissHighChance VoiceResponse MissHighChance - When a shot with 90%+ CtH was missed voice:GCExCougar]] "Seriously? That should have been a hit!"),
+				T(718046175021, --[[ModItemVoiceResponse GCExCougar MissHighChance VoiceResponse MissHighChance - When a shot with 90%+ CtH was missed voice:GCExCougar]] "How did I miss that?"),
+				T(274453864075, --[[ModItemVoiceResponse GCExCougar MissHighChance VoiceResponse MissHighChance - When a shot with 90%+ CtH was missed voice:GCExCougar]] "Unbelievable! I missed an easy shot.")
+			}),
+			MissedByKillShot = TConcat({
+				T(952439739646, --[[ModItemVoiceResponse GCExCougar MissedByKillShot VoiceResponse MissedByKillShot - When character missed a by a shot that would've killed him/her. Shot must have had 50%+ CtH. voice:GCExCougar]] "That was close. But close doesn't count.")
+			}),
+			MockGeneral = TConcat({
+				T(144537772893, --[[ModItemVoiceResponse GCExCougar MockGeneral VoiceResponse MockGeneral - 20% chance to play when another merc misses a high chance shot voice:GCExCougar]] "Was that a warning shot?")
+			}),
+			MultiOpponentKilled = TConcat({
+				T(824027026781, --[[ModItemVoiceResponse GCExCougar MultiOpponentKilled VoiceResponse MultiOpponentKilled - When 2+ enemies are killed with the same attack voice:GCExCougar]] "Obliterated."),
+				T(740011285132, --[[ModItemVoiceResponse GCExCougar MultiOpponentKilled VoiceResponse MultiOpponentKilled - When 2+ enemies are killed with the same attack voice:GCExCougar]] "(Laughing)")
+			}),
+			NoAmmo = TConcat({
+				T(308633268845, --[[ModItemVoiceResponse GCExCougar NoAmmo VoiceResponse NoAmmo - No more ammo in the gun and no more bullets. voice:GCExCougar]] "My firearm requires ammunition.")
+			}),
+			NotNow = TConcat({
+				T(153246405274, --[[ModItemVoiceResponse GCExCougar NotNow VoiceResponse NotNow - When interacting with a NPC while in combat voice:GCExCougar]] "I'm busy at the moment.")
+			}),
+			OpponentFound = TConcat({
+				T(382293987403, --[[ModItemVoiceResponse GCExCougar OpponentFound VoiceResponse OpponentFound - Enemy spotted. voice:GCExCougar]] "Spotted the enemy."),
+				T(895069885326, --[[ModItemVoiceResponse GCExCougar OpponentFound VoiceResponse OpponentFound - Enemy spotted. voice:GCExCougar]] "Enemy force now in sight."),
+				T(592731744056, --[[ModItemVoiceResponse GCExCougar OpponentFound VoiceResponse OpponentFound - Enemy spotted. voice:GCExCougar]] "Target.")
+			}),
+			OpponentKilled = TConcat({
+				T(469637487651, --[[ModItemVoiceResponse GCExCougar OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExCougar]] "Enemy, dead."),
+				T(893311793637, --[[ModItemVoiceResponse GCExCougar OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExCougar]] "Enemy, dead."),
+				T(852812074215, --[[ModItemVoiceResponse GCExCougar OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExCougar]] "Enemy, dead."),
+				T(259672612804, --[[ModItemVoiceResponse GCExCougar OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExCougar]] "It was nothing."),
+				T(682587670503, --[[ModItemVoiceResponse GCExCougar OpponentKilled VoiceResponse OpponentKilled - When opponent killed (unless OponentKilledCrit or OponentKilled multi isplayed) voice:GCExCougar]] "It was nothing.")
+			}),
+			OpponentKilledAnimal = TConcat({
+				T(592913638383, --[[ModItemVoiceResponse GCExCougar OpponentKilledAnimal VoiceResponse OpponentKilledAnimal - When animal is killed voice:GCExCougar]] "Creature, exterminated.")
+			}),
+			OpponentKilledHeadshot = TConcat({
+				T(387537914271, --[[ModItemVoiceResponse GCExCougar OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExCougar]] "I will suppress my nausea."),
+				T(539773750382, --[[ModItemVoiceResponse GCExCougar OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExCougar]] "Headshot!"),
+				T(577406441193, --[[ModItemVoiceResponse GCExCougar OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExCougar]] "Headshot!"),
+				T(672776726209, --[[ModItemVoiceResponse GCExCougar OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExCougar]] "Headshot!"),
+				T(841434891763, --[[ModItemVoiceResponse GCExCougar OpponentKilledHeadshot VoiceResponse OpponentKilledHeadshot - Opponent killed with a headshot voice:GCExCougar]] "Headshot!")
+			}),
+			OpponentKilledMelee = TConcat({
+				T(766146183821, --[[ModItemVoiceResponse GCExCougar OpponentKilledMelee VoiceResponse OpponentKilledMelee - Played when killing a unit with melee weapon voice:GCExCougar]] "Physical training has paid off."),
+				T(620832407340, --[[ModItemVoiceResponse GCExCougar OpponentKilledMelee VoiceResponse OpponentKilledMelee - Played when killing a unit with melee weapon voice:GCExCougar]] "Enemy, dead."),
+				T(939385508329, --[[ModItemVoiceResponse GCExCougar OpponentKilledMelee VoiceResponse OpponentKilledMelee - Played when killing a unit with melee weapon voice:GCExCougar]] "(Laughing)")
+			}),
+			OpponentKilledStealth = TConcat({
+				T(511797567577, --[[ModItemVoiceResponse GCExCougar OpponentKilledStealth VoiceResponse OpponentKilledStealth - Played when a Stealth kill happens. Voice should be shushed (except Steroid) voice:GCExCougar]] "Silent but deadly.")
+			}),
+			Order = TConcat({
+				T(402309366072, --[[ModItemVoiceResponse GCExCougar Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExCougar]] "Okey dokey."),
+				T(233759448123, --[[ModItemVoiceResponse GCExCougar Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExCougar]] "Ten-four, Charlie!"),
+				T(835779394403, --[[ModItemVoiceResponse GCExCougar Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExCougar]] "Sir."),
+				T(447665286693, --[[ModItemVoiceResponse GCExCougar Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExCougar]] "Got it."),
+				T(161010799085, --[[ModItemVoiceResponse GCExCougar Order VoiceResponse Order - When movement ordered (out of combat) Should be very short (3-5 words) voice:GCExCougar]] "Ten-four, Charlie!")
+			}),
+			Outnumbered = TConcat({
+				T(989836744410, --[[ModItemVoiceResponse GCExCougar Outnumbered VoiceResponse Outnumbered - Unit sees more enemies than allies voice:GCExCougar]] "Okay, time to take the gloves off.")
+			}),
+			Overwatch = TConcat({
+				T(629109530735, --[[ModItemVoiceResponse GCExCougar Overwatch VoiceResponse Overwatch - When setting overwatch voice:GCExCougar]] "I've got this covered.")
+			}),
+			OverwatchSelection = TConcat({
+				T(660045709557, --[[ModItemVoiceResponse GCExCougar OverwatchSelection VoiceResponse OverwatchSelection - Selected when under Overwatch. voice:GCExCougar]] "We've drawn enemy eyes."),
+				T(398691460227, --[[ModItemVoiceResponse GCExCougar OverwatchSelection VoiceResponse OverwatchSelection - Selected when under Overwatch. voice:GCExCougar]] "F...fubble-duddle!")
+			}),
+			Pain = TConcat({
+				T(365302454167, --[[ModItemVoiceResponse GCExCougar Pain VoiceResponse Pain - Hit by an attack (if surrounded SurroundedPain is played instead). Short. These are emotes - disregard the written text. voice:GCExCougar]] "Argh."),
+				T(685612836552, --[[ModItemVoiceResponse GCExCougar Pain VoiceResponse Pain - Hit by an attack (if surrounded SurroundedPain is played instead). Short. These are emotes - disregard the written text. voice:GCExCougar]] "Ugh."),
+				T(505139300996, --[[ModItemVoiceResponse GCExCougar Pain VoiceResponse Pain - Hit by an attack (if surrounded SurroundedPain is played instead). Short. These are emotes - disregard the written text. voice:GCExCougar]] "Ugh.")
+			}),
+			PersonalPerk = TConcat({
+				T(680908021138, --[[ModItemVoiceResponse GCExCougar PersonalPerk VoiceResponse PersonalPerk - Custom use for personal perks. voice:GCExCougar]] "(Laughing)")
+			}),
+			PinDown = TConcat({
+				T(777038706975, --[[ModItemVoiceResponse GCExCougar PinDown VoiceResponse PinDown - When pinning down (sniper rifles only) voice:GCExCougar]] "I've got the target pinned down.")
+			}),
+			PraisesBuddy1 = TConcat({
+				T(176124841994, --[[ModItemVoiceResponse GCExCougar PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played on a successful kill by Len. voice:GCExCougar]] "Yet another example of Wolf's fine work.")
+			}),
+			PraisesBuddy2 = TConcat({
+				T(206468208894, --[[ModItemVoiceResponse GCExCougar PraisesBuddy2 VoiceResponse PraisesBuddy2 - Played on a successful kill by Wolf. voice:GCExCougar]] "Len should be mercenary of the year.")
+			}),
+			PraisesFemale = TConcat({
+				T(196506352154, --[[ModItemVoiceResponse GCExCougar PraisesFemale VoiceResponse PraisesFemale - Played when a female merc makes a kill (20% chance) voice:GCExCougar]] "It is an honor to serve with you, ma'am.")
+			}),
+			PraisesMale = TConcat({
+				T(734553454812, --[[ModItemVoiceResponse GCExCougar PraisesMale VoiceResponse PraisesMale - Played when a male merc makes a kill (20% chance) voice:GCExCougar]] "It is an honor to serve with you, sir.")
+			}),
+			SectorArrived = TConcat({
+				T(515975408775, --[[ModItemVoiceResponse GCExCougar SectorArrived VoiceResponse SectorArrived - SatView - new sector reached. Played by random merc in squad. voice:GCExCougar]] "Destination achieved, sir.")
+			}),
+			Selection = TConcat({
+				T(921099461092, --[[ModItemVoiceResponse GCExCougar Selection VoiceResponse Selection - when selected or autoselected voice:GCExCougar]] "Sir."),
+				T(685817114567, --[[ModItemVoiceResponse GCExCougar Selection VoiceResponse Selection - when selected or autoselected voice:GCExCougar]] "Sir."),
+				T(908762406665, --[[ModItemVoiceResponse GCExCougar Selection VoiceResponse Selection - when selected or autoselected voice:GCExCougar]] "Sir.")
+			}),
+			SelectionStealth = TConcat({
+				T(166033792254, --[[ModItemVoiceResponse GCExCougar SelectionStealth VoiceResponse SelectionStealth - when selected or autoselected voice:GCExCougar]] "Silent approach."),
+				T(992729766507, --[[ModItemVoiceResponse GCExCougar SelectionStealth VoiceResponse SelectionStealth - when selected or autoselected voice:GCExCougar]] "Silent approach."),
+				T(202267138779, --[[ModItemVoiceResponse GCExCougar SelectionStealth VoiceResponse SelectionStealth - when selected or autoselected voice:GCExCougar]] "Silent approach.")
+			}),
+			SeriouslyWounded = TConcat({
+				T(916722024522, --[[ModItemVoiceResponse GCExCougar SeriouslyWounded VoiceResponse SeriouslyWounded - Unit is seriously wounded (3 or more wounds). Add a pain noise at the begining. voice:GCExCougar]] "These wounds are badly in need of dressing... and I want some aspirin.")
+			}),
+			SpecialThrowGrenade = TConcat({
+				T(112422427530, --[[ModItemVoiceResponse GCExCougar SpecialThrowGrenade VoiceResponse SpecialThrowGrenade - When throwing grenade voice:GCExCougar]] "Fire in the hole!")
+			}),
+			Startled = TConcat({
+				T(494253613104, --[[ModItemVoiceResponse GCExCougar Startled VoiceResponse Startled - Startled by hearing a sudden noise voice:GCExCougar]] "Detecting a suspicious sound in the vicinity.")
+			}),
+			SurroundedPain = TConcat({
+				T(307709383626, --[[ModItemVoiceResponse GCExCougar SurroundedPain VoiceResponse SurroundedPain - hit by an attack when surrounded. Situation should be very dire voice:GCExCougar]] "Enemy bearing down."),
+				T(537297091708, --[[ModItemVoiceResponse GCExCougar SurroundedPain VoiceResponse SurroundedPain - hit by an attack when surrounded. Situation should be very dire voice:GCExCougar]] "Enemy bearing down.")
+			}),
+			TacticalCareful = TConcat({
+				T(345005472825, --[[ModItemVoiceResponse GCExCougar TacticalCareful VoiceResponse TacticalCareful - The other team is making gains during the battle (inflicted 2+ wounds during their turn) voice:GCExCougar]] "They're getting hits on us! tighten up your defense!")
+			}),
+			TacticalFocus = TConcat({
+				T(114692678237, --[[ModItemVoiceResponse GCExCougar TacticalFocus VoiceResponse TacticalFocus - The team has missed  3+ times voice:GCExCougar]] "Focus, team! We can't afford to keep on missing!")
+			}),
+			TacticalKilling = TConcat({
+				T(507657424522, --[[ModItemVoiceResponse GCExCougar TacticalKilling VoiceResponse TacticalKilling - The team is winning the battle  (2+ units have been downed/killed) voice:GCExCougar]] "Nice work, team! Let's keep stacking bodies.")
+			}),
+			TacticalLastEnemy = TConcat({
+				T(606022787193, --[[ModItemVoiceResponse GCExCougar TacticalLastEnemy VoiceResponse TacticalLastEnemy - A single enemy remains voice:GCExCougar]] "Last man standing. Take him down!")
+			}),
+			TacticalLoss = TConcat({
+				T(416893100450, --[[ModItemVoiceResponse GCExCougar TacticalLoss VoiceResponse TacticalLoss - The team is losing the battle (2+ units have been downed/killed) voice:GCExCougar]] "Damn it, we're taking heavy losses! Regroup and focus!")
+			}),
+			TacticalPressing = TConcat({
+				T(813248053203, --[[ModItemVoiceResponse GCExCougar TacticalPressing VoiceResponse TacticalPressing - The team is making gains during the battle (2+ wounds have been inflicted) voice:GCExCougar]] "We're making progress, team! Keep up the pressure!")
+			}),
+			TacticalReposition = TConcat({
+				T(134121158252, --[[ModItemVoiceResponse GCExCougar TacticalReposition VoiceResponse TacticalReposition - The team has not started shooting but is repositioning during the battle voice:GCExCougar]] "Repositioning.")
+			}),
+			TacticalRevenge = TConcat({
+				T(645244048416, --[[ModItemVoiceResponse GCExCougar TacticalRevenge VoiceResponse TacticalRevenge - A unit from the team has been downed/killed voice:GCExCougar]] "They got one of ours! Make them pay!")
+			}),
+			TacticalTaunt = TConcat({
+				T(972234750345, --[[ModItemVoiceResponse GCExCougar TacticalTaunt VoiceResponse TacticalTaunt - The team has visible enemies from the other team and is shouting things at them voice:GCExCougar]] "Looks like we've got some volunteers for target practice!"),
+				T(160897998615, --[[ModItemVoiceResponse GCExCougar TacticalTaunt VoiceResponse TacticalTaunt - The team has visible enemies from the other team and is shouting things at them voice:GCExCougar]] "You must be the practice squad. Where's the real challenge?")
+			}),
+			TakeCover = TConcat({
+				T(963154357827, --[[ModItemVoiceResponse GCExCougar TakeCover VoiceResponse TakeCover - Played when the Take Cover action is used voice:GCExCougar]] "Take cover, now!")
+			}),
+			ThreatSelection = TConcat({
+				T(985411651854, --[[ModItemVoiceResponse GCExCougar ThreatSelection VoiceResponse ThreatSelection - Selected when under Pinned Down or in the area of an incoming explosion. voice:GCExCougar]] "I'm in a high-threat zone!"),
+				T(486345803693, --[[ModItemVoiceResponse GCExCougar ThreatSelection VoiceResponse ThreatSelection - Selected when under Pinned Down or in the area of an incoming explosion. voice:GCExCougar]] "This is a high anxiety area."),
+				T(486345803694, --[[ModItemVoiceResponse GCExCougar ThreatSelection VoiceResponse ThreatSelection - Selected when under Pinned Down or in the area of an incoming explosion. voice:GCExCougar]] "F...fubble-duddle!")
+			}),
+			ThrowGrenade = TConcat({
+				T(425635326731, --[[ModItemVoiceResponse GCExCougar ThrowGrenade VoiceResponse ThrowGrenade - When throwing grenade. Voiced line starts before the explosion. voice:GCExCougar]] "Fire in the hole!")
+			}),
+			Tired = TConcat({
+				T(571613589967, --[[ModItemVoiceResponse GCExCougar Tired VoiceResponse Tired - when the merc becomes tired voice:GCExCougar]] "Overtaxing... respiratory system. Must take a breather.")
+			}),
+			TrainingReceived = TConcat({
+				T(634036924545, --[[ModItemVoiceResponse GCExCougar TrainingReceived VoiceResponse TrainingReceived - Training received in SatView. Uses LevelUp if blank. voice:GCExCougar]] "There's always room for improvement.")
+			}),
+			Travelling = TConcat({
+				T(297218881972, --[[ModItemVoiceResponse GCExCougar Travelling VoiceResponse Travelling - When a squad is travelling and enters new sector that is not the final destination of the travel. Played by the squad leader voice:GCExCougar]] "A new sector.")
+			}),
+			ValuableItemFound = TConcat({
+				T(902425777134, --[[ModItemVoiceResponse GCExCougar ValuableItemFound VoiceResponse ValuableItemFound - Loot container opened with a valuable item inside voice:GCExCougar]] "Top drawer!")
+			}),
+			WeaponBroken = TConcat({
+				T(247413154102, --[[ModItemVoiceResponse GCExCougar WeaponBroken VoiceResponse WeaponBroken - When the player's weapon breaks voice:GCExCougar]] "Damn, my gun's busted!")
+			}),
+			WeaponJammed = TConcat({
+				T(798552113519, --[[ModItemVoiceResponse GCExCougar WeaponJammed VoiceResponse WeaponJammed - When weapon has jammed voice:GCExCougar]] "My gun is jammed. Requires immediate attention.")
+			}),
+			Wounded = TConcat({
+				T(524499394694, --[[ModItemVoiceResponse GCExCougar Wounded VoiceResponse Wounded - Unit is Wounded. (When the Wounded VR is played, the Pain VR should be suppressed.) Add a pain noise at the begining voice:GCExCougar]] "The flow of blood from this wound should be staunched."),
+				T(524499394695, --[[ModItemVoiceResponse GCExCougar Wounded VoiceResponse Wounded - Unit is Wounded. (When the Wounded VR is played, the Pain VR should be suppressed.) Add a pain noise at the begining voice:GCExCougar]] "The flow of blood from this wound should be staunched.")
+			}),
+			group = "GCExPrologueUnits",
+			id = "GCExCougar",
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
+		'name', "Units",
+	}, {
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExMoses",
+			'object_class', "UnitData",
+			'BigPortrait', "Mod/GCExPrologue/Images/MoBaxter 2.png",
+			'Name', T(134155050314, --[[ModItemUnitDataCompositeDef GCExMoses Name]] "Moses Baxter"),
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "MosesBaxterAppearance_2",
+				}),
+			},
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExBiff",
+			'NameColor', RGBA(61, 122, 153, 255),
+			'object_class', "UnitData",
+			'Health', 73,
+			'Agility', 74,
+			'Dexterity', 71,
+			'Strength', 41,
+			'Wisdom', 58,
+			'Leadership', 13,
+			'Marksmanship', 57,
+			'Mechanical', 0,
+			'Explosives', 4,
+			'Medical', 24,
+			'Portrait', "UI/NPCsPortraits/Biff",
+			'BigPortrait', "UI/NPCs/Biff",
+			'Name', T(174901927062, --[[ModItemUnitDataCompositeDef GCExBiff Name]] "Biff Apscott"),
+			'Nick', T(137488486663, --[[ModItemUnitDataCompositeDef GCExBiff Nick]] "Biff"),
+			'AllCapsNick', T(349220379003, --[[ModItemUnitDataCompositeDef GCExBiff AllCapsNick]] "BIFF"),
+			'Affiliation', "Other",
+			'StartingLevel', 3,
+			'immortal', true,
+			'ImportantNPC', true,
+			'AIKeywords', {
+				"Soldier",
+			},
+			'MaxAttacks', 2,
+			'RewardExperience', 0,
+			'MaxHitPoints', 69,
+			'StartingPerks', {
+				"Teacher",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Biff",
+				}),
+			},
+			'Equipment', {
+				"Biff",
+			},
+			'Specialization', "ExplosiveExpert",
+			'gender', "Male",
+			'PersistentSessionId', "GCExBiff",
+			'VoiceResponseId', "BiffNPC",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExFlo",
+			'NameColor', RGBA(61, 122, 153, 255),
+			'object_class', "UnitData",
+			'Health', 58,
+			'Agility', 37,
+			'Dexterity', 64,
+			'Strength', 45,
+			'Wisdom', 82,
+			'Leadership', 1,
+			'Marksmanship', 38,
+			'Mechanical', 7,
+			'Explosives', 2,
+			'Medical', 19,
+			'Portrait', "Mod/GCExPrologue/Images/FloPortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/Flo",
+			'Name', T(183982423479, --[[ModItemUnitDataCompositeDef GCExFlo Name]] 'Florence "Flo" Gabriel'),
+			'Nick', T(445040565694, --[[ModItemUnitDataCompositeDef GCExFlo Nick]] "Flo"),
+			'AllCapsNick', T(572992729569, --[[ModItemUnitDataCompositeDef GCExFlo AllCapsNick]] "FLO"),
+			'Affiliation', "Other",
+			'Bio', T(234573707265, --[[ModItemUnitDataCompositeDef GCExFlo Bio]] "The daughter of vineyard workers, Florence Gabriel spent most of her childhood in Cognac, France before moving to Pittsburgh, Pennsylvania, USA. After settling in the US she took a job as the bookkeeper for a major gun dealer, where she acquired extensive knowledge on the value of firearms. Slightly hesitant, but bright, Flo is simply priced too low to pass up."),
+			'Nationality', "France",
+			'snype_nick', T(965203635079, --[[ModItemUnitDataCompositeDef GCExFlo snype_nick]] "florence.gabriel"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', "The daughter of vineyard workers, Florence Gabriel spent most of her childhood in Cognac, France before moving to Pittsburgh, Pennsylvania, USA. After settling in the US she took a job as the bookkeeper for a major gun dealer, where she acquired extensive knowledge on the value of firearms. Slightly hesitant, but bright, Flo is simply priced too low to pass up.",
+			'immortal', true,
+			'MaxHitPoints', 82,
+			'Dislikes', {
+				"Meltdown",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Flo-Appearance",
+				}),
+			},
+			'Specialization', "AllRounder",
+			'gender', "Female",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+			'PersistentSessionId', "GCEXFlo",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExHaywire",
+			'NameColor', RGBA(61, 122, 153, 255),
+			'object_class', "UnitData",
+			'Health', 65,
+			'Agility', 59,
+			'Dexterity', 76,
+			'Strength', 71,
+			'Wisdom', 58,
+			'Leadership', 1,
+			'Marksmanship', 48,
+			'Mechanical', 8,
+			'Explosives', 31,
+			'Medical', 2,
+			'Portrait', "Mod/GCExPrologue/Images/HaywirePortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/Haywire",
+			'Name', T(749871154545, --[[ModItemUnitDataCompositeDef GCExHaywire Name]] 'Frankie "Haywire" Gordon'),
+			'Nick', T(977562677594, --[[ModItemUnitDataCompositeDef GCExHaywire Nick]] "Haywire"),
+			'AllCapsNick', T(828404684603, --[[ModItemUnitDataCompositeDef GCExHaywire AllCapsNick]] "HAYWIRE"),
+			'Affiliation', "Other",
+			'Bio', T(436581784584, --[[ModItemUnitDataCompositeDef GCExHaywire Bio]] "Killing is Frankie Gordon's speciality. He's not particular on how he kills, just as long as he has fun doing it. Haywire may not be considered a marksman, but he exhibits a certain fascination with automatic weapons and seems to handle them with ease. The same could be said for his talents with sharp knives. Additional info:\n\nFrankie is working on improving his people skills."),
+			'Nationality', "USA",
+			'Title', T(440783434649, --[[ModItemUnitDataCompositeDef GCExHaywire Title]] "Wicked"),
+			'snype_nick', T(881909539454, --[[ModItemUnitDataCompositeDef GCExHaywire snype_nick]] "hay.wire"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', '"Killing is Frankie Gordon\'s speciality. He\'s not particular on how he kills, just as long as he has fun doing it. Haywire may not be considered a marksman, but he exhibits a certain fascination with automatic weapons and seems to handle them with ease. The same could be said for his talents with sharp knives. Additional info:\n\nFrankie is working on improving his people skills."\n\n- M.E.R.C. Dossier',
+			'immortal', true,
+			'MaxHitPoints', 82,
+			'Likes', {
+				"GCEXRazor",
+			},
+			'StartingPerks', {
+				"AutoWeapons",
+				"MeleeTraining",
+				"Psycho",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Haywire-Appearance",
+				}),
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Name', "MERC",
+				}),
+			},
+			'Specialization', "AllRounder",
+			'gender', "Male",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+			'PersistentSessionId', "GCEXHaywire",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExRazor",
+			'NameColor', RGBA(61, 122, 153, 255),
+			'object_class', "UnitData",
+			'Health', 73,
+			'Agility', 88,
+			'Dexterity', 91,
+			'Strength', 86,
+			'Wisdom', 53,
+			'Leadership', 4,
+			'Marksmanship', 50,
+			'Mechanical', 8,
+			'Explosives', 2,
+			'Medical', 12,
+			'Portrait', "Mod/GCExPrologue/Images/RazorPortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/Razor",
+			'Name', T(606315709304, --[[ModItemUnitDataCompositeDef GCExRazor Name]] 'Bill "Razor" Lamont'),
+			'Nick', T(593891680732, --[[ModItemUnitDataCompositeDef GCExRazor Nick]] "Razor"),
+			'AllCapsNick', T(889936330375, --[[ModItemUnitDataCompositeDef GCExRazor AllCapsNick]] "RAZOR"),
+			'Affiliation', "Other",
+			'Bio', T(124927936237, --[[ModItemUnitDataCompositeDef GCExRazor Bio]] "Razor's attention to detail and finesse with the blade saved him from being nicknamed \"The Butcher\". Ask him why he prefers a knife to a gun and every time he'll say \"so much noise, so little challenge!\" He takes pride in his ability to carve the alphabet -- or at least the vowels -- into his victims before they bleed to death.\n\nAdditional Info: Razor Lamont has occasionally been called certifiable. And he is indeed certified -- certified in killing!"),
+			'Nationality', "USA",
+			'Title', T(602866699222, --[[ModItemUnitDataCompositeDef GCExRazor Title]] "The Butcher"),
+			'snype_nick', T(702813232330, --[[ModItemUnitDataCompositeDef GCExRazor snype_nick]] "bill.lamont"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', '"Razor\'s attention to detail and finesse with the blade saved him from being nicknamed "The Butcher". Ask him why he prefers a knife to a gun and every time he\'ll say "so much noise, so little challenge!" He takes pride in his ability to carve the alphabet -- or at least the vowels -- into his victims before they bleed to death.\n\nAdditional Info: Razor Lamont has occasionally been called certifiable. And he is indeed certified -- certified in killing!" - M.E.R.C. Dossier',
+			'StartingLevel', 2,
+			'immortal', true,
+			'MaxHitPoints', 82,
+			'Likes', {
+				"GCEXHaywire",
+				"Fidel",
+			},
+			'StartingPerks', {
+				"Psycho",
+				"MartialArts",
+				"Throwing",
+				"BreachAndClear",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Razor-Appearance",
+				}),
+			},
+			'Specialization', "AllRounder",
+			'gender', "Male",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+			'PersistentSessionId', "GCEXRazor",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExLarry",
+			'NameColor', RGBA(61, 122, 153, 255),
+			'object_class', "UnitData",
+			'Health', 63,
+			'Agility', 77,
+			'Dexterity', 79,
+			'Strength', 67,
+			'Wisdom', 70,
+			'Leadership', 18,
+			'Marksmanship', 70,
+			'Mechanical', 14,
+			'Explosives', 92,
+			'Medical', 70,
+			'Portrait', "UI/MercsPortraits/Larry",
+			'BigPortrait', "UI/Mercs/Larry",
+			'Name', T(300728614687, --[[ModItemUnitDataCompositeDef GCExLarry Name]] "Larry Roachburn"),
+			'Nick', T(228036596095, --[[ModItemUnitDataCompositeDef GCExLarry Nick]] "Larry"),
+			'AllCapsNick', T(512931651309, --[[ModItemUnitDataCompositeDef GCExLarry AllCapsNick]] "LARRY"),
+			'Affiliation', "Other",
+			'HireStatus', "MIA",
+			'Bio', T(325007942979, --[[ModItemUnitDataCompositeDef GCExLarry Bio]] "Explosives require a steady hand, and Larry's got some of the steadiest - most of the time. Although he has in the past struggled with bouts of chemical dependency, Larry's been clean and sober for two years now. His knowledge of pharmaceuticals comes in handy when administering first aid and his history of checking himself out of rehab whenever he liked has also made him good at sneaking around and picking locks. But Larry swears all that is behind him and we here at M.E.R.C. believe him!"),
+			'Nationality', "USA",
+			'Title', T(305533378418, --[[ModItemUnitDataCompositeDef GCExLarry Title]] "Former Artist. Explosives Expert"),
+			'SalaryLv1', 0,
+			'SalaryMaxLv', 0,
+			'LegacyNotes', 'JA1:\n\n"On probationary standing, Larry Roachburn, a somewhat respected explosives expert, was a young survivor of the C.I.A./L.S.D. years. And when not on assignment, he continues to subject his body to the whims of pharmaceutical researchers around the world."\n\nJA2 Alumni:\n\n"After eight attempts at rehab without any sustained success, AIM was little choice but to terminate Larry Roachburn\'s membership within the organization. From what we understand, the death of his father has persuaded him to take yet another attempt at ridding himself of his demons and ridding his body from decades of toxicity. The organization wishes him the best of luck in all his future endeavors."\n\nJA2 MERC:\n\n"There\'s no denying that Larry has had his share of substance abuse problems in the past, and despite many attempts at rehabilitation, the demons remain. Roachburn has recently spent six months at an exclusive and classy rehab center undergoing treatment. Having completed the program, he proclaims himself cured and ready for duty.\n\nAdditional Info:Larry spent most of his spare time in rehab studying pharmacology which has tremendously improved his medical knowledge."\n\nAdditional Info\n\nLarry\'s drug habits have made him forgetful, and he will often stop in the middle of a task in need of a reminder, losing AP.\nHis brother Gary derisively refers to him as "Anything But A Placebo" Larry.\n\nJagged Alliance/Deadly Games\nHaving ruined his health with drugs, Larry loses rather than gains stats at the end of a day, a trait normally reserved to old mercs.\n\nJagged Alliance 2\n\nLarry has two different personalities - clean and relapsed. After hiring, he can relapse under certain conditions, losing a lot of stat points, making him almost useless.\n\nAs long as he stays clean he\'s the sociable sort, and loves to hang around other mercs (with some exceptions). However, once relapsed he loses focus and becomes forgetful, preferring the loner lifestyle.\n\nRelapse conditions\n\nStationary passing time while assigned to squad, carrying energy booster, regeneration booster, medical kit, or any type of alcohol. First aid kits are excluded.\n\nStationary passing time while assigned to squad, carrying none of the above items, in any city sector that has a bar.\nThe easiest way to prevent a relapse while carrying any of the above items, is keeping Larry busy, assigning him to squad only to travel and fight. And even though sleeping whilst assigned to squad (eg. after travelling) would be safe, there\'s no wake-up call and Larry\'s very quick to get his hands on something "groovy".\n\nGetting clean\n\nLuckily there\'s an easy way to get him clean. A one day speed course called "walkabout". Within a short while, needing a rest at least once, he\'s as fit as a fiddle again. As mentioned above, carrying any of the "relapse triggering items" isn\'t a problem per se, just keep a very close tab on him waking up.\n\nDue to strength loss, Larry can be severely encumbered while on the "walkabout" and damage his strength and/or health. Damaged strength will be temporary and reset as soon as he\'s clean, even though it still looks red for a short while. Damaged health will be permanent until dismissed! Dismissing him will reset health back to what it was.',
+			'StartingLevel', 3,
+			'immortal', true,
+			'MaxHitPoints', 69,
+			'StartingPerks', {
+				"MrFixit",
+				"Loner",
+				"Pessimist",
+				"DangerClose",
+				"SteadyBreathing",
+				"Untraceable",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Larry",
+				}),
+			},
+			'Equipment', {
+				"Larry",
+			},
+			'Specialization', "ExplosiveExpert",
+			'gender', "Male",
+			'PersistentSessionId', "GCEXLarry",
+			'VoiceResponseId', "Larry_Clean",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExSmiley",
+			'NameColor', RGBA(61, 122, 153, 255),
+			'object_class', "UnitData",
+			'Health', 82,
+			'Agility', 78,
+			'Dexterity', 56,
+			'Strength', 73,
+			'Wisdom', 55,
+			'Leadership', 54,
+			'Marksmanship', 77,
+			'Mechanical', 5,
+			'Explosives', 5,
+			'Medical', 36,
+			'Portrait', "UI/MercsPortraits/Smiley",
+			'BigPortrait', "UI/Mercs/Smiley",
+			'Name', T(146892548768, --[[ModItemUnitDataCompositeDef GCExSmiley Name]] 'Alejandro "Smiley" Diaz'),
+			'Nick', T(646379074328, --[[ModItemUnitDataCompositeDef GCExSmiley Nick]] "Smiley"),
+			'AllCapsNick', T(985437449047, --[[ModItemUnitDataCompositeDef GCExSmiley AllCapsNick]] "SMILEY"),
+			'Affiliation', "Other",
+			'HireStatus', "NotMet",
+			'Bio', T(601739530861, --[[ModItemUnitDataCompositeDef GCExSmiley Bio]] 'Alejandro "Smiley" Diaz came to Grand Chien as mercenary serving some unknown small group - which got totally obliterated by the Major a few weeks before your encounter with him. An Arulco native, he is eager to join up with you, as A.I.M. is held in great regard in the new order back at his home country.'),
+			'Nationality', "Arulco",
+			'Title', T(966721153892, --[[ModItemUnitDataCompositeDef GCExSmiley Title]] "Romeo in Combat Fatigues"),
+			'SalaryLv1', 0,
+			'SalaryMaxLv', 0,
+			'StartingLevel', 2,
+			'immortal', true,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "SubmachineGun")
+				self:TryEquip(items, "Handheld B", "SniperRifle")
+			end,
+			'MaxHitPoints', 85,
+			'LearnToLike', {
+				"Kalyna",
+				"Fox",
+				"Buns",
+			},
+			'StartingPerks', {
+				"AutoWeapons",
+				"Optimist",
+				"RecklessAssault",
+				"BeefedUp",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Smiley",
+				}),
+			},
+			'Equipment', {
+				"Smiley",
+			},
+			'AdditionalGroups', {},
+			'Specialization', "AllRounder",
+			'gender', "Male",
+			'PersistentSessionId', "GCEXSmiley",
+			'VoiceResponseId', "Smiley",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExMartha",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 50,
+			'Strength', 40,
+			'Wisdom', 40,
+			'Leadership', 50,
+			'Marksmanship', 30,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 10,
+			'Portrait', "UI/NPCsPortraits/Martha",
+			'BigPortrait', "UI/NPCs/Martha",
+			'Name', T(339879582713, --[[ModItemUnitDataCompositeDef GCExMartha Name]] "Martha"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'immortal', true,
+			'ImportantNPC', true,
+			'MaxAttacks', 1,
+			'RewardExperience', 0,
+			'MaxHitPoints', 60,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "MarthaPro",
+				}),
+			},
+			'pollyvoice', "Kendra",
+			'gender', "Female",
+			'PersistentSessionId', "GCExMartha",
+			'FallbackMissingVR', "VillagerFemale",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExBasil",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 70,
+			'Agility', 50,
+			'Dexterity', 65,
+			'Strength', 70,
+			'Wisdom', 50,
+			'Leadership', 50,
+			'Marksmanship', 45,
+			'Mechanical', 70,
+			'Explosives', 10,
+			'Medical', 0,
+			'Portrait', "UI/NPCsPortraits/GreasyBasil",
+			'BigPortrait', "UI/NPCs/GreasyBasil",
+			'Name', T(279057282405, --[[ModItemUnitDataCompositeDef GCExBasil Name]] "Greasy Basil"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'immortal', true,
+			'MaxAttacks', 1,
+			'RewardExperience', 0,
+			'MaxHitPoints', 60,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "GreasyBasil",
+				}),
+			},
+			'pollyvoice', "Russell",
+			'gender', "Male",
+			'PersistentSessionId', "NPC_GreasyBasil",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExLuc",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 50,
+			'Agility', 50,
+			'Strength', 40,
+			'Wisdom', 80,
+			'Leadership', 40,
+			'Marksmanship', 40,
+			'Mechanical', 40,
+			'Explosives', 0,
+			'Medical', 20,
+			'Portrait', "UI/NPCsPortraits/luc",
+			'BigPortrait', "UI/NPCs/Luc",
+			'Name', T(407103000490, --[[ModItemUnitDataCompositeDef GCExLuc Name]] "Luc"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'immortal', true,
+			'MaxAttacks', 2,
+			'RewardExperience', 0,
+			'MaxHitPoints', 50,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Luc",
+				}),
+			},
+			'pollyvoice', "Matthew",
+			'gender', "Male",
+			'PersistentSessionId', "NPC_Luc",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExBillyBoy",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 61,
+			'Agility', 35,
+			'Dexterity', 27,
+			'Strength', 50,
+			'Wisdom', 39,
+			'Leadership', 0,
+			'Marksmanship', 22,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/MercsPortraits/unknown",
+			'Name', T(357354307977, --[[ModItemUnitDataCompositeDef GCExBillyBoy Name]] "Billy Boy"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'immortal', true,
+			'MaxAttacks', 1,
+			'RewardExperience', 0,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "BillyBoy",
+				}),
+			},
+			'pollyvoice', "Matthew",
+			'gender', "Male",
+			'PersistentSessionId', "NPC_BillyBoy",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExSantiago",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 100,
+			'Agility', 100,
+			'Dexterity', 100,
+			'Wisdom', 100,
+			'Leadership', 100,
+			'Marksmanship', 100,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 30,
+			'Portrait', "UI/NPCsPortraits/CorazonSantiago",
+			'BigPortrait', "UI/NPCs/CorazonSantiago",
+			'Name', T(712100870120, --[[ModItemUnitDataCompositeDef GCExSantiago Name]] "Corazon Santiago"),
+			'Randomization', true,
+			'Affiliation', "Adonis",
+			'immortal', true,
+			'ImportantNPC', true,
+			'villain', true,
+			'CanManEmplacements', false,
+			'MaxAttacks', 2,
+			'Lives', 4,
+			'DefeatBehavior', "Defeated",
+			'MaxHitPoints', 100,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "CorazonSantiago",
+				}),
+			},
+			'pollyvoice', "Joanna",
+			'gender', "Female",
+			'PersistentSessionId', "NPC_Corazon",
+			'VoiceResponseId', "CorazonSantiagoEnemy",
+			'FallbackMissingVR', "VillagerFemale",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExHerman",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Agility', 50,
+			'Wisdom', 20,
+			'Leadership', 0,
+			'Marksmanship', 50,
+			'Mechanical', 10,
+			'Explosives', 0,
+			'Medical', 10,
+			'Portrait', "UI/NPCsPortraits/Herman",
+			'BigPortrait', "UI/NPCs/Herman",
+			'Name', T(850689362732, --[[ModItemUnitDataCompositeDef GCExHerman Name]] "Herman"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'immortal', true,
+			'ImportantNPC', true,
+			'MaxAttacks', 2,
+			'RewardExperience', 0,
+			'MaxHitPoints', 60,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "HermanPro",
+				}),
+			},
+			'gender', "Male",
+			'PersistentSessionId', "GCExHerman",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExDeeDee",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 50,
+			'Agility', 50,
+			'Dexterity', 20,
+			'Strength', 20,
+			'Wisdom', 20,
+			'Leadership', 0,
+			'Marksmanship', 15,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/NPCsPortraits/DeedeeBoombastic",
+			'BigPortrait', "UI/NPCs/DeedeeBoombastic",
+			'Name', T(947053024459, --[[ModItemUnitDataCompositeDef GCExDeeDee Name]] "Deedee Bombastic"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'ImportantNPC', true,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Explosives",
+			},
+			'archetype', "Skirmisher",
+			'MaxAttacks', 2,
+			'RewardExperience', 0,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "DeedeePro",
+				}),
+			},
+			'Equipment', {
+				"LegionGrenadier",
+			},
+			'pollyvoice', "Amy",
+			'gender', "Female",
+			'FallbackMissingVR', "VillagerFemale",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExBastien",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 79,
+			'Agility', 72,
+			'Dexterity', 81,
+			'Strength', 44,
+			'Wisdom', 24,
+			'Leadership', 10,
+			'Marksmanship', 76,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/NPCsPortraits/Bastien",
+			'BigPortrait', "UI/NPCs/Bastien",
+			'Name', T(294499373266, --[[ModItemUnitDataCompositeDef GCExBastien Name]] "Bastien"),
+			'Randomization', true,
+			'Affiliation', "Legion",
+			'ImportantNPC', true,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Explosives",
+			},
+			'MaxAttacks', 2,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"AutoWeapons",
+				"MinFreeMove",
+				"OpportunisticKiller",
+				"BattleFocus",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "BastienPro",
+				}),
+			},
+			'Equipment', {
+				"LegionRaiderBastien",
+			},
+			'pollyvoice', "Geraint",
+			'gender', "Male",
+			'PersistentSessionId', "GCExBastien",
+			'VoiceResponseId', "LegionRaider_Jose",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExBrian",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 69,
+			'Agility', 78,
+			'Dexterity', 83,
+			'Strength', 50,
+			'Wisdom', 50,
+			'Marksmanship', 78,
+			'Mechanical', 15,
+			'Explosives', 0,
+			'Medical', 15,
+			'Portrait', "Mod/GCExPrologue/Images/BrianFace",
+			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8968",
+			'Name', T(862172338990, --[[ModItemUnitDataCompositeDef GCExBrian Name]] "Brian"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'ImportantNPC', true,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Sniper",
+			},
+			'role', "Marksman",
+			'CanManEmplacements', false,
+			'AlwaysUseOpeningAttack', true,
+			'OpeningAttackType', "PinDown",
+			'PinnedDownChance', 100,
+			'MaxAttacks', 2,
+			'RewardExperience', 0,
+			'MaxHitPoints', 60,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "BrianNPC",
+				}),
+			},
+			'Equipment', {
+				"HyenaNPC",
+			},
+			'gender', "Male",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExStephane",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 50,
+			'Agility', 50,
+			'Strength', 40,
+			'Wisdom', 80,
+			'Leadership', 40,
+			'Marksmanship', 40,
+			'Mechanical', 40,
+			'Explosives', 0,
+			'Medical', 20,
+			'Portrait', "Mod/GCExPrologue/Images/StephaneHead",
+			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8939",
+			'Name', T(996070173311, --[[ModItemUnitDataCompositeDef GCExStephane Name]] "Stephane"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'immortal', true,
+			'ImportantNPC', true,
+			'MaxAttacks', 2,
+			'RewardExperience', 0,
+			'MaxHitPoints', 50,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "StephaneNPC",
+				}),
+			},
+			'pollyvoice', "Matthew",
+			'gender', "Male",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExSmurge",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 75,
+			'Agility', 72,
+			'Dexterity', 80,
+			'Strength', 61,
+			'Wisdom', 82,
+			'Leadership', 0,
+			'Marksmanship', 80,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 49,
+			'Portrait', "Mod/GCExPrologue/Images/Smurge",
+			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8962",
+			'Name', T(790241824755, --[[ModItemUnitDataCompositeDef GCExSmurge Name]] "Smurge"),
+			'Randomization', true,
+			'Affiliation', "Other",
+			'StartingLevel', 5,
+			'ImportantNPC', true,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Soldier",
+			},
+			'MaxAttacks', 2,
+			'RewardExperience', 0,
+			'MaxHitPoints', 60,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Bounce",
+				}),
+			},
+			'Equipment', {
+				"LegionRaider_Stronger_Elite",
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "Bounce",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExStitches",
+			'NameColor', RGBA(88, 92, 68, 255),
+			'object_class', "UnitData",
+			'Health', 70,
+			'Agility', 80,
+			'Dexterity', 80,
+			'Strength', 70,
+			'Wisdom', 80,
+			'Marksmanship', 20,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 70,
+			'Portrait', "UI/NPCsPortraits/LamitheWitch",
+			'BigPortrait', "Mod/GCExPrologue/Images/BCPriestess",
+			'Name', T(153308792524, --[[ModItemUnitDataCompositeDef GCExStitches Name]] "Stitches"),
+			'Randomization', true,
+			'Affiliation', "Civilian",
+			'ImportantNPC', true,
+			'MaxAttacks', 2,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Lami",
+				}),
+			},
+			'Equipment', {
+				"Witch_Loot",
+			},
+			'pollyvoice', "Nicole",
+			'gender', "Female",
+			'PersistentSessionId', "NPC_Witch",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExZombie_F",
+			'NameColor', RGBA(182, 58, 52, 255),
+			'object_class', "UnitData",
+			'Health', 90,
+			'Agility', 95,
+			'Dexterity', 61,
+			'Strength', 97,
+			'Wisdom', 2,
+			'Leadership', 98,
+			'Marksmanship', 0,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/InfectedMale01",
+			'BigPortrait', "UI/Enemies/LegionRaider",
+			'Name', T(481219843237, --[[ModItemUnitDataCompositeDef GCExZombie_F Name]] "Infected"),
+			'Randomization', true,
+			'Affiliation', "Beast",
+			'neutral_retaliate', true,
+			'archetype', "Brute",
+			'role', "Stormer",
+			'CanManEmplacements', false,
+			'PinnedDownChance', 100,
+			'MaxAttacks', 2,
+			'MaxHitPoints', 60,
+			'StartingPerks', {
+				"Berserker",
+				"ZombiePerk",
+				"MinFreeMove",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Zombie1_F",
+				}),
+			},
+			'Equipment', {
+				"Infected_Equipment",
+			},
+			'gender', "Female",
+			'infected', true,
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExZombie_M",
+			'NameColor', RGBA(182, 58, 52, 255),
+			'object_class', "UnitData",
+			'Health', 90,
+			'Agility', 95,
+			'Dexterity', 61,
+			'Strength', 97,
+			'Wisdom', 2,
+			'Leadership', 98,
+			'Marksmanship', 0,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/InfectedMale01",
+			'BigPortrait', "UI/Enemies/LegionRaider",
+			'Name', T(693205787927, --[[ModItemUnitDataCompositeDef GCExZombie_M Name]] "Infected"),
+			'Randomization', true,
+			'Affiliation', "Beast",
+			'neutral_retaliate', true,
+			'archetype', "Brute",
+			'role', "Stormer",
+			'CanManEmplacements', false,
+			'PinnedDownChance', 100,
+			'MaxAttacks', 2,
+			'MaxHitPoints', 60,
+			'StartingPerks', {
+				"Berserker",
+				"ZombiePerk",
+				"MinFreeMove",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Zombie2_M",
+				}),
+			},
+			'Equipment', {
+				"Biolab_Infected_Equipment",
+			},
+			'gender', "Male",
+			'infected', true,
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExAdonisGuard",
+			'NameColor', RGBA(61, 122, 153, 255),
+			'object_class', "UnitData",
+			'Health', 80,
+			'Agility', 90,
+			'Dexterity', 75,
+			'Strength', 85,
+			'Wisdom', 80,
+			'Leadership', 20,
+			'Marksmanship', 95,
+			'Mechanical', 52,
+			'Explosives', 48,
+			'Medical', 50,
+			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8962",
+			'Name', T(777155779977, --[[ModItemUnitDataCompositeDef GCExAdonisGuard Name]] "Leader Elite"),
+			'Randomization', true,
+			'elite', true,
+			'eliteCategory', "Foreigners",
+			'Affiliation', "Adonis",
+			'StartingLevel', 7,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Control",
+				"Explosives",
+			},
+			'role', "Commander",
+			'AlwaysUseOpeningAttack', true,
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 2,
+			'MaxHitPoints', 80,
+			'StartingPerks', {
+				"OpportunisticKiller",
+				"AutoWeapons",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Adonis_Officer",
+				}),
+			},
+			'Equipment', {
+				"AdonisSquadLeader",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "AdonisMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "AdonisMale_2",
+				}),
+			},
+			'Tier', "Elite",
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "AdonisAssault",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExGoon_1",
+			'NameColor', RGBA(182, 58, 52, 255),
+			'object_class', "UnitData",
+			'Health', 62,
+			'Agility', 80,
+			'Dexterity', 30,
+			'Strength', 39,
+			'Wisdom', 30,
+			'Leadership', 20,
+			'Marksmanship', 55,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/LegionRecon",
+			'BigPortrait', "UI/Enemies/LegionRaider",
+			'Name', T(834781691255, --[[ModItemUnitDataCompositeDef GCExGoon_1 Name]] "Goon"),
+			'Randomization', true,
+			'Affiliation', "Legion",
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"MobileShot",
+			},
+			'archetype', "Skirmisher",
+			'role', "Recon",
+			'MaxAttacks', 2,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"MinFreeMove",
+				"Hotblood",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Goon1Pro",
+				}),
+			},
+			'Equipment', {
+				"LegionGoon",
+			},
+			'AdditionalGroups', {},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExGoon_2",
+			'NameColor', RGBA(182, 58, 52, 255),
+			'object_class', "UnitData",
+			'Health', 73,
+			'Agility', 79,
+			'Dexterity', 73,
+			'Strength', 48,
+			'Wisdom', 71,
+			'Leadership', 29,
+			'Marksmanship', 58,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/LegionRecon",
+			'BigPortrait', "UI/Enemies/LegionRaider",
+			'Name', T(669282205183, --[[ModItemUnitDataCompositeDef GCExGoon_2 Name]] "Scout"),
+			'Randomization', true,
+			'Affiliation', "Legion",
+			'StartingLevel', 2,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Flank",
+				"RunAndGun",
+			},
+			'archetype', "Skirmisher",
+			'role', "Recon",
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 2,
+			'MaxHitPoints', 50,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Goon2Pro",
+				}),
+			},
+			'Equipment', {
+				"LegionScout",
+			},
+			'AdditionalGroups', {},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExGoon_3",
+			'NameColor', RGBA(182, 58, 52, 255),
+			'object_class', "UnitData",
+			'Health', 67,
+			'Agility', 44,
+			'Dexterity', 89,
+			'Strength', 41,
+			'Wisdom', 48,
+			'Leadership', 33,
+			'Marksmanship', 91,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/RebelSniper",
+			'Name', T(781068932435, --[[ModItemUnitDataCompositeDef GCExGoon_3 Name]] "Raider"),
+			'Randomization', true,
+			'Affiliation', "Rebel",
+			'StartingLevel', 3,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Sniper",
+			},
+			'role', "Marksman",
+			'AlwaysUseOpeningAttack', true,
+			'OpeningAttackType', "PinDown",
+			'MaxAttacks', 1,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"Deadeye",
+				"MinFreeMove",
+				"NightOps",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Goon4Pro",
+				}),
+			},
+			'Equipment', {
+				"RebelSniper",
+			},
+			'AdditionalGroups', {},
+			'pollyvoice', "Kendra",
+			'gender', "Female",
+			'VoiceResponseId', "AnneLeMitrailleur",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExGoon_4",
+			'NameColor', RGBA(182, 58, 52, 255),
+			'object_class', "UnitData",
+			'Health', 100,
+			'Agility', 70,
+			'Dexterity', 34,
+			'Strength', 70,
+			'Wisdom', 24,
+			'Leadership', 10,
+			'Marksmanship', 70,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/LegionSoldier",
+			'BigPortrait', "UI/Enemies/LegionRaider",
+			'Name', T(544507340205, --[[ModItemUnitDataCompositeDef GCExGoon_4 Name]] "Marauder"),
+			'Randomization', true,
+			'Affiliation', "Legion",
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Soldier",
+			},
+			'role', "Soldier",
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 2,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"AutoWeapons",
+				"MinFreeMove",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "GoonCommander",
+				}),
+			},
+			'Equipment', {
+				"LegionRaiders",
+			},
+			'AdditionalGroups', {},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExNumb",
+			'NameColor', RGBA(220, 140, 28, 255),
+			'object_class', "UnitData",
+			'Health', 84,
+			'Agility', 73,
+			'Dexterity', 62,
+			'Strength', 78,
+			'Wisdom', 70,
+			'Leadership', 13,
+			'Marksmanship', 88,
+			'Mechanical', 14,
+			'Explosives', 22,
+			'Medical', 33,
+			'Portrait', "Mod/GCExPrologue/Images/NumbPortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/Numb",
+			'IsMercenary', true,
+			'Name', T(561852629506, --[[ModItemUnitDataCompositeDef GCExNumb Name]] 'Tim "Numb" Sutton'),
+			'Nick', T(392128018814, --[[ModItemUnitDataCompositeDef GCExNumb Nick]] "Numb"),
+			'AllCapsNick', T(531854446711, --[[ModItemUnitDataCompositeDef GCExNumb AllCapsNick]] "NUMB"),
+			'Affiliation', "Secret",
+			'Bio', T(792089849295, --[[ModItemUnitDataCompositeDef GCExNumb Bio]] "Tim Sutton suffers from a bad case of visual offensiveness and no one has been willing to give him a break. His bad haircut and neck tattoo has hindered this mercenary's career pursuits despite an otherwise impressive resume including martial arts and night ops training. His marksmanship and medical abilities are also excellent."),
+			'Nationality', "England",
+			'snype_nick', T(859662584234, --[[ModItemUnitDataCompositeDef GCExNumb snype_nick]] "tim.sutton"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', '"Tim Sutton suffers from a bad case of visual offensiveness and no one has been willing to give him a break. His bad haircut and neck tattoo has hindered this mercenary\'s career pursuits despite an otherwise impressive resume including martial arts and night ops training. His marksmanship and medical abilities are also excellent." - M.E.R.C. dossier',
+			'StartingLevel', 3,
+			'MaxHitPoints', 82,
+			'Dislikes', {
+				"Vicki",
+				"Sidney",
+				"Scope",
+			},
+			'StartingPerks', {
+				"NumbTalk",
+				"MartialArts",
+				"NightOps",
+				"Flanker",
+				"BreachAndClear",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Numb-Appearance",
+				}),
+			},
+			'Equipment', {
+				"Sidney",
+			},
+			'Tier', "Veteran",
+			'Specialization', "Marksmen",
+			'gender', "Male",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExGumpy",
+			'NameColor', RGBA(220, 140, 28, 255),
+			'object_class', "UnitData",
+			'Health', 67,
+			'Agility', 45,
+			'Dexterity', 67,
+			'Strength', 70,
+			'Wisdom', 94,
+			'Leadership', 11,
+			'Marksmanship', 44,
+			'Mechanical', 0,
+			'Explosives', 56,
+			'Medical', 9,
+			'Portrait', "Mod/GCExPrologue/Images/GumpyPortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8537 2",
+			'IsMercenary', true,
+			'Name', T(350774746706, --[[ModItemUnitDataCompositeDef GCExGumpy Name]] 'Tim "Gumpy" Hillman'),
+			'Nick', T(940139436494, --[[ModItemUnitDataCompositeDef GCExGumpy Nick]] "Gumpy"),
+			'AllCapsNick', T(284042248626, --[[ModItemUnitDataCompositeDef GCExGumpy AllCapsNick]] "GUMPY"),
+			'Affiliation', "Secret",
+			'Bio', T(845088535160, --[[ModItemUnitDataCompositeDef GCExGumpy Bio]] "Tim is a brilliant explosives expert who catches on quickly. When it comes to explosives though, there really isn't much room for error. Tim Hillman would probably still be enrolled in Harvard, doing graduate studies in electro-magnetic research, if it wasn't for a couple bouts of severe depression...possibly due to the constant exposure to EMF.\n\nAdditional Info:\n\nDue to acute allergies, Tim prefers to work in northern climates.\n\n- M.E.R.C. Dossier"),
+			'Nationality', "USA",
+			'snype_nick', T(140402586340, --[[ModItemUnitDataCompositeDef GCExGumpy snype_nick]] "tim.hilman"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', '"Tim is a brilliant explosives expert who catches on quickly. When it comes to explosives though, there really isn\'t much room for error. Tim Hillman would probably still be enrolled in Harvard, doing graduate studies in electro-magnetic research, if it wasn\'t for a couple bouts of severe depression...possibly due to the constant exposure to EMF.\n\nAdditional Info:\n\nDue to acute allergies, Tim prefers to work in northern climates."\n\n- M.E.R.C. Dossier',
+			'MaxHitPoints', 82,
+			'StartingPerks', {
+				"GumpySpecialPineapple",
+				"MrFixit",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Gumpy-Appearance",
+				}),
+			},
+			'Equipment', {
+				"Red",
+			},
+			'Specialization', "ExplosiveExpert",
+			'gender', "Male",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExGasket",
+			'NameColor', RGBA(220, 140, 28, 255),
+			'object_class', "UnitData",
+			'Health', 72,
+			'Agility', 61,
+			'Dexterity', 89,
+			'Strength', 68,
+			'Wisdom', 49,
+			'Leadership', 3,
+			'Marksmanship', 44,
+			'Mechanical', 82,
+			'Explosives', 8,
+			'Medical', 0,
+			'Portrait', "Mod/GCExPrologue/Images/GasketPortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/Gasket",
+			'IsMercenary', true,
+			'Name', T(949646749914, --[[ModItemUnitDataCompositeDef GCExGasket Name]] 'Doug "Gasket" Milton'),
+			'Nick', T(854815094946, --[[ModItemUnitDataCompositeDef GCExGasket Nick]] "Gasket"),
+			'AllCapsNick', T(801666550540, --[[ModItemUnitDataCompositeDef GCExGasket AllCapsNick]] "GASKET"),
+			'Affiliation', "Secret",
+			'Bio', T(242637099594, --[[ModItemUnitDataCompositeDef GCExGasket Bio]] "Doug Milton originates from Kentucky. He quit school in the fourth grade to work in his father's gas station. When his sister/cousin started pumping gas at the garage, he transferred his focus to the repair bench, and became a good mechanic. Since he left the family business, he roamed from job to job before trying his luck as a mercenary."),
+			'Nationality', "USA",
+			'snype_nick', T(534857338517, --[[ModItemUnitDataCompositeDef GCExGasket snype_nick]] "doug.milton"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', "Doug Milton originates from Kentucky. He quit school in the fourth grade to work in his father's gas station. When his sister/cousin started pumping gas at the garage, he transferred his focus to the repair bench, and became a good mechanic. Since he left the family business, he roamed from job to job before trying his luck as a mercenary.\" - M.E.R.C. Dossier",
+			'MaxHitPoints', 82,
+			'Likes', {
+				"Vicki",
+			},
+			'Dislikes', {
+				"Ivan",
+				"Igor",
+			},
+			'StartingPerks', {
+				"Gasket",
+				"MrFixit",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Gasket-Appearance",
+				}),
+			},
+			'Equipment', {
+				"Wolf",
+			},
+			'Specialization', "Mechanic",
+			'gender', "Male",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExStogie",
+			'NameColor', RGBA(220, 140, 28, 255),
+			'object_class', "UnitData",
+			'Health', 98,
+			'Agility', 78,
+			'Dexterity', 84,
+			'Strength', 96,
+			'Wisdom', 77,
+			'Leadership', 33,
+			'Marksmanship', 89,
+			'Mechanical', 74,
+			'Explosives', 43,
+			'Medical', 11,
+			'Portrait', "Mod/GCExPrologue/Images/StogiePortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/Stogie",
+			'IsMercenary', true,
+			'Name', T(112445946149, --[[ModItemUnitDataCompositeDef GCExStogie Name]] 'Lt. "Stogie" Horge'),
+			'Nick', T(297085285316, --[[ModItemUnitDataCompositeDef GCExStogie Nick]] "Stogie"),
+			'AllCapsNick', T(104451916638, --[[ModItemUnitDataCompositeDef GCExStogie AllCapsNick]] "STOGIE"),
+			'Affiliation', "Secret",
+			'Bio', T(703872402200, --[[ModItemUnitDataCompositeDef GCExStogie Bio]] "Built like a tank, Lt. Horge's speciality is destroying them. Extremely skilled with heavy weapons, Stogie spent the last two years working as an independent mercenary in the Congo. He's one of the toughest grunts in the business, and M.E.R.C. is proud that he has chosen us as his first foray into agency representation, even if it is on a temporary trial basis.\n\nAdditional Info\nPlease hire Stogie. We don't want to lose him.\" -M.E.R.C. Dossier"),
+			'Nationality', "USA",
+			'snype_nick', T(159796160036, --[[ModItemUnitDataCompositeDef GCExStogie snype_nick]] "stogie"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', "Built like a tank, Lt. Horge's speciality is destroying them. Extremely skilled with heavy weapons, Stogie spent the last two years working as an independent mercenary in the Congo. He's one of the toughest grunts in the business, and M.E.R.C. is proud that he has chosen us as his first foray into agency representation, even if it is on a temporary trial basis.\n\nAdditional Info\nPlease hire Stogie. We don't want to lose him.\" -M.E.R.C. Dossier",
+			'StartingLevel', 7,
+			'MaxHitPoints', 82,
+			'Likes', {
+				"Gus",
+			},
+			'Dislikes', {
+				"Meltdown",
+			},
+			'StartingPerks', {
+				"GruntForce",
+				"HeavyWeaponsTraining",
+				"BeefedUp",
+				"BreachAndClear",
+				"Ironclad",
+				"CollateralDamage",
+				"HardBlow",
+				"HitTheDeck",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Stogie-Appearance",
+				}),
+			},
+			'Equipment', {
+				"Gus",
+			},
+			'Tier', "Legendary",
+			'Specialization', "Marksmen",
+			'gender', "Male",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+			'VoiceResponseId', "GCExStogie",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExCougar",
+			'NameColor', RGBA(220, 140, 28, 255),
+			'object_class', "UnitData",
+			'Health', 88,
+			'Agility', 83,
+			'Dexterity', 79,
+			'Strength', 87,
+			'Wisdom', 75,
+			'Leadership', 31,
+			'Marksmanship', 93,
+			'Mechanical', 58,
+			'Explosives', 45,
+			'Medical', 33,
+			'Portrait', "Mod/GCExPrologue/Images/CougarPortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/Cougar",
+			'IsMercenary', true,
+			'Name', T(823708430215, --[[ModItemUnitDataCompositeDef GCExCougar Name]] 'Jim "Cougar" Wallace'),
+			'Nick', T(346183843645, --[[ModItemUnitDataCompositeDef GCExCougar Nick]] "Cougar"),
+			'AllCapsNick', T(245400817655, --[[ModItemUnitDataCompositeDef GCExCougar AllCapsNick]] "COUGAR"),
+			'Affiliation', "Secret",
+			'Bio', T(549374649264, --[[ModItemUnitDataCompositeDef GCExCougar Bio]] "Jim Wallace is one of the few cadets ever to get a perfect score on every final exam at military college. Of course, it didn't hurt that his father wrote the school's military code of conduct. He's a master at conventional mercenary skills and a pro with automatic weaponry. Always by-the-book Cougar is highly professional, possibly M.E.R.C's top performer.\" - M.E.R.C. Dossier\n\nAdditional Info\n\"Even though he is a man with strong opinions, Cougar has the military background (and discipline) to keep them to himself.\""),
+			'Nationality', "USA",
+			'snype_nick', T(737933631206, --[[ModItemUnitDataCompositeDef GCExCougar snype_nick]] "jim.wallace"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', '"Jim Wallace is one of the few cadets ever to get a perfect score on every final exam at military college. Of course, it didn\'t hurt that his father wrote the school\'s military code of conduct. He\'s a master at conventional mercenary skills and a pro with automatic weaponry. Always by-the-book Cougar is highly professional, possibly M.E.R.C\'s top performer." - M.E.R.C. Dossier\n\nAdditional Info\n"Even though he is a man with strong opinions, Cougar has the military background (and discipline) to keep them to himself."',
+			'StartingLevel', 5,
+			'MaxHitPoints', 82,
+			'Likes', {
+				"Len",
+				"Wolf",
+			},
+			'StartingPerks', {
+				"ByTheBook",
+				"AutoWeapons",
+				"Stealthy",
+				"Deadeye",
+				"Flanker",
+				"LightningReaction",
+				"RelentlessAdvance",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Cougar-Appearance",
+				}),
+			},
+			'Equipment', {
+				"Len",
+			},
+			'Tier', "Elite",
+			'Specialization', "Marksmen",
+			'gender', "Male",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+			'VoiceResponseId', "GCExCougar",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExGaston",
+			'NameColor', RGBA(220, 140, 28, 255),
+			'object_class', "UnitData",
+			'Health', 88,
+			'Agility', 82,
+			'Dexterity', 96,
+			'Strength', 84,
+			'Wisdom', 80,
+			'Leadership', 28,
+			'Marksmanship', 94,
+			'Mechanical', 22,
+			'Explosives', 21,
+			'Medical', 23,
+			'Portrait', "Mod/GCExPrologue/Images/GastonPortrait",
+			'BigPortrait', "Mod/GCExPrologue/Images/Gaston",
+			'IsMercenary', true,
+			'Name', T(833359843240, --[[ModItemUnitDataCompositeDef GCExGaston Name]] "Gaston Cavalier"),
+			'Nick', T(513999821212, --[[ModItemUnitDataCompositeDef GCExGaston Nick]] "Gaston"),
+			'AllCapsNick', T(849984528283, --[[ModItemUnitDataCompositeDef GCExGaston AllCapsNick]] "GASTON"),
+			'Affiliation', "Secret",
+			'Bio', T(321537150794, --[[ModItemUnitDataCompositeDef GCExGaston Bio]] "As a distinguished commando in the French Marine Corp (FMC), Gaston has played a distinguished role in many of the NATO and UN operations throughout this hostile world. A confident, field-proven, professional sharpshooter, Cavalier's addition to our roster is just another step in M.E.R.C.'s continuing effort to meet your needs.\n\nAdditional Info\n\nGaston operates best in the early hours of the morning. He is also rather apt at sniping from an elevated vantage point.\n\n-M.E.R.C. Dossier"),
+			'Nationality', "France",
+			'snype_nick', T(189826039300, --[[ModItemUnitDataCompositeDef GCExGaston snype_nick]] "gaston.cavalier"),
+			'Refusals', {},
+			'Haggles', {},
+			'Mitigations', {},
+			'ExtraPartingWords', {},
+			'Offline', {},
+			'GreetingAndOffer', {},
+			'ConversationRestart', {},
+			'IdleLine', {},
+			'PartingWords', {},
+			'RehireIntro', {},
+			'RehireOutro', {},
+			'MedicalDeposit', "none",
+			'StartingSalary', 470,
+			'SalaryIncrease', 280,
+			'SalaryLv1', 100,
+			'SalaryMaxLv', 4100,
+			'LegacyNotes', '"As a distinguished commando in the French Marine Corp (FMC), Gaston has played a distinguished role in many of the NATO and UN operations throughout this hostile world. A confident, field-proven, professional sharpshooter, Cavalier\'s addition to our roster is just another step in M.E.R.C.\'s continuing effort to meet your needs.\n\nAdditional Info\n\nGaston operates best in the early hours of the morning. He is also rather apt at sniping from an elevated vantage point."\n\n-M.E.R.C. Dossier',
+			'StartingLevel', 6,
+			'MaxHitPoints', 82,
+			'Likes', {
+				"Fox",
+			},
+			'LearnToLike', {
+				"Buns",
+			},
+			'StartingPerks', {
+				"Gaston",
+				"NightOps",
+				"DeathFromAbove",
+				"Deadeye",
+				"Counterfire",
+				"Hotblood",
+				"Killzone",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Gaston-Appearance",
+				}),
+			},
+			'Equipment', {
+				"Scope",
+			},
+			'Tier', "Elite",
+			'Specialization', "Marksmen",
+			'gender', "Male",
+			'blocked_spots', set( "Weaponls", "Weaponrs" ),
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "GCExPrologueUnits",
+			'Id', "GCExBeatrice",
+			'object_class', "UnitData",
+			'Health', 15,
+			'Agility', 50,
+			'Dexterity', 20,
+			'Strength', 20,
+			'Wisdom', 20,
+			'Leadership', 0,
+			'Marksmanship', 15,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/MercsPortraits/unknown",
+			'Name', T(975740075134, --[[ModItemUnitDataCompositeDef GCExBeatrice Name]] "Working Girl"),
+			'Affiliation', "Civilian",
+			'MaxAttacks', 1,
+			'RewardExperience', 0,
+			'MaxHitPoints', 50,
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "VillagerFemale_14",
+				}),
+			},
+			'AdditionalGroups', {},
+			'pollyvoice', "Kimberly",
+			'gender', "Female",
+			'FallbackMissingVR', "VillagerFemale",
 		}),
 		}),
 	PlaceObj('ModItemFolder', {
@@ -4684,6 +8924,2619 @@ return {
 		}),
 		}),
 	PlaceObj('ModItemFolder', {
+		'name', "Banter",
+	}, {
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Character', "BiffNPC",
+					'Text', T(515417508491, --[[ModItemBanterDef BiffRadio Text section:GCExBantersSatellite/BiffRadio voice:BiffNPC radio]] "Hello, Hello, is this operational? Guys remember to gear up. By the way I have some static in my radio and I suspect it comes from the sector location you are currently scouting! Find the source of the signal and fix the issue, guys!"),
+					'useSnype', true,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			conditions = {
+				PlaceObj('BanterHasPlayed', {
+					Banters = {
+						"BiffRadio",
+					},
+					Negate = true,
+				}),
+			},
+			group = "GCExBantersSatellite",
+			id = "BiffRadio",
+			isRadio = true,
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(448548097991, --[[ModItemBanterDef BrianChest Text]] "This must be the Bobby's Package Brian spoke of. Wonder why they are currently not delivering..."),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersEmerald",
+			id = "BrianChest",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Character', "GCExSmiley",
+					'Text', T(302797667725, --[[ModItemBanterDef GCExSmileyTalks Text]] "Oh my Beauty, God must have sent you to brighten up the world."),
+					'Voiced', false,
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCExBeatrice",
+					'Text', T(225079169870, --[[ModItemBanterDef GCExSmileyTalks Text]] "Really? That cheesy? Oh boy wake up, you think because I live in a shit hole country, you can get me that cheap?"),
+					'Voiced', false,
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCExSmiley",
+					'Text', T(528551330367, --[[ModItemBanterDef GCExSmileyTalks Text]] "What about a dinner then?"),
+					'Voiced', false,
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCExBeatrice",
+					'Text', T(131755882042, --[[ModItemBanterDef GCExSmileyTalks Text section:GCExBantersErnie/GCExSmileyTalks voice:GCExBeatrice]] "You don't take no for an answer do you? And what the fuck are you all staring at. "),
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCExSmiley",
+					'Text', T(985687332451, --[[ModItemBanterDef GCExSmileyTalks Text]] "Oh, I love difficult women...I like this place already!"),
+					'Voiced', false,
+				}),
+			},
+			Once = true,
+			campaign = "GCEXPrologue",
+			conditions = {
+				PlaceObj('UnitIsAroundMarkerOfGroup', {
+					MarkerGroup = "SmileyFlirt",
+					TargetUnit = "GCExSmiley",
+				}),
+			},
+			disabledInConflict = true,
+			group = "GCExBantersErnie",
+			id = "GCExSmileyTalks",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(256538198079, --[[ModItemBanterDef Erny2 Text]] "So they are preparing for some kind of celebration. If there are any problems in this region, the people here seem to be unaffected, let's hope it stays that way."),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersErnie",
+			id = "Erny2",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(847955647243, --[[ModItemBanterDef Erny1 Text]] "Election banner! Oh, and this is the current president!? He looks so - friendly. Wonder if the will make it next turn..."),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersErnie",
+			id = "Erny1",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Character', "GCEXNumb",
+					'Text', T(478373935958, --[[ModItemBanterDef DayoneSeagull Text section:GCExBantersSeagul/DayoneSeagull voice:GCEXNumb]] "What a tom tit, this khyber pass of a leader left us here."),
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCEXStogie",
+					'Text', T(143080518604, --[[ModItemBanterDef DayoneSeagull Text section:GCExBantersSeagul/DayoneSeagull voice:GCEXStogie]] "Well, its a good time for some R&R. It's a paid vacation."),
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCEXCougar",
+					'Text', T(119888099035, --[[ModItemBanterDef DayoneSeagull Text section:GCExBantersSeagul/DayoneSeagull voice:GCEXCougar]] "First we need to size up the situation, determine the patterns of the area and..."),
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "Gaston",
+					'Text', T(744338736865, --[[ModItemBanterDef DayoneSeagull Text section:GCExBantersSeagul/DayoneSeagull voice:Gaston]] "Mon dieu, spare us the army talk, we are left here on a rock with no means to leave."),
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersSeagul",
+			id = "DayoneSeagull",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(390358622540, --[[ModItemBanterDef RecentActivity Text]] "A lot of different tracks here... I am sure this is not only due to the upcoming festival."),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersRust",
+			id = "RecentActivity",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(895950646218, --[[ModItemBanterDef Clue5MedFacility Text]] "Signs of fighting and explosions, dead guards and burned vehicles. Something went seriously wrong here. Seems like something got out! But someone must have been here recently. Tracks all over the place..."),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersSeagul",
+			id = "Clue5MedFacility",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(198813223668, --[[ModItemBanterDef Playground Text]] "Someone has been playing Minesweeper but with real mines... and lost!"),
+					'Voiced', false,
+				}),
+			},
+			Once = true,
+			campaign = "GCEXPrologue",
+			group = "GCExBantersEmerald",
+			id = "Playground",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(751959186721, --[[ModItemBanterDef Clue4MedFacility Text]] "14. September, 1943\nThe Zarathustra Trial looks promising. From the thirty-one subjects, three have survived and shown abnormal growth in muscle mass. Unfortunately, the guards were unprepared for the sheer force these creatures can unleash. One of these things is still out there, but we have everything under control.\nSigned Siegfried"),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersSeagul",
+			id = "Clue4MedFacility",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(452439969774, --[[ModItemBanterDef Clue3Airport Text]] "The tire tracks lead in both directions, as if someone was transporting material. The trail is still fresh, just recently a larger vehicle must have passed through. A third party is at work here. The ominous Major Biff spoke about?"),
+					'Voiced', false,
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCEXCougar",
+					'Text', T(536245435963, --[[ModItemBanterDef Clue3Airport Text section:GCExBantersSeagul/Clue3Airport voice:GCEXCougar]] "Sir, these tracks from military standard vehicle strongly suggest a military or paramilitary operation is ongoing here. We should carefully consider our next move."),
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersSeagul",
+			id = "Clue3Airport",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Character', "GCEXFlo",
+					'Text', T(487728711780, --[[ModItemBanterDef NewBanter_1 Text]] "Flo: Is everything alright, Biff? You look exhausted, Mon amour.\n"),
+					'Voiced', false,
+					'FloatUp', true,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersErnie",
+			id = "NewBanter_1",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(834575746739, --[[ModItemBanterDef Clue2Airport Text]] "There are signs of recent activity. Someone tried to act in secrecy but left some tracks. Could it have been a member of the tribe or the smugglers?"),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersSeagul",
+			id = "Clue2Airport",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(676432987757, --[[ModItemBanterDef OutlookWaste Text]] "The amount of litter indicates a lot of recent activity, most likely local youngsters, drinking and smoking late in the night..."),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersOutlook",
+			id = "OutlookWaste",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(848540679670, --[[ModItemBanterDef OutlookGods Text]] "It looks as if those statues are watching over us! Everyone has something to hide..."),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersOutlook",
+			id = "OutlookGods",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Character', "GCEXStogie",
+					'Text', T(213853510854, --[[ModItemBanterDef FirstTimeZombies Text section:GCExBantersSeagul/FirstTimeZombies voice:GCEXStogie]] "I am very sure these do not count as local wildlife!"),
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCEXNumb",
+					'Text', T(325964118089, --[[ModItemBanterDef FirstTimeZombies Text section:GCExBantersSeagul/FirstTimeZombies voice:GCEXNumb]] "Hell no, way too clingy, china plate!"),
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersSeagul",
+			id = "FirstTimeZombies",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Text', T(735223259061, --[[ModItemBanterDef FuelFound Text]] "This must be the fuel Brian was looking for!"),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersEmerald",
+			id = "FuelFound",
+		}),
+		PlaceObj('ModItemBanterDef', {
+			Lines = {
+				PlaceObj('BanterLine', {
+					'Character', "GCEXNumb",
+					'Text', T(449169647212, --[[ModItemBanterDef Colonizer Text]] "Told ya'! Lumps of School, Colonizer history...when you see the folks still living from Pony and Trap. "),
+					'Voiced', false,
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCEXGaston",
+					'Text', T(596015365193, --[[ModItemBanterDef Colonizer Text section:GCExBantersFlagHill/Colonizer voice:GCEXGaston]] "Sacre bleu, not this again!"),
+				}),
+				PlaceObj('BanterLine', {
+					'Character', "GCEXCougar",
+					'Text', T(322703887328, --[[ModItemBanterDef Colonizer Text]] "With all due respect, but this flag is to commemorate the comrades fallen here in Word War II. We should honor it!"),
+					'Voiced', false,
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExBantersFlagHill",
+			id = "Colonizer",
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
+		'name', "Convos",
+	}, {
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "GCExMoses",
+			Conditions = {
+				PlaceObj('QuestIsVariableBool', {
+					QuestId = "FlagHillHostileTracker",
+					Vars = set( "PaidToll" ),
+					param_bindings = false,
+				}),
+			},
+			DefaultActor = "GCExMoses",
+			campaign = "GCEXPrologue",
+			disabledInConflict = true,
+			group = "GCExPrologueFlagHill",
+			id = "WeaponSale",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExMoses",
+						Text = T(989228713209, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:Greeting]] "So you're the guys my boys told me about, the ones with cash, huh? Ex-Military, French Foreign Legion or some Merc for Hire.I honestly don't give a fuck who you shoot, as longs as its not one of my boys."),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Enabled = false,
+					Keyword = "Yes, we are here for business and not for smalltalk.",
+					KeywordT = T(494589305594, --[[ModItemConversation WeaponSale KeywordT]] "Yes, we are here for business and not for smalltalk."),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExMoses",
+							Text = T(871860583166, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:Yes, we are here for business and not for smalltalk.]] "So what ya Fellows interested in? Guns, Armor, Explosive?"),
+							param_bindings = false,
+						}),
+					},
+					id = "Yeswearehereforbusinessandnotforsmalltalk2",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						AutoRemove = true,
+						Conditions = {
+							PlaceObj('PlayerHasMoney', {
+								Amount = 1000,
+								param_bindings = false,
+							}),
+						},
+						Effects = {
+							PlaceObj('UnitGrantItem', {
+								ItemId = "AK47",
+								param_bindings = false,
+							}),
+							PlaceObj('UnitGrantItem', {
+								Amount = 60,
+								ItemId = "_762WP_AP",
+								param_bindings = false,
+							}),
+							PlaceObj('PlayerPayMoney', {
+								Amount = 1000,
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(515573929102, --[[ModItemConversation WeaponSale message]] "Bought AK 47 for 1000$!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "Greeting.Yeswearehereforbusinessandnotforsmalltalk2",
+						Keyword = "That box of AK's over there!",
+						KeywordT = T(448499245887, --[[ModItemConversation WeaponSale KeywordT]] "That box of AK's over there!"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(461860151965, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:That box of AK's over there!]] "A Solid Weapon, the Russians dropped a lot of that shit on the market after Afghanistan. It's still the most used weapon in the world, I bet they will still kill each other with it in 2020."),
+								param_bindings = false,
+							}),
+						},
+						id = "ThatboxofAKsoverthere2",
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationPhrase', {
+						AutoRemove = true,
+						Conditions = {
+							PlaceObj('PlayerHasMoney', {
+								Amount = 750,
+								param_bindings = false,
+							}),
+						},
+						Effects = {
+							PlaceObj('UnitGrantItem', {
+								ItemId = "MP5K",
+								param_bindings = false,
+							}),
+							PlaceObj('UnitGrantItem', {
+								Amount = 20,
+								ItemId = "_9mm_HP",
+								param_bindings = false,
+							}),
+							PlaceObj('PlayerPayMoney', {
+								Amount = 750,
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(243853572933, --[[ModItemConversation WeaponSale message]] "Bought a MP5K for 750$!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "Greeting.Yeswearehereforbusinessandnotforsmalltalk2",
+						Keyword = "MP5K!",
+						KeywordT = T(786113592264, --[[ModItemConversation WeaponSale KeywordT]] "MP5K!"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(485558101344, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:MP5K!]] "You can't go wrong with this one, reliable on short distance. Fun to work with."),
+								param_bindings = false,
+							}),
+						},
+						id = "MP5K",
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationPhrase', {
+						AutoRemove = true,
+						Conditions = {
+							PlaceObj('PlayerHasMoney', {
+								Amount = 2500,
+								param_bindings = false,
+							}),
+						},
+						Effects = {
+							PlaceObj('UnitGrantItem', {
+								ItemId = "LightHelmet",
+								param_bindings = false,
+							}),
+							PlaceObj('UnitGrantItem', {
+								ItemId = "CamoArmor_Light",
+								param_bindings = false,
+							}),
+							PlaceObj('UnitGrantItem', {
+								ItemId = "FlakLeggings",
+								param_bindings = false,
+							}),
+							PlaceObj('PlayerPayMoney', {
+								Amount = 2500,
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(608716838825, --[[ModItemConversation WeaponSale message]] "Bought an Armor Set for 2500$!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "Greeting.Yeswearehereforbusinessandnotforsmalltalk2",
+						Keyword = "Kevlar Armour",
+						KeywordT = T(623395423851, --[[ModItemConversation WeaponSale KeywordT]] "Kevlar Armour"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(466730229803, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:Kevlar Armour]] "Nothing wrong with some Armor, getting shot still hurts like a motherfucker, but at least it wont kill you right away."),
+								param_bindings = false,
+							}),
+						},
+						id = "KevlarArmour2",
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationPhrase', {
+						AutoRemove = true,
+						Conditions = {
+							PlaceObj('PlayerHasMoney', {
+								Amount = 1000,
+								param_bindings = false,
+							}),
+						},
+						Effects = {
+							PlaceObj('UnitGrantItem', {
+								Amount = 2,
+								ItemId = "FragGrenade",
+								param_bindings = false,
+							}),
+							PlaceObj('PlayerPayMoney', {
+								Amount = 1000,
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(456452362561, --[[ModItemConversation WeaponSale message]] "Bought 2xGrenades for 1000$!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "Greeting.Yeswearehereforbusinessandnotforsmalltalk2",
+						Keyword = "Frag Grenades!",
+						KeywordT = T(222225314241, --[[ModItemConversation WeaponSale KeywordT]] "Frag Grenades!"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(876319660671, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:Frag Grenades!]] "A good choice. Nothing wrong with a good boom."),
+								param_bindings = false,
+							}),
+						},
+						id = "FragGrenade",
+						param_bindings = false,
+					}),
+				}),
+				PlaceObj('ConversationPhrase', {
+					Keyword = "So what's your deal on this island?",
+					KeywordT = T(280129575189, --[[ModItemConversation WeaponSale KeywordT]] "So what's your deal on this island?"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExMoses",
+							Text = T(537385559886, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:So what's your deal on this island?]] "Why do you think I will answer this question, Fucker! You know what? In good faith I will tell you, just to make sure you stay the fuck out of my hair. Besides I still want your money, it's clean rich Fuckers Money I bet, from that bitch Santiago."),
+							param_bindings = false,
+						}),
+					},
+					id = "Sowhatsyourdealonthisisland",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						Keyword = "Explain...",
+						KeywordT = T(795151351990, --[[ModItemConversation WeaponSale KeywordT]] "Explain..."),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(242414440967, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:Explain...]] "She owns this shit island and runs a diamond business. Doesn't bother, she brings in money into the region, unstable as Whore's Ass. A Gold Mine, weapons always sell to people who wanna shoot each other."),
+								param_bindings = false,
+							}),
+						},
+						id = "Explain2",
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationPhrase', {
+						Keyword = "Allright to business then.",
+						KeywordT = T(793961001727, --[[ModItemConversation WeaponSale KeywordT]] "Allright to business then."),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(438390389310, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:Allright to business then.]] "So what ya Fellows interested in? Guns, Armor, Explosive?"),
+								param_bindings = false,
+							}),
+						},
+						id = "Allrighttobusinessthen",
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationPhrase', {
+						AutoRemove = true,
+						Conditions = {
+							PlaceObj('PlayerHasMoney', {
+								Amount = 1000,
+								param_bindings = false,
+							}),
+						},
+						Effects = {
+							PlaceObj('UnitGrantItem', {
+								ItemId = "AK47",
+								param_bindings = false,
+							}),
+							PlaceObj('UnitGrantItem', {
+								Amount = 60,
+								ItemId = "_762WP_AP",
+								param_bindings = false,
+							}),
+							PlaceObj('PlayerPayMoney', {
+								Amount = 1000,
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(876912179175, --[[ModItemConversation WeaponSale message]] "Bought AK 47 for 1000$!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "Greeting.Sowhatsyourdealonthisisland.Allrighttobusinessthen",
+						Keyword = "That box of AK's over there!",
+						KeywordT = T(448499245887, --[[ModItemConversation WeaponSale KeywordT]] "That box of AK's over there!"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(588435821657, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:That box of AK's over there!]] "A Solid Weapon, the Russians dropped a lot of that shit on the market after Afghanistan. It's still the most used weapon in the world, I bet they will still kill each other with it in 2020."),
+								param_bindings = false,
+							}),
+						},
+						id = "ThatboxofAKsoverthere",
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationPhrase', {
+						AutoRemove = true,
+						Conditions = {
+							PlaceObj('PlayerHasMoney', {
+								Amount = 750,
+								param_bindings = false,
+							}),
+						},
+						Effects = {
+							PlaceObj('UnitGrantItem', {
+								ItemId = "MP5K",
+								param_bindings = false,
+							}),
+							PlaceObj('UnitGrantItem', {
+								Amount = 20,
+								ItemId = "_9mm_HP",
+								param_bindings = false,
+							}),
+							PlaceObj('PlayerPayMoney', {
+								Amount = 750,
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(697222409650, --[[ModItemConversation WeaponSale message]] "Bought a MP5K for 750$!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "Greeting.Sowhatsyourdealonthisisland.Allrighttobusinessthen",
+						Keyword = "MP5K!",
+						KeywordT = T(786113592264, --[[ModItemConversation WeaponSale KeywordT]] "MP5K!"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(474099090386, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:MP5K!]] "You can't go wrong with this one, reliable on short distance. Fun to work with."),
+								param_bindings = false,
+							}),
+						},
+						id = "MP5K2",
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationPhrase', {
+						AutoRemove = true,
+						Conditions = {
+							PlaceObj('PlayerHasMoney', {
+								Amount = 2500,
+								param_bindings = false,
+							}),
+						},
+						Effects = {
+							PlaceObj('UnitGrantItem', {
+								ItemId = "LightHelmet",
+								param_bindings = false,
+							}),
+							PlaceObj('UnitGrantItem', {
+								ItemId = "CamoArmor_Light",
+								param_bindings = false,
+							}),
+							PlaceObj('UnitGrantItem', {
+								ItemId = "FlakLeggings",
+								param_bindings = false,
+							}),
+							PlaceObj('PlayerPayMoney', {
+								Amount = 2500,
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(851121979611, --[[ModItemConversation WeaponSale message]] "Bought an Armor Set for 2500$!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "Greeting.Sowhatsyourdealonthisisland.Allrighttobusinessthen",
+						Keyword = "Kevlar Armour",
+						KeywordT = T(623395423851, --[[ModItemConversation WeaponSale KeywordT]] "Kevlar Armour"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(184470616358, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:Kevlar Armour]] "Nothing wrong with some Armor, getting shot still hurts like a motherfucker, but at least it wont kill you right away."),
+								param_bindings = false,
+							}),
+						},
+						id = "KevlarArmour",
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationPhrase', {
+						AutoRemove = true,
+						Conditions = {
+							PlaceObj('PlayerHasMoney', {
+								Amount = 1000,
+								param_bindings = false,
+							}),
+						},
+						Effects = {
+							PlaceObj('UnitGrantItem', {
+								Amount = 2,
+								ItemId = "FragGrenade",
+								param_bindings = false,
+							}),
+							PlaceObj('PlayerPayMoney', {
+								Amount = 1000,
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(894437516429, --[[ModItemConversation WeaponSale message]] "Bought 2xGrenades for 1000$!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "Greeting.Sowhatsyourdealonthisisland.Allrighttobusinessthen",
+						Keyword = "Frag Grenades!",
+						KeywordT = T(222225314241, --[[ModItemConversation WeaponSale KeywordT]] "Frag Grenades!"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExMoses",
+								Text = T(791752682040, --[[ModItemConversation WeaponSale Text voice:GCExMoses section:WeaponSale keyword:Frag Grenades!]] "A good choice. Nothing wrong with a good boom."),
+								param_bindings = false,
+							}),
+						},
+						id = "FragGrenades",
+						param_bindings = false,
+					}),
+				}),
+			}),
+			PlaceObj('ConversationPhrase', {
+				GoTo = "<end conversation>",
+				Keyword = "Goodbye",
+				KeywordT = T(557225474228, --[[ModItemConversation WeaponSale KeywordT]] "Goodbye"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExMoses",
+						param_bindings = false,
+					}),
+				},
+				id = "Goodbye",
+				param_bindings = false,
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "GCExBrian",
+			DefaultActor = "GCExBrian",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueBrian",
+			id = "Fuel_2",
+			PlaceObj('ConversationPhrase', {
+				Conditions = {
+					PlaceObj('QuestIsVariableBool', {
+						QuestId = "BriansFuel",
+						Vars = set({
+	Given = false,
+}),
+						param_bindings = false,
+					}),
+				},
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBrian",
+						Text = T(570080620925, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Greeting]] "Hello Folks!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Keyword = "What’s your business here?",
+					KeywordT = T(359485066766, --[[ModItemConversation Fuel_2 KeywordT]] "What’s your business here?"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExBrian",
+							Text = T(461931187015, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:What’s your business here?]] "My business? I am THE Delivery Guy. I drive and deliver all over Erny-Island. You need a ride?"),
+							param_bindings = false,
+						}),
+					},
+					id = "Whatsyourbusinesshere",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						Effects = {
+							PlaceObj('LogMessageAdd', {
+								message = T(940520417648, --[[ModItemConversation Fuel_2 message]] "You agreed to look for Brian's Fuel!"),
+								param_bindings = false,
+							}),
+						},
+						GiveQuests = {
+							"BriansFuel",
+						},
+						Keyword = "No, thanks. We are good.",
+						KeywordT = T(803064260586, --[[ModItemConversation Fuel_2 KeywordT]] "No, thanks. We are good."),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExBrian",
+								Text = T(111244765826, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:No, thanks. We are good.]] "Good, cause I have some bad news: I am all out of fuel. Maybe you can help me out here, guys."),
+								param_bindings = false,
+							}),
+						},
+						PlayGoToPhrase = true,
+						id = "NothanksWearegood",
+						param_bindings = false,
+						PlaceObj('ConversationPhrase', {
+							GoTo = "<end conversation>",
+							Keyword = "What's the deal?",
+							KeywordT = T(991255635297, --[[ModItemConversation Fuel_2 KeywordT]] "What's the deal?"),
+							Lines = {
+								PlaceObj('ConversationLine', {
+									Character = "GCExBrian",
+									Text = T(332534543453, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:What's the deal?]] "Someone stole my canister. I was just about to refuel and took a short break at the beach, but after that it was gone..."),
+									param_bindings = false,
+								}),
+							},
+							id = "Whatsthedeal",
+							param_bindings = false,
+						}),
+					}),
+					PlaceObj('ConversationPhrase', {
+						Effects = {
+							PlaceObj('LogMessageAdd', {
+								message = T(688181368131, --[[ModItemConversation Fuel_2 message]] "You agreed to look for Brian's Fuel!"),
+								param_bindings = false,
+							}),
+						},
+						GiveQuests = {
+							"BriansFuel",
+						},
+						Keyword = "Yes, sure.",
+						KeywordT = T(165041368024, --[[ModItemConversation Fuel_2 KeywordT]] "Yes, sure."),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExBrian",
+								Text = T(172631532251, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Yes, sure.]] "Then you need to help me first, because I have some bad news..."),
+								param_bindings = false,
+							}),
+						},
+						PlayGoToPhrase = true,
+						id = "Yessure2",
+						param_bindings = false,
+						PlaceObj('ConversationPhrase', {
+							GiveQuests = {
+								"BriansFuel",
+							},
+							GoTo = "<end conversation>",
+							Keyword = "What's the deal?",
+							KeywordT = T(991255635297, --[[ModItemConversation Fuel_2 KeywordT]] "What's the deal?"),
+							Lines = {
+								PlaceObj('ConversationLine', {
+									Character = "GCExBrian",
+									Text = T(920652601672, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:What's the deal?]] "Someone stole my canister. I was just about to refuel and took a short break at the beach, but after that it was gone..."),
+									param_bindings = false,
+								}),
+							},
+							PlayGoToPhrase = true,
+							id = "Whatsthedeal2",
+							param_bindings = false,
+						}),
+					}),
+				}),
+			}),
+			PlaceObj('ConversationPhrase', {
+				Conditions = {
+					PlaceObj('BanterHasPlayed', {
+						Banters = {
+							"FuelFound",
+						},
+						Negate = true,
+						param_bindings = false,
+					}),
+					PlaceObj('QuestIsVariableBool', {
+						QuestId = "BriansFuel",
+						Vars = set( "Given" ),
+						param_bindings = false,
+					}),
+				},
+				Effects = {
+					PlaceObj('LogMessageAdd', {
+						message = T(358903638991, --[[ModItemConversation Fuel_2 message]] "Brian still needs his Fuel!"),
+						param_bindings = false,
+					}),
+				},
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBrian",
+						Text = T(912529852067, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Greeting2]] "Hello guys, you're back. Any news?"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting2",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					GoTo = "Goodbye",
+					Keyword = "Yeah, we have news. You're still alive.",
+					KeywordT = T(858851579091, --[[ModItemConversation Fuel_2 KeywordT]] "Yeah, we have news. You're still alive."),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExBrian",
+							Text = T(464515757176, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Yeah, we have news. You're still alive.]] "Oh... so glad to hear. Man you guys have no idea how many bad news a car person has to bear in Grand Chien. You ever see anybody drive here?"),
+							param_bindings = false,
+						}),
+						PlaceObj('ConversationInterjectionList', {
+							Interjections = {
+								PlaceObj('ConversationInterjection', {
+									Lines = {
+										PlaceObj('ConversationLine', {
+											Character = "GCExGasket",
+											Text = T(844493677180, --[[ModItemConversation Fuel_2 Text voice:GCExGasket section:Fuel_2 keyword:Yeah, we have news. You're still alive.]] "They drive and swim like midwesterners here."),
+											param_bindings = false,
+										}),
+										PlaceObj('ConversationLine', {
+											Character = "GCExCougar",
+											Text = T(771360202894, --[[ModItemConversation Fuel_2 Text voice:GCExCougar section:Fuel_2 keyword:Yeah, we have news. You're still alive.]] "Sir, may I inform that they lack the appropriate animations for either driving or swimming!"),
+											param_bindings = false,
+										}),
+									},
+									param_bindings = false,
+								}),
+							},
+							param_bindings = false,
+						}),
+					},
+					id = "Whatsyourbusinesshere2",
+					param_bindings = false,
+				}),
+			}),
+			PlaceObj('ConversationPhrase', {
+				Conditions = {
+					PlaceObj('BanterHasPlayed', {
+						Banters = {
+							"FuelFound",
+						},
+						param_bindings = false,
+					}),
+				},
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBrian",
+						Text = T(476638817032, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Greeting3]] "Hello guys, you're back. Any news?"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting3",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Keyword = "Yeah, we have news. We found your fuel. And the guys who took it.",
+					KeywordT = T(637034739414, --[[ModItemConversation Fuel_2 KeywordT]] "Yeah, we have news. We found your fuel. And the guys who took it."),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExBrian",
+							Text = T(278741833443, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Yeah, we have news. We found your fuel. And the guys who took it.]] "Oh... what... what happened?"),
+							param_bindings = false,
+						}),
+						PlaceObj('ConversationInterjectionList', {
+							Interjections = {
+								PlaceObj('ConversationInterjection', {
+									Lines = {
+										PlaceObj('ConversationLine', {
+											Character = "GCExGasket",
+											Text = T(628497932510, --[[ModItemConversation Fuel_2 Text voice:GCExGasket section:Fuel_2 keyword:Yeah, we have news. We found your fuel. And the guys who took it.]] "They came to our barbecue. Uninvited. And they weren't bringin' no damn bit of roadkill. "),
+											param_bindings = false,
+										}),
+										PlaceObj('ConversationLine', {
+											Character = "GCExBrian",
+											Text = T(299168443165, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Yeah, we have news. We found your fuel. And the guys who took it.]] "*Gulp* They are... eh... no more, I guess?"),
+											param_bindings = false,
+										}),
+										PlaceObj('ConversationLine', {
+											Character = "GCExCougar",
+											Text = T(627282875338, --[[ModItemConversation Fuel_2 Text voice:GCExCougar section:Fuel_2 keyword:Yeah, we have news. We found your fuel. And the guys who took it.]] "No Sir. The threat surrounding your missing equipment has been eliminated."),
+											param_bindings = false,
+										}),
+									},
+									param_bindings = false,
+								}),
+							},
+							param_bindings = false,
+						}),
+					},
+					id = "YeahwehavenewsWefoundyourfuelAndtheguyswhotookit",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						CompleteQuests = {
+							"BriansFuel",
+						},
+						Effects = {
+							PlaceObj('LogMessageAdd', {
+								message = T(282061545236, --[[ModItemConversation Fuel_2 message]] "You brought back Brian's Fuel!"),
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(643276328328, --[[ModItemConversation Fuel_2 message]] "Acquired Information about a lost Package!"),
+								param_bindings = false,
+							}),
+							PlaceObj('LogMessageAdd', {
+								message = T(565622943591, --[[ModItemConversation Fuel_2 message]] "You heard a strange rumour about Seagull Island!"),
+								param_bindings = false,
+							}),
+						},
+						GoTo = "<end conversation>",
+						Keyword = "So there. No need to thank us...",
+						KeywordT = T(747557808891, --[[ModItemConversation Fuel_2 KeywordT]] "So there. No need to thank us..."),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExBrian",
+								Text = T(906495110260, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:So there. No need to thank us...]] "What a nice surprise, you found my Fuel...so sorry guys but no space for a ride here. But I can give you something for your troubles. Near Deedees Hut there is a Bobby's Package Drop, must have slipped from board, it's yours if you want it"),
+								param_bindings = false,
+							}),
+						},
+						PlayGoToPhrase = true,
+						id = "SothereNoneedtothankus",
+						param_bindings = false,
+					}),
+				}),
+			}),
+			PlaceObj('ConversationPhrase', {
+				GoTo = "<end conversation>",
+				Keyword = "Goodbye",
+				KeywordT = T(557225474228, --[[ModItemConversation WeaponSale KeywordT]] "Goodbye"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBrian",
+						Text = T(577071930154, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Goodbye]] "Good riddance!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Goodbye",
+				param_bindings = false,
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "ZombieEvent",
+			DefaultActor = "GCExSmurge",
+			campaign = "GCEXPrologue",
+			comment = "5",
+			group = "GCExPrologueSeagul",
+			id = "SmurgeZombieEvent",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExSmurge",
+						Text = T(175202234117, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:Greeting]] "So you are neither one of any, huh?"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Keyword = "What?",
+					KeywordT = T(480309853435, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "What?"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExSmurge",
+							Text = T(576361630181, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:What?]] "Well, you're neither one of the dead dudes, nor one of the half dead dudes. Then you are either running from the law or totally picked wrong vacation spot."),
+							param_bindings = false,
+						}),
+					},
+					id = "What2",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						Keyword = "We are just travellers, looking for a boat.",
+						KeywordT = T(135707620584, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "We are just travellers, looking for a boat."),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								AlwaysInterject = true,
+								Character = "GCExSmurge",
+								Text = T(680703397025, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:We are just travellers, looking for a boat.]] "No boat here, unless you count as weapon cargo."),
+								param_bindings = false,
+							}),
+							PlaceObj('ConversationLine', {
+								Character = "GCExNumb",
+								Text = T(972990684633, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExNumb section:SmurgeZombieEvent keyword:We are just travellers, looking for a boat.]] "You bet yer bottle and glass, some of us surely count as weapons."),
+								param_bindings = false,
+							}),
+						},
+						id = "Wearejusttravellerslookingforaboat2",
+						param_bindings = false,
+						PlaceObj('ConversationPhrase', {
+							Keyword = "So, whats this place?",
+							KeywordT = T(246846882929, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "So, whats this place?"),
+							Lines = {
+								PlaceObj('ConversationLine', {
+									Character = "GCExSmurge",
+									Text = T(516838697818, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:So, whats this place?]] "What d'ya think! Smugglers operation base, but don't tell anyone, haha. I would have to kill you."),
+									param_bindings = false,
+								}),
+							},
+							id = "Sowhatsthisplace2",
+							param_bindings = false,
+							PlaceObj('ConversationPhrase', {
+								Keyword = "Aha, so why tell me?",
+								KeywordT = T(952879649822, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "Aha, so why tell me?"),
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExSmurge",
+										Text = T(729231793472, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:Aha, so why tell me?]] "Because I don't care. No government troops would set foot here, too dangerous. You don't wanna know what happens here at night..."),
+										param_bindings = false,
+									}),
+								},
+								id = "Ahasowhytellme2",
+								param_bindings = false,
+								PlaceObj('ConversationPhrase', {
+									Keyword = "Well, what does happen here at night?",
+									KeywordT = T(623840755240, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "Well, what does happen here at night?"),
+									Lines = {
+										PlaceObj('ConversationLine', {
+											Character = "GCExSmurge",
+											Text = T(983256822005, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:Well, what does happen here at night?]] "Crawling, hundreds of them all over the island. Those creatures, mad and dull! If you stay and help us out, you will see. You know, we are short handed at the moment. Henry and Seville, they have not returned yet. They are probably dead in jungle, haha. These fuckers owed me money...."),
+											param_bindings = false,
+										}),
+									},
+									id = "Wellwhatdoeshappenhereatnight2",
+									param_bindings = false,
+									PlaceObj('ConversationPhrase', {
+										GoTo = "<end conversation>",
+										Keyword = "Ok, what’s the deal?",
+										KeywordT = T(986459381656, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "Ok, what’s the deal?"),
+										Lines = {
+											PlaceObj('ConversationLine', {
+												Character = "GCExSmurge",
+												Text = T(666845966282, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:Ok, what’s the deal?]] "Come night, you will see. You will see...After that we can talk business. I can make you a real good offer, my friends!"),
+												param_bindings = false,
+											}),
+										},
+										id = "Okwhatsthedeal2",
+										param_bindings = false,
+									}),
+								}),
+							}),
+						}),
+					}),
+				}),
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "CoBCompletion",
+			DefaultActor = "GCExStitches",
+			campaign = "GCEXPrologue",
+			comment = "4",
+			group = "GCExPrologueSeagul",
+			id = "QuestCompletionCoB",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStitches",
+						Text = T(286397022049, --[[ModItemConversation QuestCompletionCoB Text voice:GCExStitches section:QuestCompletionCoB keyword:Greeting]] "Very good, you brought us a gift. Thank you. I will lead you further. Now I shall prepare the ritual. You are welcome to join!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Keyword = "Go ahead, do what you must.",
+					KeywordT = T(321679047452, --[[ModItemConversation QuestCompletionCoB KeywordT]] "Go ahead, do what you must."),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExStitches",
+							Text = T(948616562921, --[[ModItemConversation QuestCompletionCoB Text voice:GCExStitches section:QuestCompletionCoB keyword:Go ahead, do what you must.]] "After the ritual is where our souls part. You did a service to us and honoured the gods of this island. In the end, I thank you. If you follow that path, you will find the boat!"),
+							param_bindings = false,
+						}),
+					},
+					id = "Goaheaddowhatyoumust2",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						GoTo = "<end conversation>",
+						Keyword = "Roger that!",
+						KeywordT = T(779330074700, --[[ModItemConversation QuestCompletionCoB KeywordT]] "Roger that!"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExStitches",
+								Text = T(961968269504, --[[ModItemConversation QuestCompletionCoB Text voice:GCExStitches section:QuestCompletionCoB keyword:Roger that!]] "I have a parting gift...pages of a diary... Years ago, a man-a stranger, much like you-came here. He was a writer, wanting to know all about our ways. Wilcox, I believe was his name. He stayed here for a few months. Suddenly, one day, he was gone, but he left his notes."),
+								param_bindings = false,
+							}),
+						},
+						id = "Rogerthat2",
+						param_bindings = false,
+					}),
+				}),
+				PlaceObj('ConversationPhrase', {
+					GoTo = "<end conversation>",
+					Keyword = "No, you cannot go around killing people, even if they don’t look human anymore.",
+					KeywordT = T(453510176545, --[[ModItemConversation QuestCompletionCoB KeywordT]] "No, you cannot go around killing people, even if they don’t look human anymore."),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExStitches",
+							param_bindings = false,
+						}),
+					},
+					id = "Noyoucannotgoaroundkillingpeopleeveniftheydontlookhumananymore2",
+					param_bindings = false,
+				}),
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "CoBArrived",
+			DefaultActor = "GCExStitches",
+			campaign = "GCEXPrologue",
+			comment = "3",
+			group = "GCExPrologueSeagul",
+			id = "ArrivedAtChurch",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStitches",
+						Text = T(512491413389, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Greeting]] "This...is our humble abode. And this is my devoted flock. Welcome to the Church of Blood!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Keyword = "Looks more like a Night of the Dead Revival Party to me.",
+					KeywordT = T(932601292197, --[[ModItemConversation ArrivedAtChurch KeywordT]] "Looks more like a Night of the Dead Revival Party to me."),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExStitches",
+							Text = T(707097531218, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Looks more like a Night of the Dead Revival Party to me.]] "Pardon me, yes, it is true. We are mere actors on a stage that is called life. But no, no, this is reality, strangers. The blood bond is real..."),
+							param_bindings = false,
+						}),
+					},
+					id = "LooksmorelikeaNightoftheDeadRevivalPartytome2",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						Keyword = "Good, but spare us the mumbo jumbo. So where’s the boat?",
+						KeywordT = T(429842311844, --[[ModItemConversation ArrivedAtChurch KeywordT]] "Good, but spare us the mumbo jumbo. So where’s the boat?"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExStitches",
+								Text = T(141392386725, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Good, but spare us the mumbo jumbo. So where’s the boat?]] "Do you hear this, brothers and sisters? They want to go through the mouth of Ioa, one does not simply walk through there, you fools."),
+								param_bindings = false,
+							}),
+						},
+						id = "GoodbutspareusthemumbojumboSowherestheboat2",
+						param_bindings = false,
+						PlaceObj('ConversationPhrase', {
+							Keyword = "So much for that...so what do you want?",
+							KeywordT = T(550788777589, --[[ModItemConversation ArrivedAtChurch KeywordT]] "So much for that...so what do you want?"),
+							Lines = {
+								PlaceObj('ConversationLine', {
+									Character = "GCExStitches",
+									Text = T(479404192793, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:So much for that...so what do you want?]] 'First you need to capture a "gift" for us, one of those poor creatures you encountered earlier. But this is important, it has to be breathing!'),
+									param_bindings = false,
+								}),
+							},
+							id = "Somuchforthatsowhatdoyouwant2",
+							param_bindings = false,
+							PlaceObj('ConversationPhrase', {
+								Keyword = "What do you need it for?",
+								KeywordT = T(885153576899, --[[ModItemConversation ArrivedAtChurch KeywordT]] "What do you need it for?"),
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExStitches",
+										Text = T(135547524085, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:What do you need it for?]] "Don't be so naive...blood demands more blood...it will satisfy Ioa. It will feed her needs. It will grant you passage!"),
+										param_bindings = false,
+									}),
+								},
+								id = "Whatdoyouneeditfor",
+								param_bindings = false,
+								PlaceObj('ConversationPhrase', {
+									GoTo = "<end conversation>",
+									Keyword = "You want to kill it?  But what are those creatures, anyways?",
+									KeywordT = T(522996238738, --[[ModItemConversation ArrivedAtChurch KeywordT]] "You want to kill it?  But what are those creatures, anyways?"),
+									Lines = {
+										PlaceObj('ConversationLine', {
+											Character = "GCExStitches",
+											Text = T(497831969614, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:You want to kill it?  But what are those creatures, anyways?]] "Lost Souls, poor creatures. Caught in between lives..."),
+											param_bindings = false,
+										}),
+									},
+									id = "YouwanttokillitButwhatarethosecreaturesanyways",
+									param_bindings = false,
+								}),
+							}),
+						}),
+					}),
+				}),
+				PlaceObj('ConversationPhrase', {
+					Keyword = "Seems like the one god is absent, but instead there are a dozen!",
+					KeywordT = T(203389682309, --[[ModItemConversation ArrivedAtChurch KeywordT]] "Seems like the one god is absent, but instead there are a dozen!"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExStitches",
+							Text = T(966583249364, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Seems like the one god is absent, but instead there are a dozen!]] "Observant. Indeed, there are gods everywhere, and everything is god. The mountains and trees, the beaches and birds...."),
+							param_bindings = false,
+						}),
+					},
+					id = "Seemsliketheonegodisabsentbutinsteadthereareadozen2",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						Keyword = "Good, but spare us the mumbo jumbo. So where’s the boat?",
+						KeywordT = T(429842311844, --[[ModItemConversation ArrivedAtChurch KeywordT]] "Good, but spare us the mumbo jumbo. So where’s the boat?"),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExStitches",
+								Text = T(274233804625, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Good, but spare us the mumbo jumbo. So where’s the boat?]] "Do you hear this, brothers and sisters? They want to go through the mouth of Ioa, one does not simply walk through there, you fools."),
+								param_bindings = false,
+							}),
+						},
+						id = "GoodbutspareusthemumbojumboSowherestheboat",
+						param_bindings = false,
+						PlaceObj('ConversationPhrase', {
+							Keyword = "So much for that...so what do you want?",
+							KeywordT = T(550788777589, --[[ModItemConversation ArrivedAtChurch KeywordT]] "So much for that...so what do you want?"),
+							Lines = {
+								PlaceObj('ConversationLine', {
+									Character = "GCExStitches",
+									Text = T(769253298483, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:So much for that...so what do you want?]] 'First you need to capture a "gift" for us, one of those poor creatures you encountered earlier. But this is important, it has to be breathing!'),
+									param_bindings = false,
+								}),
+							},
+							id = "Somuchforthatsowhatdoyouwant",
+							param_bindings = false,
+							PlaceObj('ConversationPhrase', {
+								Keyword = "What do you need it for?",
+								KeywordT = T(885153576899, --[[ModItemConversation ArrivedAtChurch KeywordT]] "What do you need it for?"),
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExStitches",
+										Text = T(484271468024, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:What do you need it for?]] "Don't be so naive...blood demands more blood...it will satisfy Ioa. It will feed her needs. It will grant you passage!"),
+										param_bindings = false,
+									}),
+								},
+								id = "Whatdoyouneeditfor2",
+								param_bindings = false,
+								PlaceObj('ConversationPhrase', {
+									GoTo = "<end conversation>",
+									Keyword = "You want to kill it?  But what are those creatures, anyways?",
+									KeywordT = T(522996238738, --[[ModItemConversation ArrivedAtChurch KeywordT]] "You want to kill it?  But what are those creatures, anyways?"),
+									Lines = {
+										PlaceObj('ConversationLine', {
+											Character = "GCExStitches",
+											Text = T(450362149169, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:You want to kill it?  But what are those creatures, anyways?]] "Lost Souls, poor creatures. Caught in between lives..."),
+											param_bindings = false,
+										}),
+									},
+									id = "YouwanttokillitButwhatarethosecreaturesanyways2",
+									param_bindings = false,
+								}),
+							}),
+						}),
+					}),
+				}),
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "ExitSector",
+			DefaultActor = "GCExStitches",
+			campaign = "GCEXPrologue",
+			comment = "2",
+			group = "GCExPrologueSeagul",
+			id = "LeaveSector",
+			PlaceObj('ConversationPhrase', {
+				GoTo = "<end conversation>",
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStitches",
+						Text = T(927927229371, --[[ModItemConversation LeaveSector Text voice:GCExStitches section:LeaveSector keyword:Greeting]] "I really hope your souls are ready for this journey. Whatever you see, don't be afraid! And don't stray afar, this island is treacherous. We are visiting my flock, they can provide for you."),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "CoBQuest",
+			DefaultActor = "GCExStitches",
+			campaign = "GCEXPrologue",
+			comment = "1",
+			group = "GCExPrologueSeagul",
+			id = "ChurchQuestStart",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStitches",
+						Text = T(704601762572, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Greeting]] "Bones and ashes! What are you guys doing on this rock? Go! Leave now! Leave as long as you are still alive!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Keyword = "Is it a threat or an advice",
+					KeywordT = T(823346415217, --[[ModItemConversation ChurchQuestStart KeywordT]] "Is it a threat or an advice"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExStitches",
+							Text = T(882984204847, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Is it a threat or an advice]] "Threat? No! Advice? Yes! You could call it that, if you mind being alive..."),
+							param_bindings = false,
+						}),
+					},
+					id = "Isitathreatoranadvice2",
+					param_bindings = false,
+					PlaceObj('ConversationPhrase', {
+						Keyword = "We do, but our boat is gone. We cannot leave, even if we wanted to.",
+						KeywordT = T(838551283596, --[[ModItemConversation ChurchQuestStart KeywordT]] "We do, but our boat is gone. We cannot leave, even if we wanted to."),
+						Lines = {
+							PlaceObj('ConversationLine', {
+								Character = "GCExStitches",
+								Text = T(563852815369, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:We do, but our boat is gone. We cannot leave, even if we wanted to.]] "Is that so? Your fate is sealed, then. None of these people around here will help you. They do not warm up to strangers. A boat is simply not a commodity around here. For a certain price, however..."),
+								param_bindings = false,
+							}),
+						},
+						id = "WedobutourboatisgoneWecannotleaveevenifwewantedto2",
+						param_bindings = false,
+						PlaceObj('ConversationPhrase', {
+							Keyword = "What is the meaning of this? What price?",
+							KeywordT = T(925450658439, --[[ModItemConversation ChurchQuestStart KeywordT]] "What is the meaning of this? What price?"),
+							Lines = {
+								PlaceObj('ConversationLine', {
+									Character = "GCExStitches",
+									Text = T(284542997764, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:What is the meaning of this? What price?]] "There is a boat, my boat, on the other side of the island. As there is nothing of value you could offer me, except your lives. A donation of a life for a boat, how does that sound to you?"),
+									param_bindings = false,
+								}),
+							},
+							id = "WhatisthemeaningofthisWhatprice2",
+							param_bindings = false,
+							PlaceObj('ConversationPhrase', {
+								Keyword = "Are you serious?",
+								KeywordT = T(292276275399, --[[ModItemConversation ChurchQuestStart KeywordT]] "Are you serious?"),
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExStitches",
+										Text = T(273327164732, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Are you serious?]] "One life, to save three, does this not sound fair to you?"),
+										param_bindings = false,
+									}),
+								},
+								id = "Areyouserious2",
+								param_bindings = false,
+								PlaceObj('ConversationPhrase', {
+									Keyword = "How about, a boat and we spare YOUR life! Does this sound fair to you?",
+									KeywordT = T(720469593500, --[[ModItemConversation ChurchQuestStart KeywordT]] "How about, a boat and we spare YOUR life! Does this sound fair to you?"),
+									Lines = {
+										PlaceObj('ConversationInterjectionList', {
+											Interjections = {
+												PlaceObj('ConversationInterjection', {
+													AlwaysInterject = true,
+													Lines = {
+														PlaceObj('ConversationLine', {
+															Character = "GCExCougar",
+															Text = T(167977453644, --[[ModItemConversation ChurchQuestStart Text voice:GCExCougar section:ChurchQuestStart keyword:How about, a boat and we spare YOUR life! Does this sound fair to you?]] "Sir, I think we are improving a lot on our tactical bargaining front, Sir!"),
+															param_bindings = false,
+														}),
+													},
+													param_bindings = false,
+												}),
+											},
+											param_bindings = false,
+										}),
+										PlaceObj('ConversationLine', {
+											Character = "GCExStitches",
+											Text = T(208247280631, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:How about, a boat and we spare YOUR life! Does this sound fair to you?]] "Do what you must. You can kill me, but I am dead already! Besides, without me you will never find it..."),
+											param_bindings = false,
+										}),
+									},
+									id = "HowaboutaboatandwespareYOURlifeDoesthissoundfairtoyou2",
+									param_bindings = false,
+									PlaceObj('ConversationPhrase', {
+										Keyword = "Then you will show us the way!",
+										KeywordT = T(234744866561, --[[ModItemConversation ChurchQuestStart KeywordT]] "Then you will show us the way!"),
+										Lines = {
+											PlaceObj('ConversationLine', {
+												Character = "GCExStitches",
+												Text = T(900249276083, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Then you will show us the way!]] "Is that so? It's much easier to die here on the beach, stranger. I can give you some poison to spare you a lot of pain and horror."),
+												param_bindings = false,
+											}),
+											PlaceObj('ConversationInterjectionList', {
+												Interjections = {
+													PlaceObj('ConversationInterjection', {
+														Lines = {
+															PlaceObj('ConversationLine', {
+																Character = "GCExStitches",
+																Text = T(342783999250, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Then you will show us the way!]] "I could be convinced if you serve the poison with some Bordeaux!"),
+																param_bindings = false,
+															}),
+														},
+														param_bindings = false,
+													}),
+												},
+												param_bindings = false,
+											}),
+										},
+										id = "Thenyouwillshowustheway2",
+										param_bindings = false,
+										PlaceObj('ConversationPhrase', {
+											GoTo = "<end conversation>",
+											Keyword = "What do you mean?",
+											KeywordT = T(724520438286, --[[ModItemConversation ChurchQuestStart KeywordT]] "What do you mean?"),
+											Lines = {
+												PlaceObj('ConversationLine', {
+													Character = "GCExStitches",
+													Text = T(599504319466, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:What do you mean?]] "Whatever you heard of this place, it is worse...You came to the island of the dead. Those alive are dead and those dead are alive, the veil of worlds grows thin here...Let us go then."),
+													param_bindings = false,
+												}),
+											},
+											id = "Whatdoyoumean2",
+											param_bindings = false,
+										}),
+									}),
+								}),
+							}),
+						}),
+					}),
+				}),
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "SeagullLanding1",
+			DefaultActor = "GCExAdonisGuard",
+			campaign = "GCEXPrologue",
+			comment = "The Dialogue when landed on Seagull",
+			group = "GCExPrologueSeagul",
+			id = "LandingSeagull",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExAdonisGuard",
+						Text = T(370741661326, --[[ModItemConversation LandingSeagull Text voice:GCExAdonisGuard section:LandingSeagull keyword:Greeting]] "I am afraid this is not Diamond Red! The current must have changed our course."),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					GoTo = "<end conversation>",
+					Keyword = "So this is Seagull Island then?",
+					KeywordT = T(696112802392, --[[ModItemConversation LandingSeagull KeywordT]] "So this is Seagull Island then?"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExAdonisGuard",
+							Text = T(558501881185, --[[ModItemConversation LandingSeagull Text voice:GCExAdonisGuard section:LandingSeagull keyword:So this is Seagull Island then?]] "I am afraid so, we have heard no good of this place. Be careful when you take a look around. The boat will be ready again in now time."),
+							param_bindings = false,
+						}),
+					},
+					id = "SothisisSeagullIslandthen",
+					param_bindings = false,
+				}),
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "SeagullLanding2",
+			DefaultActor = "GCExBiff",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueSeagul",
+			id = "LandingSeagull2",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBiff",
+						Text = T(180432867983, --[[ModItemConversation LandingSeagull2 Text voice:GCExBiff section:LandingSeagull2 keyword:Greeting]] "I am sorry guys, this place is giving me the creeps. You never should have told me about the curse on these islands."),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					GoTo = "<end conversation>",
+					Keyword = "Nothing but local rumours and legends, stories you tell your kids.",
+					KeywordT = T(215204480282, --[[ModItemConversation LandingSeagull2 KeywordT]] "Nothing but local rumours and legends, stories you tell your kids."),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExBiff",
+							Text = T(356329072480, --[[ModItemConversation LandingSeagull2 Text voice:GCExBiff section:LandingSeagull2 keyword:Nothing but local rumours and legends, stories you tell your kids.]] "I am not to sure about this anymore...I mean look at this place, it's deserted, where are all the people? You guys can take a look, the rest of us will stay here. \n"),
+							param_bindings = false,
+						}),
+					},
+					id = "Goodbye",
+					param_bindings = false,
+				}),
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "GCExDeeDee",
+			DefaultActor = "GCExDeeDee",
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "Parts_High",
+					'Value', 25,
+					'Tag', "<Parts_High>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "Parts_Low",
+					'Value', 15,
+					'Tag', "<Parts_Low>",
+				}),
+			},
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueEmerald",
+			id = "GCExDeedee",
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Comment = "first",
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExDeeDee",
+						Text = T(106364168261, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Greeting]] "Hello there! Hope you did not trip on a trap. You got it? Triptrap, hehe!"),
+						param_bindings = false,
+					}),
+				},
+				NoBackOption = true,
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Align = "right",
+					AutoRemove = true,
+					Conditions = {
+						PlaceObj('WoundedMercs', {
+							param_bindings = false,
+						}),
+					},
+					GoTo = "<root>",
+					Keyword = "Too late to tell us now.",
+					KeywordT = T(405416363086, --[[ModItemConversation GCExDeedee KeywordT]] "Too late to tell us now."),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExDeeDee",
+							Text = T(455602460461, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Too late to tell us now.]] "Oh, don't worry about me! Explosions are common around here. I put a blast shield under the workbench and I've gotten really good at vaulting over it."),
+							param_bindings = false,
+						}),
+					},
+					StoryBranchIcon = "conversation_friendly",
+					id = "Toolatetotellusnow",
+					param_bindings = false,
+				}),
+				PlaceObj('ConversationPhrase', {
+					Align = "right",
+					AutoRemove = true,
+					GoTo = "<root>",
+					Keyword = "Well, yes, ehm...no. We got lucky",
+					KeywordT = T(840168287628, --[[ModItemConversation GCExDeedee KeywordT]] "Well, yes, ehm...no. We got lucky"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExDeeDee",
+							Text = T(375135683228, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Well, yes, ehm...no. We got lucky]] "There were some signs, you know. It's my playground...where I test things..."),
+							param_bindings = false,
+						}),
+					},
+					StoryBranchIcon = "conversation_sarcastic",
+					id = "WellyesehmnoWegotlucky",
+					param_bindings = false,
+				}),
+			}),
+			PlaceObj('ConversationPhrase', {
+				Align = "right",
+				Comment = "repeated",
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExDeeDee",
+						Text = T(997088934283, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Greeting]] "There were some signs, you know. It's my playground...where I test things..."),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExDeedee",
+						PhraseId = "Makeussomeexplosives",
+						param_bindings = false,
+					}),
+				},
+				Keyword = "What are you testing?",
+				KeywordT = T(550938876362, --[[ModItemConversation GCExDeedee KeywordT]] "What are you testing?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExDeeDee",
+						Text = T(951705920478, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:What are you testing?]] "Deedee: Bombs, of course! That's why they call me Boombastic, hehe. There is still a lot of functional WW2 material on this island!"),
+						param_bindings = false,
+					}),
+				},
+				StoryBranchIcon = "conversation_trade",
+				id = "Whatareyoutesting",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				Align = "right",
+				Enabled = false,
+				Keyword = "We need some equipment, you don't sale explosives by chance?",
+				KeywordT = T(863651032741, --[[ModItemConversation GCExDeedee KeywordT]] "We need some equipment, you don't sale explosives by chance?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExDeeDee",
+						Text = T(741584586654, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:We need some equipment, you don't sale explosives by chance?]] 'Well, I could probably spare some of my "Experiments", if you can part with some parts! Hahaha, you get, it do you? Part and parts, also as in body parts.'),
+						param_bindings = false,
+					}),
+				},
+				PhraseRolloverText = T(417330716617, --[[ModItemConversation GCExDeedee PhraseRolloverText]] "<color EmStyle>25 Parts</color> required"),
+				StoryBranchIcon = "conversation_action",
+				id = "YouthinkyoucanyousellussomeofyourExplosives",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				Align = "right",
+				AutoRemove = true,
+				Comment = "Fidel enabled",
+				Conditions = {
+					PlaceObj('UnitSquadHasItem', {
+						Amount = 15,
+						ItemId = "Parts",
+						param_bindings = {
+							Amount = "Parts_Low",
+						},
+					}),
+				},
+				Effects = {
+					PlaceObj('UnitTakeItem', {
+						Amount = 15,
+						AnySquad = true,
+						ItemId = "Parts",
+						param_bindings = {
+							Amount = "Parts_Low",
+						},
+					}),
+					PlaceObj('QuestSetVariableBool', {
+						Prop = "DeedeeExplosives",
+						QuestId = "ErnieSideQuests",
+						Set = false,
+						param_bindings = false,
+					}),
+					PlaceObj('UnitGrantItem', {
+						ItemId = "LionRoar",
+						param_bindings = false,
+					}),
+					PlaceObj('QuestSetVariableBool', {
+						Prop = "LootedStash2",
+						QuestId = "GearUp",
+						param_bindings = false,
+					}),
+					PlaceObj('LogMessageAdd', {
+						message = T(489401064088, --[[ModItemConversation GCExDeedee message]] "Found one of the Provisions!"),
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				GoTo = "YouthinkyoucanyousellussomeofyourExplosives",
+				Keyword = "Make us some explosives",
+				KeywordT = T(954966894269, --[[ModItemConversation GCExDeedee KeywordT]] "Make us some explosives"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExDeeDee",
+						Text = T(803706759749, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Make us some explosives]] "Ohh, what a pity, I cannot do much with this! What about I give you something I found on the beach? I have no use for it and would scrap it for parts."),
+						param_bindings = false,
+					}),
+				},
+				PhraseRolloverText = "",
+				PlayGoToPhrase = true,
+				StoryBranchIcon = "conversation_action",
+				id = "Makeussomeexplosives",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				Align = "right",
+				GoTo = "<end conversation>",
+				Keyword = "Goodbye",
+				KeywordT = T(557225474228, --[[ModItemConversation WeaponSale KeywordT]] "Goodbye"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExDeeDee",
+						Text = T(302422212918, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Goodbye]] "Have a boom-boombastic day!"),
+						param_bindings = false,
+					}),
+				},
+				StoryBranchIcon = "conversation_goodbye",
+				id = "Goodbye",
+				param_bindings = false,
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "Stephane",
+			DefaultActor = "GCExStephane",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueOutlook",
+			id = "GCExStephane",
+			PlaceObj('ConversationPhrase', {
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExStephane",
+						PhraseId = "WeareCommandoslikeinthemovies",
+						param_bindings = false,
+					}),
+				},
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStephane",
+						Text = T(952780783459, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:Greeting]] "Soldiers!? What are you doing here? I hope it's for the celebrations..."),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExStephane",
+						PhraseId = "Whatdoyoumean",
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				Keyword = "We are Commandos, like in the movies!",
+				KeywordT = T(582027436041, --[[ModItemConversation GCExStephane KeywordT]] "We are Commandos, like in the movies!"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStephane",
+						Text = T(689188544794, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:We are Commandos, like in the movies!]] "Really? You are not here to shoot anyone, are you? For a moment I thought it's war all over again."),
+						param_bindings = false,
+					}),
+				},
+				id = "WeareCommandoslikeinthemovies",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExStephane",
+						PhraseId = "Andnow",
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				Keyword = "What do you mean?",
+				KeywordT = T(724520438286, --[[ModItemConversation ChurchQuestStart KeywordT]] "What do you mean?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStephane",
+						Text = T(641009209196, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:What do you mean?]] "A few years back there was a civil war here. Very bloody, many people died..."),
+						param_bindings = false,
+					}),
+				},
+				id = "Whatdoyoumean",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExStephane",
+						PhraseId = "Whatdoyoumeanbydarkhistory",
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				Keyword = "And now?",
+				KeywordT = T(906217673307, --[[ModItemConversation GCExStephane KeywordT]] "And now?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStephane",
+						SoundAfter = "Mod/GCExPrologue/CROW FLY.WAV",
+						Text = T(591134729341, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:And now?]] "I am enjoying my peace here with my wife. Erny has such a good climate and a less dark history than the other islands."),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationInterjectionList', {
+						Interjections = {
+							PlaceObj('ConversationInterjection', {
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExGaston",
+										Text = T(250497870643, --[[ModItemConversation GCExStephane Text voice:GCExGaston section:GCExStephane keyword:And now?]] "Where the french colonized, beautiful places remained!"),
+										param_bindings = false,
+									}),
+								},
+								param_bindings = false,
+							}),
+						},
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationInterjectionList', {
+						Interjections = {
+							PlaceObj('ConversationInterjection', {
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExStogie",
+										Text = T(932225020249, --[[ModItemConversation GCExStephane Text voice:GCExStogie section:GCExStephane keyword:And now?]] "Such as Haiti and Vietnam..."),
+										param_bindings = false,
+									}),
+								},
+								param_bindings = false,
+							}),
+						},
+						param_bindings = false,
+					}),
+				},
+				id = "Andnow",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExStephane",
+						PhraseId = "Tellusmore",
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				Keyword = "What do you mean by dark history?",
+				KeywordT = T(703052525224, --[[ModItemConversation GCExStephane KeywordT]] "What do you mean by dark history?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStephane",
+						SoundAfter = "Mod/GCExPrologue/CROW3.WAV",
+						Text = T(340391831764, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:What do you mean by dark history?]] "Haven't you heard about this region? There is a curse on these islands. Rumor has it, that a god is protecting Erny Island."),
+						param_bindings = false,
+					}),
+				},
+				id = "Whatdoyoumeanbydarkhistory",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				Effects = {
+					PlaceObj('LogMessageAdd', {
+						message = T(512777124252, --[[ModItemConversation GCExStephane message]] "You heard a strange rumour about Seagull Island!"),
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				GoTo = "Goodbye",
+				Keyword = "Tell us more...",
+				KeywordT = T(437750991668, --[[ModItemConversation GCExStephane KeywordT]] "Tell us more..."),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStephane",
+						SoundAfter = "Mod/GCExPrologue/CROW2.WAV",
+						Text = T(759892413264, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:Tell us more...]] "It is said, that north of here, on Seagull Island, the dead are walking at night. I heard some fishermen talk about it!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Tellusmore",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				GoTo = "<end conversation>",
+				Keyword = "Goodbye",
+				KeywordT = T(557225474228, --[[ModItemConversation WeaponSale KeywordT]] "Goodbye"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExStephane",
+						Text = T(886504214877, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:Goodbye]] "A la prochaine..."),
+						param_bindings = false,
+					}),
+				},
+				id = "Goodbye",
+				param_bindings = false,
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "MarthaBar",
+			DefaultActor = "GCExMartha",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueErnie",
+			id = "GCExMartha",
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExMartha",
+						Text = T(778294712459, --[[ModItemConversation GCExMartha Text voice:GCExMartha section:GCExMartha keyword:Greeting]] "Hello there paying customer!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExMartha",
+						PhraseId = "Sowhatstheword",
+						param_bindings = false,
+					}),
+					PlaceObj('PlayerPayMoney', {
+						Amount = 2,
+						param_bindings = false,
+					}),
+				},
+				Keyword = "One beer, please!",
+				KeywordT = T(954947644437, --[[ModItemConversation GCExMartha KeywordT]] "One beer, please!"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExMartha",
+						Text = T(676385075189, --[[ModItemConversation GCExMartha Text voice:GCExMartha section:GCExMartha keyword:One beer, please!]] "You heard it, Herman. One cold beer for this customer!"),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationInterjectionList', {
+						Interjections = {
+							PlaceObj('ConversationInterjection', {
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExHerman",
+										Text = T(603459065651, --[[ModItemConversation GCExMartha Text voice:GCExHerman section:GCExMartha keyword:One beer, please!]] "Yes, Martha, of course. So strangers, have you heard about the island-curse? How Erny Island is blessed?"),
+										param_bindings = false,
+									}),
+								},
+								param_bindings = false,
+							}),
+						},
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationInterjectionList', {
+						Interjections = {
+							PlaceObj('ConversationInterjection', {
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExMartha",
+										Text = T(480583133159, --[[ModItemConversation GCExMartha Text voice:GCExMartha section:GCExMartha keyword:One beer, please!]] "Oh, shut up, Herman. You don't really believe that nonsense."),
+										param_bindings = false,
+									}),
+								},
+								param_bindings = false,
+							}),
+						},
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationInterjectionList', {
+						Interjections = {
+							PlaceObj('ConversationInterjection', {
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExHerman",
+										Text = T(815544067665, --[[ModItemConversation GCExMartha Text voice:GCExHerman section:GCExMartha keyword:One beer, please!]] "But something strange is going on at Seagull. You can ask around..."),
+										param_bindings = false,
+									}),
+								},
+								param_bindings = false,
+							}),
+						},
+						param_bindings = false,
+					}),
+				},
+				id = "Onebeerplease",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				Effects = {
+					PlaceObj('LogMessageAdd', {
+						message = T(137797017272, --[[ModItemConversation GCExMartha message]] "You heard a strange rumour about Seagull Island!"),
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				GoTo = "Goodbye",
+				Keyword = "So what's the word?",
+				KeywordT = T(739090893416, --[[ModItemConversation GCExMartha KeywordT]] "So what's the word?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExHerman",
+						SoundBefore = "Mod/GCExPrologue/DRINK FROM CANTEEN MALE.WAV",
+						Text = T(782372299345, --[[ModItemConversation GCExMartha Text voice:GCExHerman section:GCExMartha keyword:So what's the word?]] "Strange sightings at night, weird sounds. Someone lurking in the jungle. It is a place I would avoid, if I were you..."),
+						param_bindings = false,
+					}),
+				},
+				id = "Sowhatstheword",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				GoTo = "<end conversation>",
+				Keyword = "Goodbye",
+				KeywordT = T(557225474228, --[[ModItemConversation WeaponSale KeywordT]] "Goodbye"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExMartha",
+						Text = T(109652371430, --[[ModItemConversation GCExMartha Text voice:GCExMartha section:GCExMartha keyword:Goodbye]] "Hope to see you soon!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Goodbye",
+				param_bindings = false,
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "GCExBiff",
+			Conditions = {
+				PlaceObj('UnitIsAroundMarkerOfGroup', {
+					MarkerGroup = "SantiagoMeet",
+					TargetUnit = "GCEXFlo",
+					param_bindings = false,
+				}),
+			},
+			DefaultActor = "GCExBiff",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueErnie",
+			id = "GCExBiff",
+			PlaceObj('ConversationPhrase', {
+				Effects = {
+					PlaceObj('QuestSetVariableBool', {
+						Prop = "Completed",
+						QuestId = "GCEx_01_Landing",
+						param_bindings = false,
+					}),
+					PlaceObj('GroupSetBehaviorExit', {
+						TargetUnit = "GCExBiff",
+						closest = true,
+						delay = 1000,
+						param_bindings = false,
+					}),
+					PlaceObj('GroupSetBehaviorExit', {
+						TargetUnit = "GCExSantiago",
+						closest = true,
+						delay = 1000,
+						param_bindings = false,
+					}),
+					PlaceObj('GroupSetBehaviorAdvanceTo', {
+						MarkerGroup = "MarthaBar",
+						TargetUnit = "GCEXFlo",
+						param_bindings = false,
+					}),
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExBiff",
+						PhraseId = "Greeting1",
+						param_bindings = false,
+					}),
+					PlaceObj('LogMessageAdd', {
+						message = T(812009438671, --[[ModItemConversation GCExBiff message]] "Quest Received: Gear Up!"),
+						param_bindings = false,
+					}),
+				},
+				GiveQuests = {
+					"GearUp",
+				},
+				GoTo = "<end conversation>",
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBiff",
+						Text = T(248739835120, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting]] "So, listen up, guys. I don't know much yet about our mission, only that I was asked for the best and that is us."),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationInterjectionList', {
+						Interjections = {
+							PlaceObj('ConversationInterjection', {
+								Lines = {
+									PlaceObj('ConversationLine', {
+										AlwaysInterject = true,
+										Character = "GCExStogie",
+										Text = T(470791200374, --[[ModItemConversation GCExBiff Text voice:GCExStogie section:GCExBiff keyword:Greeting]] "Well, you gotta give us a bit more than that!"),
+										param_bindings = false,
+									}),
+								},
+								param_bindings = false,
+							}),
+						},
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExBiff",
+						Text = T(462724511182, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting]] "The only thing I can tell you right now is, that our mission is to capture some diamond mines.  Sorry, can't tell you more until I've met the client. Oh, there is one other thing: We'll need to gear up. With this equipment we will not get far"),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationInterjectionList', {
+						Interjections = {
+							PlaceObj('ConversationInterjection', {
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExCougar",
+										Text = T(994262243827, --[[ModItemConversation GCExBiff Text voice:GCExCougar section:GCExBiff keyword:Greeting]] "Sir, the mission briefing did not adequately cover the situation on site. What resources do you have to rectify that situation, Sir?"),
+										param_bindings = false,
+									}),
+								},
+								param_bindings = false,
+							}),
+						},
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExBiff",
+						Text = T(268515951566, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting]] "What, me? None, but my contractor might be able to provide additional funding. I'll see what I can do. You should scout the island in the meantime. Until then, procure additional supplies from local sources. Think of something!"),
+						param_bindings = false,
+					}),
+				},
+				PlayGoToPhrase = true,
+				id = "Greeting",
+				param_bindings = false,
+				target_units = {},
+			}),
+			PlaceObj('ConversationPhrase', {
+				Conditions = {
+					PlaceObj('QuestIsVariableBool', {
+						QuestId = "GCEx_01_Landing",
+						Vars = set( "Completed" ),
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				GiveQuests = {
+					"ReadyForRailings",
+				},
+				GoTo = "<end conversation>",
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBiff",
+						Text = T(359691937175, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting1]] "So here's the deal. We leave next thing tomorrow morning, I arranged a boat.  We are heading north  to a mine called Diamond Red. Apparently a warlord is financing his personal Vendetta with diamond money"),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationInterjectionList', {
+						Interjections = {
+							PlaceObj('ConversationInterjection', {
+								Lines = {
+									PlaceObj('ConversationLine', {
+										Character = "GCExStogie",
+										Text = T(553373879540, --[[ModItemConversation GCExBiff Text voice:GCExStogie section:GCExBiff keyword:Greeting1]] "Any details on what resistance to expect? Squad size, position, gear?"),
+										param_bindings = false,
+									}),
+								},
+								param_bindings = false,
+							}),
+						},
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExBiff",
+						Text = T(476862176521, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting1]] "No, not currently. We land south of that mine and gather some Intel first. It's said there is a communist cell currently fighting agains the warlord, who calls himself the Major.\nWhen all preparations are met, we'll be ready to set sails"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting1",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				GoTo = "<end conversation>",
+				Keyword = "Goodbye",
+				KeywordT = T(557225474228, --[[ModItemConversation WeaponSale KeywordT]] "Goodbye"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBiff",
+						param_bindings = false,
+					}),
+				},
+				id = "Goodbye2",
+				param_bindings = false,
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "GCExBastien",
+			Comment = "(Bastien) - initial",
+			DefaultActor = "GCExBastien",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueFlagHill",
+			id = "GCExBastien",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBastien",
+						Text = T(946372180209, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:Greeting]] "Bonjour, Boss!"),
+						param_bindings = false,
+					}),
+				},
+				NoBackOption = true,
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					AutoRemove = true,
+					Effects = {
+						PlaceObj('PhraseSetEnabled', {
+							Conversation = "GCExBastien",
+							PhraseId = "Sowhydoyouneedarifle",
+							param_bindings = false,
+						}),
+					},
+					Keyword = "Who are you?",
+					KeywordT = T(860517763452, --[[ModItemConversation GCExBastien KeywordT]] "Who are you?"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExBastien",
+							Text = T(721168187062, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:Who are you?]] "Oh, me? Haha! I am just a tourist guide!"),
+							param_bindings = false,
+						}),
+						PlaceObj('ConversationInterjectionList', {
+							Interjections = {
+								PlaceObj('ConversationInterjection', {
+									Lines = {
+										PlaceObj('ConversationLine', {
+											Character = "GCExGasket",
+											Text = T(429615830652, --[[ModItemConversation GCExBastien Text voice:GCExGasket section:GCExBastien keyword:Who are you?]] "I also guide tourists and squirrels with my gun. It's a good hobby."),
+											param_bindings = false,
+										}),
+									},
+									param_bindings = false,
+								}),
+							},
+							param_bindings = false,
+						}),
+					},
+					StoryBranchIcon = "conversation_sarcastic",
+					id = "Whoareyou",
+					param_bindings = false,
+				}),
+			}),
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExBastien",
+						PhraseId = "Youaremoreofthesuspicioustypeeh",
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				Keyword = "So why do you need a rifle?",
+				KeywordT = T(844660616592, --[[ModItemConversation GCExBastien KeywordT]] "So why do you need a rifle?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBastien",
+						Text = T(439379989623, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:So why do you need a rifle?]] "Huh? Oh this one, yes, yes. Dangerous Island, wild animals, you know!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Sowhydoyouneedarifle",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				AutoRemove = true,
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExBastien",
+						PhraseId = "WhatifwetakeyoutotheowneroftheIsland",
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				Keyword = "You are more of the suspicious type, eh?",
+				KeywordT = T(228218104589, --[[ModItemConversation GCExBastien KeywordT]] "You are more of the suspicious type, eh?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBastien",
+						Text = T(189454375929, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:You are more of the suspicious type, eh?]] "Bastien: No, no, no. Really, Boss...Just leave me be. I am here enjoying my beer, catching fish. Ain't nothing wrong with that, is there?"),
+						param_bindings = false,
+					}),
+				},
+				id = "Youaremoreofthesuspicioustypeeh",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				Effects = {
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExBastien",
+						PhraseId = "Alrightthenhanditover",
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				Keyword = "What if we take you to the owner of the Island?",
+				KeywordT = T(920028591231, --[[ModItemConversation GCExBastien KeywordT]] "What if we take you to the owner of the Island?"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBastien",
+						Text = T(865099393848, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:What if we take you to the owner of the Island?]] "Ah, this is really not necessary, don't bother... Instead I might have something that interests you. I have a family, you know!"),
+						param_bindings = false,
+					}),
+				},
+				id = "WhatifwetakeyoutotheowneroftheIsland",
+				param_bindings = false,
+			}),
+			PlaceObj('ConversationPhrase', {
+				Align = "right",
+				Effects = {
+					PlaceObj('GroupSetBehaviorExit', {
+						MarkerGroup = "East",
+						Running = true,
+						TargetUnit = "GCExBastien",
+						UseWeapons = true,
+						param_bindings = false,
+					}),
+					PlaceObj('UnitGrantItem', {
+						ItemId = "Winchester_Quest",
+						param_bindings = {},
+					}),
+					PlaceObj('QuestSetVariableBool', {
+						Prop = "LootedStash1",
+						QuestId = "GearUp",
+						param_bindings = false,
+					}),
+					PlaceObj('LogMessageAdd', {
+						message = T(915778038865, --[[ModItemConversation GCExBastien message]] "Looted Bastien for Gear!"),
+						param_bindings = false,
+					}),
+				},
+				Enabled = false,
+				GoTo = "<end conversation>",
+				Keyword = "Alright then, hand it over!",
+				KeywordT = T(956960100252, --[[ModItemConversation GCExBastien KeywordT]] "Alright then, hand it over!"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExBastien",
+						Text = T(284729928776, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:Alright then, hand it over!]] "Bien sur! Please, take these. I just found them on the beach, I swear... All yours now. I... I can go? And... You won't shoot me in the back?"),
+						param_bindings = false,
+					}),
+				},
+				PhraseRolloverText = "",
+				PlayGoToPhrase = true,
+				StoryBranchIcon = "conversation_action",
+				id = "Alrightthenhanditover",
+				param_bindings = false,
+				target_units = {},
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "MERCNpcs",
+			DefaultActor = "GCExHaywire",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueErnie",
+			id = "GCExBarChat",
+			PlaceObj('ConversationPhrase', {
+				Effects = {
+					PlaceObj('GroupSetBehaviorAdvanceTo', {
+						MarkerGroup = "SantiagoMeet",
+						TargetUnit = "GCExFlo",
+						param_bindings = false,
+					}),
+					PlaceObj('PhraseSetEnabled', {
+						Conversation = "GCExBarChat",
+						Enabled = false,
+						PhraseId = "Greeting",
+						param_bindings = false,
+					}),
+					PlaceObj('DisableInteractionMarkerEffect', {
+						Group = "MERCNpcs",
+						param_bindings = false,
+					}),
+					PlaceObj('GroupSetBehaviorAdvanceTo', {
+						MarkerGroup = "SmileyFlirt",
+						TargetUnit = "GCExSmiley",
+						param_bindings = false,
+					}),
+				},
+				GoTo = "<end conversation>",
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExHaywire",
+						Text = T(612451531498, --[[ModItemConversation GCExBarChat Text voice:GCExHaywire section:GCExBarChat keyword:Greeting]] "So, that's the Great Grand Chien?!"),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExNumb",
+						Text = T(413632878144, --[[ModItemConversation GCExBarChat Text voice:GCExNumb section:GCExBarChat keyword:Greeting]] "Haha, maybe you should ask the french bottles..."),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExFlo",
+						Text = T(120339035724, --[[ModItemConversation GCExBarChat Text voice:GCExFlo section:GCExBarChat keyword:Greeting]] "What's that supposed to mean, huh?"),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExNumb",
+						Text = T(800781060210, --[[ModItemConversation GCExBarChat Text voice:GCExNumb section:GCExBarChat keyword:Greeting]] "Well, just have a butchers at this place! Colonization history! I 'ate the Brits, imperialist, classist buggers, but Ya' french are no better..."),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExFlo",
+						Text = T(904387263515, --[[ModItemConversation GCExBarChat Text voice:GCExFlo section:GCExBarChat keyword:Greeting]] "I cannot be held accountable for what some old white men did here in the past."),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExGaston",
+						Text = T(736358797281, --[[ModItemConversation GCExBarChat Text voice:GCExGaston section:GCExBarChat keyword:Greeting]] "Oh mon dieu, I don't wanna hear no more."),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExLarry",
+						Text = T(876967566309, --[[ModItemConversation GCExBarChat Text voice:GCExLarry section:GCExBarChat keyword:Greeting]] "Yea, right! Let's rather check out the Menu at this place!"),
+						param_bindings = false,
+					}),
+					PlaceObj('ConversationLine', {
+						Character = "GCExCougar",
+						Text = T(376109083800, --[[ModItemConversation GCExBarChat Text voice:GCExCougar section:GCExBarChat keyword:Greeting]] "Sir, a Bar is not the correct environment for a base of operations, Sir."),
+						param_bindings = false,
+					}),
+				},
+				PlayGoToPhrase = true,
+				id = "Greeting",
+				param_bindings = false,
+				target_units = {},
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "LegionScouts",
+			DefaultActor = "LegionMarauder_Tutorial",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueRust",
+			id = "GCExLegionTalk",
+			PlaceObj('ConversationPhrase', {
+				Conditions = {
+					PlaceObj('UnitHasStatusEffect', {
+						Effect = "Hidden",
+						Negate = true,
+						TargetUnit = "player mercs on map",
+						param_bindings = false,
+					}),
+				},
+				Effects = {
+					PlaceObj('GroupAddStatusEffect', {
+						Status = "Suspicious",
+						TargetUnit = "LegionScouts",
+						param_bindings = false,
+					}),
+				},
+				GoTo = "<end conversation>",
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "LegionRaider_WeakFlagHill",
+						Text = T(405146278692, --[[ModItemConversation GCExLegionTalk Text voice:LegionRaider_WeakFlagHill section:GCExLegionTalk keyword:Greeting]] "Come on boys! Hurry up! I think I heard someone coming."),
+						param_bindings = false,
+					}),
+				},
+				PlayGoToPhrase = true,
+				id = "Greeting",
+				param_bindings = false,
+				target_units = {},
+			}),
+		}),
+		PlaceObj('ModItemConversation', {
+			AssignToGroup = "GoonsChillaxing",
+			DefaultActor = "Raider",
+			campaign = "GCEXPrologue",
+			group = "GCExPrologueOutlook",
+			id = "GCExThugs",
+			PlaceObj('ConversationPhrase', {
+				Keyword = "Greeting",
+				KeywordT = T(774381032385, --[[ModItemConversation WeaponSale KeywordT]] "Greeting"),
+				Lines = {
+					PlaceObj('ConversationLine', {
+						Character = "GCExGoon_4",
+						Text = T(903654102284, --[[ModItemConversation GCExThugs Text voice:GCExGoon_4 section:GCExThugs keyword:Greeting]] "Hey tourists, you passed through our territory, it's time to pay the toll!"),
+						param_bindings = false,
+					}),
+				},
+				id = "Greeting",
+				param_bindings = false,
+				PlaceObj('ConversationPhrase', {
+					Effects = {
+						PlaceObj('GroupSetSide', {
+							CreateSquad = false,
+							Side = "enemy1",
+							TargetUnit = "GoonsChillaxing",
+							param_bindings = false,
+						}),
+						PlaceObj('QuestSetVariableBool', {
+							Prop = "ThugsHostile",
+							QuestId = "FlagHillHostileTracker",
+							param_bindings = false,
+						}),
+					},
+					GoTo = "<end conversation>",
+					Keyword = "Open fire",
+					KeywordT = T(787910685312, --[[ModItemConversation GCExThugs KeywordT]] "Open fire"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExGoon_4",
+							Text = T(718635057739, --[[ModItemConversation GCExThugs Text voice:GCExGoon_4 section:GCExThugs keyword:Open fire]] "Wrong choice!"),
+							param_bindings = false,
+						}),
+					},
+					PlayGoToPhrase = true,
+					id = "Openfire",
+					param_bindings = false,
+					target_units = {},
+				}),
+				PlaceObj('ConversationPhrase', {
+					Effects = {
+						PlaceObj('PlayerPayMoney', {
+							Amount = 1500,
+							param_bindings = false,
+						}),
+						PlaceObj('DisableInteractionMarkerEffect', {
+							Group = "GoonsChillaxing",
+							param_bindings = false,
+						}),
+						PlaceObj('QuestSetVariableBool', {
+							Prop = "PaidToll",
+							QuestId = "FlagHillHostileTracker",
+							param_bindings = false,
+						}),
+					},
+					GoTo = "<end conversation>",
+					Keyword = "Pay the toll",
+					KeywordT = T(538733183912, --[[ModItemConversation GCExThugs KeywordT]] "Pay the toll"),
+					Lines = {
+						PlaceObj('ConversationLine', {
+							Character = "GCExGoon_4",
+							Text = T(490759011841, --[[ModItemConversation GCExThugs Text voice:GCExGoon_4 section:GCExThugs keyword:Pay the toll]] "That's right, you can go unharmed this time."),
+							param_bindings = false,
+						}),
+						PlaceObj('ConversationLine', {
+							Character = "GCExGoon_4",
+							Text = T(896355908779, --[[ModItemConversation GCExThugs Text voice:GCExGoon_4 section:GCExThugs keyword:Pay the toll]] "I see you guys mean business, I will tell the boss about you, you can find him in Flag Hill."),
+							param_bindings = false,
+						}),
+					},
+					PlayGoToPhrase = true,
+					id = "Paythetoll",
+					param_bindings = false,
+				}),
+			}),
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
+		'name', "Quest Item",
+	}, {
+		PlaceObj('ModItemInventoryItemCompositeDef', {
+			'Id', "WilcoxNotes_1",
+			'object_class', "QuestItem",
+			'Icon', "UI/Icons/Items/diary",
+			'DisplayName', T(727241629685, --[[ModItemInventoryItemCompositeDef WilcoxNotes_1 DisplayName]] "Wilcox's Diary"),
+			'Description', T(832034164910, --[[ModItemInventoryItemCompositeDef WilcoxNotes_1 Description]] "Deep in the black and horrid forest, in the misty jungles of \n<color EmStyle>Seagull</color>, there lives a Tribe. Simple folks, deeply connected with their heritage and the blood of their ancestors. These people survived not only by wit alone, but by their rituals thousands of years old. Rules by which their fathers fathers and mothers mothers abided. <color EmStyle>The Ritual of Blood</color>. The demanding of blood by gods.<newline><newline>\nThis is the rule. And for thousands of years the sacrifice of mere animals was suffice for the gods. They lent their protection.<newline><newline>\nBut as fate often comes as a stranger and stays as a friend, the same happened here in the deep jungles of Seagull. \nIt came a time where war was once again upon mankind. One side twisted in their ideology, where science knows no ethical bounds-destroyed by their own ideas of the future.\nLet loose a <color EmStyle>walking plague</color> on an island of harmless hunter and fishermen. In their ordeal to survive, they begged the gods for their help once more. And the gods approved, but for the price of more blood..."),
+			'RestockWeight', 0,
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
+		'name', "Minsc",
+	}, {
+		PlaceObj('ModItemRadioStationPreset', {
+			FadeOutTime = 1000,
+			Files = {
+				PlaceObj('RadioPlaylistTrack', {
+					'Track', "Mod/GCExPrologue/creedence-clearwater-revival-fortunate-sonmp3",
+				}),
+				PlaceObj('RadioPlaylistTrack', {
+					'Track', "Mod/GCExPrologue/Buffalo Springfield - For What It's Worth 1967 2",
+				}),
+			},
+			Folder = "RadioStations/",
+			Mode = "list",
+			group = "Default",
+			id = "GCExRadio",
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
 		'name', "Sectors",
 	}, {
 		PlaceObj('ModItemFolder', {
@@ -4744,7 +11597,7 @@ return {
 					'bidirectionalBlockApply', true,
 					'BlockTravel', set({
 	East = true,
-	North = true,
+	North = false,
 	South = false,
 	West = false,
 }),
@@ -5057,6 +11910,7 @@ return {
 				}),
 			}),
 			PlaceObj('ModItemSector', {
+				'comment', "Erny Village",
 				'mapName', "qqQkbH5",
 				'campaignId', "GCEXPrologue",
 				'sectorId', "J5",
@@ -5131,5169 +11985,5 @@ return {
 				}),
 			}),
 			}),
-		}),
-	PlaceObj('ModItemFolder', {
-		'name', "Appearance Presets",
-	}, {
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "NPCCostumeMale_Shirt_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(20, 9, 6, 255),
-				'EditableColor2', RGBA(30, 57, 78, 255),
-				'EditableColor3', RGBA(37, 43, 59, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat2 = "EquipmentIvan_Glasses",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(17, 21, 28, 255),
-				'EditableColor2', RGBA(32, 38, 49, 255),
-				'EditableColor3', RGBA(38, 40, 43, 255),
-			}),
-			Head = "Male_Head_02",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "NPCCostumeMale_Pants_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(64, 55, 55, 255),
-				'EditableColor2', RGBA(15, 11, 7, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(19, 13, 7, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "BrianNPC",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "NPCTraditionalMale_Top_A_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 3, 11, 255),
-				'EditableColor2', RGBA(0, 6, 12, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(0, 0, 0, 255),
-				'EditableRoughness3', -128,
-			}),
-			Hat = "NPCTraditionalMale_Hat_Pattern_01",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 3, 11, 255),
-				'EditableColor2', RGBA(0, 6, 12, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Male_Head_08",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "NPCTraditionalMale_Pants_Pattern_03",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 3, 11, 255),
-				'EditableColor2', RGBA(0, 6, 12, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "StephaneNPC",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(33, 12, 7, 255),
-				'EditableColor2', RGBA(123, 97, 10, 255),
-				'EditableColor3', RGBA(207, 207, 207, 255),
-			}),
-			Body = "Faction_Militia_Top_05",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(30, 40, 27, 255),
-				'EditableColor2', RGBA(29, 26, 26, 255),
-				'EditableColor3', RGBA(37, 34, 34, 255),
-				'EditableRoughness3', 44,
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "FactionMale_Hat_01",
-			Hat2 = "EquipmentLen_Glasses",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(170, 89, 23, 255),
-				'EditableColor2', RGBA(19, 15, 13, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Male_Head_04",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "Faction_Adonis_Bottom_02",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(30, 40, 27, 255),
-				'EditableColor2', RGBA(29, 26, 26, 255),
-				'EditableColor3', RGBA(37, 34, 34, 255),
-				'EditableRoughness3', 44,
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "SmurgeNPC",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Adonis_Top_Camo_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(43, 18, 13, 255),
-				'EditableColor2', RGBA(22, 29, 31, 255),
-				'EditableColor3', RGBA(37, 35, 35, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(4, 4, 4, 255),
-				'EditableColor2', RGBA(8, 8, 8, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "FactionMale_Hat_01",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(20, 54, 198, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_M_Ca_NPC_Camo_01",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "Faction_Acc_Recon",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(4, 4, 4, 255),
-				'EditableColor2', RGBA(8, 8, 8, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "Faction_Adonis_Bottom_Camo_02",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 29, 31, 255),
-				'EditableColor2', RGBA(20, 19, 19, 255),
-				'EditableColor3', RGBA(15, 14, 14, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "AdonisGuard1NPC",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Adonis_Top_Camo_03",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(28, 12, 9, 255),
-				'EditableColor2', RGBA(45, 58, 62, 255),
-				'EditableColor3', RGBA(12, 12, 12, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "FactionMale_Hat_12",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(55, 73, 78, 255),
-				'EditableColor2', RGBA(12, 12, 12, 255),
-				'EditableColor3', RGBA(12, 12, 12, 255),
-			}),
-			Head = "Male_Head_04",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "Faction_Acc_Stormer",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(4, 4, 4, 255),
-				'EditableColor2', RGBA(8, 8, 8, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "Faction_Adonis_Bottom_Camo_02",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(45, 58, 62, 255),
-				'EditableColor2', RGBA(12, 12, 12, 255),
-				'EditableColor3', RGBA(12, 12, 12, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "AdonisGuard2NPC",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Infected_Top_F_02",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(190, 91, 52, 255),
-				'EditableColor2', RGBA(80, 81, 77, 255),
-				'EditableColor3', RGBA(61, 67, 41, 255),
-			}),
-			Chest = "",
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(13, 15, 8, 255),
-				'EditableColor2', RGBA(13, 15, 8, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hair = "EquipmentRaven_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "Faction_Infected_F_HeadBandage_01",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(189, 171, 149, 255),
-				'EditableColor3', RGBA(33, 2, 2, 255),
-			}),
-			HatSpot = "Origin",
-			Head = "Head_F_Senior_NPC_01",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(196, 107, 73, 255),
-				'EditableColor2', RGBA(196, 107, 73, 255),
-				'EditableColor3', RGBA(69, 58, 39, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(4, 4, 4, 255),
-				'EditableColor2', RGBA(8, 8, 8, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4290132532,
-			Pants = "Faction_Infected_Bottom_F_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(190, 91, 52, 255),
-				'EditableColor2', RGBA(38, 31, 29, 255),
-				'EditableColor3', RGBA(33, 21, 17, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "Zombie1_F",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Infected_Top_M_02",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(190, 91, 52, 255),
-				'EditableColor2', RGBA(80, 81, 77, 255),
-				'EditableColor3', RGBA(61, 67, 41, 255),
-			}),
-			Chest = "",
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(13, 15, 8, 255),
-				'EditableColor2', RGBA(13, 15, 8, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hair = "EquipmentSteroid_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "Faction_Infected_M_HeadBandage_02",
-			Hat2 = "Faction_Infected_M_HeadBandage_02",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(79, 9, 5, 255),
-				'EditableColor2', RGBA(189, 171, 149, 255),
-				'EditableColor3', RGBA(79, 9, 5, 255),
-			}),
-			Hat2Spot = "Origin",
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(79, 9, 5, 255),
-				'EditableColor2', RGBA(189, 171, 149, 255),
-				'EditableColor3', RGBA(84, 11, 7, 255),
-			}),
-			HatSpot = "Origin",
-			Head = "Head_Infected_M_01",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(196, 107, 73, 255),
-				'EditableColor2', RGBA(196, 107, 73, 255),
-				'EditableColor3', RGBA(69, 58, 39, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(4, 4, 4, 255),
-				'EditableColor2', RGBA(8, 8, 8, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4290132532,
-			Pants = "Faction_Infected_Bottom_M_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(190, 91, 52, 255),
-				'EditableColor2', RGBA(38, 31, 29, 255),
-				'EditableColor3', RGBA(33, 21, 17, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "Zombie2_M",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "NPCBastien_Top",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(40, 18, 11, 255),
-				'EditableColor2', RGBA(116, 16, 0, 255),
-				'EditableColor3', RGBA(250, 192, 15, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Comment = "Legion Jose",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "NPCBastien_Hat",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(12, 14, 18, 255),
-				'EditableColor2', RGBA(21, 47, 11, 255),
-				'EditableColor3', RGBA(246, 242, 239, 255),
-			}),
-			Head = "Head_M_Ca_NPC_01",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "NPCCostumeMale_Pants_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(16, 24, 14, 255),
-				'EditableColor2', RGBA(17, 14, 12, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "BastienPro",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "NPCDeedee_Top_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(33, 13, 6, 255),
-				'EditableColor2', RGBA(64, 70, 66, 255),
-				'EditableColor3', RGBA(30, 30, 32, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hair = "EquipmentBuns_Hair_Hat",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(96, 79, 21, 255),
-				'EditableColor2', RGBA(60, 45, 11, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "NPCDeedee_Glasses_01",
-			Hat2 = "EquipmentFemale_WW2Helmet",
-			Hat2AttachOffsetZ = 0,
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatAttachOffsetZ = -10,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_F_Af_NPC_04",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "NPCDeedee_Bottom_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(29, 17, 13, 255),
-				'EditableColor2', RGBA(6, 5, 5, 255),
-				'EditableColor3', RGBA(8, 10, 11, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "DeedeePro",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "NPCMarta_Top_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 7, 3, 255),
-				'EditableColor2', RGBA(6, 77, 147, 255),
-				'EditableColor3', RGBA(0, 11, 21, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hair = "",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(96, 79, 21, 255),
-				'EditableColor2', RGBA(60, 45, 11, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "NPCTraditionalFemale_Scarf_A_02",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 26, 47, 255),
-				'EditableColor2', RGBA(0, 26, 47, 255),
-				'EditableColor3', RGBA(0, 26, 47, 255),
-			}),
-			Head = "Head_F_Af_NPC_08",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "NPCMarta_Bottom_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 7, 3, 255),
-				'EditableColor2', RGBA(1, 38, 79, 255),
-				'EditableColor3', RGBA(0, 11, 21, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "MarthaPro",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "NPCHerman_Top_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(6, 3, 2, 255),
-				'EditableColor2', RGBA(255, 148, 84, 255),
-				'EditableColor3', RGBA(219, 151, 5, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "NPCHerman_Hat_01",
-			Hat2 = "NPCHerman_Glasses_01",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(35, 25, 13, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(67, 112, 39, 255),
-				'EditableColor2', RGBA(26, 22, 16, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Male_Head_07",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "NPCHerman_Bottom_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(6, 3, 2, 255),
-				'EditableColor2', RGBA(22, 20, 19, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "HermanPro",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_GrandChien_Top_08",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(17, 9, 6, 255),
-				'EditableColor2', RGBA(208, 192, 174, 255),
-				'EditableColor3', RGBA(145, 88, 63, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "EquipmentBlood_Hat",
-			Hat2 = "",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(113, 70, 49, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatAttachOffsetY = 0,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(32, 52, 39, 255),
-				'EditableColor2', RGBA(85, 17, 17, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Faction_Rebels_M_HeadMedic",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(47, 24, 18, 255),
-				'EditableColor2', RGBA(7, 5, 5, 255),
-				'EditableColor3', RGBA(189, 171, 149, 255),
-			}),
-			Hip = "Faction_Acc_Soldier",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(15, 16, 15, 255),
-				'EditableColor2', RGBA(14, 14, 14, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4290132532,
-			Pants = "EquipmentLen_Bottom",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(17, 9, 6, 255),
-				'EditableColor2', RGBA(41, 53, 69, 255),
-				'EditableColor3', RGBA(13, 14, 15, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 23, 24, 255),
-				'EditableColor2', RGBA(37, 38, 40, 255),
-				'EditableColor3', RGBA(22, 23, 24, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "Goon1Pro",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Legion_Top_06",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(17, 9, 6, 255),
-				'EditableColor2', RGBA(208, 192, 174, 255),
-				'EditableColor3', RGBA(145, 88, 63, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat = "EquipmentPierre_Hat",
-			Hat2 = "EquipmentIvan_Glasses",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(113, 70, 49, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatAttachOffsetY = 0,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(32, 52, 39, 255),
-				'EditableColor2', RGBA(85, 17, 17, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_M_As_NPC_03",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(47, 24, 18, 255),
-				'EditableColor2', RGBA(7, 5, 5, 255),
-				'EditableColor3', RGBA(189, 171, 149, 255),
-			}),
-			Hip = "Faction_Acc_Soldier",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(15, 16, 15, 255),
-				'EditableColor2', RGBA(14, 14, 14, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4290132532,
-			Pants = "EquipmentOmryn_Bottom",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(17, 9, 6, 255),
-				'EditableColor2', RGBA(41, 53, 69, 255),
-				'EditableColor3', RGBA(13, 14, 15, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 23, 24, 255),
-				'EditableColor2', RGBA(37, 38, 40, 255),
-				'EditableColor3', RGBA(22, 23, 24, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "Goon2Pro",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Legion_Top_10",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(17, 9, 6, 255),
-				'EditableColor2', RGBA(208, 192, 174, 255),
-				'EditableColor3', RGBA(145, 88, 63, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat2 = "EquipmentNails_Headband",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(113, 70, 49, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatAttachOffsetY = 0,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(32, 52, 39, 255),
-				'EditableColor2', RGBA(85, 17, 17, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_Chimurenga",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(47, 24, 18, 255),
-				'EditableColor2', RGBA(7, 5, 5, 255),
-				'EditableColor3', RGBA(189, 171, 149, 255),
-			}),
-			Hip = "Faction_Acc_Soldier",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(15, 16, 15, 255),
-				'EditableColor2', RGBA(14, 14, 14, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4290132532,
-			Pants = "Faction_Legion_Bottom_05",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(17, 9, 6, 255),
-				'EditableColor2', RGBA(41, 53, 69, 255),
-				'EditableColor3', RGBA(13, 14, 15, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 23, 24, 255),
-				'EditableColor2', RGBA(37, 38, 40, 255),
-				'EditableColor3', RGBA(22, 23, 24, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "Goon3Pro",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			Armor = "EquipmentFemale_FlackVest",
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(35, 38, 22, 255),
-				'EditableColor2', RGBA(88, 92, 68, 255),
-				'EditableColor3', RGBA(124, 130, 96, 255),
-			}),
-			Body = "Female_Body_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 7, 3, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hair = "EquipmentVicki_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(26, 23, 11, 255),
-				'EditableColor2', RGBA(10, 4, 2, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_F_As_NPC_10",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "Faction_Acc_Marksman",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(35, 38, 22, 255),
-				'EditableColor2', RGBA(88, 92, 68, 255),
-				'EditableColor3', RGBA(124, 130, 96, 255),
-			}),
-			NameColor = 4290132532,
-			Pants = "EquipmentCorazon_Bottom_BattleMod",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(35, 38, 22, 255),
-				'EditableColor2', RGBA(88, 92, 68, 255),
-				'EditableColor3', RGBA(124, 130, 96, 255),
-			}),
-			Shirt = "EquipmentFemale_Shirt_01",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(88, 92, 68, 255),
-				'EditableColor2', RGBA(60, 53, 39, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "Goon4Pro",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Adonis_Top_Camo_03",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(47, 24, 18, 255),
-				'EditableColor2', RGBA(38, 4, 4, 255),
-				'EditableColor3', RGBA(49, 47, 47, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hair = "EquipmentFidel_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(230, 222, 202, 255),
-			}),
-			HatAttachOffsetY = 0,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(32, 52, 39, 255),
-				'EditableColor2', RGBA(85, 17, 17, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_Faucheux",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(47, 24, 18, 255),
-				'EditableColor2', RGBA(7, 5, 5, 255),
-				'EditableColor3', RGBA(189, 171, 149, 255),
-			}),
-			Hip = "Faction_Acc_Artilery",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(15, 16, 15, 255),
-				'EditableColor2', RGBA(14, 14, 14, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4290132532,
-			Pants = "Faction_Adonis_Bottom_Camo_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(17, 9, 6, 255),
-				'EditableColor2', RGBA(41, 53, 69, 255),
-				'EditableColor3', RGBA(13, 14, 15, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 23, 24, 255),
-				'EditableColor2', RGBA(37, 38, 40, 255),
-				'EditableColor3', RGBA(22, 23, 24, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "GoonCommander",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Male_Body_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(67, 22, 8, 255),
-				'EditableColor2', RGBA(44, 85, 105, 255),
-				'EditableColor3', RGBA(157, 166, 149, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 100, 0, 255),
-				'EditableColor2', RGBA(0, 100, 0, 255),
-				'EditableColor3', RGBA(0, 100, 0, 255),
-			}),
-			Hair = "EquipmentBiff_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(6, 1, 1, 255),
-				'EditableRoughness1', 40,
-				'EditableMetallic1', -128,
-				'EditableColor2', RGBA(10, 4, 2, 255),
-				'EditableRoughness2', 28,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(0, 0, 0, 255),
-				'EditableRoughness3', 74,
-				'EditableMetallic3', 127,
-			}),
-			HairParam1 = 24,
-			HairParam2 = 43,
-			HairParam3 = 92,
-			Hat = "",
-			Hat2 = "",
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(35, 27, 27, 255),
-				'EditableColor3', RGBA(105, 60, 60, 255),
-			}),
-			Head = "Head_M_Ca_NPC_03",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(128, 68, 68, 255),
-				'EditableColor2', RGBA(81, 26, 26, 255),
-				'EditableColor3', RGBA(61, 23, 23, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(249, 249, 219, 255),
-				'EditableColor2', RGBA(177, 22, 14, 255),
-				'EditableColor3', RGBA(222, 60, 75, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "Faction_Thugs_Bottom_02",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(255, 134, 53, 255),
-				'EditableColor2', RGBA(189, 171, 149, 255),
-				'EditableColor3', RGBA(48, 25, 14, 255),
-			}),
-			Shirt = "EquipmentMale_Shirt_02",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(107, 159, 185, 255),
-				'EditableColor2', RGBA(4, 90, 133, 255),
-				'EditableColor3', RGBA(53, 106, 36, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Haywire-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Thugs_Top_09",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(154, 76, 35, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(5, 6, 5, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 100, 0, 255),
-				'EditableColor2', RGBA(0, 100, 0, 255),
-				'EditableColor3', RGBA(0, 100, 0, 255),
-			}),
-			Hair = "NPCMale_Hair_01",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(176, 22, 36, 255),
-				'EditableRoughness1', 40,
-				'EditableMetallic1', -92,
-				'EditableColor2', RGBA(133, 17, 28, 255),
-				'EditableRoughness2', 81,
-				'EditableMetallic2', -49,
-				'EditableColor3', RGBA(81, 45, 57, 255),
-				'EditableRoughness3', 108,
-				'EditableMetallic3', -20,
-			}),
-			HairParam1 = 31,
-			HairParam2 = 19,
-			HairParam3 = 10,
-			Hat = "",
-			Hat2 = "",
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(35, 27, 27, 255),
-				'EditableColor3', RGBA(105, 60, 60, 255),
-			}),
-			Head = "Head_Igor",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(176, 46, 46, 255),
-				'EditableColor2', RGBA(125, 36, 36, 255),
-				'EditableColor3', RGBA(67, 11, 11, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(249, 249, 219, 255),
-				'EditableColor2', RGBA(177, 22, 14, 255),
-				'EditableColor3', RGBA(222, 60, 75, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "EquipmentBlood_Bottom",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(179, 104, 102, 255),
-				'EditableColor2', RGBA(83, 132, 156, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 100, 255),
-				'EditableColor3', RGBA(0, 0, 100, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Numb-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(50, 0, 0, 255),
-				'EditableColor2', RGBA(0, 50, 0, 255),
-				'EditableColor3', RGBA(0, 0, 50, 255),
-			}),
-			Body = "Faction_Legion_Top_02",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(160, 73, 16, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hair = "EquipmentFaucheux_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(30, 13, 6, 255),
-				'EditableRoughness1', 40,
-				'EditableMetallic1', -128,
-				'EditableColor2', RGBA(13, 6, 3, 255),
-				'EditableRoughness2', 28,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(0, 0, 0, 255),
-				'EditableRoughness3', 74,
-				'EditableMetallic3', 127,
-			}),
-			HairParam3 = 128,
-			Head = "Head_Faucheux",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(60, 3, 3, 255),
-				'EditableColor2', RGBA(0, 60, 0, 255),
-				'EditableColor3', RGBA(0, 0, 60, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(50, 0, 0, 255),
-				'EditableColor2', RGBA(0, 5, 0, 255),
-				'EditableColor3', RGBA(0, 0, 50, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "EquipmentBlood_Bottom",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(52, 14, 23, 255),
-				'EditableColor2', RGBA(12, 51, 11, 255),
-				'EditableColor3', RGBA(19, 18, 58, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Razor-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Male_Body_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(62, 28, 18, 255),
-				'EditableColor2', RGBA(44, 85, 105, 255),
-				'EditableColor3', RGBA(157, 166, 149, 255),
-			}),
-			Chest = "",
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 16, 12, 255),
-				'EditableColor2', RGBA(20, 17, 15, 255),
-				'EditableColor3', RGBA(29, 23, 16, 255),
-			}),
-			Hair = "EquipmentBlood_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(40, 30, 20, 255),
-				'EditableRoughness1', 29,
-				'EditableMetallic1', 48,
-				'EditableColor2', RGBA(30, 15, 10, 255),
-				'EditableRoughness2', -37,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(30, 5, 5, 255),
-				'EditableRoughness3', -44,
-				'EditableMetallic3', 127,
-			}),
-			HairParam1 = 12,
-			HairParam2 = 26,
-			HairParam3 = 172,
-			Hat = "",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatAttachOffsetAngle = 2400,
-			HatAttachOffsetX = 10,
-			HatAttachOffsetY = -50,
-			HatAttachOffsetZ = 5,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(118, 6, 6, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_Biff",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "NPCJackhammer_Bottom_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(6, 5, 5, 255),
-				'EditableColor2', RGBA(34, 40, 32, 255),
-				'EditableColor3', RGBA(136, 153, 40, 255),
-			}),
-			Shirt = "EquipmentMale_Shirt_01",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 47, 108, 255),
-				'EditableColor2', RGBA(137, 111, 78, 255),
-				'EditableColor3', RGBA(137, 111, 78, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Gumpy-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Male_Body_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(67, 37, 27, 255),
-				'EditableColor2', RGBA(44, 85, 105, 255),
-				'EditableColor3', RGBA(157, 166, 149, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 100, 0, 255),
-				'EditableColor2', RGBA(0, 100, 0, 255),
-				'EditableColor3', RGBA(0, 100, 0, 255),
-			}),
-			Hair = "NPCMale_Hair_02",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(11, 5, 3, 255),
-				'EditableRoughness1', 40,
-				'EditableMetallic1', -128,
-				'EditableColor2', RGBA(10, 4, 2, 255),
-				'EditableRoughness2', 28,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(0, 0, 0, 255),
-				'EditableRoughness3', 74,
-				'EditableMetallic3', 127,
-			}),
-			HairParam3 = 128,
-			Hat = "",
-			Hat2 = "",
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(35, 27, 27, 255),
-				'EditableColor3', RGBA(105, 60, 60, 255),
-			}),
-			Head = "Head_Ivan",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(176, 46, 46, 255),
-				'EditableColor2', RGBA(125, 36, 36, 255),
-				'EditableColor3', RGBA(67, 11, 11, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(249, 249, 219, 255),
-				'EditableColor2', RGBA(177, 22, 14, 255),
-				'EditableColor3', RGBA(222, 60, 75, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "Faction_Thugs_Bottom_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(33, 55, 108, 255),
-				'EditableColor2', RGBA(87, 26, 32, 255),
-				'EditableColor3', RGBA(101, 55, 55, 255),
-			}),
-			Shirt = "EquipmentMale_Shirt_01",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(7, 35, 108, 255),
-				'EditableColor2', RGBA(137, 111, 78, 255),
-				'EditableColor3', RGBA(137, 111, 78, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Gasket-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Female_Body_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(100, 29, 7, 255),
-				'EditableColor2', RGBA(11, 13, 62, 255),
-				'EditableColor3', RGBA(101, 133, 210, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hair = "EquipmentFox_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(38, 15, 4, 255),
-				'EditableRoughness1', 76,
-				'EditableMetallic1', -82,
-				'EditableColor2', RGBA(59, 18, 4, 255),
-				'EditableRoughness2', -44,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(255, 255, 255, 255),
-				'EditableRoughness3', -25,
-				'EditableMetallic3', 127,
-			}),
-			HairParam1 = 61,
-			HairParam2 = 16,
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(120, 200, 43, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_F_Ca_NPC_01",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "EquipmentIMPTrooper_Pants",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(55, 60, 28, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Shirt = "EquipmentFemale_Shirt_01",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(5, 23, 66, 255),
-				'EditableColor2', RGBA(12, 11, 11, 255),
-				'EditableColor3', RGBA(19, 18, 18, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Flo-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "NPCJackhammer_Top_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(50, 20, 20, 255),
-				'EditableColor2', RGBA(1, 5, 18, 255),
-				'EditableColor3', RGBA(22, 45, 18, 255),
-			}),
-			Chest = "",
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 16, 12, 255),
-				'EditableColor2', RGBA(20, 17, 15, 255),
-				'EditableColor3', RGBA(29, 23, 16, 255),
-			}),
-			Hair = "EquipmentBlood_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(40, 30, 20, 255),
-				'EditableRoughness1', 29,
-				'EditableMetallic1', 48,
-				'EditableColor2', RGBA(30, 15, 10, 255),
-				'EditableRoughness2', -37,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(30, 5, 5, 255),
-				'EditableRoughness3', -44,
-				'EditableMetallic3', 127,
-			}),
-			HairParam1 = 12,
-			HairParam2 = 26,
-			HairParam3 = 172,
-			Hat = "",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatAttachOffsetAngle = 2400,
-			HatAttachOffsetX = 10,
-			HatAttachOffsetY = -50,
-			HatAttachOffsetZ = 5,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(118, 6, 6, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_M_Ca_NPC_08",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "NPCJackhammer_Bottom_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(7, 3, 3, 255),
-				'EditableColor2', RGBA(36, 47, 32, 255),
-				'EditableColor3', RGBA(142, 200, 84, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(12, 23, 9, 255),
-				'EditableColor2', RGBA(14, 34, 15, 255),
-				'EditableColor3', RGBA(30, 27, 24, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Bubba-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "EquipmentBiff_Top",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(187, 64, 35, 255),
-				'EditableColor2', RGBA(73, 8, 8, 255),
-				'EditableColor3', RGBA(109, 83, 55, 255),
-			}),
-			Chest = "Faction_Binocular_01",
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(46, 35, 25, 255),
-				'EditableColor2', RGBA(16, 13, 9, 255),
-				'EditableColor3', RGBA(109, 83, 55, 255),
-			}),
-			Hair = "EquipmentBiff_Hair",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(221, 66, 30, 255),
-				'EditableMetallic1', 50,
-				'EditableColor2', RGBA(227, 70, 22, 255),
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(169, 62, 62, 255),
-				'EditableMetallic3', 127,
-			}),
-			HairParam2 = 20,
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(68, 48, 35, 255),
-				'EditableRoughness1', 60,
-				'EditableColor2', RGBA(40, 35, 25, 255),
-				'EditableColor3', RGBA(68, 48, 35, 255),
-			}),
-			HatAttachOffsetZ = -10,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_Biff",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "Faction_Acc_Stormer",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(11, 8, 6, 255),
-				'EditableColor2', RGBA(11, 8, 6, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Pants = "NPCCostumeMale_Pants_10",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(20, 24, 26, 255),
-				'EditableColor2', RGBA(12, 8, 4, 255),
-				'EditableColor3', RGBA(24, 14, 4, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			group = "GCEXPrologueNPCs",
-			id = "Biff-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Thugs_Top_09",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(199, 87, 49, 255),
-				'EditableColor2', RGBA(2, 9, 0, 255),
-				'EditableColor3', RGBA(9, 31, 2, 255),
-			}),
-			Chest = "",
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(22, 16, 12, 255),
-				'EditableColor2', RGBA(20, 17, 15, 255),
-				'EditableColor3', RGBA(29, 23, 16, 255),
-			}),
-			Hair = "NPCMale_Hair_02",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(71, 62, 60, 255),
-				'EditableRoughness1', 29,
-				'EditableMetallic1', 48,
-				'EditableColor2', RGBA(84, 74, 72, 255),
-				'EditableRoughness2', -37,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(30, 5, 5, 255),
-				'EditableRoughness3', -44,
-				'EditableMetallic3', 127,
-			}),
-			HairParam1 = 12,
-			HairParam2 = 26,
-			HairParam3 = 172,
-			Hat = "EquipmentFidel_Cigar",
-			Hat2Color = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			HatAttachOffsetAngle = 2400,
-			HatAttachOffsetX = 4,
-			HatAttachOffsetY = -50,
-			HatAttachOffsetZ = -6,
-			HatColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(118, 6, 6, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Head = "Head_Igor",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "Faction_GrandChien_Bottom_04",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(42, 60, 33, 255),
-				'EditableColor2', RGBA(99, 48, 26, 255),
-				'EditableColor3', RGBA(25, 36, 22, 255),
-			}),
-			Shirt = "",
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(12, 23, 9, 255),
-				'EditableColor2', RGBA(14, 34, 15, 255),
-				'EditableColor3', RGBA(30, 27, 24, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Stogie-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "NPCLuigy_Top_01",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(65, 25, 11, 255),
-				'EditableColor2', RGBA(189, 171, 149, 255),
-				'EditableColor3', RGBA(189, 171, 149, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 100, 0, 255),
-				'EditableColor2', RGBA(0, 100, 0, 255),
-				'EditableColor3', RGBA(0, 100, 0, 255),
-			}),
-			Hair = "NPCMale_Hair_05",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(38, 20, 10, 255),
-				'EditableRoughness1', 40,
-				'EditableMetallic1', -128,
-				'EditableColor2', RGBA(40, 22, 14, 255),
-				'EditableRoughness2', 28,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(0, 0, 0, 255),
-				'EditableRoughness3', 74,
-				'EditableMetallic3', 127,
-			}),
-			HairParam3 = 128,
-			Head = "Male_Head_01",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(78, 40, 38, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(32, 47, 33, 255),
-				'EditableColor2', RGBA(75, 63, 50, 255),
-				'EditableColor3', RGBA(249, 249, 219, 255),
-			}),
-			NameColor = 4292643868,
-			Pants = "NPCCostumeMale_Pants_07",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(10, 7, 5, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(91, 88, 88, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 100, 255),
-				'EditableColor2', RGBA(0, 0, 100, 255),
-				'EditableColor3', RGBA(0, 0, 100, 255),
-			}),
-			group = "GCEXPrologueMERCs",
-			id = "Cougar-Appearance",
-		}),
-		PlaceObj('ModItemAppearancePreset', {
-			ArmorColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 0, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Body = "Faction_Adonis_Top_05",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(126, 48, 21, 255),
-				'EditableColor2', RGBA(11, 15, 16, 255),
-				'EditableColor3', RGBA(11, 15, 16, 255),
-			}),
-			ChestColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 100, 0, 255),
-				'EditableColor2', RGBA(0, 100, 0, 255),
-				'EditableColor3', RGBA(0, 100, 0, 255),
-			}),
-			Hair = "NPCMale_Hair_05",
-			HairColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(14, 12, 11, 255),
-				'EditableRoughness1', 40,
-				'EditableMetallic1', -128,
-				'EditableColor2', RGBA(120, 110, 109, 255),
-				'EditableRoughness2', 28,
-				'EditableMetallic2', -128,
-				'EditableColor3', RGBA(112, 112, 112, 255),
-				'EditableRoughness3', 74,
-				'EditableMetallic3', 127,
-			}),
-			HairParam3 = 128,
-			Head = "Head_Wolf",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(168, 121, 119, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
-			Hip = "",
-			HipColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(32, 47, 33, 255),
-				'EditableColor2', RGBA(75, 63, 50, 255),
-				'EditableColor3', RGBA(249, 249, 219, 255),
-			}),
-			Pants = "Faction_Adonis_Bottom_01",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(10, 7, 5, 255),
-				'EditableColor2', RGBA(0, 0, 0, 255),
-				'EditableColor3', RGBA(91, 88, 88, 255),
-			}),
-			ShirtColor = PlaceObj('ColorizationPropSet', {
-				'EditableColor1', RGBA(0, 0, 100, 255),
-				'EditableColor2', RGBA(0, 0, 100, 255),
-				'EditableColor3', RGBA(0, 0, 100, 255),
-			}),
-			group = "Default",
-			id = "Gaston-Appearance",
-		}),
-		}),
-	PlaceObj('ModItemFolder', {
-		'name', "Units",
-	}, {
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExBiff",
-			'NameColor', RGBA(61, 122, 153, 255),
-			'object_class', "UnitData",
-			'Health', 73,
-			'Agility', 74,
-			'Dexterity', 71,
-			'Strength', 41,
-			'Wisdom', 58,
-			'Leadership', 13,
-			'Marksmanship', 57,
-			'Mechanical', 0,
-			'Explosives', 4,
-			'Medical', 24,
-			'Portrait', "UI/NPCsPortraits/Biff",
-			'BigPortrait', "UI/NPCs/Biff",
-			'Name', T(174901927062, --[[ModItemUnitDataCompositeDef GCExBiff Name]] "Biff Apscott"),
-			'Nick', T(137488486663, --[[ModItemUnitDataCompositeDef GCExBiff Nick]] "Biff"),
-			'AllCapsNick', T(349220379003, --[[ModItemUnitDataCompositeDef GCExBiff AllCapsNick]] "BIFF"),
-			'Affiliation', "Other",
-			'StartingLevel', 3,
-			'immortal', true,
-			'ImportantNPC', true,
-			'AIKeywords', {
-				"Soldier",
-			},
-			'MaxAttacks', 2,
-			'RewardExperience', 0,
-			'MaxHitPoints', 69,
-			'StartingPerks', {
-				"Teacher",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Biff",
-				}),
-			},
-			'Equipment', {
-				"Biff",
-			},
-			'Specialization', "ExplosiveExpert",
-			'gender', "Male",
-			'PersistentSessionId', "GCExBiff",
-			'VoiceResponseId', "BiffNPC",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXFlo",
-			'NameColor', RGBA(61, 122, 153, 255),
-			'object_class', "UnitData",
-			'Health', 58,
-			'Agility', 37,
-			'Dexterity', 64,
-			'Strength', 45,
-			'Wisdom', 82,
-			'Leadership', 1,
-			'Marksmanship', 38,
-			'Mechanical', 7,
-			'Explosives', 2,
-			'Medical', 19,
-			'Portrait', "Mod/GCExPrologue/Images/FloPortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/Flo",
-			'Name', T(183982423479, --[[ModItemUnitDataCompositeDef GCEXFlo Name]] 'Florence "Flo" Gabriel'),
-			'Nick', T(445040565694, --[[ModItemUnitDataCompositeDef GCEXFlo Nick]] "Flo"),
-			'AllCapsNick', T(572992729569, --[[ModItemUnitDataCompositeDef GCEXFlo AllCapsNick]] "FLO"),
-			'Affiliation', "Other",
-			'Bio', T(234573707265, --[[ModItemUnitDataCompositeDef GCEXFlo Bio]] "The daughter of vineyard workers, Florence Gabriel spent most of her childhood in Cognac, France before moving to Pittsburgh, Pennsylvania, USA. After settling in the US she took a job as the bookkeeper for a major gun dealer, where she acquired extensive knowledge on the value of firearms. Slightly hesitant, but bright, Flo is simply priced too low to pass up."),
-			'Nationality', "France",
-			'snype_nick', T(965203635079, --[[ModItemUnitDataCompositeDef GCEXFlo snype_nick]] "florence.gabriel"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', "The daughter of vineyard workers, Florence Gabriel spent most of her childhood in Cognac, France before moving to Pittsburgh, Pennsylvania, USA. After settling in the US she took a job as the bookkeeper for a major gun dealer, where she acquired extensive knowledge on the value of firearms. Slightly hesitant, but bright, Flo is simply priced too low to pass up.",
-			'immortal', true,
-			'MaxHitPoints', 82,
-			'Dislikes', {
-				"Meltdown",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Flo-Appearance",
-				}),
-			},
-			'Specialization', "AllRounder",
-			'gender', "Female",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-			'PersistentSessionId', "GCEXFlo",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXHaywire",
-			'NameColor', RGBA(61, 122, 153, 255),
-			'object_class', "UnitData",
-			'Health', 65,
-			'Agility', 59,
-			'Dexterity', 76,
-			'Strength', 71,
-			'Wisdom', 58,
-			'Leadership', 1,
-			'Marksmanship', 48,
-			'Mechanical', 8,
-			'Explosives', 31,
-			'Medical', 2,
-			'Portrait', "Mod/GCExPrologue/Images/HaywirePortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/Haywire",
-			'Name', T(749871154545, --[[ModItemUnitDataCompositeDef GCEXHaywire Name]] 'Frankie "Haywire" Gordon'),
-			'Nick', T(977562677594, --[[ModItemUnitDataCompositeDef GCEXHaywire Nick]] "Haywire"),
-			'AllCapsNick', T(828404684603, --[[ModItemUnitDataCompositeDef GCEXHaywire AllCapsNick]] "HAYWIRE"),
-			'Affiliation', "Other",
-			'Bio', T(436581784584, --[[ModItemUnitDataCompositeDef GCEXHaywire Bio]] "Killing is Frankie Gordon's speciality. He's not particular on how he kills, just as long as he has fun doing it. Haywire may not be considered a marksman, but he exhibits a certain fascination with automatic weapons and seems to handle them with ease. The same could be said for his talents with sharp knives. Additional info:\n\nFrankie is working on improving his people skills."),
-			'Nationality', "USA",
-			'Title', T(440783434649, --[[ModItemUnitDataCompositeDef GCEXHaywire Title]] "Wicked"),
-			'snype_nick', T(881909539454, --[[ModItemUnitDataCompositeDef GCEXHaywire snype_nick]] "hay.wire"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', '"Killing is Frankie Gordon\'s speciality. He\'s not particular on how he kills, just as long as he has fun doing it. Haywire may not be considered a marksman, but he exhibits a certain fascination with automatic weapons and seems to handle them with ease. The same could be said for his talents with sharp knives. Additional info:\n\nFrankie is working on improving his people skills."\n\n- M.E.R.C. Dossier',
-			'immortal', true,
-			'MaxHitPoints', 82,
-			'Likes', {
-				"GCEXRazor",
-			},
-			'StartingPerks', {
-				"AutoWeapons",
-				"MeleeTraining",
-				"Psycho",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Haywire-Appearance",
-				}),
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Name', "MERC",
-				}),
-			},
-			'Specialization', "AllRounder",
-			'gender', "Male",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-			'PersistentSessionId', "GCEXHaywire",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXRazor",
-			'NameColor', RGBA(61, 122, 153, 255),
-			'object_class', "UnitData",
-			'Health', 73,
-			'Agility', 88,
-			'Dexterity', 91,
-			'Strength', 86,
-			'Wisdom', 53,
-			'Leadership', 4,
-			'Marksmanship', 50,
-			'Mechanical', 8,
-			'Explosives', 2,
-			'Medical', 12,
-			'Portrait', "Mod/GCExPrologue/Images/RazorPortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/Razor",
-			'Name', T(606315709304, --[[ModItemUnitDataCompositeDef GCEXRazor Name]] 'Bill "Razor" Lamont'),
-			'Nick', T(593891680732, --[[ModItemUnitDataCompositeDef GCEXRazor Nick]] "Razor"),
-			'AllCapsNick', T(889936330375, --[[ModItemUnitDataCompositeDef GCEXRazor AllCapsNick]] "RAZOR"),
-			'Affiliation', "Other",
-			'Bio', T(124927936237, --[[ModItemUnitDataCompositeDef GCEXRazor Bio]] "Razor's attention to detail and finesse with the blade saved him from being nicknamed \"The Butcher\". Ask him why he prefers a knife to a gun and every time he'll say \"so much noise, so little challenge!\" He takes pride in his ability to carve the alphabet -- or at least the vowels -- into his victims before they bleed to death.\n\nAdditional Info: Razor Lamont has occasionally been called certifiable. And he is indeed certified -- certified in killing!"),
-			'Nationality', "USA",
-			'Title', T(602866699222, --[[ModItemUnitDataCompositeDef GCEXRazor Title]] "The Butcher"),
-			'snype_nick', T(702813232330, --[[ModItemUnitDataCompositeDef GCEXRazor snype_nick]] "bill.lamont"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', '"Razor\'s attention to detail and finesse with the blade saved him from being nicknamed "The Butcher". Ask him why he prefers a knife to a gun and every time he\'ll say "so much noise, so little challenge!" He takes pride in his ability to carve the alphabet -- or at least the vowels -- into his victims before they bleed to death.\n\nAdditional Info: Razor Lamont has occasionally been called certifiable. And he is indeed certified -- certified in killing!" - M.E.R.C. Dossier',
-			'StartingLevel', 2,
-			'immortal', true,
-			'MaxHitPoints', 82,
-			'Likes', {
-				"GCEXHaywire",
-				"Fidel",
-			},
-			'StartingPerks', {
-				"Psycho",
-				"MartialArts",
-				"Throwing",
-				"BreachAndClear",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Razor-Appearance",
-				}),
-			},
-			'Specialization', "AllRounder",
-			'gender', "Male",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-			'PersistentSessionId', "GCEXRazor",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXLarry",
-			'NameColor', RGBA(61, 122, 153, 255),
-			'object_class', "UnitData",
-			'Health', 63,
-			'Agility', 77,
-			'Dexterity', 79,
-			'Strength', 67,
-			'Wisdom', 70,
-			'Leadership', 18,
-			'Marksmanship', 70,
-			'Mechanical', 14,
-			'Explosives', 92,
-			'Medical', 70,
-			'Portrait', "UI/MercsPortraits/Larry",
-			'BigPortrait', "UI/Mercs/Larry",
-			'Name', T(300728614687, --[[ModItemUnitDataCompositeDef GCEXLarry Name]] "Larry Roachburn"),
-			'Nick', T(228036596095, --[[ModItemUnitDataCompositeDef GCEXLarry Nick]] "Larry"),
-			'AllCapsNick', T(512931651309, --[[ModItemUnitDataCompositeDef GCEXLarry AllCapsNick]] "LARRY"),
-			'Affiliation', "Other",
-			'HireStatus', "MIA",
-			'Bio', T(325007942979, --[[ModItemUnitDataCompositeDef GCEXLarry Bio]] "Explosives require a steady hand, and Larry's got some of the steadiest - most of the time. Although he has in the past struggled with bouts of chemical dependency, Larry's been clean and sober for two years now. His knowledge of pharmaceuticals comes in handy when administering first aid and his history of checking himself out of rehab whenever he liked has also made him good at sneaking around and picking locks. But Larry swears all that is behind him and we here at M.E.R.C. believe him!"),
-			'Nationality', "USA",
-			'Title', T(305533378418, --[[ModItemUnitDataCompositeDef GCEXLarry Title]] "Former Artist. Explosives Expert"),
-			'SalaryLv1', 0,
-			'SalaryMaxLv', 0,
-			'LegacyNotes', 'JA1:\n\n"On probationary standing, Larry Roachburn, a somewhat respected explosives expert, was a young survivor of the C.I.A./L.S.D. years. And when not on assignment, he continues to subject his body to the whims of pharmaceutical researchers around the world."\n\nJA2 Alumni:\n\n"After eight attempts at rehab without any sustained success, AIM was little choice but to terminate Larry Roachburn\'s membership within the organization. From what we understand, the death of his father has persuaded him to take yet another attempt at ridding himself of his demons and ridding his body from decades of toxicity. The organization wishes him the best of luck in all his future endeavors."\n\nJA2 MERC:\n\n"There\'s no denying that Larry has had his share of substance abuse problems in the past, and despite many attempts at rehabilitation, the demons remain. Roachburn has recently spent six months at an exclusive and classy rehab center undergoing treatment. Having completed the program, he proclaims himself cured and ready for duty.\n\nAdditional Info:Larry spent most of his spare time in rehab studying pharmacology which has tremendously improved his medical knowledge."\n\nAdditional Info\n\nLarry\'s drug habits have made him forgetful, and he will often stop in the middle of a task in need of a reminder, losing AP.\nHis brother Gary derisively refers to him as "Anything But A Placebo" Larry.\n\nJagged Alliance/Deadly Games\nHaving ruined his health with drugs, Larry loses rather than gains stats at the end of a day, a trait normally reserved to old mercs.\n\nJagged Alliance 2\n\nLarry has two different personalities - clean and relapsed. After hiring, he can relapse under certain conditions, losing a lot of stat points, making him almost useless.\n\nAs long as he stays clean he\'s the sociable sort, and loves to hang around other mercs (with some exceptions). However, once relapsed he loses focus and becomes forgetful, preferring the loner lifestyle.\n\nRelapse conditions\n\nStationary passing time while assigned to squad, carrying energy booster, regeneration booster, medical kit, or any type of alcohol. First aid kits are excluded.\n\nStationary passing time while assigned to squad, carrying none of the above items, in any city sector that has a bar.\nThe easiest way to prevent a relapse while carrying any of the above items, is keeping Larry busy, assigning him to squad only to travel and fight. And even though sleeping whilst assigned to squad (eg. after travelling) would be safe, there\'s no wake-up call and Larry\'s very quick to get his hands on something "groovy".\n\nGetting clean\n\nLuckily there\'s an easy way to get him clean. A one day speed course called "walkabout". Within a short while, needing a rest at least once, he\'s as fit as a fiddle again. As mentioned above, carrying any of the "relapse triggering items" isn\'t a problem per se, just keep a very close tab on him waking up.\n\nDue to strength loss, Larry can be severely encumbered while on the "walkabout" and damage his strength and/or health. Damaged strength will be temporary and reset as soon as he\'s clean, even though it still looks red for a short while. Damaged health will be permanent until dismissed! Dismissing him will reset health back to what it was.',
-			'StartingLevel', 3,
-			'immortal', true,
-			'MaxHitPoints', 69,
-			'StartingPerks', {
-				"MrFixit",
-				"Loner",
-				"Pessimist",
-				"DangerClose",
-				"SteadyBreathing",
-				"Untraceable",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Larry",
-				}),
-			},
-			'Equipment', {
-				"Larry",
-			},
-			'Specialization', "ExplosiveExpert",
-			'gender', "Male",
-			'PersistentSessionId', "GCEXLarry",
-			'VoiceResponseId', "Larry_Clean",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXSmiley",
-			'NameColor', RGBA(61, 122, 153, 255),
-			'object_class', "UnitData",
-			'Health', 82,
-			'Agility', 78,
-			'Dexterity', 56,
-			'Strength', 73,
-			'Wisdom', 55,
-			'Leadership', 54,
-			'Marksmanship', 77,
-			'Mechanical', 5,
-			'Explosives', 5,
-			'Medical', 36,
-			'Portrait', "UI/MercsPortraits/Smiley",
-			'BigPortrait', "UI/Mercs/Smiley",
-			'Name', T(146892548768, --[[ModItemUnitDataCompositeDef GCEXSmiley Name]] 'Alejandro "Smiley" Diaz'),
-			'Nick', T(646379074328, --[[ModItemUnitDataCompositeDef GCEXSmiley Nick]] "Smiley"),
-			'AllCapsNick', T(985437449047, --[[ModItemUnitDataCompositeDef GCEXSmiley AllCapsNick]] "SMILEY"),
-			'Affiliation', "Other",
-			'HireStatus', "NotMet",
-			'Bio', T(601739530861, --[[ModItemUnitDataCompositeDef GCEXSmiley Bio]] 'Alejandro "Smiley" Diaz came to Grand Chien as mercenary serving some unknown small group - which got totally obliterated by the Major a few weeks before your encounter with him. An Arulco native, he is eager to join up with you, as A.I.M. is held in great regard in the new order back at his home country.'),
-			'Nationality', "Arulco",
-			'Title', T(966721153892, --[[ModItemUnitDataCompositeDef GCEXSmiley Title]] "Romeo in Combat Fatigues"),
-			'SalaryLv1', 0,
-			'SalaryMaxLv', 0,
-			'StartingLevel', 2,
-			'immortal', true,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "SubmachineGun")
-				self:TryEquip(items, "Handheld B", "SniperRifle")
-			end,
-			'MaxHitPoints', 85,
-			'LearnToLike', {
-				"Kalyna",
-				"Fox",
-				"Buns",
-			},
-			'StartingPerks', {
-				"AutoWeapons",
-				"Optimist",
-				"RecklessAssault",
-				"BeefedUp",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Smiley",
-				}),
-			},
-			'Equipment', {
-				"Smiley",
-			},
-			'AdditionalGroups', {},
-			'Specialization', "AllRounder",
-			'gender', "Male",
-			'PersistentSessionId', "GCEXSmiley",
-			'VoiceResponseId', "Smiley",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExMartha",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 50,
-			'Strength', 40,
-			'Wisdom', 40,
-			'Leadership', 50,
-			'Marksmanship', 30,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 10,
-			'Portrait', "UI/NPCsPortraits/Martha",
-			'BigPortrait', "UI/NPCs/Martha",
-			'Name', T(339879582713, --[[ModItemUnitDataCompositeDef GCExMartha Name]] "Martha"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'immortal', true,
-			'ImportantNPC', true,
-			'MaxAttacks', 1,
-			'RewardExperience', 0,
-			'MaxHitPoints', 60,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "MarthaPro",
-				}),
-			},
-			'pollyvoice', "Kendra",
-			'gender', "Female",
-			'PersistentSessionId', "GCExMartha",
-			'FallbackMissingVR', "VillagerFemale",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExBasil",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 70,
-			'Agility', 50,
-			'Dexterity', 65,
-			'Strength', 70,
-			'Wisdom', 50,
-			'Leadership', 50,
-			'Marksmanship', 45,
-			'Mechanical', 70,
-			'Explosives', 10,
-			'Medical', 0,
-			'Portrait', "UI/NPCsPortraits/GreasyBasil",
-			'BigPortrait', "UI/NPCs/GreasyBasil",
-			'Name', T(279057282405, --[[ModItemUnitDataCompositeDef GCExBasil Name]] "Greasy Basil"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'immortal', true,
-			'MaxAttacks', 1,
-			'RewardExperience', 0,
-			'MaxHitPoints', 60,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "GreasyBasil",
-				}),
-			},
-			'pollyvoice', "Russell",
-			'gender', "Male",
-			'PersistentSessionId', "NPC_GreasyBasil",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExLuc",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 50,
-			'Agility', 50,
-			'Strength', 40,
-			'Wisdom', 80,
-			'Leadership', 40,
-			'Marksmanship', 40,
-			'Mechanical', 40,
-			'Explosives', 0,
-			'Medical', 20,
-			'Portrait', "UI/NPCsPortraits/luc",
-			'BigPortrait', "UI/NPCs/Luc",
-			'Name', T(407103000490, --[[ModItemUnitDataCompositeDef GCExLuc Name]] "Luc"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'immortal', true,
-			'MaxAttacks', 2,
-			'RewardExperience', 0,
-			'MaxHitPoints', 50,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Luc",
-				}),
-			},
-			'pollyvoice', "Matthew",
-			'gender', "Male",
-			'PersistentSessionId', "NPC_Luc",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExBillyBoy",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 61,
-			'Agility', 35,
-			'Dexterity', 27,
-			'Strength', 50,
-			'Wisdom', 39,
-			'Leadership', 0,
-			'Marksmanship', 22,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/MercsPortraits/unknown",
-			'Name', T(357354307977, --[[ModItemUnitDataCompositeDef GCExBillyBoy Name]] "Billy Boy"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'immortal', true,
-			'MaxAttacks', 1,
-			'RewardExperience', 0,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "BillyBoy",
-				}),
-			},
-			'pollyvoice', "Matthew",
-			'gender', "Male",
-			'PersistentSessionId', "NPC_BillyBoy",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExSantiago",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 100,
-			'Agility', 100,
-			'Dexterity', 100,
-			'Wisdom', 100,
-			'Leadership', 100,
-			'Marksmanship', 100,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 30,
-			'Portrait', "UI/NPCsPortraits/CorazonSantiago",
-			'BigPortrait', "UI/NPCs/CorazonSantiago",
-			'Name', T(712100870120, --[[ModItemUnitDataCompositeDef GCExSantiago Name]] "Corazon Santiago"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'immortal', true,
-			'ImportantNPC', true,
-			'villain', true,
-			'CanManEmplacements', false,
-			'MaxAttacks', 2,
-			'Lives', 4,
-			'DefeatBehavior', "Defeated",
-			'MaxHitPoints', 100,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "CorazonSantiago",
-				}),
-			},
-			'pollyvoice', "Joanna",
-			'gender', "Female",
-			'PersistentSessionId', "NPC_Corazon",
-			'VoiceResponseId', "CorazonSantiagoEnemy",
-			'FallbackMissingVR', "VillagerFemale",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExHerman",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Agility', 50,
-			'Wisdom', 20,
-			'Leadership', 0,
-			'Marksmanship', 50,
-			'Mechanical', 10,
-			'Explosives', 0,
-			'Medical', 10,
-			'Portrait', "UI/NPCsPortraits/Herman",
-			'BigPortrait', "UI/NPCs/Herman",
-			'Name', T(850689362732, --[[ModItemUnitDataCompositeDef GCExHerman Name]] "Herman"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'immortal', true,
-			'ImportantNPC', true,
-			'MaxAttacks', 2,
-			'RewardExperience', 0,
-			'MaxHitPoints', 60,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "HermanPro",
-				}),
-			},
-			'gender', "Male",
-			'PersistentSessionId', "GCExHerman",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExDeeDee",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 50,
-			'Agility', 50,
-			'Dexterity', 20,
-			'Strength', 20,
-			'Wisdom', 20,
-			'Leadership', 0,
-			'Marksmanship', 15,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/NPCsPortraits/DeedeeBoombastic",
-			'BigPortrait', "UI/NPCs/DeedeeBoombastic",
-			'Name', T(947053024459, --[[ModItemUnitDataCompositeDef GCExDeeDee Name]] "Deedee Bombastic"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'ImportantNPC', true,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Explosives",
-			},
-			'archetype', "Skirmisher",
-			'MaxAttacks', 2,
-			'RewardExperience', 0,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "DeedeePro",
-				}),
-			},
-			'Equipment', {
-				"LegionGrenadier",
-			},
-			'pollyvoice', "Amy",
-			'gender', "Female",
-			'FallbackMissingVR', "VillagerFemale",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExBastien",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 79,
-			'Agility', 72,
-			'Dexterity', 81,
-			'Strength', 44,
-			'Wisdom', 24,
-			'Leadership', 10,
-			'Marksmanship', 76,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/NPCsPortraits/Bastien",
-			'BigPortrait', "UI/NPCs/Bastien",
-			'Name', T(294499373266, --[[ModItemUnitDataCompositeDef GCExBastien Name]] "Bastien"),
-			'Randomization', true,
-			'Affiliation', "Legion",
-			'ImportantNPC', true,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Explosives",
-			},
-			'MaxAttacks', 2,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"AutoWeapons",
-				"MinFreeMove",
-				"OpportunisticKiller",
-				"BattleFocus",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "BastienPro",
-				}),
-			},
-			'Equipment', {
-				"LegionRaiderBastien",
-			},
-			'pollyvoice', "Geraint",
-			'gender', "Male",
-			'PersistentSessionId', "GCExBastien",
-			'VoiceResponseId', "LegionRaider_Jose",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExBrian",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 69,
-			'Agility', 78,
-			'Dexterity', 83,
-			'Strength', 50,
-			'Wisdom', 50,
-			'Marksmanship', 78,
-			'Mechanical', 15,
-			'Explosives', 0,
-			'Medical', 15,
-			'Portrait', "Mod/GCExPrologue/Images/BrianFace",
-			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8968",
-			'Name', T(862172338990, --[[ModItemUnitDataCompositeDef GCExBrian Name]] "Brian"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'ImportantNPC', true,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Sniper",
-			},
-			'role', "Marksman",
-			'CanManEmplacements', false,
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "PinDown",
-			'PinnedDownChance', 100,
-			'MaxAttacks', 2,
-			'RewardExperience', 0,
-			'MaxHitPoints', 60,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "BrianNPC",
-				}),
-			},
-			'Equipment', {
-				"HyenaNPC",
-			},
-			'gender', "Male",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExStephane",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 50,
-			'Agility', 50,
-			'Strength', 40,
-			'Wisdom', 80,
-			'Leadership', 40,
-			'Marksmanship', 40,
-			'Mechanical', 40,
-			'Explosives', 0,
-			'Medical', 20,
-			'Portrait', "Mod/GCExPrologue/Images/StephaneHead",
-			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8939",
-			'Name', T(996070173311, --[[ModItemUnitDataCompositeDef GCExStephane Name]] "Stephane"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'immortal', true,
-			'ImportantNPC', true,
-			'MaxAttacks', 2,
-			'RewardExperience', 0,
-			'MaxHitPoints', 50,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "StephaneNPC",
-				}),
-			},
-			'pollyvoice', "Matthew",
-			'gender', "Male",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExSmurge",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 75,
-			'Agility', 72,
-			'Dexterity', 80,
-			'Strength', 61,
-			'Wisdom', 82,
-			'Leadership', 0,
-			'Marksmanship', 80,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 49,
-			'Portrait', "Mod/GCExPrologue/Images/Smurge",
-			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8962",
-			'Name', T(790241824755, --[[ModItemUnitDataCompositeDef GCExSmurge Name]] "Smurge"),
-			'Randomization', true,
-			'Affiliation', "Other",
-			'StartingLevel', 5,
-			'ImportantNPC', true,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Soldier",
-			},
-			'MaxAttacks', 2,
-			'RewardExperience', 0,
-			'MaxHitPoints', 60,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Bounce",
-				}),
-			},
-			'Equipment', {
-				"LegionRaider_Stronger_Elite",
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "Bounce",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExStitches",
-			'NameColor', RGBA(88, 92, 68, 255),
-			'object_class', "UnitData",
-			'Health', 70,
-			'Agility', 80,
-			'Dexterity', 80,
-			'Strength', 70,
-			'Wisdom', 80,
-			'Marksmanship', 20,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 70,
-			'Portrait', "UI/NPCsPortraits/LamitheWitch",
-			'BigPortrait', "Mod/GCExPrologue/Images/BCPriestess",
-			'Name', T(153308792524, --[[ModItemUnitDataCompositeDef GCExStitches Name]] "Stitches"),
-			'Randomization', true,
-			'Affiliation', "Civilian",
-			'ImportantNPC', true,
-			'MaxAttacks', 2,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Lami",
-				}),
-			},
-			'Equipment', {
-				"Witch_Loot",
-			},
-			'pollyvoice', "Nicole",
-			'gender', "Female",
-			'PersistentSessionId', "NPC_Witch",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExZombie_F",
-			'NameColor', RGBA(182, 58, 52, 255),
-			'object_class', "UnitData",
-			'Health', 90,
-			'Agility', 95,
-			'Dexterity', 61,
-			'Strength', 97,
-			'Wisdom', 2,
-			'Leadership', 98,
-			'Marksmanship', 0,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/InfectedMale01",
-			'BigPortrait', "UI/Enemies/LegionRaider",
-			'Name', T(481219843237, --[[ModItemUnitDataCompositeDef GCExZombie_F Name]] "Infected"),
-			'Randomization', true,
-			'Affiliation', "Beast",
-			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
-			'CanManEmplacements', false,
-			'PinnedDownChance', 100,
-			'MaxAttacks', 2,
-			'MaxHitPoints', 60,
-			'StartingPerks', {
-				"Berserker",
-				"ZombiePerk",
-				"MinFreeMove",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Zombie1_F",
-				}),
-			},
-			'Equipment', {
-				"Infected_Equipment",
-			},
-			'gender', "Female",
-			'infected', true,
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExZombie_M",
-			'NameColor', RGBA(182, 58, 52, 255),
-			'object_class', "UnitData",
-			'Health', 90,
-			'Agility', 95,
-			'Dexterity', 61,
-			'Strength', 97,
-			'Wisdom', 2,
-			'Leadership', 98,
-			'Marksmanship', 0,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/InfectedMale01",
-			'BigPortrait', "UI/Enemies/LegionRaider",
-			'Name', T(693205787927, --[[ModItemUnitDataCompositeDef GCExZombie_M Name]] "Infected"),
-			'Randomization', true,
-			'Affiliation', "Beast",
-			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
-			'CanManEmplacements', false,
-			'PinnedDownChance', 100,
-			'MaxAttacks', 2,
-			'MaxHitPoints', 60,
-			'StartingPerks', {
-				"Berserker",
-				"ZombiePerk",
-				"MinFreeMove",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Zombie2_M",
-				}),
-			},
-			'Equipment', {
-				"Biolab_Infected_Equipment",
-			},
-			'gender', "Male",
-			'infected', true,
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExAdonisGuard",
-			'NameColor', RGBA(61, 122, 153, 255),
-			'object_class', "UnitData",
-			'Health', 80,
-			'Agility', 90,
-			'Dexterity', 75,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Leadership', 20,
-			'Marksmanship', 95,
-			'Mechanical', 52,
-			'Explosives', 48,
-			'Medical', 50,
-			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
-			'BigPortrait', "Mod/GCExPrologue/Images/TimTurtledove 2.dds",
-			'Name', T(777155779977, --[[ModItemUnitDataCompositeDef GCExAdonisGuard Name]] "Leader Elite"),
-			'Randomization', true,
-			'elite', true,
-			'eliteCategory', "Foreigners",
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-				"Explosives",
-			},
-			'role', "Commander",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"OpportunisticKiller",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Officer",
-				}),
-			},
-			'Equipment', {
-				"AdonisSquadLeader",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExGoon_1",
-			'NameColor', RGBA(182, 58, 52, 255),
-			'object_class', "UnitData",
-			'Health', 62,
-			'Agility', 80,
-			'Dexterity', 30,
-			'Strength', 39,
-			'Wisdom', 30,
-			'Leadership', 20,
-			'Marksmanship', 55,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/LegionRecon",
-			'BigPortrait', "UI/Enemies/LegionRaider",
-			'Name', T(834781691255, --[[ModItemUnitDataCompositeDef GCExGoon_1 Name]] "Goon"),
-			'Randomization', true,
-			'Affiliation', "Legion",
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"MobileShot",
-			},
-			'archetype', "Skirmisher",
-			'role', "Recon",
-			'MaxAttacks', 2,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"MinFreeMove",
-				"Hotblood",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Goon1Pro",
-				}),
-			},
-			'Equipment', {
-				"LegionGoon",
-			},
-			'AdditionalGroups', {},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExGoon_2",
-			'NameColor', RGBA(182, 58, 52, 255),
-			'object_class', "UnitData",
-			'Health', 73,
-			'Agility', 79,
-			'Dexterity', 73,
-			'Strength', 48,
-			'Wisdom', 71,
-			'Leadership', 29,
-			'Marksmanship', 58,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/LegionRecon",
-			'BigPortrait', "UI/Enemies/LegionRaider",
-			'Name', T(669282205183, --[[ModItemUnitDataCompositeDef GCExGoon_2 Name]] "Scout"),
-			'Randomization', true,
-			'Affiliation', "Legion",
-			'StartingLevel', 2,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Flank",
-				"RunAndGun",
-			},
-			'archetype', "Skirmisher",
-			'role', "Recon",
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
-			'MaxHitPoints', 50,
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Goon2Pro",
-				}),
-			},
-			'Equipment', {
-				"LegionScout",
-			},
-			'AdditionalGroups', {},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExGoon_3",
-			'NameColor', RGBA(182, 58, 52, 255),
-			'object_class', "UnitData",
-			'Health', 67,
-			'Agility', 44,
-			'Dexterity', 89,
-			'Strength', 41,
-			'Wisdom', 48,
-			'Leadership', 33,
-			'Marksmanship', 91,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/RebelSniper",
-			'Name', T(781068932435, --[[ModItemUnitDataCompositeDef GCExGoon_3 Name]] "Raider"),
-			'Randomization', true,
-			'Affiliation', "Rebel",
-			'StartingLevel', 3,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Sniper",
-			},
-			'role', "Marksman",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"Deadeye",
-				"MinFreeMove",
-				"NightOps",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Goon4Pro",
-				}),
-			},
-			'Equipment', {
-				"RebelSniper",
-			},
-			'AdditionalGroups', {},
-			'pollyvoice', "Kendra",
-			'gender', "Female",
-			'VoiceResponseId', "AnneLeMitrailleur",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCExGoon_4",
-			'NameColor', RGBA(182, 58, 52, 255),
-			'object_class', "UnitData",
-			'Health', 100,
-			'Agility', 70,
-			'Dexterity', 34,
-			'Strength', 70,
-			'Wisdom', 24,
-			'Leadership', 10,
-			'Marksmanship', 70,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/LegionSoldier",
-			'BigPortrait', "UI/Enemies/LegionRaider",
-			'Name', T(544507340205, --[[ModItemUnitDataCompositeDef GCExGoon_4 Name]] "Marauder"),
-			'Randomization', true,
-			'Affiliation', "Legion",
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Soldier",
-			},
-			'role', "Soldier",
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"AutoWeapons",
-				"MinFreeMove",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "GoonCommander",
-				}),
-			},
-			'Equipment', {
-				"LegionRaiders",
-			},
-			'AdditionalGroups', {},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXNumb",
-			'NameColor', RGBA(220, 140, 28, 255),
-			'object_class', "UnitData",
-			'Health', 84,
-			'Agility', 73,
-			'Dexterity', 62,
-			'Strength', 78,
-			'Wisdom', 70,
-			'Leadership', 13,
-			'Marksmanship', 88,
-			'Mechanical', 14,
-			'Explosives', 22,
-			'Medical', 33,
-			'Portrait', "Mod/GCExPrologue/Images/NumbPortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/Numb",
-			'IsMercenary', true,
-			'Name', T(561852629506, --[[ModItemUnitDataCompositeDef GCEXNumb Name]] 'Tim "Numb" Sutton'),
-			'Nick', T(392128018814, --[[ModItemUnitDataCompositeDef GCEXNumb Nick]] "Numb"),
-			'AllCapsNick', T(531854446711, --[[ModItemUnitDataCompositeDef GCEXNumb AllCapsNick]] "NUMB"),
-			'Affiliation', "Secret",
-			'Bio', T(792089849295, --[[ModItemUnitDataCompositeDef GCEXNumb Bio]] "Tim Sutton suffers from a bad case of visual offensiveness and no one has been willing to give him a break. His bad haircut and neck tattoo has hindered this mercenary's career pursuits despite an otherwise impressive resume including martial arts and night ops training. His marksmanship and medical abilities are also excellent."),
-			'Nationality', "England",
-			'snype_nick', T(859662584234, --[[ModItemUnitDataCompositeDef GCEXNumb snype_nick]] "tim.sutton"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', '"Tim Sutton suffers from a bad case of visual offensiveness and no one has been willing to give him a break. His bad haircut and neck tattoo has hindered this mercenary\'s career pursuits despite an otherwise impressive resume including martial arts and night ops training. His marksmanship and medical abilities are also excellent." - M.E.R.C. dossier',
-			'StartingLevel', 3,
-			'MaxHitPoints', 82,
-			'Dislikes', {
-				"Vicki",
-				"Sidney",
-				"Scope",
-			},
-			'StartingPerks', {
-				"MartialArts",
-				"NightOps",
-				"NumbTalk",
-				"Flanker",
-				"BreachAndClear",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Numb-Appearance",
-				}),
-			},
-			'Equipment', {
-				"Sidney",
-			},
-			'Tier', "Veteran",
-			'Specialization', "Marksmen",
-			'gender', "Male",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXGumpy",
-			'NameColor', RGBA(220, 140, 28, 255),
-			'object_class', "UnitData",
-			'Health', 67,
-			'Agility', 45,
-			'Dexterity', 67,
-			'Strength', 70,
-			'Wisdom', 94,
-			'Leadership', 11,
-			'Marksmanship', 44,
-			'Mechanical', 0,
-			'Explosives', 56,
-			'Medical', 9,
-			'Portrait', "Mod/GCExPrologue/Images/GumpyPortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/IMG_8537 2",
-			'IsMercenary', true,
-			'Name', T(350774746706, --[[ModItemUnitDataCompositeDef GCEXGumpy Name]] 'Tim "Gumpy" Hillman'),
-			'Nick', T(940139436494, --[[ModItemUnitDataCompositeDef GCEXGumpy Nick]] "Gumpy"),
-			'AllCapsNick', T(284042248626, --[[ModItemUnitDataCompositeDef GCEXGumpy AllCapsNick]] "GUMPY"),
-			'Affiliation', "Secret",
-			'Bio', T(845088535160, --[[ModItemUnitDataCompositeDef GCEXGumpy Bio]] "Tim is a brilliant explosives expert who catches on quickly. When it comes to explosives though, there really isn't much room for error. Tim Hillman would probably still be enrolled in Harvard, doing graduate studies in electro-magnetic research, if it wasn't for a couple bouts of severe depression...possibly due to the constant exposure to EMF.\n\nAdditional Info:\n\nDue to acute allergies, Tim prefers to work in northern climates.\n\n- M.E.R.C. Dossier"),
-			'Nationality', "USA",
-			'snype_nick', T(140402586340, --[[ModItemUnitDataCompositeDef GCEXGumpy snype_nick]] "tim.hilman"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', '"Tim is a brilliant explosives expert who catches on quickly. When it comes to explosives though, there really isn\'t much room for error. Tim Hillman would probably still be enrolled in Harvard, doing graduate studies in electro-magnetic research, if it wasn\'t for a couple bouts of severe depression...possibly due to the constant exposure to EMF.\n\nAdditional Info:\n\nDue to acute allergies, Tim prefers to work in northern climates."\n\n- M.E.R.C. Dossier',
-			'MaxHitPoints', 82,
-			'StartingPerks', {
-				"MrFixit",
-				"GumpySpecialPineapple",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Gumpy-Appearance",
-				}),
-			},
-			'Equipment', {
-				"Red",
-			},
-			'Specialization', "ExplosiveExpert",
-			'gender', "Male",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXGasket",
-			'NameColor', RGBA(220, 140, 28, 255),
-			'object_class', "UnitData",
-			'Health', 72,
-			'Agility', 61,
-			'Dexterity', 89,
-			'Strength', 68,
-			'Wisdom', 49,
-			'Leadership', 3,
-			'Marksmanship', 44,
-			'Mechanical', 82,
-			'Explosives', 8,
-			'Medical', 0,
-			'Portrait', "Mod/GCExPrologue/Images/GasketPortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/Gasket",
-			'IsMercenary', true,
-			'Name', T(949646749914, --[[ModItemUnitDataCompositeDef GCEXGasket Name]] 'Doug "Gasket" Milton'),
-			'Nick', T(854815094946, --[[ModItemUnitDataCompositeDef GCEXGasket Nick]] "Gasket"),
-			'AllCapsNick', T(801666550540, --[[ModItemUnitDataCompositeDef GCEXGasket AllCapsNick]] "GASKET"),
-			'Affiliation', "Secret",
-			'Bio', T(242637099594, --[[ModItemUnitDataCompositeDef GCEXGasket Bio]] "Doug Milton originates from Kentucky. He quit school in the fourth grade to work in his father's gas station. When his sister/cousin started pumping gas at the garage, he transferred his focus to the repair bench, and became a good mechanic. Since he left the family business, he roamed from job to job before trying his luck as a mercenary."),
-			'Nationality', "USA",
-			'snype_nick', T(534857338517, --[[ModItemUnitDataCompositeDef GCEXGasket snype_nick]] "doug.milton"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', "Doug Milton originates from Kentucky. He quit school in the fourth grade to work in his father's gas station. When his sister/cousin started pumping gas at the garage, he transferred his focus to the repair bench, and became a good mechanic. Since he left the family business, he roamed from job to job before trying his luck as a mercenary.\" - M.E.R.C. Dossier",
-			'MaxHitPoints', 82,
-			'Likes', {
-				"Vicki",
-			},
-			'Dislikes', {
-				"Ivan",
-				"Igor",
-			},
-			'StartingPerks', {
-				"MrFixit",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Gasket-Appearance",
-				}),
-			},
-			'Equipment', {
-				"Wolf",
-			},
-			'Specialization', "Mechanic",
-			'gender', "Male",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXStogie",
-			'NameColor', RGBA(220, 140, 28, 255),
-			'object_class', "UnitData",
-			'Health', 98,
-			'Agility', 78,
-			'Dexterity', 84,
-			'Strength', 96,
-			'Wisdom', 77,
-			'Leadership', 33,
-			'Marksmanship', 89,
-			'Mechanical', 74,
-			'Explosives', 43,
-			'Medical', 11,
-			'Portrait', "Mod/GCExPrologue/Images/StogiePortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/Stogie",
-			'IsMercenary', true,
-			'Name', T(112445946149, --[[ModItemUnitDataCompositeDef GCEXStogie Name]] 'Lt. "Stogie" Horge'),
-			'Nick', T(297085285316, --[[ModItemUnitDataCompositeDef GCEXStogie Nick]] "Stogie"),
-			'AllCapsNick', T(104451916638, --[[ModItemUnitDataCompositeDef GCEXStogie AllCapsNick]] "STOGIE"),
-			'Affiliation', "Secret",
-			'Bio', T(703872402200, --[[ModItemUnitDataCompositeDef GCEXStogie Bio]] "Built like a tank, Lt. Horge's speciality is destroying them. Extremely skilled with heavy weapons, Stogie spent the last two years working as an independent mercenary in the Congo. He's one of the toughest grunts in the business, and M.E.R.C. is proud that he has chosen us as his first foray into agency representation, even if it is on a temporary trial basis.\n\nAdditional Info\nPlease hire Stogie. We don't want to lose him.\" -M.E.R.C. Dossier"),
-			'Nationality', "USA",
-			'snype_nick', T(159796160036, --[[ModItemUnitDataCompositeDef GCEXStogie snype_nick]] "stogie"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', "Built like a tank, Lt. Horge's speciality is destroying them. Extremely skilled with heavy weapons, Stogie spent the last two years working as an independent mercenary in the Congo. He's one of the toughest grunts in the business, and M.E.R.C. is proud that he has chosen us as his first foray into agency representation, even if it is on a temporary trial basis.\n\nAdditional Info\nPlease hire Stogie. We don't want to lose him.\" -M.E.R.C. Dossier",
-			'StartingLevel', 7,
-			'MaxHitPoints', 82,
-			'Likes', {
-				"Gus",
-			},
-			'Dislikes', {
-				"Meltdown",
-			},
-			'StartingPerks', {
-				"HeavyWeaponsTraining",
-				"BeefedUp",
-				"BreachAndClear",
-				"Ironclad",
-				"CollateralDamage",
-				"HardBlow",
-				"HitTheDeck",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Stogie-Appearance",
-				}),
-			},
-			'Equipment', {
-				"Gus",
-			},
-			'Tier', "Legendary",
-			'Specialization', "Marksmen",
-			'gender', "Male",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXCougar",
-			'NameColor', RGBA(220, 140, 28, 255),
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 83,
-			'Dexterity', 79,
-			'Strength', 87,
-			'Wisdom', 75,
-			'Leadership', 31,
-			'Marksmanship', 93,
-			'Mechanical', 58,
-			'Explosives', 45,
-			'Medical', 33,
-			'Portrait', "Mod/GCExPrologue/Images/CougarPortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/Cougar",
-			'IsMercenary', true,
-			'Name', T(823708430215, --[[ModItemUnitDataCompositeDef GCEXCougar Name]] 'Jim "Cougar" Wallace'),
-			'Nick', T(346183843645, --[[ModItemUnitDataCompositeDef GCEXCougar Nick]] "Cougar"),
-			'AllCapsNick', T(245400817655, --[[ModItemUnitDataCompositeDef GCEXCougar AllCapsNick]] "COUGAR"),
-			'Affiliation', "Secret",
-			'Bio', T(549374649264, --[[ModItemUnitDataCompositeDef GCEXCougar Bio]] "Jim Wallace is one of the few cadets ever to get a perfect score on every final exam at military college. Of course, it didn't hurt that his father wrote the school's military code of conduct. He's a master at conventional mercenary skills and a pro with automatic weaponry. Always by-the-book Cougar is highly professional, possibly M.E.R.C's top performer.\" - M.E.R.C. Dossier\n\nAdditional Info\n\"Even though he is a man with strong opinions, Cougar has the military background (and discipline) to keep them to himself.\""),
-			'Nationality', "USA",
-			'snype_nick', T(737933631206, --[[ModItemUnitDataCompositeDef GCEXCougar snype_nick]] "jim.wallace"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', '"Jim Wallace is one of the few cadets ever to get a perfect score on every final exam at military college. Of course, it didn\'t hurt that his father wrote the school\'s military code of conduct. He\'s a master at conventional mercenary skills and a pro with automatic weaponry. Always by-the-book Cougar is highly professional, possibly M.E.R.C\'s top performer." - M.E.R.C. Dossier\n\nAdditional Info\n"Even though he is a man with strong opinions, Cougar has the military background (and discipline) to keep them to himself."',
-			'StartingLevel', 5,
-			'MaxHitPoints', 82,
-			'Likes', {
-				"Len",
-				"Wolf",
-			},
-			'StartingPerks', {
-				"AutoWeapons",
-				"Stealthy",
-				"Deadeye",
-				"Flanker",
-				"LightningReaction",
-				"RelentlessAdvance",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Cougar-Appearance",
-				}),
-			},
-			'Equipment', {
-				"Len",
-			},
-			'Tier', "Elite",
-			'Specialization', "Marksmen",
-			'gender', "Male",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "GCExPrologueUnits",
-			'Id', "GCEXGaston",
-			'NameColor', RGBA(220, 140, 28, 255),
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 82,
-			'Dexterity', 96,
-			'Strength', 84,
-			'Wisdom', 80,
-			'Leadership', 28,
-			'Marksmanship', 94,
-			'Mechanical', 22,
-			'Explosives', 21,
-			'Medical', 23,
-			'Portrait', "Mod/GCExPrologue/Images/GastonPortrait",
-			'BigPortrait', "Mod/GCExPrologue/Images/Gaston",
-			'IsMercenary', true,
-			'Name', T(833359843240, --[[ModItemUnitDataCompositeDef GCEXGaston Name]] "Gaston Cavalier"),
-			'Nick', T(513999821212, --[[ModItemUnitDataCompositeDef GCEXGaston Nick]] "Gaston"),
-			'AllCapsNick', T(849984528283, --[[ModItemUnitDataCompositeDef GCEXGaston AllCapsNick]] "GASTON"),
-			'Affiliation', "Secret",
-			'Bio', T(321537150794, --[[ModItemUnitDataCompositeDef GCEXGaston Bio]] "As a distinguished commando in the French Marine Corp (FMC), Gaston has played a distinguished role in many of the NATO and UN operations throughout this hostile world. A confident, field-proven, professional sharpshooter, Cavalier's addition to our roster is just another step in M.E.R.C.'s continuing effort to meet your needs.\n\nAdditional Info\n\nGaston operates best in the early hours of the morning. He is also rather apt at sniping from an elevated vantage point.\n\n-M.E.R.C. Dossier"),
-			'Nationality', "France",
-			'snype_nick', T(189826039300, --[[ModItemUnitDataCompositeDef GCEXGaston snype_nick]] "gaston.cavalier"),
-			'Refusals', {},
-			'Haggles', {},
-			'Mitigations', {},
-			'ExtraPartingWords', {},
-			'Offline', {},
-			'GreetingAndOffer', {},
-			'ConversationRestart', {},
-			'IdleLine', {},
-			'PartingWords', {},
-			'RehireIntro', {},
-			'RehireOutro', {},
-			'MedicalDeposit', "none",
-			'StartingSalary', 470,
-			'SalaryIncrease', 280,
-			'SalaryLv1', 100,
-			'SalaryMaxLv', 4100,
-			'LegacyNotes', '"As a distinguished commando in the French Marine Corp (FMC), Gaston has played a distinguished role in many of the NATO and UN operations throughout this hostile world. A confident, field-proven, professional sharpshooter, Cavalier\'s addition to our roster is just another step in M.E.R.C.\'s continuing effort to meet your needs.\n\nAdditional Info\n\nGaston operates best in the early hours of the morning. He is also rather apt at sniping from an elevated vantage point."\n\n-M.E.R.C. Dossier',
-			'StartingLevel', 6,
-			'MaxHitPoints', 82,
-			'Likes', {
-				"Fox",
-			},
-			'LearnToLike', {
-				"Buns",
-			},
-			'StartingPerks', {
-				"NightOps",
-				"DeathFromAbove",
-				"Deadeye",
-				"Counterfire",
-				"Hotblood",
-				"Killzone",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Gaston-Appearance",
-				}),
-			},
-			'Equipment', {
-				"Scope",
-			},
-			'Tier', "Elite",
-			'Specialization', "Marksmen",
-			'gender', "Male",
-			'blocked_spots', set( "Weaponls", "Weaponrs" ),
-		}),
-		}),
-	PlaceObj('ModItemFolder', {
-		'name', "Convos",
-	}, {
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "GCExBrian",
-			DefaultActor = "GCExBrian",
-			group = "GCExPrologue",
-			id = "Fuel_2",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBrian",
-						Text = T(570080620925, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Greeting]] "Hello Folks!"),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					Keyword = "What’s your business here?",
-					KeywordT = T(359485066766, --[[ModItemConversation Fuel_2 KeywordT]] "What’s your business here?"),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExBrian",
-							Text = T(461931187015, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:What’s your business here?]] "My business? I am THE Delivery Guy. I drive and deliver all over Erny-Island. You need a ride?"),
-							param_bindings = false,
-						}),
-					},
-					id = "Whatsyourbusinesshere",
-					param_bindings = false,
-					PlaceObj('ConversationPhrase', {
-						Keyword = "No, thanks. We are good.",
-						KeywordT = T(803064260586, --[[ModItemConversation Fuel_2 KeywordT]] "No, thanks. We are good."),
-						Lines = {
-							PlaceObj('ConversationLine', {
-								Character = "GCExBrian",
-								Text = T(111244765826, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:No, thanks. We are good.]] "Good, cause I am all out of fuel, maybe you can help me out here, guys."),
-								param_bindings = false,
-							}),
-						},
-						PlayGoToPhrase = true,
-						id = "NothanksWearegood",
-						param_bindings = false,
-						PlaceObj('ConversationPhrase', {
-							GoTo = "<end conversation>",
-							Keyword = "What's the deal?",
-							KeywordT = T(991255635297, --[[ModItemConversation Fuel_2 KeywordT]] "What's the deal?"),
-							Lines = {
-								PlaceObj('ConversationLine', {
-									Character = "GCExBrian",
-									Text = T(332534543453, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:What's the deal?]] "Someone stole my canister. I was just about to refuel and took a short break at the beach, but after that it was gone..."),
-									param_bindings = false,
-								}),
-							},
-							id = "Whatsthedeal",
-							param_bindings = false,
-						}),
-					}),
-					PlaceObj('ConversationPhrase', {
-						Keyword = "Yes, sure.",
-						KeywordT = T(165041368024, --[[ModItemConversation Fuel_2 KeywordT]] "Yes, sure."),
-						Lines = {
-							PlaceObj('ConversationLine', {
-								Character = "GCExBrian",
-								Text = T(172631532251, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Yes, sure.]] "Then you need to help me first, please."),
-								param_bindings = false,
-							}),
-						},
-						PlayGoToPhrase = true,
-						id = "Yessure2",
-						param_bindings = false,
-						PlaceObj('ConversationPhrase', {
-							GiveQuests = {
-								"BriansFuel",
-							},
-							GoTo = "<end conversation>",
-							Keyword = "What's the deal?",
-							KeywordT = T(991255635297, --[[ModItemConversation Fuel_2 KeywordT]] "What's the deal?"),
-							Lines = {
-								PlaceObj('ConversationLine', {
-									Character = "GCExBrian",
-									Text = T(920652601672, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:What's the deal?]] "Someone stole my canister. I was just about to refuel and took a short break at the beach, but after that it was gone..."),
-									param_bindings = false,
-								}),
-							},
-							PlayGoToPhrase = true,
-							id = "Whatsthedeal2",
-							param_bindings = false,
-						}),
-					}),
-				}),
-			}),
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Goodbye",
-				KeywordT = T(557225474228, --[[ModItemConversation Fuel_2 KeywordT]] "Goodbye"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBrian",
-						param_bindings = false,
-					}),
-				},
-				id = "Goodbye",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				CompleteQuests = {
-					"BriansFuel",
-				},
-				Conditions = {
-					PlaceObj('BanterHasPlayed', {
-						Banters = {
-							"FuelFound",
-						},
-						param_bindings = false,
-					}),
-				},
-				GoTo = "<end conversation>",
-				Keyword = "Mission",
-				KeywordT = T(991893386957, --[[ModItemConversation Fuel_2 KeywordT]] "Mission"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBrian",
-						Text = T(455002610524, --[[ModItemConversation Fuel_2 Text voice:GCExBrian section:Fuel_2 keyword:Mission]] "What a nice surprise, you found my Fuel...so sorry guys but no space for a ride here. But I can give you something for you troubles. Near Deedees Hut there is a Bobby's Package Drop, must have slipped from board, it's yours if you want it"),
-						param_bindings = false,
-					}),
-				},
-				PlayGoToPhrase = true,
-				id = "Mission2",
-				param_bindings = false,
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "ZombieEvent",
-			DefaultActor = "GCExSmurge",
-			campaign = "GCEXPrologue",
-			comment = "5",
-			group = "GCExPrologue",
-			id = "SmurgeZombieEvent",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExSmurge",
-						Text = T(175202234117, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:Greeting]] "So you are neither one of any, huh?"),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					Keyword = "What?",
-					KeywordT = T(480309853435, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "What?"),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExSmurge",
-							Text = T(576361630181, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:What?]] "Well, you're neither one of the dead dudes, nor one of the half dead dudes. Then you are either running from the law or totally picked wrong vacation spot."),
-							param_bindings = false,
-						}),
-					},
-					id = "What2",
-					param_bindings = false,
-					PlaceObj('ConversationPhrase', {
-						Keyword = "We are just travellers, looking for a boat.",
-						KeywordT = T(135707620584, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "We are just travellers, looking for a boat."),
-						Lines = {
-							PlaceObj('ConversationLine', {
-								AlwaysInterject = true,
-								Character = "GCExSmurge",
-								Text = T(680703397025, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:We are just travellers, looking for a boat.]] "No boat here, unless you count as weapon cargo."),
-								param_bindings = false,
-							}),
-							PlaceObj('ConversationLine', {
-								Character = "GCEXNumb",
-								Text = T(972990684633, --[[ModItemConversation SmurgeZombieEvent Text voice:GCEXNumb section:SmurgeZombieEvent keyword:We are just travellers, looking for a boat.]] "You bet yer bottle and glass, some of us surely count as weapons."),
-								param_bindings = false,
-							}),
-						},
-						id = "Wearejusttravellerslookingforaboat2",
-						param_bindings = false,
-						PlaceObj('ConversationPhrase', {
-							Keyword = "So, whats this place?",
-							KeywordT = T(246846882929, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "So, whats this place?"),
-							Lines = {
-								PlaceObj('ConversationLine', {
-									Character = "GCExSmurge",
-									Text = T(516838697818, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:So, whats this place?]] "What d'ya think! Smugglers operation base, but don't tell anyone, haha. I would have to kill you."),
-									param_bindings = false,
-								}),
-							},
-							id = "Sowhatsthisplace2",
-							param_bindings = false,
-							PlaceObj('ConversationPhrase', {
-								Keyword = "Aha, so why tell me?",
-								KeywordT = T(952879649822, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "Aha, so why tell me?"),
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCExSmurge",
-										Text = T(729231793472, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:Aha, so why tell me?]] "Because I don't care. No government troops would set foot here, too dangerous. You don't wanna know what happens here at night..."),
-										param_bindings = false,
-									}),
-								},
-								id = "Ahasowhytellme2",
-								param_bindings = false,
-								PlaceObj('ConversationPhrase', {
-									Keyword = "Well, what does happen here at night?",
-									KeywordT = T(623840755240, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "Well, what does happen here at night?"),
-									Lines = {
-										PlaceObj('ConversationLine', {
-											Character = "GCExSmurge",
-											Text = T(983256822005, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:Well, what does happen here at night?]] "Crawling, hundreds of them all over the island. Those creatures, mad and dull! If you stay and help us out, you will see. You know, we are short handed at the moment. Henry and Seville, they have not returned yet. They are probably dead in jungle, haha. These fuckers owed me money...."),
-											param_bindings = false,
-										}),
-									},
-									id = "Wellwhatdoeshappenhereatnight2",
-									param_bindings = false,
-									PlaceObj('ConversationPhrase', {
-										GoTo = "<end conversation>",
-										Keyword = "Ok, what’s the deal?",
-										KeywordT = T(986459381656, --[[ModItemConversation SmurgeZombieEvent KeywordT]] "Ok, what’s the deal?"),
-										Lines = {
-											PlaceObj('ConversationLine', {
-												Character = "GCExSmurge",
-												Text = T(666845966282, --[[ModItemConversation SmurgeZombieEvent Text voice:GCExSmurge section:SmurgeZombieEvent keyword:Ok, what’s the deal?]] "Come night, you will see. You will see...After that we can talk business. I can make you a real good offer, my friends!"),
-												param_bindings = false,
-											}),
-										},
-										id = "Okwhatsthedeal2",
-										param_bindings = false,
-									}),
-								}),
-							}),
-						}),
-					}),
-				}),
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "CoBCompletion",
-			DefaultActor = "GCExStitches",
-			campaign = "GCEXPrologue",
-			comment = "4",
-			group = "GCExPrologue",
-			id = "QuestCompletionCoB",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStitches",
-						Text = T(286397022049, --[[ModItemConversation QuestCompletionCoB Text voice:GCExStitches section:QuestCompletionCoB keyword:Greeting]] "Very good, you brought us a gift. Thank you. I will lead you further. Now I shall prepare the ritual. You are welcome to join!"),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					Keyword = "Go ahead, do what you must.",
-					KeywordT = T(321679047452, --[[ModItemConversation QuestCompletionCoB KeywordT]] "Go ahead, do what you must."),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExStitches",
-							Text = T(948616562921, --[[ModItemConversation QuestCompletionCoB Text voice:GCExStitches section:QuestCompletionCoB keyword:Go ahead, do what you must.]] "After the ritual is where our souls part. You did a service to us and honoured the gods of this island. In the end, I thank you. If you follow that path, you will find the boat!"),
-							param_bindings = false,
-						}),
-					},
-					id = "Goaheaddowhatyoumust2",
-					param_bindings = false,
-					PlaceObj('ConversationPhrase', {
-						GoTo = "<end conversation>",
-						Keyword = "Roger that!",
-						KeywordT = T(779330074700, --[[ModItemConversation QuestCompletionCoB KeywordT]] "Roger that!"),
-						Lines = {
-							PlaceObj('ConversationLine', {
-								Character = "GCExStitches",
-								Text = T(961968269504, --[[ModItemConversation QuestCompletionCoB Text voice:GCExStitches section:QuestCompletionCoB keyword:Roger that!]] "I have a parting gift...pages of a diary... Years ago, a man-a stranger, much like you-came here. He was a writer, wanting to know all about our ways. Wilcox, I believe was his name. He stayed here for a few months. Suddenly, one day, he was gone, but he left his notes."),
-								param_bindings = false,
-							}),
-						},
-						id = "Rogerthat2",
-						param_bindings = false,
-					}),
-				}),
-				PlaceObj('ConversationPhrase', {
-					GoTo = "<end conversation>",
-					Keyword = "No, you cannot go around killing people, even if they don’t look human anymore.",
-					KeywordT = T(453510176545, --[[ModItemConversation QuestCompletionCoB KeywordT]] "No, you cannot go around killing people, even if they don’t look human anymore."),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExStitches",
-							param_bindings = false,
-						}),
-					},
-					id = "Noyoucannotgoaroundkillingpeopleeveniftheydontlookhumananymore2",
-					param_bindings = false,
-				}),
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "CoBArrived",
-			DefaultActor = "GCExStitches",
-			campaign = "GCEXPrologue",
-			comment = "3",
-			group = "GCExPrologue",
-			id = "ArrivedAtChurch",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStitches",
-						Text = T(512491413389, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Greeting]] "This...is our humble abode. And this is my devoted flock. Welcome to the Church of Blood!"),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					Keyword = "Looks more like a Night of the Dead Revival Party to me.",
-					KeywordT = T(932601292197, --[[ModItemConversation ArrivedAtChurch KeywordT]] "Looks more like a Night of the Dead Revival Party to me."),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExStitches",
-							Text = T(707097531218, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Looks more like a Night of the Dead Revival Party to me.]] "Pardon me, yes, it is true. We are mere actors on a stage that is called life. But no, no, this is reality, strangers. The blood bond is real..."),
-							param_bindings = false,
-						}),
-					},
-					id = "LooksmorelikeaNightoftheDeadRevivalPartytome2",
-					param_bindings = false,
-					PlaceObj('ConversationPhrase', {
-						Keyword = "Good, but spare us the mumbo jumbo. So where’s the boat?",
-						KeywordT = T(429842311844, --[[ModItemConversation ArrivedAtChurch KeywordT]] "Good, but spare us the mumbo jumbo. So where’s the boat?"),
-						Lines = {
-							PlaceObj('ConversationLine', {
-								Character = "GCExStitches",
-								Text = T(141392386725, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Good, but spare us the mumbo jumbo. So where’s the boat?]] "Do you hear this, brothers and sisters? They want to go through the mouth of Ioa, one does not simply walk through there, you fools."),
-								param_bindings = false,
-							}),
-						},
-						id = "GoodbutspareusthemumbojumboSowherestheboat2",
-						param_bindings = false,
-						PlaceObj('ConversationPhrase', {
-							Keyword = "So much for that...so what do you want?",
-							KeywordT = T(550788777589, --[[ModItemConversation ArrivedAtChurch KeywordT]] "So much for that...so what do you want?"),
-							Lines = {
-								PlaceObj('ConversationLine', {
-									Character = "GCExStitches",
-									Text = T(479404192793, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:So much for that...so what do you want?]] 'First you need to capture a "gift" for us, one of those poor creatures you encountered earlier. But this is important, it has to be breathing!'),
-									param_bindings = false,
-								}),
-							},
-							id = "Somuchforthatsowhatdoyouwant2",
-							param_bindings = false,
-							PlaceObj('ConversationPhrase', {
-								Keyword = "What do you need it for?",
-								KeywordT = T(885153576899, --[[ModItemConversation ArrivedAtChurch KeywordT]] "What do you need it for?"),
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCExStitches",
-										Text = T(135547524085, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:What do you need it for?]] "Don't be so naive...blood demands more blood...it will satisfy Ioa. It will feed her needs. It will grant you passage!"),
-										param_bindings = false,
-									}),
-								},
-								id = "Whatdoyouneeditfor",
-								param_bindings = false,
-								PlaceObj('ConversationPhrase', {
-									GoTo = "<end conversation>",
-									Keyword = "You want to kill it?  But what are those creatures, anyways?",
-									KeywordT = T(522996238738, --[[ModItemConversation ArrivedAtChurch KeywordT]] "You want to kill it?  But what are those creatures, anyways?"),
-									Lines = {
-										PlaceObj('ConversationLine', {
-											Character = "GCExStitches",
-											Text = T(497831969614, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:You want to kill it?  But what are those creatures, anyways?]] "Lost Souls, poor creatures. Caught in between lives..."),
-											param_bindings = false,
-										}),
-									},
-									id = "YouwanttokillitButwhatarethosecreaturesanyways",
-									param_bindings = false,
-								}),
-							}),
-						}),
-					}),
-				}),
-				PlaceObj('ConversationPhrase', {
-					Keyword = "Seems like the one god is absent, but instead there are a dozen!",
-					KeywordT = T(203389682309, --[[ModItemConversation ArrivedAtChurch KeywordT]] "Seems like the one god is absent, but instead there are a dozen!"),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExStitches",
-							Text = T(966583249364, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Seems like the one god is absent, but instead there are a dozen!]] "Observant. Indeed, there are gods everywhere, and everything is god. The mountains and trees, the beaches and birds...."),
-							param_bindings = false,
-						}),
-					},
-					id = "Seemsliketheonegodisabsentbutinsteadthereareadozen2",
-					param_bindings = false,
-					PlaceObj('ConversationPhrase', {
-						Keyword = "Good, but spare us the mumbo jumbo. So where’s the boat?",
-						KeywordT = T(429842311844, --[[ModItemConversation ArrivedAtChurch KeywordT]] "Good, but spare us the mumbo jumbo. So where’s the boat?"),
-						Lines = {
-							PlaceObj('ConversationLine', {
-								Character = "GCExStitches",
-								Text = T(274233804625, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:Good, but spare us the mumbo jumbo. So where’s the boat?]] "Do you hear this, brothers and sisters? They want to go through the mouth of Ioa, one does not simply walk through there, you fools."),
-								param_bindings = false,
-							}),
-						},
-						id = "GoodbutspareusthemumbojumboSowherestheboat",
-						param_bindings = false,
-						PlaceObj('ConversationPhrase', {
-							Keyword = "So much for that...so what do you want?",
-							KeywordT = T(550788777589, --[[ModItemConversation ArrivedAtChurch KeywordT]] "So much for that...so what do you want?"),
-							Lines = {
-								PlaceObj('ConversationLine', {
-									Character = "GCExStitches",
-									Text = T(769253298483, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:So much for that...so what do you want?]] 'First you need to capture a "gift" for us, one of those poor creatures you encountered earlier. But this is important, it has to be breathing!'),
-									param_bindings = false,
-								}),
-							},
-							id = "Somuchforthatsowhatdoyouwant",
-							param_bindings = false,
-							PlaceObj('ConversationPhrase', {
-								Keyword = "What do you need it for?",
-								KeywordT = T(885153576899, --[[ModItemConversation ArrivedAtChurch KeywordT]] "What do you need it for?"),
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCExStitches",
-										Text = T(484271468024, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:What do you need it for?]] "Don't be so naive...blood demands more blood...it will satisfy Ioa. It will feed her needs. It will grant you passage!"),
-										param_bindings = false,
-									}),
-								},
-								id = "Whatdoyouneeditfor2",
-								param_bindings = false,
-								PlaceObj('ConversationPhrase', {
-									GoTo = "<end conversation>",
-									Keyword = "You want to kill it?  But what are those creatures, anyways?",
-									KeywordT = T(522996238738, --[[ModItemConversation ArrivedAtChurch KeywordT]] "You want to kill it?  But what are those creatures, anyways?"),
-									Lines = {
-										PlaceObj('ConversationLine', {
-											Character = "GCExStitches",
-											Text = T(450362149169, --[[ModItemConversation ArrivedAtChurch Text voice:GCExStitches section:ArrivedAtChurch keyword:You want to kill it?  But what are those creatures, anyways?]] "Lost Souls, poor creatures. Caught in between lives..."),
-											param_bindings = false,
-										}),
-									},
-									id = "YouwanttokillitButwhatarethosecreaturesanyways2",
-									param_bindings = false,
-								}),
-							}),
-						}),
-					}),
-				}),
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "ExitSector",
-			DefaultActor = "GCExStitches",
-			campaign = "GCEXPrologue",
-			comment = "2",
-			group = "GCExPrologue",
-			id = "LeaveSector",
-			PlaceObj('ConversationPhrase', {
-				GoTo = "<end conversation>",
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStitches",
-						Text = T(927927229371, --[[ModItemConversation LeaveSector Text voice:GCExStitches section:LeaveSector keyword:Greeting]] "I really hope your souls are ready for this journey. Whatever you see, don't be afraid! And don't stray afar, this island is treacherous. We are visiting my flock, they can provide for you."),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "CoBQuest",
-			DefaultActor = "GCExStitches",
-			campaign = "GCEXPrologue",
-			comment = "1",
-			group = "GCExPrologue",
-			id = "ChurchQuestStart",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStitches",
-						Text = T(704601762572, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Greeting]] "Bones and ashes! What are you guys doing on this rock? Go! Leave now! Leave as long as you are still alive!"),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					Keyword = "Is it a threat or an advice",
-					KeywordT = T(823346415217, --[[ModItemConversation ChurchQuestStart KeywordT]] "Is it a threat or an advice"),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExStitches",
-							Text = T(882984204847, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Is it a threat or an advice]] "Threat? No! Advice? Yes! You could call it that, if you mind being alive..."),
-							param_bindings = false,
-						}),
-					},
-					id = "Isitathreatoranadvice2",
-					param_bindings = false,
-					PlaceObj('ConversationPhrase', {
-						Keyword = "We do, but our boat is gone. We cannot leave, even if we wanted to.",
-						KeywordT = T(838551283596, --[[ModItemConversation ChurchQuestStart KeywordT]] "We do, but our boat is gone. We cannot leave, even if we wanted to."),
-						Lines = {
-							PlaceObj('ConversationLine', {
-								Character = "GCExStitches",
-								Text = T(563852815369, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:We do, but our boat is gone. We cannot leave, even if we wanted to.]] "Is that so? Your fate is sealed, then. None of these people around here will help you. They do not warm up to strangers. A boat is simply not a commodity around here. For a certain price, however..."),
-								param_bindings = false,
-							}),
-						},
-						id = "WedobutourboatisgoneWecannotleaveevenifwewantedto2",
-						param_bindings = false,
-						PlaceObj('ConversationPhrase', {
-							Keyword = "What is the meaning of this? What price?",
-							KeywordT = T(925450658439, --[[ModItemConversation ChurchQuestStart KeywordT]] "What is the meaning of this? What price?"),
-							Lines = {
-								PlaceObj('ConversationLine', {
-									Character = "GCExStitches",
-									Text = T(284542997764, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:What is the meaning of this? What price?]] "There is a boat, my boat, on the other side of the island. As there is nothing of value you could offer me, except your lives. A donation of a life for a boat, how does that sound to you?"),
-									param_bindings = false,
-								}),
-							},
-							id = "WhatisthemeaningofthisWhatprice2",
-							param_bindings = false,
-							PlaceObj('ConversationPhrase', {
-								Keyword = "Are you serious?",
-								KeywordT = T(292276275399, --[[ModItemConversation ChurchQuestStart KeywordT]] "Are you serious?"),
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCExStitches",
-										Text = T(273327164732, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Are you serious?]] "One life, to save three, does this not sound fair to you?"),
-										param_bindings = false,
-									}),
-								},
-								id = "Areyouserious2",
-								param_bindings = false,
-								PlaceObj('ConversationPhrase', {
-									Keyword = "How about, a boat and we spare YOUR life! Does this sound fair to you?",
-									KeywordT = T(720469593500, --[[ModItemConversation ChurchQuestStart KeywordT]] "How about, a boat and we spare YOUR life! Does this sound fair to you?"),
-									Lines = {
-										PlaceObj('ConversationInterjectionList', {
-											Interjections = {
-												PlaceObj('ConversationInterjection', {
-													AlwaysInterject = true,
-													Lines = {
-														PlaceObj('ConversationLine', {
-															Character = "GCEXCougar",
-															Text = T(167977453644, --[[ModItemConversation ChurchQuestStart Text voice:GCEXCougar section:ChurchQuestStart keyword:How about, a boat and we spare YOUR life! Does this sound fair to you?]] "Sir, I think we are improving a lot on our tactical bargaining front, Sir!"),
-															param_bindings = false,
-														}),
-													},
-													param_bindings = false,
-												}),
-											},
-											param_bindings = false,
-										}),
-										PlaceObj('ConversationLine', {
-											Character = "GCExStitches",
-											Text = T(208247280631, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:How about, a boat and we spare YOUR life! Does this sound fair to you?]] "Do what you must. You can kill me, but I am dead already! Besides, without me you will never find it..."),
-											param_bindings = false,
-										}),
-									},
-									id = "HowaboutaboatandwespareYOURlifeDoesthissoundfairtoyou2",
-									param_bindings = false,
-									PlaceObj('ConversationPhrase', {
-										Keyword = "Then you will show us the way!",
-										KeywordT = T(234744866561, --[[ModItemConversation ChurchQuestStart KeywordT]] "Then you will show us the way!"),
-										Lines = {
-											PlaceObj('ConversationLine', {
-												Character = "GCExStitches",
-												Text = T(900249276083, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Then you will show us the way!]] "Is that so? It's much easier to die here on the beach, stranger. I can give you some poison to spare you a lot of pain and horror."),
-												param_bindings = false,
-											}),
-											PlaceObj('ConversationInterjectionList', {
-												Interjections = {
-													PlaceObj('ConversationInterjection', {
-														Lines = {
-															PlaceObj('ConversationLine', {
-																Character = "GCExStitches",
-																Text = T(342783999250, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:Then you will show us the way!]] "I could be convinced if you serve the poison with some Bordeaux!"),
-																param_bindings = false,
-															}),
-														},
-														param_bindings = false,
-													}),
-												},
-												param_bindings = false,
-											}),
-										},
-										id = "Thenyouwillshowustheway2",
-										param_bindings = false,
-										PlaceObj('ConversationPhrase', {
-											GoTo = "<end conversation>",
-											Keyword = "What do you mean?",
-											KeywordT = T(724520438286, --[[ModItemConversation ChurchQuestStart KeywordT]] "What do you mean?"),
-											Lines = {
-												PlaceObj('ConversationLine', {
-													Character = "GCExStitches",
-													Text = T(599504319466, --[[ModItemConversation ChurchQuestStart Text voice:GCExStitches section:ChurchQuestStart keyword:What do you mean?]] "Whatever you heard of this place, it is worse...You came to the island of the dead. Those alive are dead and those dead are alive, the veil of worlds grows thin here...Let us go then."),
-													param_bindings = false,
-												}),
-											},
-											id = "Whatdoyoumean2",
-											param_bindings = false,
-										}),
-									}),
-								}),
-							}),
-						}),
-					}),
-				}),
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "SeagullLanding1",
-			DefaultActor = "GCExAdonisGuard",
-			campaign = "GCEXPrologue",
-			comment = "The Dialogue when landed on Seagull",
-			group = "GCExPrologue",
-			id = "LandingSeagull",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExAdonisGuard",
-						Text = T(370741661326, --[[ModItemConversation LandingSeagull Text voice:GCExAdonisGuard section:LandingSeagull keyword:Greeting]] "I am afraid this is not Diamond Red! The current must have changed our course."),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					GoTo = "<end conversation>",
-					Keyword = "So this is Seagull Island then?",
-					KeywordT = T(696112802392, --[[ModItemConversation LandingSeagull KeywordT]] "So this is Seagull Island then?"),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExAdonisGuard",
-							Text = T(558501881185, --[[ModItemConversation LandingSeagull Text voice:GCExAdonisGuard section:LandingSeagull keyword:So this is Seagull Island then?]] "I am afraid so, we have heard no good of this place. Be careful when you take a look around. The boat will be ready again in now time."),
-							param_bindings = false,
-						}),
-					},
-					id = "SothisisSeagullIslandthen",
-					param_bindings = false,
-				}),
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "SeagullLanding2",
-			DefaultActor = "GCExBiff",
-			DefaultActorPortraitOverride = "Mod/GCExPrologue/Images/Biff 2.dds",
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "LandingSeagull2",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBiff",
-						Text = T(180432867983, --[[ModItemConversation LandingSeagull2 Text voice:GCExBiff section:LandingSeagull2 keyword:Greeting]] "I am sorry guys, this place is giving me the creeps. You never should have told me about the curse on these islands."),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					GoTo = "<end conversation>",
-					Keyword = "Nothing but local rumours and legends, stories you tell your kids.",
-					KeywordT = T(215204480282, --[[ModItemConversation LandingSeagull2 KeywordT]] "Nothing but local rumours and legends, stories you tell your kids."),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExBiff",
-							Text = T(356329072480, --[[ModItemConversation LandingSeagull2 Text voice:GCExBiff section:LandingSeagull2 keyword:Nothing but local rumours and legends, stories you tell your kids.]] "I am not to sure about this anymore...I mean look at this place, it's deserted, where are all the people? You guys can take a look, the rest of us will stay here. \n"),
-							param_bindings = false,
-						}),
-					},
-					id = "Goodbye",
-					param_bindings = false,
-				}),
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "GCExDeeDee",
-			DefaultActor = "GCExDeeDee",
-			Parameters = {
-				PlaceObj('PresetParamNumber', {
-					'Name', "Parts_High",
-					'Value', 25,
-					'Tag', "<Parts_High>",
-				}),
-				PlaceObj('PresetParamNumber', {
-					'Name', "Parts_Low",
-					'Value', 15,
-					'Tag', "<Parts_Low>",
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "GCExDeedee",
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Comment = "first",
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExDeeDee",
-						Text = T(106364168261, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Greeting]] "Hello there! Hope you did not trip on a trap. You got it? Triptrap, hehe!"),
-						param_bindings = false,
-					}),
-				},
-				NoBackOption = true,
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					Align = "right",
-					AutoRemove = true,
-					Conditions = {
-						PlaceObj('WoundedMercs', {
-							param_bindings = false,
-						}),
-					},
-					GoTo = "<root>",
-					Keyword = "Too late to tell us now.",
-					KeywordT = T(405416363086, --[[ModItemConversation GCExDeedee KeywordT]] "Too late to tell us now."),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExDeeDee",
-							Text = T(455602460461, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Too late to tell us now.]] "Oh, don't worry about me! Explosions are common around here. I put a blast shield under the workbench and I've gotten really good at vaulting over it."),
-							param_bindings = false,
-						}),
-					},
-					StoryBranchIcon = "conversation_friendly",
-					id = "Toolatetotellusnow",
-					param_bindings = false,
-				}),
-				PlaceObj('ConversationPhrase', {
-					Align = "right",
-					AutoRemove = true,
-					GoTo = "<root>",
-					Keyword = "Well, yes, ehm...no. We got lucky",
-					KeywordT = T(840168287628, --[[ModItemConversation GCExDeedee KeywordT]] "Well, yes, ehm...no. We got lucky"),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExDeeDee",
-							Text = T(375135683228, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Well, yes, ehm...no. We got lucky]] "There were some signs, you know. It's my playground...where I test things..."),
-							param_bindings = false,
-						}),
-					},
-					StoryBranchIcon = "conversation_sarcastic",
-					id = "WellyesehmnoWegotlucky",
-					param_bindings = false,
-				}),
-			}),
-			PlaceObj('ConversationPhrase', {
-				Align = "right",
-				Comment = "repeated",
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExDeeDee",
-						Text = T(997088934283, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Greeting]] "There were some signs, you know. It's my playground...where I test things..."),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExDeedee",
-						PhraseId = "Makeussomeexplosives",
-						param_bindings = false,
-					}),
-				},
-				Keyword = "What are you testing?",
-				KeywordT = T(550938876362, --[[ModItemConversation GCExDeedee KeywordT]] "What are you testing?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExDeeDee",
-						Text = T(951705920478, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:What are you testing?]] "Deedee: Bombs, of course! That's why they call me Boombastic, hehe. There is still a lot of functional WW2 material on this island!"),
-						param_bindings = false,
-					}),
-				},
-				StoryBranchIcon = "conversation_trade",
-				id = "Whatareyoutesting",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Align = "right",
-				Enabled = false,
-				Keyword = "You think you can you sell us some of your Explosives?",
-				KeywordT = T(568504257376, --[[ModItemConversation GCExDeedee KeywordT]] "You think you can you sell us some of your Explosives?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExDeeDee",
-						Text = T(741584586654, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:You think you can you sell us some of your Explosives?]] "Gladly! But I must have something to work with. I can't make explosives out of thin air."),
-						param_bindings = false,
-					}),
-				},
-				PhraseRolloverText = T(417330716617, --[[ModItemConversation GCExDeedee PhraseRolloverText]] "<color EmStyle>25 Parts</color> required"),
-				StoryBranchIcon = "conversation_action",
-				id = "YouthinkyoucanyousellussomeofyourExplosives",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Align = "right",
-				AutoRemove = true,
-				Comment = "Fidel enabled",
-				Conditions = {
-					PlaceObj('UnitSquadHasItem', {
-						Amount = 15,
-						ItemId = "Parts",
-						param_bindings = {
-							Amount = "Parts_Low",
-						},
-					}),
-				},
-				Effects = {
-					PlaceObj('UnitTakeItem', {
-						Amount = 15,
-						AnySquad = true,
-						ItemId = "Parts",
-						param_bindings = {
-							Amount = "Parts_Low",
-						},
-					}),
-					PlaceObj('QuestSetVariableBool', {
-						Prop = "DeedeeExplosives",
-						QuestId = "ErnieSideQuests",
-						Set = false,
-						param_bindings = false,
-					}),
-					PlaceObj('UnitGrantItem', {
-						ItemId = "LionRoar",
-						param_bindings = false,
-					}),
-					PlaceObj('QuestSetVariableBool', {
-						Prop = "LootedStash2",
-						QuestId = "GearUp",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				Keyword = "Make us some explosives",
-				KeywordT = T(954966894269, --[[ModItemConversation GCExDeedee KeywordT]] "Make us some explosives"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExDeeDee",
-						Text = T(803706759749, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Make us some explosives]] "Aww, is it Christmas already? Thank you! Here, this is my present for Uncle Fidel and his friends!"),
-						param_bindings = false,
-					}),
-				},
-				PhraseRolloverText = "",
-				PlayGoToPhrase = true,
-				StoryBranchIcon = "conversation_action",
-				id = "Makeussomeexplosives",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Align = "right",
-				GoTo = "<end conversation>",
-				Keyword = "Goodbye",
-				KeywordT = T(557225474228, --[[ModItemConversation Fuel_2 KeywordT]] "Goodbye"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExDeeDee",
-						Text = T(302422212918, --[[ModItemConversation GCExDeedee Text voice:GCExDeeDee section:GCExDeedee keyword:Goodbye]] "Have a boom-boombastic day!"),
-						param_bindings = false,
-					}),
-				},
-				StoryBranchIcon = "conversation_goodbye",
-				id = "Goodbye",
-				param_bindings = false,
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "Stephane",
-			DefaultActor = "GCExStephane",
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "GCExStephane",
-			PlaceObj('ConversationPhrase', {
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExStephane",
-						PhraseId = "WeareCommandoslikeinthemovies",
-						param_bindings = false,
-					}),
-				},
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStephane",
-						Text = T(952780783459, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:Greeting]] "Soldiers!? What are you doing here? I hope it's for the celebrations..."),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExStephane",
-						PhraseId = "Whatdoyoumean",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				Keyword = "We are Commandos, like in the movies!",
-				KeywordT = T(582027436041, --[[ModItemConversation GCExStephane KeywordT]] "We are Commandos, like in the movies!"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStephane",
-						Text = T(689188544794, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:We are Commandos, like in the movies!]] "Really? You are not here to shoot anyone, are you? For a moment I thought it's war all over again."),
-						param_bindings = false,
-					}),
-				},
-				id = "WeareCommandoslikeinthemovies",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExStephane",
-						PhraseId = "Andnow",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				Keyword = "What do you mean?",
-				KeywordT = T(724520438286, --[[ModItemConversation ChurchQuestStart KeywordT]] "What do you mean?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStephane",
-						Text = T(641009209196, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:What do you mean?]] "A few years back there was a civil war here. Very bloody, many people died..."),
-						param_bindings = false,
-					}),
-				},
-				id = "Whatdoyoumean",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExStephane",
-						PhraseId = "Whatdoyoumeanbydarkhistory",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				Keyword = "And now?",
-				KeywordT = T(906217673307, --[[ModItemConversation GCExStephane KeywordT]] "And now?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStephane",
-						Text = T(591134729341, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:And now?]] "I am enjoying my peace here with my wife. Erny has such a good climate and a less dark history than the other islands."),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCExStephane",
-										Text = T(965975078769, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:And now?]] "Oui, c'est vrai. Wherever France colonized the world, lovely places remain..."),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCEXStogie",
-										Text = T(250497870643, --[[ModItemConversation GCExStephane Text voice:GCEXStogie section:GCExStephane keyword:And now?]] "Such as Haiti and Vietnam..."),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-				},
-				id = "Andnow",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExStephane",
-						PhraseId = "Tellusmore",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				Keyword = "What do you mean by dark history?",
-				KeywordT = T(703052525224, --[[ModItemConversation GCExStephane KeywordT]] "What do you mean by dark history?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStephane",
-						Text = T(340391831764, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:What do you mean by dark history?]] "Haven't you heard about this region? There is a curse on these islands. Rumor has it, that a god is protecting Erny Island."),
-						param_bindings = false,
-					}),
-				},
-				id = "Whatdoyoumeanbydarkhistory",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Enabled = false,
-				GoTo = "Goodbye",
-				Keyword = "Tell us more...",
-				KeywordT = T(437750991668, --[[ModItemConversation GCExStephane KeywordT]] "Tell us more..."),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStephane",
-						Text = T(759892413264, --[[ModItemConversation GCExStephane Text voice:GCExStephane section:GCExStephane keyword:Tell us more...]] "It is said, that north of here, on Seagull Island, the dead are walking at night. I heard some fishermen talk about it!"),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCEXFlo",
-										Text = T(793919348390, --[[ModItemConversation GCExStephane Text voice:GCEXFlo section:GCExStephane keyword:Tell us more...]] "And that's another place I won' go to, evidamment!"),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-				},
-				id = "Tellusmore",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				GoTo = "<end conversation>",
-				Keyword = "Goodbye",
-				KeywordT = T(557225474228, --[[ModItemConversation Fuel_2 KeywordT]] "Goodbye"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExStephane",
-						param_bindings = false,
-					}),
-				},
-				id = "Goodbye",
-				param_bindings = false,
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "MarthaBar",
-			DefaultActor = "GCExMartha",
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "GCExMartha",
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExMartha",
-						Text = T(778294712459, --[[ModItemConversation GCExMartha Text voice:GCExMartha section:GCExMartha keyword:Greeting]] "Hello there paying customer!"),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExMartha",
-						PhraseId = "Sowhatstheword",
-						param_bindings = false,
-					}),
-				},
-				Keyword = "One beer, please!",
-				KeywordT = T(954947644437, --[[ModItemConversation GCExMartha KeywordT]] "One beer, please!"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExMartha",
-						Text = T(676385075189, --[[ModItemConversation GCExMartha Text voice:GCExMartha section:GCExMartha keyword:One beer, please!]] "You heard it, Herman. One cold beer for this customer!"),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCExHerman",
-										Text = T(603459065651, --[[ModItemConversation GCExMartha Text voice:GCExHerman section:GCExMartha keyword:One beer, please!]] "Yes, Martha, of course. So strangers, have you heard about the island-curse? How Erny Island is blessed?"),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCExMartha",
-										Text = T(480583133159, --[[ModItemConversation GCExMartha Text voice:GCExMartha section:GCExMartha keyword:One beer, please!]] "Oh, shut up, Herman. You don't really believe that nonsense."),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCExHerman",
-										Text = T(815544067665, --[[ModItemConversation GCExMartha Text voice:GCExHerman section:GCExMartha keyword:One beer, please!]] "But something strange is going on at Seagull. You can ask around..."),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-				},
-				id = "Onebeerplease",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Enabled = false,
-				GoTo = "Goodbye",
-				Keyword = "So what's the word?",
-				KeywordT = T(739090893416, --[[ModItemConversation GCExMartha KeywordT]] "So what's the word?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExHerman",
-						Text = T(782372299345, --[[ModItemConversation GCExMartha Text voice:GCExHerman section:GCExMartha keyword:So what's the word?]] "Strange sightings at night, weird sounds. Someone lurking in the jungle. It is a place I would avoid, if I were you..."),
-						param_bindings = false,
-					}),
-				},
-				id = "Sowhatstheword",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				GoTo = "<end conversation>",
-				Keyword = "Goodbye",
-				KeywordT = T(557225474228, --[[ModItemConversation Fuel_2 KeywordT]] "Goodbye"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExMartha",
-						param_bindings = false,
-					}),
-				},
-				id = "Goodbye",
-				param_bindings = false,
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "GCExBiff",
-			Conditions = {
-				PlaceObj('UnitIsAroundMarkerOfGroup', {
-					MarkerGroup = "SantiagoMeet",
-					TargetUnit = "GCEXFlo",
-					param_bindings = false,
-				}),
-			},
-			DefaultActor = "GCExBiff",
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "GCExBiff",
-			PlaceObj('ConversationPhrase', {
-				Effects = {
-					PlaceObj('QuestSetVariableBool', {
-						Prop = "Completed",
-						QuestId = "GCEx_01_Landing",
-						param_bindings = false,
-					}),
-					PlaceObj('GroupSetBehaviorExit', {
-						TargetUnit = "GCExBiff",
-						closest = true,
-						delay = 1000,
-						param_bindings = false,
-					}),
-					PlaceObj('GroupSetBehaviorExit', {
-						TargetUnit = "GCExSantiago",
-						closest = true,
-						delay = 1000,
-						param_bindings = false,
-					}),
-					PlaceObj('GroupSetBehaviorAdvanceTo', {
-						MarkerGroup = "MarthaBar",
-						TargetUnit = "GCEXFlo",
-						param_bindings = false,
-					}),
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExBiff",
-						PhraseId = "Greeting1",
-						param_bindings = false,
-					}),
-				},
-				GiveQuests = {
-					"GearUp",
-				},
-				GoTo = "<end conversation>",
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBiff",
-						Text = T(248739835120, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting]] "So, listen up, guys. I don't know much yet about our mission, only that I was asked for the best and that is us."),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										AlwaysInterject = true,
-										Character = "GCEXStogie",
-										Text = T(470791200374, --[[ModItemConversation GCExBiff Text voice:GCEXStogie section:GCExBiff keyword:Greeting]] "Well, you gotta give us a bit more than that!"),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCExBiff",
-						Text = T(462724511182, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting]] "The only thing I can tell you right now is, that our mission is to capture some diamond mines.  Sorry, can't tell you more until I've met the client. Oh, there is one other thing: We'll need to gear up. With this equipment we will not get far"),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCEXCougar",
-										Text = T(994262243827, --[[ModItemConversation GCExBiff Text voice:GCEXCougar section:GCExBiff keyword:Greeting]] "Sir, the mission briefing did not adequately cover the situation on site. What resources do you have to rectify that situation, Sir?"),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCExBiff",
-						Text = T(268515951566, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting]] "What, me? None, but my contractor might be able to provide additional funding. I'll see what I can do. You should scout the island in the meantime. Until then, procure additional supplies from local sources. Think of something!"),
-						param_bindings = false,
-					}),
-				},
-				PlayGoToPhrase = true,
-				id = "Greeting",
-				param_bindings = false,
-				target_units = {
-					nil,
-				},
-			}),
-			PlaceObj('ConversationPhrase', {
-				Conditions = {
-					PlaceObj('QuestIsVariableBool', {
-						QuestId = "GCEx_01_Landing",
-						Vars = set( "Completed" ),
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				GiveQuests = {
-					"ReadyForRailings",
-				},
-				GoTo = "<end conversation>",
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBiff",
-						Text = T(359691937175, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting1]] "So here's the deal. We leave next thing tomorrow morning, I arranged a boat.  We are heading north  to a mine called Diamond Red. Apparently a warlord is financing his personal Vendetta with diamond money"),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCEXStogie",
-										Text = T(553373879540, --[[ModItemConversation GCExBiff Text voice:GCEXStogie section:GCExBiff keyword:Greeting1]] "Any details on what resistance to expect? Squad size, position, gear?"),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCExBiff",
-						Text = T(476862176521, --[[ModItemConversation GCExBiff Text voice:GCExBiff section:GCExBiff keyword:Greeting1]] "No, not currently. We land south of that mine and gather some Intel first. It's said there is a communist cell currently fighting agains the warlord, who calls himself the Major.\nWhen all preparations are met, we'll be ready to set sails"),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting1",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				GoTo = "<end conversation>",
-				Keyword = "Goodbye",
-				KeywordT = T(557225474228, --[[ModItemConversation Fuel_2 KeywordT]] "Goodbye"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBiff",
-						param_bindings = false,
-					}),
-				},
-				id = "Goodbye2",
-				param_bindings = false,
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "GCExBastien",
-			Comment = "(Bastien) - initial",
-			DefaultActor = "GCExBastien",
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "GCExBastien",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBastien",
-						Text = T(946372180209, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:Greeting]] "Bonjour, Boss!"),
-						param_bindings = false,
-					}),
-				},
-				NoBackOption = true,
-				id = "Greeting",
-				param_bindings = false,
-				PlaceObj('ConversationPhrase', {
-					AutoRemove = true,
-					Effects = {
-						PlaceObj('PhraseSetEnabled', {
-							Conversation = "GCExBastien",
-							PhraseId = "Sowhydoyouneedarifle",
-							param_bindings = false,
-						}),
-					},
-					Keyword = "Who are you?",
-					KeywordT = T(860517763452, --[[ModItemConversation GCExBastien KeywordT]] "Who are you?"),
-					Lines = {
-						PlaceObj('ConversationLine', {
-							Character = "GCExBastien",
-							Text = T(721168187062, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:Who are you?]] "Oh, me? Haha! I am just a tourist guide!"),
-							param_bindings = false,
-						}),
-						PlaceObj('ConversationInterjectionList', {
-							Interjections = {
-								PlaceObj('ConversationInterjection', {
-									Lines = {
-										PlaceObj('ConversationLine', {
-											Character = "GCEXGasket",
-											Text = T(429615830652, --[[ModItemConversation GCExBastien Text voice:GCEXGasket section:GCExBastien keyword:Who are you?]] "I also guide tourists and squirrels with my gun. It's a good hobby."),
-											param_bindings = false,
-										}),
-									},
-									param_bindings = false,
-								}),
-							},
-							param_bindings = false,
-						}),
-					},
-					StoryBranchIcon = "conversation_sarcastic",
-					id = "Whoareyou",
-					param_bindings = false,
-				}),
-			}),
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExBastien",
-						PhraseId = "Youaremoreofthesuspicioustypeeh",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				Keyword = "So why do you need a rifle?",
-				KeywordT = T(844660616592, --[[ModItemConversation GCExBastien KeywordT]] "So why do you need a rifle?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBastien",
-						Text = T(439379989623, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:So why do you need a rifle?]] "Huh? Oh this one, yes, yes. Dangerous Island, wild animals, you know!."),
-						param_bindings = false,
-					}),
-				},
-				id = "Sowhydoyouneedarifle",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				AutoRemove = true,
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExBastien",
-						PhraseId = "WhatifwetakeyoutotheowneroftheIsland",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				Keyword = "You are more of the suspicious type, eh?",
-				KeywordT = T(228218104589, --[[ModItemConversation GCExBastien KeywordT]] "You are more of the suspicious type, eh?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBastien",
-						Text = T(189454375929, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:You are more of the suspicious type, eh?]] "Bastien: No, no, no. Really, Boss...Just leave me be. I am here enjoying my beer, catching fish. Ain't nothing wrong with that, is there?."),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationInterjectionList', {
-						Interjections = {
-							PlaceObj('ConversationInterjection', {
-								Lines = {
-									PlaceObj('ConversationLine', {
-										Character = "GCEXRazor",
-										Text = T(449109017873, --[[ModItemConversation GCExBastien Text voice:GCEXRazor section:GCExBastien keyword:You are more of the suspicious type, eh?]] "I love fishing with my beer on the beach too. And when I catch one, I enjoy slicing it open from side to side..."),
-										param_bindings = false,
-									}),
-								},
-								param_bindings = false,
-							}),
-						},
-						param_bindings = false,
-					}),
-				},
-				id = "Youaremoreofthesuspicioustypeeh",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Effects = {
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExBastien",
-						PhraseId = "Alrightthenhanditover",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				Keyword = "What if we take you to the owner of the Island?",
-				KeywordT = T(920028591231, --[[ModItemConversation GCExBastien KeywordT]] "What if we take you to the owner of the Island?"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBastien",
-						Text = T(865099393848, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:What if we take you to the owner of the Island?]] "Ah, this is really not necessary, don't bother... Instead I might have something that interests you. I have a family, you know!."),
-						param_bindings = false,
-					}),
-				},
-				id = "WhatifwetakeyoutotheowneroftheIsland",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Align = "right",
-				Effects = {
-					PlaceObj('GroupSetBehaviorExit', {
-						MarkerGroup = "East",
-						Running = true,
-						TargetUnit = "GCExBastien",
-						UseWeapons = true,
-						param_bindings = false,
-					}),
-					PlaceObj('UnitGrantItem', {
-						ItemId = "Winchester_Quest",
-						param_bindings = {},
-					}),
-					PlaceObj('QuestSetVariableBool', {
-						Prop = "LootedStash1",
-						QuestId = "GearUp",
-						param_bindings = false,
-					}),
-				},
-				Enabled = false,
-				GoTo = "<end conversation>",
-				Keyword = "Alright then, hand it over!",
-				KeywordT = T(956960100252, --[[ModItemConversation GCExBastien KeywordT]] "Alright then, hand it over!"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExBastien",
-						Text = T(284729928776, --[[ModItemConversation GCExBastien Text voice:GCExBastien section:GCExBastien keyword:Alright then, hand it over!]] "Bien sur! Please, take these. I just found them on the beach, I swear... All yours now. I... I can go? And... You won't shoot me in the back?"),
-						param_bindings = false,
-					}),
-				},
-				PhraseRolloverText = "",
-				PlayGoToPhrase = true,
-				StoryBranchIcon = "conversation_action",
-				id = "Alrightthenhanditover",
-				param_bindings = false,
-				target_units = {},
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "MERCNpcs",
-			DefaultActor = "GCEXHaywire",
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "GCExBarChat",
-			PlaceObj('ConversationPhrase', {
-				Effects = {
-					PlaceObj('GroupSetBehaviorAdvanceTo', {
-						MarkerGroup = "SantiagoMeet",
-						TargetUnit = "GCEXFlo",
-						param_bindings = false,
-					}),
-					PlaceObj('PhraseSetEnabled', {
-						Conversation = "GCExBarChat",
-						Enabled = false,
-						PhraseId = "Greeting",
-						param_bindings = false,
-					}),
-					PlaceObj('DisableInteractionMarkerEffect', {
-						Group = "MERCNpcs",
-						param_bindings = false,
-					}),
-				},
-				GoTo = "<end conversation>",
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCEXHaywire",
-						Text = T(612451531498, --[[ModItemConversation GCExBarChat Text voice:GCEXHaywire section:GCExBarChat keyword:Greeting]] "So, that's the Great Grand Chien?!"),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCEXNumb",
-						Text = T(413632878144, --[[ModItemConversation GCExBarChat Text voice:GCEXNumb section:GCExBarChat keyword:Greeting]] "Haha, maybe you should ask the french bottles..."),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCEXFlo",
-						Text = T(120339035724, --[[ModItemConversation GCExBarChat Text voice:GCEXFlo section:GCExBarChat keyword:Greeting]] "What's that supposed to mean, huh?"),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCEXNumb",
-						Text = T(800781060210, --[[ModItemConversation GCExBarChat Text voice:GCEXNumb section:GCExBarChat keyword:Greeting]] "Well, just have a butchers at this place! Colonization history! I 'ate the Brits, imperialist, classist buggers, but Ya' french are no better..."),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCEXFlo",
-						Text = T(904387263515, --[[ModItemConversation GCExBarChat Text voice:GCEXFlo section:GCExBarChat keyword:Greeting]] "I cannot be held accountable for what some old white men did here in the past."),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCEXGaston",
-						Text = T(736358797281, --[[ModItemConversation GCExBarChat Text voice:GCEXGaston section:GCExBarChat keyword:Greeting]] "Oh mon dieu, I don't wanna hear no more."),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCEXLarry",
-						Text = T(876967566309, --[[ModItemConversation GCExBarChat Text voice:GCEXLarry section:GCExBarChat keyword:Greeting]] "Yea, right! Let's rather check out the Menu at this place!"),
-						param_bindings = false,
-					}),
-					PlaceObj('ConversationLine', {
-						Character = "GCEXCougar",
-						Text = T(376109083800, --[[ModItemConversation GCExBarChat Text voice:GCEXCougar section:GCExBarChat keyword:Greeting]] "Sir, a Bar is not the correct environment for a base of operations, Sir."),
-						param_bindings = false,
-					}),
-				},
-				PlayGoToPhrase = true,
-				id = "Greeting",
-				param_bindings = false,
-				target_units = {
-					nil,
-				},
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "LegionScouts",
-			DefaultActor = "LegionMarauder_Tutorial",
-			DefaultActorPortraitOverride = "Mod/GCExPrologue/Images/LegionRaider.dds",
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "GCExLegionTalk",
-			PlaceObj('ConversationPhrase', {
-				Conditions = {
-					PlaceObj('UnitHasStatusEffect', {
-						Effect = "Hidden",
-						Negate = true,
-						TargetUnit = "player mercs on map",
-						param_bindings = false,
-					}),
-				},
-				Effects = {
-					PlaceObj('GroupAddStatusEffect', {
-						Status = "Suspicious",
-						TargetUnit = "LegionScouts",
-						param_bindings = false,
-					}),
-				},
-				GoTo = "<end conversation>",
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "LegionRaider_WeakFlagHill",
-						Text = T(405146278692, --[[ModItemConversation GCExLegionTalk Text voice:LegionRaider_WeakFlagHill section:GCExLegionTalk keyword:Greeting]] "Come on boys! Hurry up! I think I heard someone coming."),
-						param_bindings = false,
-					}),
-				},
-				PlayGoToPhrase = true,
-				id = "Greeting",
-				param_bindings = false,
-				target_units = {},
-			}),
-		}),
-		PlaceObj('ModItemConversation', {
-			AssignToGroup = "GoonsChillaxing",
-			DefaultActor = "Raider",
-			campaign = "GCEXPrologue",
-			group = "GCExPrologue",
-			id = "GCExThugs",
-			PlaceObj('ConversationPhrase', {
-				Keyword = "Greeting",
-				KeywordT = T(774381032385, --[[ModItemConversation Fuel_2 KeywordT]] "Greeting"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "GCExGoon_4",
-						Text = T(903654102284, --[[ModItemConversation GCExThugs Text voice:GCExGoon_4 section:GCExThugs keyword:Greeting]] "Hey tourists, you passed through our territory, it's time to pay the toll!"),
-						param_bindings = false,
-					}),
-				},
-				id = "Greeting",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Effects = {
-					PlaceObj('PlayerPayMoney', {
-						Amount = 1500,
-						param_bindings = false,
-					}),
-				},
-				GoTo = "<end conversation>",
-				Keyword = "Pay the toll",
-				KeywordT = T(538733183912, --[[ModItemConversation GCExThugs KeywordT]] "Pay the toll"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "Raider",
-						Text = T(490759011841, --[[ModItemConversation GCExThugs Text voice:Raider section:GCExThugs keyword:Pay the toll]] "That's right, you can go unharmed this time."),
-						param_bindings = false,
-					}),
-				},
-				PlayGoToPhrase = true,
-				id = "Paythetoll",
-				param_bindings = false,
-			}),
-			PlaceObj('ConversationPhrase', {
-				Effects = {
-					PlaceObj('GroupSetSide', {
-						CreateSquad = false,
-						Side = "enemy1",
-						TargetUnit = "GoonsChillaxing",
-						param_bindings = false,
-					}),
-				},
-				GoTo = "<end conversation>",
-				Keyword = "Open fire",
-				KeywordT = T(787910685312, --[[ModItemConversation GCExThugs KeywordT]] "Open fire"),
-				Lines = {
-					PlaceObj('ConversationLine', {
-						Character = "Raider",
-						Text = T(718635057739, --[[ModItemConversation GCExThugs Text voice:Raider section:GCExThugs keyword:Open fire]] "Wrong choice!"),
-						param_bindings = false,
-					}),
-				},
-				PlayGoToPhrase = true,
-				id = "Openfire",
-				param_bindings = false,
-			}),
-		}),
-		}),
-	PlaceObj('ModItemFolder', {
-		'name', "Banter",
-	}, {
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Character', "GCEXFlo",
-					'Text', T(784187252081, --[[ModItemBanterDef Erny3 Text]] "Is everything alright, Biff? You look exhausted, Mon amour."),
-					'Voiced', false,
-				}),
-				PlaceObj('BanterLine', {
-					'Character', "GCExBiff",
-					'Text', T(364287610462, --[[ModItemBanterDef Erny3 Text section:FlavourBanter/Erny3 voice:GCExBiff]] "It's probably nothing...I just don't have a good feeling about this mission. but I am sure it will be alright in the end..."),
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "Erny3",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(448548097991, --[[ModItemBanterDef BrianChest Text]] "This must be the Bobby's Package Brian spoke of. Wonder why they are currently not delivering..."),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "BrianChest",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(256538198079, --[[ModItemBanterDef Erny2 Text]] "So they are preparing for some kind of celebration. If there are any problems in this region, the people here seem to be unaffected, let's hope it stays that way."),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "Erny2",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(847955647243, --[[ModItemBanterDef Erny1 Text]] "Election banner! Oh, and this is the current president!? He looks so - friendly. Wonder if the will make it next turn..."),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "Erny1",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Character', "GCEXNumb",
-					'Text', T(478373935958, --[[ModItemBanterDef DayoneSeagull Text section:LeftAloneBanter/DayoneSeagull voice:GCEXNumb]] "What a tom tit, this khyber pass of a leader left us here."),
-				}),
-				PlaceObj('BanterLine', {
-					'Character', "GCEXStogie",
-					'Text', T(143080518604, --[[ModItemBanterDef DayoneSeagull Text section:LeftAloneBanter/DayoneSeagull voice:GCEXStogie]] "Well, its a good time for some R&R. It's a paid vacation."),
-				}),
-				PlaceObj('BanterLine', {
-					'Character', "GCEXCougar",
-					'Text', T(119888099035, --[[ModItemBanterDef DayoneSeagull Text section:LeftAloneBanter/DayoneSeagull voice:GCEXCougar]] "First we need to size up the situation, determine the patterns of the area and..."),
-				}),
-				PlaceObj('BanterLine', {
-					'Character', "Gaston",
-					'Text', T(744338736865, --[[ModItemBanterDef DayoneSeagull Text section:LeftAloneBanter/DayoneSeagull voice:Gaston]] "Mon dieu, spare us the army talk, we are left here on a rock with no means to leave."),
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "LeftAloneBanter",
-			id = "DayoneSeagull",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(390358622540, --[[ModItemBanterDef RecentActivity Text]] "A lot of different tracks here... I am sure this is not only due to the upcoming festival."),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "RecentActivity",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(895950646218, --[[ModItemBanterDef Clue5MedFacility Text]] "Signs of fighting and explosions, dead guards and burned vehicles. Something went seriously wrong here. Seems like something got out! But someone must have been here recently. Tracks all over the place..."),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "LeftAloneBanter",
-			id = "Clue5MedFacility",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(198813223668, --[[ModItemBanterDef Playground Text]] "Someone has been playing Minesweeper but with real mines... and lost!"),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "Playground",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(751959186721, --[[ModItemBanterDef Clue4MedFacility Text]] "14. September, 1943\nThe Zarathustra Trial looks promising. From the thirty-one subjects, three have survived and shown abnormal growth in muscle mass. Unfortunately, the guards were unprepared for the sheer force these creatures can unleash. One of these things is still out there, but we have everything under control.\nSigned Siegfried"),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "LeftAloneBanter",
-			id = "Clue4MedFacility",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(452439969774, --[[ModItemBanterDef Clue3Airport Text]] "The tire tracks lead in both directions, as if someone was transporting material. The trail is still fresh, just recently a larger vehicle must have passed through. A third party is at work here. The ominous Major Biff spoke about?"),
-					'Voiced', false,
-				}),
-				PlaceObj('BanterLine', {
-					'Character', "GCEXCougar",
-					'Text', T(536245435963, --[[ModItemBanterDef Clue3Airport Text section:LeftAloneBanter/Clue3Airport voice:GCEXCougar]] "Sir, these tracks from military standard vehicle strongly suggest a military or paramilitary operation is ongoing here. We should carefully consider our next move."),
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "LeftAloneBanter",
-			id = "Clue3Airport",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(834575746739, --[[ModItemBanterDef Clue2Airport Text]] "There are signs of recent activity. Someone tried to act in secrecy but left some tracks. Could it have been a member of the tribe or the smugglers?"),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "LeftAloneBanter",
-			id = "Clue2Airport",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(676432987757, --[[ModItemBanterDef OutlookWaste Text]] "The amount of litter indicates a lot of recent activity, most likely local youngsters, drinking and smoking late in the night..."),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "OutlookWaste",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(848540679670, --[[ModItemBanterDef OutlookGods Text]] "It looks as if those statues are watching over us! Everyone has something to hide..."),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "OutlookGods",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Character', "GCEXStogie",
-					'Text', T(213853510854, --[[ModItemBanterDef FirstTimeZombies Text section:ZombieEncounter/FirstTimeZombies voice:GCEXStogie]] "I am very sure these do not count as local wildlife!"),
-				}),
-				PlaceObj('BanterLine', {
-					'Character', "GCEXNumb",
-					'Text', T(325964118089, --[[ModItemBanterDef FirstTimeZombies Text section:ZombieEncounter/FirstTimeZombies voice:GCEXNumb]] "Hell no, way too clingy, china plate!"),
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "ZombieEncounter",
-			id = "FirstTimeZombies",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Text', T(735223259061, --[[ModItemBanterDef FuelFound Text]] "This must be the fuel Brian was looking for!"),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "BNBrian",
-			id = "FuelFound",
-		}),
-		PlaceObj('ModItemBanterDef', {
-			Lines = {
-				PlaceObj('BanterLine', {
-					'Character', "GCEXNumb",
-					'Text', T(449169647212, --[[ModItemBanterDef Colonizer Text]] "Told ya'! Lumps of School, Colonizer history...when you see the folks still living from Pony and Trap. "),
-					'Voiced', false,
-				}),
-				PlaceObj('BanterLine', {
-					'Character', "GCEXGasket",
-					'Text', T(596015365193, --[[ModItemBanterDef Colonizer Text section:FlavourBanter/Colonizer voice:GCEXGasket]] "Sacre bleu, not this again!"),
-				}),
-				PlaceObj('BanterLine', {
-					'Character', "GCEXCougar",
-					'Text', T(322703887328, --[[ModItemBanterDef Colonizer Text]] "With all due respect, but this flag is to commemorate the comrades fallen here in Word War II. We should honor it!"),
-					'Voiced', false,
-				}),
-			},
-			campaign = "GCEXPrologue",
-			group = "FlavourBanter",
-			id = "Colonizer",
-		}),
-		}),
-	PlaceObj('ModItemFolder', {
-		'name', "Quest Item",
-	}, {
-		PlaceObj('ModItemInventoryItemCompositeDef', {
-			'Id', "WilcoxNotes_1",
-			'object_class', "QuestItem",
-			'Icon', "UI/Icons/Items/diary",
-			'DisplayName', T(727241629685, --[[ModItemInventoryItemCompositeDef WilcoxNotes_1 DisplayName]] "Wilcox's Diary"),
-			'Description', T(832034164910, --[[ModItemInventoryItemCompositeDef WilcoxNotes_1 Description]] "Deep in the black and horrid forest, in the misty jungles of \n<color EmStyle>Seagull</color>, there lives a Tribe. Simple folks, deeply connected with their heritage and the blood of their ancestors. These people survived not only by wit alone, but by their rituals thousands of years old. Rules by which their fathers fathers and mothers mothers abided. <color EmStyle>The Ritual of Blood</color>. The demanding of blood by gods.<newline><newline>\nThis is the rule. And for thousands of years the sacrifice of mere animals was suffice for the gods. They lent their protection.<newline><newline>\nBut as fate often comes as a stranger and stays as a friend, the same happened here in the deep jungles of Seagull. \nIt came a time where war was once again upon mankind. One side twisted in their ideology, where science knows no ethical bounds-destroyed by their own ideas of the future.\nLet loose a <color EmStyle>walking plague</color> on an island of harmless hunter and fishermen. In their ordeal to survive, they begged the gods for their help once more. And the gods approved, but for the price of more blood..."),
-			'RestockWeight', 0,
-		}),
 		}),
 }

@@ -25,11 +25,11 @@ DefineClass.Gasket = {
 			end,
 		}),
 	},
-	DisplayName = T(705074527278, --[[ModItemCharacterEffectCompositeDef Gasket DisplayName]] "Not Caring"),
-	Description = T(853579610940, --[[ModItemCharacterEffectCompositeDef Gasket Description]] "Due to his innate ability to not give a fuck, Haywire is immune to Panicked or Suppressed."),
+	DisplayName = T(705074527278, --[[ModItemCharacterEffectCompositeDef Gasket DisplayName]] "Simple Minded"),
+	Description = T(853579610940, --[[ModItemCharacterEffectCompositeDef Gasket Description]] "Gasket needs simple stuff to operate better, the simpler the better."),
 	OnAdded = function (self, obj)  end,
 	OnRemoved = function (self, obj)  end,
-	Icon = "Mod/GCExPrologue/Images/PerkGASKETBlu 2.png",
+	Icon = "Mod/GCExPrologue/Images/PerkGASKETBlu 2",
 	Tier = "Personal",
 }
 

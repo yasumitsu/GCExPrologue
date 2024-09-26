@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="mesh"/>
+	</state>
+	<mesh_description id="mesh">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/Spatula_mesh.m.hgm"/>
+			<material file="Materials/Spatula_mesh.mtl"/>
+			<bsphere value="-0.462,-0.176,4.721,10.300"/>
+			<box min="-3.964,-1.046,-4.974" max="3.041,0.693,14.416"/>
+			<src file="C:/Users/kenji/AppData/Roaming/Jagged Alliance 3/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

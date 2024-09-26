@@ -1,5 +1,5 @@
-UndefineClass('GCEXFlo')
-DefineClass.GCEXFlo = {
+UndefineClass('GCExFlo')
+DefineClass.GCExFlo = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -18,13 +18,13 @@ DefineClass.GCEXFlo = {
 	Medical = 19,
 	Portrait = "Mod/GCExPrologue/Images/FloPortrait",
 	BigPortrait = "Mod/GCExPrologue/Images/Flo",
-	Name = T(183982423479, --[[ModItemUnitDataCompositeDef GCEXFlo Name]] 'Florence "Flo" Gabriel'),
-	Nick = T(445040565694, --[[ModItemUnitDataCompositeDef GCEXFlo Nick]] "Flo"),
-	AllCapsNick = T(572992729569, --[[ModItemUnitDataCompositeDef GCEXFlo AllCapsNick]] "FLO"),
+	Name = T(183982423479, --[[ModItemUnitDataCompositeDef GCExFlo Name]] 'Florence "Flo" Gabriel'),
+	Nick = T(445040565694, --[[ModItemUnitDataCompositeDef GCExFlo Nick]] "Flo"),
+	AllCapsNick = T(572992729569, --[[ModItemUnitDataCompositeDef GCExFlo AllCapsNick]] "FLO"),
 	Affiliation = "Other",
-	Bio = T(234573707265, --[[ModItemUnitDataCompositeDef GCEXFlo Bio]] "The daughter of vineyard workers, Florence Gabriel spent most of her childhood in Cognac, France before moving to Pittsburgh, Pennsylvania, USA. After settling in the US she took a job as the bookkeeper for a major gun dealer, where she acquired extensive knowledge on the value of firearms. Slightly hesitant, but bright, Flo is simply priced too low to pass up."),
+	Bio = T(234573707265, --[[ModItemUnitDataCompositeDef GCExFlo Bio]] "The daughter of vineyard workers, Florence Gabriel spent most of her childhood in Cognac, France before moving to Pittsburgh, Pennsylvania, USA. After settling in the US she took a job as the bookkeeper for a major gun dealer, where she acquired extensive knowledge on the value of firearms. Slightly hesitant, but bright, Flo is simply priced too low to pass up."),
 	Nationality = "France",
-	snype_nick = T(965203635079, --[[ModItemUnitDataCompositeDef GCEXFlo snype_nick]] "florence.gabriel"),
+	snype_nick = T(965203635079, --[[ModItemUnitDataCompositeDef GCExFlo snype_nick]] "florence.gabriel"),
 	Refusals = {},
 	Haggles = {},
 	Mitigations = {},

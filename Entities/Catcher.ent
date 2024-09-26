@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity path="" name="">
+	<state id="idle">
+		<mesh_ref ref="mesh"/>
+	</state>
+	<mesh_description id="mesh">
+		<lod idx="0" distance="0">
+			<mesh file="Meshes/Catcher_mesh.m.hgm"/>
+			<material file="Materials/Catcher_mesh.mtl"/>
+			<bsphere value="-0.260,0.020,5.573,13.348"/>
+			<box min="-0.967,-2.661,-7.517" max="0.446,2.700,18.662"/>
+			<src file="C:/Users/kenji/AppData/Roaming/Jagged Alliance 3/ModAssets/FBX/untitled.fbx"/>
+		</lod>
+	</mesh_description>
+</entity>

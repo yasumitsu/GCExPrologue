@@ -43,29 +43,6 @@
 		type = "UnitMarker",
 	},
 	{
-		BanterTriggerEffects = {
-			PlaceObj('PlayBanterEffect', {
-				Banters = {
-					"RecentActivity",
-				},
-			}),
-		},
-		Groups = false,
-		handle = 1239312607,
-		items = {
-			{
-				editor_view_abridged = "Play banter(s): RecentActivity",
-				filter_type = "banter",
-				reference_id = "RecentActivity",
-				type = "PlayBanterEffect",
-			},
-		},
-		map = "QcNU7NV",
-		name = 'CustomInteractable#607 "Examine"',
-		path = "CustomInteractable ",
-		type = "CustomInteractable",
-	},
-	{
 		Groups = {
 			"LegionScouts",
 			"LegionScoutsSirNi",

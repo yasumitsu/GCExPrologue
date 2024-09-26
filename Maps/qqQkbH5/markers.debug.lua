@@ -140,6 +140,56 @@
 		type = "UnitMarker",
 	},
 	{
+		BanterTriggerEffects = {
+			PlaceObj('PlayBanterEffect', {
+				Banters = {
+					"NewBanter_1",
+				},
+			}),
+		},
+		Groups = {
+			"FloBanter",
+		},
+		handle = 1419355806,
+		items = {
+			{
+				editor_view_abridged = "Play banter(s): NewBanter_1",
+				filter_type = "banter",
+				reference_id = "NewBanter_1",
+				type = "PlayBanterEffect",
+			},
+		},
+		map = "qqQkbH5",
+		name = "Position#806 (FloBanter)",
+		path = "Position ",
+		type = "Position",
+	},
+	{
+		BanterTriggerEffects = {
+			PlaceObj('PlayBanterEffect', {
+				Banters = {
+					"Erny2",
+				},
+			}),
+		},
+		Groups = {
+			"FlavourBanter",
+		},
+		handle = 1458534406,
+		items = {
+			{
+				editor_view_abridged = "Play banter(s): Erny2",
+				filter_type = "banter",
+				reference_id = "Erny2",
+				type = "PlayBanterEffect",
+			},
+		},
+		map = "qqQkbH5",
+		name = 'CustomInteractable#406 "Examine" (FlavourBanter)',
+		path = "CustomInteractable ",
+		type = "CustomInteractable",
+	},
+	{
 		Groups = {
 			"MERCNpcs",
 		},
@@ -242,6 +292,42 @@
 		name = "UnitMarker#802 (BiffWait)",
 		path = "UnitMarker ",
 		type = "UnitMarker",
+	},
+	{
+		Groups = {
+			"SmileyFlirt",
+		},
+		handle = 1570716600,
+		items = {},
+		map = "qqQkbH5",
+		name = "UnitMarker#600 (SmileyFlirt)",
+		path = "UnitMarker ",
+		type = "UnitMarker",
+	},
+	{
+		BanterTriggerEffects = {
+			PlaceObj('PlayBanterEffect', {
+				Banters = {
+					"Erny1",
+				},
+			}),
+		},
+		Groups = {
+			"FlavourBanter",
+		},
+		handle = 1661106637,
+		items = {
+			{
+				editor_view_abridged = "Play banter(s): Erny1",
+				filter_type = "banter",
+				reference_id = "Erny1",
+				type = "PlayBanterEffect",
+			},
+		},
+		map = "qqQkbH5",
+		name = 'CustomInteractable#637 "Examine" (FlavourBanter)',
+		path = "CustomInteractable ",
+		type = "CustomInteractable",
 	},
 	{
 		Groups = {

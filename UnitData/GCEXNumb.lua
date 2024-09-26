@@ -1,5 +1,5 @@
-UndefineClass('GCEXNumb')
-DefineClass.GCEXNumb = {
+UndefineClass('GCExNumb')
+DefineClass.GCExNumb = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -19,13 +19,13 @@ DefineClass.GCEXNumb = {
 	Portrait = "Mod/GCExPrologue/Images/NumbPortrait",
 	BigPortrait = "Mod/GCExPrologue/Images/Numb",
 	IsMercenary = true,
-	Name = T(561852629506, --[[ModItemUnitDataCompositeDef GCEXNumb Name]] 'Tim "Numb" Sutton'),
-	Nick = T(392128018814, --[[ModItemUnitDataCompositeDef GCEXNumb Nick]] "Numb"),
-	AllCapsNick = T(531854446711, --[[ModItemUnitDataCompositeDef GCEXNumb AllCapsNick]] "NUMB"),
+	Name = T(561852629506, --[[ModItemUnitDataCompositeDef GCExNumb Name]] 'Tim "Numb" Sutton'),
+	Nick = T(392128018814, --[[ModItemUnitDataCompositeDef GCExNumb Nick]] "Numb"),
+	AllCapsNick = T(531854446711, --[[ModItemUnitDataCompositeDef GCExNumb AllCapsNick]] "NUMB"),
 	Affiliation = "Secret",
-	Bio = T(792089849295, --[[ModItemUnitDataCompositeDef GCEXNumb Bio]] "Tim Sutton suffers from a bad case of visual offensiveness and no one has been willing to give him a break. His bad haircut and neck tattoo has hindered this mercenary's career pursuits despite an otherwise impressive resume including martial arts and night ops training. His marksmanship and medical abilities are also excellent."),
+	Bio = T(792089849295, --[[ModItemUnitDataCompositeDef GCExNumb Bio]] "Tim Sutton suffers from a bad case of visual offensiveness and no one has been willing to give him a break. His bad haircut and neck tattoo has hindered this mercenary's career pursuits despite an otherwise impressive resume including martial arts and night ops training. His marksmanship and medical abilities are also excellent."),
 	Nationality = "England",
-	snype_nick = T(859662584234, --[[ModItemUnitDataCompositeDef GCEXNumb snype_nick]] "tim.sutton"),
+	snype_nick = T(859662584234, --[[ModItemUnitDataCompositeDef GCExNumb snype_nick]] "tim.sutton"),
 	Refusals = {},
 	Haggles = {},
 	Mitigations = {},
@@ -51,9 +51,9 @@ DefineClass.GCEXNumb = {
 		"Scope",
 	},
 	StartingPerks = {
+		"NumbTalk",
 		"MartialArts",
 		"NightOps",
-		"NumbTalk",
 		"Flanker",
 		"BreachAndClear",
 	},

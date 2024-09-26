@@ -1,5 +1,5 @@
-UndefineClass('GCEXCougar')
-DefineClass.GCEXCougar = {
+UndefineClass('GCExCougar')
+DefineClass.GCExCougar = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -19,13 +19,13 @@ DefineClass.GCEXCougar = {
 	Portrait = "Mod/GCExPrologue/Images/CougarPortrait",
 	BigPortrait = "Mod/GCExPrologue/Images/Cougar",
 	IsMercenary = true,
-	Name = T(823708430215, --[[ModItemUnitDataCompositeDef GCEXCougar Name]] 'Jim "Cougar" Wallace'),
-	Nick = T(346183843645, --[[ModItemUnitDataCompositeDef GCEXCougar Nick]] "Cougar"),
-	AllCapsNick = T(245400817655, --[[ModItemUnitDataCompositeDef GCEXCougar AllCapsNick]] "COUGAR"),
+	Name = T(823708430215, --[[ModItemUnitDataCompositeDef GCExCougar Name]] 'Jim "Cougar" Wallace'),
+	Nick = T(346183843645, --[[ModItemUnitDataCompositeDef GCExCougar Nick]] "Cougar"),
+	AllCapsNick = T(245400817655, --[[ModItemUnitDataCompositeDef GCExCougar AllCapsNick]] "COUGAR"),
 	Affiliation = "Secret",
-	Bio = T(549374649264, --[[ModItemUnitDataCompositeDef GCEXCougar Bio]] "Jim Wallace is one of the few cadets ever to get a perfect score on every final exam at military college. Of course, it didn't hurt that his father wrote the school's military code of conduct. He's a master at conventional mercenary skills and a pro with automatic weaponry. Always by-the-book Cougar is highly professional, possibly M.E.R.C's top performer.\" - M.E.R.C. Dossier\n\nAdditional Info\n\"Even though he is a man with strong opinions, Cougar has the military background (and discipline) to keep them to himself.\""),
+	Bio = T(549374649264, --[[ModItemUnitDataCompositeDef GCExCougar Bio]] "Jim Wallace is one of the few cadets ever to get a perfect score on every final exam at military college. Of course, it didn't hurt that his father wrote the school's military code of conduct. He's a master at conventional mercenary skills and a pro with automatic weaponry. Always by-the-book Cougar is highly professional, possibly M.E.R.C's top performer.\" - M.E.R.C. Dossier\n\nAdditional Info\n\"Even though he is a man with strong opinions, Cougar has the military background (and discipline) to keep them to himself.\""),
 	Nationality = "USA",
-	snype_nick = T(737933631206, --[[ModItemUnitDataCompositeDef GCEXCougar snype_nick]] "jim.wallace"),
+	snype_nick = T(737933631206, --[[ModItemUnitDataCompositeDef GCExCougar snype_nick]] "jim.wallace"),
 	Refusals = {},
 	Haggles = {},
 	Mitigations = {},
@@ -50,6 +50,7 @@ DefineClass.GCEXCougar = {
 		"Wolf",
 	},
 	StartingPerks = {
+		"ByTheBook",
 		"AutoWeapons",
 		"Stealthy",
 		"Deadeye",
@@ -69,5 +70,6 @@ DefineClass.GCEXCougar = {
 	Specialization = "Marksmen",
 	gender = "Male",
 	blocked_spots = set( "Weaponls", "Weaponrs" ),
+	VoiceResponseId = "GCExCougar",
 }
 

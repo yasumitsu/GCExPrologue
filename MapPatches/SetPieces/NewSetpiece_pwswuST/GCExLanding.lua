@@ -8,7 +8,7 @@ SetpiecePrgs.GCExLanding = function(seed, state, TriggerUnits, Merc1, Merc2, Mer
 	local _
 	prgdbg(li, 1, 3) _, Merc2 = sprocall(SetpieceAssignFromExistingActor.Exec, SetpieceAssignFromExistingActor, state, rand, Merc2, Merc2, "Object", false)
 	local _
-	prgdbg(li, 1, 4) _, Merc1 = sprocall(SetpieceAssignFromGroup.Exec, SetpieceAssignFromGroup, state, rand, Merc1, "", "GCEXCougar", "Object", false)
+	prgdbg(li, 1, 4) _, Merc1 = sprocall(SetpieceAssignFromGroup.Exec, SetpieceAssignFromGroup, state, rand, Merc1, "", "GCExCougar", "Object", false)
 	local _
 	prgdbg(li, 1, 5) _, Merc3 = sprocall(SetpieceAssignFromParam.Exec, SetpieceAssignFromParam, state, rand, Merc3, "", Merc3)
 	local _

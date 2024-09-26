@@ -20,7 +20,9 @@
 				},
 			}),
 		},
-		Groups = false,
+		Groups = {
+			"ShrineBanter",
+		},
 		handle = 1065817122,
 		items = {
 			{
@@ -31,8 +33,8 @@
 			},
 		},
 		map = "AygWRur",
-		name = 'CustomInteractable#122 Shrine "Examine"',
-		path = "CustomInteractable Shrine",
+		name = 'CustomInteractable#122 "Examine" (ShrineBanter)',
+		path = "CustomInteractable ",
 		type = "CustomInteractable",
 	},
 	{
@@ -98,29 +100,6 @@
 		name = "UnitMarker#267 (GoonsChillaxing)",
 		path = "UnitMarker ",
 		type = "UnitMarker",
-	},
-	{
-		BanterTriggerEffects = {
-			PlaceObj('PlayBanterEffect', {
-				Banters = {
-					"OutlookWaste",
-				},
-			}),
-		},
-		Groups = false,
-		handle = 1293714233,
-		items = {
-			{
-				editor_view_abridged = "Play banter(s): OutlookWaste",
-				filter_type = "banter",
-				reference_id = "OutlookWaste",
-				type = "PlayBanterEffect",
-			},
-		},
-		map = "AygWRur",
-		name = 'CustomInteractable#233 "Examine"',
-		path = "CustomInteractable ",
-		type = "CustomInteractable",
 	},
 	{
 		Groups = {

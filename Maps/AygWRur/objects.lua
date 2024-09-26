@@ -107,13 +107,6 @@ PlaceObj('Collection', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294966497,
-	'Name', "col_CustomInteractable",
-	'Index', 2924,
-}, nil, 1170554050)
-PlaceObj('Collection', {
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
 	'Name', "col_TropicalPlant_Liana_05",
 	'Index', 2902,
 }, nil, 1171231649)
@@ -377,6 +370,13 @@ PlaceObj('Collection', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'AllowedMask', 4294966497,
+	'Name', "col_TropicalRockSharp_5",
+	'Index', 1671,
+}, nil, 1657617541)
+PlaceObj('Collection', {
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
 	'Name', "col_TropicalPlant_01_Tree_5",
 	'Index', 1583,
 }, nil, 1657802619)
@@ -578,9 +578,7 @@ PlaceObj('ContainerIntelMarker', {
 	'CollectionIndex', 2859,
 	'AllowedMask', 4294966497,
 	'Name', "SecretStash",
-	'Spawn_Conditions', {
-		PlaceObj('SectorHasIntel', {}),
-	},
+	'Spawn_Conditions', {},
 	'DisplayName', T(654287758819, "SECRET STASH"),
 	'ItemSpawners', {
 		PlaceObj('ConditionalLoot', {
@@ -723,20 +721,6 @@ PlaceObj('UnitMarker', {
 		}),
 	},
 }, nil, 1718780053)
-PlaceObj('CustomInteractable', {
-	'Pos', point(137400, 133800),
-	'CollectionIndex', 2393,
-	'AllowedMask', 4294966497,
-	'DisplayName', T(178963733043, "Examine"),
-	'ConditionalEffects', {
-		PlaceObj('PlayBanterEffect', {
-			Banters = {
-				"OutlookWaste",
-			},
-		}),
-		PlaceObj('DisableInteractionMarkerEffect', {}),
-	},
-}, nil, 1293714233)
 PlaceObj('GridMarker', {
 	'Pos', point(141000, 161400),
 	'Groups', {
@@ -777,10 +761,11 @@ PlaceObj('GridMarker', {
 }, nil, 1627920049)
 PlaceObj('CustomInteractable', {
 	'Pos', point(183000, 159000),
-	'CollectionIndex', 2924,
+	'Groups', {
+		"ShrineBanter",
+	},
 	'AllowedMask', 4294966497,
 	'DisplayName', T(478972876780, "Examine"),
-	'ID', "Shrine",
 	'ConditionalEffects', {
 		PlaceObj('PlayBanterEffect', {
 			Banters = {
@@ -1379,7 +1364,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1282617402)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(15274, 129300, 6619),
@@ -1389,7 +1374,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1070830048)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(19200, 105300, 6300),
@@ -1439,7 +1424,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1046559273)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(19844, 129195, 6221),
@@ -1449,7 +1434,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1293689342)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(20163, 129202, 6795),
@@ -1458,7 +1443,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1502608132)
 PlaceObj('Village_Boat_01', {
 	'ColorizationPalette', "",
@@ -1480,7 +1465,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1070074910)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(22836, 127192, 5157),
@@ -1489,7 +1474,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1013117260)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(29200, 115300, 6300),
@@ -1539,7 +1524,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1597758938)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(39200, 95300, 6300),
@@ -1559,7 +1544,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1676536690)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(47833, 97633, 12730),
@@ -1569,7 +1554,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1207289491)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(49200, 75300, 6300),
@@ -1608,7 +1593,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1161242918)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(51404, 92794, 10252),
@@ -1618,7 +1603,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1256359387)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(49200, 95300, 6300),
@@ -1647,7 +1632,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1405693306)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(60002, 93156, 6260),
@@ -1655,7 +1640,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1254605768)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(58698, 95761, 9523),
@@ -1665,7 +1650,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1386755548)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(59200, 95300, 6300),
@@ -1705,7 +1690,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1019706229)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(39200, 105300, 6300),
@@ -1725,7 +1710,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1294934998)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(41491, 98347, 6720),
@@ -1774,7 +1759,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1130414777)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(44738, 102739, 7410),
@@ -1803,7 +1788,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1232910135)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(45690, 99631, 6784),
@@ -1822,7 +1807,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1478984606)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(46158, 99929, 6816),
@@ -1861,7 +1846,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ColorModifier', RGBA(68, 66, 66, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1340647652)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(45202, 103210, 7293),
@@ -1881,7 +1866,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1599490755)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(46900, 107753),
@@ -1891,7 +1876,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1429802457)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(48791, 112223, 6592),
@@ -1901,7 +1886,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1167780365)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(39200, 115300, 6300),
@@ -1931,7 +1916,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1788613414)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(46446, 119328, 6511),
@@ -1941,7 +1926,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1660494344)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(46427, 120318, 6489),
@@ -1951,7 +1936,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1337941983)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(47316, 129441, 6184),
@@ -1971,7 +1956,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1686078681)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(48301, 129259),
@@ -2002,7 +1987,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ColorModifier', RGBA(68, 66, 66, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1428726807)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(50311, 107664, 10087),
@@ -2012,7 +1997,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1444826500)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(50362, 110372, 8848),
@@ -2022,7 +2007,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1097885084)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(55252, 109447, 9008),
@@ -2112,7 +2097,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1712674689)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(57910, 101780, 10701),
@@ -2151,7 +2136,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1692737558)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(57745, 107430, 9028),
@@ -2170,7 +2155,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1800409038)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(60428, 107203),
@@ -2229,7 +2214,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1772128117)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(59691, 110762),
@@ -2269,7 +2254,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1533452791)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(51047, 120804, 7432),
@@ -2279,7 +2264,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1051096927)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(50009, 122254),
@@ -2319,7 +2304,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1736420620)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(53475, 119432),
@@ -2378,7 +2363,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1762560663)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(50724, 123336),
@@ -2408,7 +2393,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1283274587)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(49887, 128756),
@@ -2418,7 +2403,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1143293187)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(50896, 130850),
@@ -2428,7 +2413,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1164082919)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(52635, 130497),
@@ -2475,7 +2460,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1894909680)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(55062, 128792),
@@ -2485,7 +2470,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1269584907)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(53443, 130648),
@@ -2495,7 +2480,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1809075815)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(69200, 5300, 6300),
@@ -3231,7 +3216,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1618995610)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(78721, 116300),
@@ -3261,7 +3246,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1262673556)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(79364, 116307),
@@ -3320,7 +3305,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1257579922)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(78887, 122062),
@@ -3338,7 +3323,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1272802199)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(83843, 105733, 6200),
@@ -3347,7 +3332,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1219016945)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(85929, 104728),
@@ -3367,7 +3352,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1596375013)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(86386, 104700, 6194),
@@ -3406,7 +3391,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1418822118)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(89412, 103641, 6203),
@@ -3416,7 +3401,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1760333041)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(89200, 105300, 6300),
@@ -3476,7 +3461,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1880961009)
 PlaceObj('BeachMarker', {
 	'Pos', point(96696, 107215, 14034),
@@ -3621,7 +3606,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 127,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1137244143)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(99200, 75300, 6300),
@@ -4343,7 +4328,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Axis', point(259, 1821, 3659),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1475431610)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(100648, 108117, 9813),
@@ -4580,7 +4565,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 127,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1107657888)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(99981, 128614),
@@ -4588,7 +4573,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 165,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1591122670)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(100838, 128909),
@@ -4596,7 +4581,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 151,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1633214523)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(102462, 130264),
@@ -4604,7 +4589,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 118,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1035341176)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(102529, 131038),
@@ -4612,7 +4597,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 161,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1295141629)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(103791, 130394),
@@ -4620,7 +4605,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 147,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1691153896)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(108990, 126629),
@@ -4628,7 +4613,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 93,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1662732764)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(110116, 126788),
@@ -4636,7 +4621,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 96,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1820055664)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(109962, 128886),
@@ -4644,7 +4629,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 97,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1681030385)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(108876, 129291),
@@ -4652,7 +4637,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 145,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1245371883)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(110617, 127126),
@@ -4660,7 +4645,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 132,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1010564751)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(111220, 128746),
@@ -4668,7 +4653,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 97,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1032925565)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(112509, 129728),
@@ -4676,7 +4661,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 88,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1100286838)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(113514, 127848),
@@ -4704,7 +4689,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 93,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1131879056)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(113246, 129096),
@@ -4712,7 +4697,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 92,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1651841735)
 PlaceObj('CameraCollider', {
 	'Pos', point(115800, 99000, 12600),
@@ -4797,7 +4782,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1027332179)
 PlaceObj('CameraCollider', {
 	'Pos', point(120600, 99000, 12600),
@@ -4837,7 +4822,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1769385511)
 PlaceObj('Mist', {
 	'Pos', point(116577, 108221, 9309),
@@ -4880,7 +4865,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1272917953)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(122532, 108063),
@@ -4888,7 +4873,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 104,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1053154573)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(118972, 114466),
@@ -5067,7 +5052,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 96,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1511910417)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(123276, 108345),
@@ -5075,7 +5060,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1667349630)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(124283, 108911),
@@ -5083,7 +5068,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 227,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1136799022)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(125360, 107925),
@@ -5091,7 +5076,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 130,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1608216390)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(126574, 107174),
@@ -5099,7 +5084,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1531591545)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(126034, 107652, 4995),
@@ -5116,7 +5101,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 245,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1030330754)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(124939, 108569),
@@ -5124,7 +5109,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 125,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1830446854)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(126173, 110285),
@@ -5132,7 +5117,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 116,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1307822094)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(124434, 111607),
@@ -5140,7 +5125,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 96,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1430049086)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(125888, 111070),
@@ -5148,7 +5133,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 138,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1153190793)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(125824, 114568),
@@ -5156,7 +5141,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1787301395)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(126986, 108208),
@@ -5164,7 +5149,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 149,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1248603632)
 PlaceObj('Mist', {
 	'Pos', point(128538, 107358, 9526),
@@ -5206,7 +5191,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 152,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1326565216)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(129282, 107926, 8294),
@@ -5232,7 +5217,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1116025693)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(128852, 111764),
@@ -5240,7 +5225,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 160,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1019285510)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(129463, 111609),
@@ -5248,7 +5233,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 133,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1033097705)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(117192, 117883),
@@ -5288,7 +5273,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 157,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1806980896)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(122507, 118492),
@@ -5305,7 +5290,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1505804673)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(118509, 125364),
@@ -5313,7 +5298,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1561011254)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(116265, 128105),
@@ -5321,7 +5306,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 132,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1085221770)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(115601, 130979),
@@ -5329,7 +5314,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1012708068)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(116104, 131009),
@@ -5347,7 +5332,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 105,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1776565065)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(117533, 128955),
@@ -5355,7 +5340,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1806825839)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(119209, 124758),
@@ -5390,7 +5375,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 86,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1014820162)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(119641, 125646),
@@ -5408,7 +5393,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1344291115)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(121545, 123039),
@@ -5416,7 +5401,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 88,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1587452748)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(120331, 127052),
@@ -5424,7 +5409,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1202649659)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(126547, 115034),
@@ -5432,7 +5417,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 104,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1130360456)
 PlaceObj('SoundSource', {
 	'Pos', point(124111, 120821, 9508),
@@ -5449,7 +5434,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 92,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1196500026)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(125808, 120713),
@@ -5457,7 +5442,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 130,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1633843653)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(126166, 120782),
@@ -5502,7 +5487,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 126,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1381138968)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(128329, 115171),
@@ -5510,7 +5495,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1861998205)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(128517, 116404),
@@ -5518,7 +5503,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1096534528)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(129334, 114734),
@@ -5535,7 +5520,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 120,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1371427888)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(127967, 118810),
@@ -5543,7 +5528,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1320371195)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(127077, 121174),
@@ -5552,7 +5537,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Axis', point(57, 479, 4067),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1109321940)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(124710, 125753),
@@ -5560,7 +5545,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 115,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1750236293)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(125894, 124664),
@@ -5568,7 +5553,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1443179992)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(125656, 125193),
@@ -5576,7 +5561,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 130,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1585566883)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(126236, 126421),
@@ -5623,7 +5608,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1771992857)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(124052, 128921),
@@ -5657,7 +5642,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 92,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1138112625)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(126085, 127374),
@@ -5665,7 +5650,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 92,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1554245514)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(126373, 126999),
@@ -5696,7 +5681,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1866641830)
 PlaceObj('TropicalPlant_Dead_03', {
 	'Pos', point(10584, 162257, 6910),
@@ -5821,7 +5806,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1565082388)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(23411, 133767, 6504),
@@ -5905,7 +5890,7 @@ PlaceObj('Scaffolding_Planks_04', {
 	'ColorModifier', RGBA(11, 8, 7, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1881953270)
 PlaceObj('Scaffolding_Planks_04', {
 	'ColorizationPalette', "",
@@ -5917,7 +5902,7 @@ PlaceObj('Scaffolding_Planks_04', {
 	'ColorModifier', RGBA(11, 8, 7, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1861343243)
 PlaceObj('JungleCamp_Lantern_01', {
 	'Pos', point(22272, 138200, 7090),
@@ -5925,7 +5910,7 @@ PlaceObj('JungleCamp_Lantern_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1502732681)
 PlaceObj('BunkerInterior_AmmoBox_02', {
 	'ColorizationPalette', "",
@@ -5946,7 +5931,7 @@ PlaceObj('JungleCamp_NewspaperPile_01', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1513091972)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(22926, 135220, 6672),
@@ -5967,7 +5952,7 @@ PlaceObj('Scaffolding_Planks_02', {
 	'ColorModifier', RGBA(11, 8, 7, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1179734403)
 PlaceObj('Scaffolding_Planks_04', {
 	'ColorizationPalette', "",
@@ -5979,7 +5964,7 @@ PlaceObj('Scaffolding_Planks_04', {
 	'ColorModifier', RGBA(11, 8, 7, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1229243958)
 PlaceObj('Scaffolding_Wall_01', {
 	'ColorizationPalette', "",
@@ -6003,7 +5988,7 @@ PlaceObj('Scaffolding_Planks_02', {
 	'ColorModifier', RGBA(11, 8, 7, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1163367159)
 PlaceObj('Shanty_WallDecor_04', {
 	'Pos', point(24349, 138083, 6481),
@@ -6013,7 +5998,7 @@ PlaceObj('Shanty_WallDecor_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1124363947)
 PlaceObj('Bunker_MetalBed_mattress', {
 	'ColorizationPalette', "",
@@ -6035,7 +6020,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1884556090)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(25184, 138648, 6602),
@@ -6045,7 +6030,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1052999773)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(27177, 137799, 6214),
@@ -6055,7 +6040,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1701645947)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(26847, 138319, 6256),
@@ -6064,7 +6049,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1788793220)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(27222, 139064, 6335),
@@ -6074,7 +6059,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1467184338)
 PlaceObj('Shanty_WallDecor_04', {
 	'Pos', point(27522, 138932, 6322),
@@ -6084,7 +6069,7 @@ PlaceObj('Shanty_WallDecor_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1153601602)
 PlaceObj('Village_Boat_01', {
 	'ColorizationPalette', "",
@@ -6116,7 +6101,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1715748288)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(24745, 140494, 6793),
@@ -6125,7 +6110,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1444505519)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(25601, 140120, 6506),
@@ -6134,7 +6119,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1460609845)
 PlaceObj('Shanty_WallDecor_01', {
 	'Pos', point(28261, 139608, 6358),
@@ -6143,7 +6128,7 @@ PlaceObj('Shanty_WallDecor_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1627834242)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(20074, 155949, 6960),
@@ -6152,7 +6137,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1078469254)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(19922, 160622, 6960),
@@ -6191,7 +6176,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1527532659)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(21456, 157171, 6960),
@@ -6200,7 +6185,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1128700033)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(20775, 159316, 6960),
@@ -6210,7 +6195,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1740067532)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(20591, 160351, 6960),
@@ -6230,7 +6215,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1327693753)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(21439, 161844, 6960),
@@ -6240,7 +6225,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1388605730)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(24956, 153665),
@@ -6250,7 +6235,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1130107825)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(24964, 153968, 6759),
@@ -6280,7 +6265,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1023487748)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(27924, 152938, 6960),
@@ -6289,7 +6274,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1684839452)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(29606, 153296, 6960),
@@ -6299,7 +6284,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1339857231)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(26188, 157855, 6960),
@@ -6309,7 +6294,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1326467816)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(26623, 159364, 6960),
@@ -6319,7 +6304,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1872824953)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(25362, 161070, 6901),
@@ -6368,7 +6353,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1263471517)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(26988, 161557, 6956),
@@ -6378,7 +6363,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1162367607)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(31843, 155987, 6960),
@@ -6388,7 +6373,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1522877878)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(21800, 165726, 6960),
@@ -6425,7 +6410,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1008287329)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(22580, 166147, 5996),
@@ -6444,7 +6429,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1298964822)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(24104, 170869),
@@ -6454,7 +6439,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1425569474)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(22725, 172061, 6960),
@@ -6472,7 +6457,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1475621546)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(24724, 167221),
@@ -6481,7 +6466,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1897524667)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(27053, 164519, 6960),
@@ -6491,7 +6476,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1201923748)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(26011, 169433, 6960),
@@ -6500,7 +6485,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1007385186)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(31504, 165942),
@@ -6566,7 +6551,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1512305591)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(26053, 173425),
@@ -6585,7 +6570,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1264839420)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(26473, 173333),
@@ -6603,7 +6588,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1567272355)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(28574, 173408),
@@ -6659,7 +6644,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1708240053)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(23915, 188138, 7018),
@@ -6668,7 +6653,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1592836130)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(22352, 188508),
@@ -6677,7 +6662,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1328332987)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(28023, 184037, 6960),
@@ -6686,7 +6671,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1205741856)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(27559, 186926),
@@ -6696,7 +6681,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1818433141)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(29911, 181486, 6960),
@@ -6715,7 +6700,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1400073153)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(29531, 185580),
@@ -6725,7 +6710,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1247143314)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(31952, 186596, 9389),
@@ -6736,7 +6721,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ColorModifier', RGBA(68, 66, 66, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1298646147)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(26571, 189172),
@@ -6756,7 +6741,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1199347044)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(26543, 194831),
@@ -6776,7 +6761,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1302615661)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(28600, 193094, 9513),
@@ -6786,7 +6771,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1297091322)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(30067, 194427, 9989),
@@ -6797,7 +6782,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ColorModifier', RGBA(68, 66, 66, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1356355917)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(39200, 135300, 6300),
@@ -6862,7 +6847,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1545504376)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(47699, 133039),
@@ -6872,7 +6857,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1555582303)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(48870, 131271),
@@ -6882,7 +6867,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1183990995)
 PlaceObj('Village_Boat_01', {
 	'Pos', point(44713, 139403),
@@ -6908,7 +6893,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1209588270)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(40565, 147872, 6940),
@@ -6918,7 +6903,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1463249471)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(40655, 149250),
@@ -6927,7 +6912,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1095188783)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(39404, 151407, 6960),
@@ -6937,7 +6922,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1294929106)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(37171, 153415, 7671),
@@ -6946,7 +6931,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1455769871)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(38457, 152889, 6954),
@@ -6955,7 +6940,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1479150641)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(40265, 153357, 6851),
@@ -6965,7 +6950,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1680926917)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(39221, 153969, 6960),
@@ -6975,7 +6960,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1018058174)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(39605, 154957, 6960),
@@ -7004,14 +6989,14 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1081411159)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(38999, 160397, 6960),
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1084617755)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(41838, 149425, 6958),
@@ -7050,7 +7035,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1786666394)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(42921, 148660, 6958),
@@ -7059,7 +7044,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1224470758)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(42255, 149584, 6958),
@@ -7079,7 +7064,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1234511762)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(44720, 156995, 7014),
@@ -7089,7 +7074,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1157138339)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(44956, 158968, 6960),
@@ -7107,7 +7092,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1167310450)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(45526, 155903, 6960),
@@ -7175,7 +7160,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1570107531)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(50027, 131421, 6567),
@@ -7284,7 +7269,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1132312111)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(49380, 156551, 6960),
@@ -7332,7 +7317,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1826882797)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(49678, 162110, 6959),
@@ -7351,7 +7336,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1777559408)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(56640, 158593, 6960),
@@ -7370,7 +7355,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1612812599)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(57156, 158423, 6960),
@@ -7388,7 +7373,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1669532838)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(56761, 159247, 6902),
@@ -7418,7 +7403,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1245700980)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(63848, 155202, 6960),
@@ -7466,7 +7451,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1825473932)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(60199, 161002),
@@ -7476,7 +7461,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1303169293)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(60292, 161218),
@@ -7486,7 +7471,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1159648657)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(60143, 161894),
@@ -7496,7 +7481,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1665092407)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(60936, 162135),
@@ -7505,7 +7490,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1190824178)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(60743, 163631, 6960),
@@ -7515,7 +7500,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1203752027)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(62326, 161254),
@@ -7523,7 +7508,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1302064465)
 PlaceObj('SoundSource', {
 	'Pos', point(65171, 163419, 10968),
@@ -7542,7 +7527,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1519032953)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(40302, 169009),
@@ -7551,7 +7536,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1822619466)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(34083, 175087),
@@ -7560,7 +7545,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1776752321)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(33265, 177489),
@@ -7569,7 +7554,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1538136107)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(41987, 169982),
@@ -7579,7 +7564,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1166142348)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(44620, 168476),
@@ -7589,7 +7574,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1460667670)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(45928, 165402, 6960),
@@ -7636,7 +7621,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1830695644)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(47954, 166738, 6972),
@@ -7646,7 +7631,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1576475635)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(48819, 165993, 7266),
@@ -7655,7 +7640,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1501188371)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(48267, 169510),
@@ -7665,7 +7650,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1240268149)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(47606, 172022, 6960),
@@ -7693,7 +7678,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1014851581)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(45809, 175553, 6865),
@@ -7702,7 +7687,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1134533063)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(47168, 172299, 6959),
@@ -7710,7 +7695,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1049023332)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(47935, 172457, 6960),
@@ -7728,7 +7713,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1659256256)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(33429, 180868),
@@ -7787,7 +7772,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1513357172)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(38032, 186275),
@@ -7835,7 +7820,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1083782831)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(35841, 196473),
@@ -7844,7 +7829,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1039434258)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(37919, 195419),
@@ -7852,7 +7837,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1444961822)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(42486, 188059, 6960),
@@ -7862,7 +7847,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1550187767)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(49124, 182273),
@@ -7870,7 +7855,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1519727084)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(43469, 189391, 6960),
@@ -7879,7 +7864,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1689126582)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(42136, 194057, 6959),
@@ -7888,7 +7873,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1609272000)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(42930, 195076),
@@ -7897,7 +7882,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1859393691)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(44721, 196065, 7809),
@@ -7907,7 +7892,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1801105798)
 PlaceObj('TropicalPlant_Dead_03', {
 	'Pos', point(46301, 192935, 6960),
@@ -7924,7 +7909,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1189437996)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(46169, 193758, 6961),
@@ -7934,7 +7919,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1473801943)
 PlaceObj('TropicalPlant_Liana_04', {
 	'Pos', point(46635, 194224, 6583),
@@ -7943,7 +7928,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1213463694)
 PlaceObj('TropicalPlant_Liana_02', {
 	'Pos', point(46834, 194833, 6960),
@@ -7970,7 +7955,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1075782100)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(48610, 195323, 6959),
@@ -7979,7 +7964,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1213430179)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(49818, 164743),
@@ -7988,7 +7973,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1863497567)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(50332, 164191, 6155),
@@ -7998,7 +7983,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1554545668)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(50959, 167216, 6964),
@@ -8007,7 +7992,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1557987305)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(50112, 169544, 6960),
@@ -8036,7 +8021,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1284986254)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(54822, 169048),
@@ -8046,7 +8031,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1431095614)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(55173, 172017),
@@ -8066,7 +8051,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1177927716)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(55931, 169337),
@@ -8112,21 +8097,21 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1508752343)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(50771, 175029),
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1155622076)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(50075, 177773),
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1034885725)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(50143, 178864),
@@ -8171,7 +8156,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1710105677)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(53609, 175630),
@@ -8180,7 +8165,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1284028700)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(53330, 179250, 6960),
@@ -8189,7 +8174,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1641404308)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(56266, 176814),
@@ -8207,7 +8192,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1543522273)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(50580, 181852),
@@ -8215,7 +8200,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1796384859)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(51933, 185848),
@@ -8224,7 +8209,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1317161611)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(55798, 184032, 6960),
@@ -8233,7 +8218,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1714564939)
 PlaceObj('TropicalPlant_Liana_04', {
 	'Pos', point(58270, 188164, 7476),
@@ -8242,7 +8227,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1164939237)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(59026, 187706, 7270),
@@ -8261,14 +8246,14 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1479952419)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(65038, 180880, 6960),
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1837437674)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(59954, 192011),
@@ -8276,7 +8261,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1316956438)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(57876, 193065),
@@ -8285,7 +8270,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1618461402)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(58334, 194978),
@@ -8293,7 +8278,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1273752428)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(65486, 195496, 6851),
@@ -8302,7 +8287,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1124239044)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(26685, 200487),
@@ -8311,7 +8296,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1898039702)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(30609, 196960, 9067),
@@ -8321,7 +8306,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1783074733)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(30374, 201317, 6960),
@@ -8331,7 +8316,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1572210856)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(29942, 202823, 6960),
@@ -8340,7 +8325,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1897461354)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(31248, 202052, 6960),
@@ -8358,7 +8343,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1170202066)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(30738, 208952, 6960),
@@ -8367,7 +8352,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1316648001)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(31059, 211963, 6959),
@@ -8376,7 +8361,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1033447777)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(32106, 212325, 7485),
@@ -8385,7 +8370,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1553506269)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(26285, 214170, 6960),
@@ -8414,7 +8399,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1251170107)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(29186, 213922, 6955),
@@ -8423,7 +8408,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1282745929)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(31763, 213818, 6960),
@@ -8479,7 +8464,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1326747148)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(35699, 199502, 6960),
@@ -8497,7 +8482,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1464347629)
 PlaceObj('TropicalPlant_Liana_04', {
 	'Pos', point(40573, 203949, 6583),
@@ -8506,7 +8491,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1811337487)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(38047, 204922, 6960),
@@ -8515,7 +8500,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1087841822)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(39486, 206990, 6960),
@@ -8533,7 +8518,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1031754079)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(42184, 198156),
@@ -8543,7 +8528,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1116795393)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(42731, 199228),
@@ -8552,7 +8537,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1095571839)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(43667, 200636, 6960),
@@ -8561,7 +8546,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1463314568)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(46449, 198040),
@@ -8570,7 +8555,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1011216633)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(47021, 199603, 6942),
@@ -8579,7 +8564,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1769209402)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(49105, 202697, 6915),
@@ -8588,7 +8573,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1043362638)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(42077, 207848),
@@ -8597,7 +8582,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1493159230)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(44286, 207840, 6959),
@@ -8607,7 +8592,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1221883207)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(42262, 210702, 6960),
@@ -8617,7 +8602,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1341839473)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(46616, 207760, 6966),
@@ -8636,7 +8621,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1301076938)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(36385, 215568, 6960),
@@ -8655,7 +8640,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1055564200)
 PlaceObj('TropicalPlant_04_Tree_02', {
 	'Pos', point(36934, 223916, 6960),
@@ -8722,7 +8707,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1181938107)
 PlaceObj('TropicalPlant_Dead_03', {
 	'Pos', point(56252, 198914, 6957),
@@ -8740,7 +8725,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1786991732)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(50536, 206418, 6959),
@@ -8750,7 +8735,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1885952656)
 PlaceObj('TropicalPlant_Liana_04', {
 	'Pos', point(50616, 207097, 6583),
@@ -8759,7 +8744,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1414370336)
 PlaceObj('TropicalPlant_Liana_01', {
 	'Pos', point(52868, 207768),
@@ -8785,7 +8770,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1251545921)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(54816, 208106, 7386),
@@ -8795,7 +8780,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1485478679)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(56704, 209445, 6958),
@@ -8814,7 +8799,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1820557877)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(64432, 204564),
@@ -8824,7 +8809,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1649323095)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(57414, 208615),
@@ -8834,7 +8819,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1735063534)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(60288, 207738, 6959),
@@ -8843,7 +8828,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1751739262)
 PlaceObj('TropicalPlant_Dead_03', {
 	'Pos', point(60440, 207307, 6960),
@@ -8860,7 +8845,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1123746268)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(60021, 212368, 6958),
@@ -8878,7 +8863,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1617858472)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(62987, 206681, 6960),
@@ -8887,7 +8872,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1162414260)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(64739, 207069, 7060),
@@ -8897,7 +8882,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1221736554)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(50405, 217286, 6960),
@@ -8966,7 +8951,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1540885626)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(46926, 235765),
@@ -8995,7 +8980,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1359424419)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(42465, 258398),
@@ -9005,7 +8990,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1663509805)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(55567, 249150, 1372),
@@ -9025,7 +9010,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1775514588)
 PlaceObj('TropicalPlant_Dead_03', {
 	'Pos', point(67503, 143280, 6920),
@@ -9091,7 +9076,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1083580555)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(72366, 140054),
@@ -9169,7 +9154,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1875707024)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(71226, 145796, 6960),
@@ -9198,7 +9183,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1004930424)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(66151, 150482, 7206),
@@ -9267,7 +9252,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1258806404)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(69821, 150327, 6960),
@@ -9434,7 +9419,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1271461560)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(76377, 154321, 6954),
@@ -9443,7 +9428,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1015229794)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(78520, 153489, 6954),
@@ -9452,7 +9437,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1355583153)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(78749, 154326, 6948),
@@ -9460,7 +9445,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1593534159)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(80327, 152997, 6954),
@@ -9469,7 +9454,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1665194530)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(80067, 153662, 6950),
@@ -9478,7 +9463,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1396976505)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(75086, 156836, 6960),
@@ -9505,7 +9490,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1734758885)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(76883, 161966, 6960),
@@ -9513,7 +9498,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1376326792)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(79835, 159676),
@@ -9522,7 +9507,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1842073461)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(77973, 160551),
@@ -9531,7 +9516,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1194339983)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(81662, 162183, 8270),
@@ -9539,8 +9524,17 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1280045181)
+PlaceObj('NoteMarker', {
+	'Pos', point(85253, 134686),
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
+	'Text', "ENEMY ENCOUNTER",
+	'TextColor', RGBA(0, 72, 130, 255),
+	'TextStyle', "DescriptionTextAPRed",
+}, nil, 1633064160)
 PlaceObj('SoundSource', {
 	'Pos', point(87963, 137260, 10727),
 	'AllowedMask', 4294966497,
@@ -9625,7 +9619,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1452501777)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(92837, 141366),
@@ -9667,8 +9661,17 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1174223632)
+PlaceObj('TropicalPlant_02_Tree_02', {
+	'Pos', point(89945, 153742),
+	'Angle', 21164,
+	'Scale', 108,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'CollectionIndex', 388,
+	'AllowedMask', 4294967279,
+}, nil, 1321588553)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(81976, 156647),
 	'Angle', 19250,
@@ -9676,7 +9679,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1876498909)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(82978, 158950),
@@ -9684,72 +9687,10 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1495562559)
-PlaceObj('TropicalFillerPlants_01', {
-	'Pos', point(84889, 158138),
-	'Angle', 15954,
-	'Scale', 112,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1012967590)
-PlaceObj('TropicalFillerPlants_02', {
-	'Pos', point(83997, 159630),
-	'Angle', 17664,
-	'Scale', 101,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1792387345)
-PlaceObj('TropicalFillerPlants_03', {
-	'Pos', point(85930, 158952),
-	'Angle', 16134,
-	'Scale', 132,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1863576975)
-PlaceObj('TropicalFillerPlants_01', {
-	'Pos', point(82608, 160304),
-	'Angle', 17489,
-	'Scale', 122,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1180342452)
-PlaceObj('TropicalFillerPlants_02', {
-	'Pos', point(82739, 163266),
-	'Angle', 6389,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1529678989)
-PlaceObj('TropicalFillerPlants_03', {
-	'Pos', point(85322, 163186),
-	'Angle', 16974,
-	'Scale', 180,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1628457776)
-PlaceObj('TropicalFillerPlants_02', {
-	'Pos', point(86314, 156886),
-	'Angle', 11584,
-	'Scale', 104,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1597242717)
 PlaceObj('TropicalPlant_02_Tree_01', {
-	'Pos', point(86795, 157711),
+	'Pos', point(85703, 157167),
 	'Angle', 12006,
 	'Scale', 113,
 	'ForcedLODState', "Minimum",
@@ -9758,8 +9699,70 @@ PlaceObj('TropicalPlant_02_Tree_01', {
 	'CollectionIndex', 388,
 	'AllowedMask', 4294967279,
 }, nil, 1688935413)
+PlaceObj('TropicalFillerPlants_01', {
+	'Pos', point(84889, 158138),
+	'Angle', 15954,
+	'Scale', 112,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1012967590)
+PlaceObj('TropicalFillerPlants_02', {
+	'Pos', point(83997, 159630),
+	'Angle', 17664,
+	'Scale', 101,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1792387345)
+PlaceObj('TropicalFillerPlants_03', {
+	'Pos', point(85930, 158952),
+	'Angle', 16134,
+	'Scale', 132,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1863576975)
+PlaceObj('TropicalFillerPlants_01', {
+	'Pos', point(82608, 160304),
+	'Angle', 17489,
+	'Scale', 122,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1180342452)
+PlaceObj('TropicalFillerPlants_02', {
+	'Pos', point(82739, 163266),
+	'Angle', 6389,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1529678989)
+PlaceObj('TropicalFillerPlants_03', {
+	'Pos', point(85322, 163186),
+	'Angle', 16974,
+	'Scale', 180,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1628457776)
+PlaceObj('TropicalFillerPlants_02', {
+	'Pos', point(86314, 156886),
+	'Angle', 11584,
+	'Scale', 104,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1597242717)
 PlaceObj('TropicalPlant_02_Tree_02', {
-	'Pos', point(87740, 157870),
+	'Pos', point(86648, 157326),
 	'Angle', 16726,
 	'Scale', 81,
 	'ForcedLODState', "Minimum",
@@ -9769,7 +9772,7 @@ PlaceObj('TropicalPlant_02_Tree_02', {
 	'AllowedMask', 4294967279,
 }, nil, 1426314241)
 PlaceObj('TropicalPlant_02_Tree_01', {
-	'Pos', point(89149, 156554),
+	'Pos', point(88057, 156010),
 	'Angle', 15491,
 	'Scale', 117,
 	'ForcedLODState', "Minimum",
@@ -9785,7 +9788,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1752158410)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(86231, 160374),
@@ -9794,19 +9797,10 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1857811534)
-PlaceObj('TropicalFillerPlants_01', {
-	'Pos', point(86493, 162401),
-	'Angle', 15310,
-	'Scale', 131,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1344098982)
 PlaceObj('TropicalPlant_02_Tree_01', {
-	'Pos', point(88088, 160788),
+	'Pos', point(86996, 160244),
 	'Angle', 15322,
 	'Scale', 111,
 	'ForcedLODState', "Minimum",
@@ -9815,6 +9809,15 @@ PlaceObj('TropicalPlant_02_Tree_01', {
 	'CollectionIndex', 388,
 	'AllowedMask', 4294967279,
 }, nil, 1574254218)
+PlaceObj('TropicalFillerPlants_01', {
+	'Pos', point(86493, 162401),
+	'Angle', 15310,
+	'Scale', 131,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1344098982)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(88828, 161093),
 	'Angle', 11604,
@@ -9822,7 +9825,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1098230626)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(89220, 159811),
@@ -9831,8 +9834,17 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1270167677)
+PlaceObj('TropicalPlant_02_Tree_01', {
+	'Pos', point(89819, 159983),
+	'Angle', 13424,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'CollectionIndex', 388,
+	'AllowedMask', 4294967279,
+}, nil, 1367968956)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(89811, 161543),
 	'Angle', 16845,
@@ -9840,7 +9852,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1286030909)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(88745, 162484),
@@ -9849,19 +9861,19 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1877002458)
-PlaceObj('TropicalPlant_02_Tree_02', {
-	'Pos', point(91037, 154286),
-	'Angle', 21164,
-	'Scale', 108,
+PlaceObj('TropicalFillerPlants_02', {
+	'Pos', point(90047, 162585),
+	'Angle', 18054,
+	'Scale', 132,
+	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'CollectionIndex', 388,
-	'AllowedMask', 4294967279,
-}, nil, 1321588553)
+	'AllowedMask', 0,
+}, nil, 1892379216)
 PlaceObj('TropicalPlant_02_Tree_01', {
-	'Pos', point(92368, 154289),
+	'Pos', point(91276, 153745),
 	'Angle', 14555,
 	'Scale', 88,
 	'Saturation', 0,
@@ -9876,10 +9888,10 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1210305527)
 PlaceObj('TropicalPlant_02_Tree_02', {
-	'Pos', point(91236, 157497),
+	'Pos', point(90144, 156953),
 	'Angle', 19271,
 	'Scale', 80,
 	'Saturation', 0,
@@ -9892,15 +9904,6 @@ PlaceObj('Mist', {
 	'AllowedMask', 4294966497,
 	'Preset', "Jungle_Mist",
 }, nil, 1849772429)
-PlaceObj('TropicalPlant_02_Tree_01', {
-	'Pos', point(90911, 160527),
-	'Angle', 13424,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'CollectionIndex', 388,
-	'AllowedMask', 4294967279,
-}, nil, 1367968956)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(90671, 160775),
 	'Angle', 20291,
@@ -9908,7 +9911,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1791007048)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(90347, 162904),
@@ -9917,17 +9920,8 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1696161145)
-PlaceObj('TropicalFillerPlants_02', {
-	'Pos', point(91512, 162100),
-	'Angle', 18054,
-	'Scale', 132,
-	'ForcedLODState', "Minimum",
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1892379216)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(92841, 160499),
 	'Angle', 16640,
@@ -9935,7 +9929,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1638612282)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(92221, 160789),
@@ -9944,7 +9938,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1301092384)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(93560, 159783),
@@ -9953,8 +9947,26 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1063816230)
+PlaceObj('TropicalFillerPlants_01', {
+	'Pos', point(93700, 161018),
+	'Angle', 282,
+	'Scale', 98,
+	'ForcedLODState', "Minimum",
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1216345187)
+PlaceObj('NoteMarker', {
+	'Pos', point(93624, 163057),
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 4294966497,
+	'Text', "LOOT",
+	'TextColor', RGBA(0, 72, 130, 255),
+	'TextStyle', "DescriptionTextAPRed",
+}, nil, 1775022939)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(94047, 162971),
 	'Angle', 18284,
@@ -9962,7 +9974,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1578612239)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(96251, 157485),
@@ -9970,10 +9982,10 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 134,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1360153294)
 PlaceObj('TropicalPlant_02_Tree_01', {
-	'Pos', point(96695, 158675),
+	'Pos', point(95603, 158131),
 	'Angle', 14006,
 	'Scale', 97,
 	'Saturation', 0,
@@ -9981,13 +9993,21 @@ PlaceObj('TropicalPlant_02_Tree_01', {
 	'CollectionIndex', 388,
 	'AllowedMask', 4294967279,
 }, nil, 1240595824)
+PlaceObj('TropicalFillerPlants_02', {
+	'Pos', point(96924, 159183),
+	'Angle', 19937,
+	'Scale', 110,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1063834493)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(96861, 159269),
 	'Angle', 21074,
 	'Scale', 130,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1312782517)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(95619, 162649),
@@ -9996,10 +10016,10 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1200328227)
 PlaceObj('TropicalPlant_02_Tree_02', {
-	'Pos', point(97507, 160304),
+	'Pos', point(96415, 159760),
 	'Angle', 12003,
 	'Scale', 87,
 	'Saturation', 0,
@@ -10013,7 +10033,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1854968552)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(96272, 161880),
@@ -10021,7 +10041,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 93,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1378946769)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(66796, 168239, 6960),
@@ -10079,7 +10099,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1209241311)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(68756, 169681, 6960),
@@ -10089,7 +10109,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1593978921)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(68541, 171525),
@@ -10098,7 +10118,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1005892260)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(71180, 163865),
@@ -10106,7 +10126,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1333202976)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(71400, 166027),
@@ -10115,7 +10135,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1880930350)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(73434, 166063),
@@ -10123,7 +10143,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1712739178)
 PlaceObj('TropicalPlant_Dead_03', {
 	'Pos', point(69950, 170068),
@@ -10139,7 +10159,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1270245144)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(65955, 174053),
@@ -10156,7 +10176,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1085112426)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(66987, 175862),
@@ -10203,7 +10223,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1551536010)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(66437, 176414, 6960),
@@ -10211,7 +10231,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1371980541)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(67497, 180180),
@@ -10219,7 +10239,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1091132254)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(68024, 176853),
@@ -10228,7 +10248,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1165694102)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(68243, 178117),
@@ -10237,7 +10257,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1521181396)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(69246, 176926),
@@ -10246,7 +10266,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1040028309)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(69854, 173314),
@@ -10255,7 +10275,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1323568074)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(70658, 178388),
@@ -10263,7 +10283,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1896962535)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(79606, 165839),
@@ -10272,7 +10292,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1012613968)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(79324, 167853),
@@ -10280,7 +10300,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1214819933)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(80302, 164089),
@@ -10289,7 +10309,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1414470124)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(80260, 170836),
@@ -10309,7 +10329,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1223902817)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(75824, 179190, 9501),
@@ -10318,7 +10338,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1703270871)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(79342, 172400),
@@ -10329,7 +10349,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ColorModifier', RGBA(68, 66, 66, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1195045749)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(78192, 179036),
@@ -10347,7 +10367,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1508075693)
 PlaceObj('TropicalPlant_04_Tree_02', {
 	'Pos', point(69522, 180534, 6960),
@@ -10374,7 +10394,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1077927291)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(69590, 187790),
@@ -10392,7 +10412,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1257725520)
 PlaceObj('TropicalPlant_Liana_04', {
 	'Pos', point(66422, 192594, 6950),
@@ -10400,7 +10420,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1355716768)
 PlaceObj('TropicalPlant_Liana_02', {
 	'Pos', point(68565, 195725),
@@ -10425,7 +10445,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1214649739)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(70703, 192836, 6958),
@@ -10434,7 +10454,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1403052712)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(71557, 192678),
@@ -10452,7 +10472,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1362140715)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(79181, 183086),
@@ -10481,7 +10501,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1140245252)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(85009, 167087),
@@ -10492,7 +10512,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ColorModifier', RGBA(68, 66, 66, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1803528947)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(85114, 169015),
@@ -10517,7 +10537,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1111189602)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(85153, 172793),
@@ -10554,7 +10574,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ColorModifier', RGBA(68, 66, 66, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1149462528)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(90047, 172272),
@@ -10563,7 +10583,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1878666657)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(86298, 179344),
@@ -10573,7 +10593,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ColorModifier', RGBA(68, 66, 66, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1442351927)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(90718, 164320),
@@ -10582,7 +10602,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1539932081)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(90703, 164828),
@@ -10591,7 +10611,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1671511555)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(90383, 167730),
@@ -10620,7 +10640,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1325781267)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(90798, 168961),
@@ -10629,7 +10649,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1710880085)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(91381, 168079),
@@ -10638,7 +10658,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1097239335)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(90736, 170524),
@@ -10647,20 +10667,39 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1754651012)
 PlaceObj('Mist', {
 	'Pos', point(95477, 167415, 7879),
 	'AllowedMask', 4294966497,
 	'Preset', "Jungle_Mist",
 }, nil, 1551674756)
+PlaceObj('TropicalPlant_02_Tree_02', {
+	'Pos', point(97228, 164851),
+	'Angle', 18511,
+	'Scale', 101,
+	'Axis', point(-647, 1235, 3851),
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'CollectionIndex', 388,
+	'AllowedMask', 4294967279,
+}, nil, 1165685406)
+PlaceObj('TropicalPlant_02_Tree_01', {
+	'Pos', point(97796, 165605),
+	'Angle', 18406,
+	'Scale', 113,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'CollectionIndex', 388,
+	'AllowedMask', 4294967279,
+}, nil, 1431973936)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(97472, 167861),
 	'Angle', 16302,
 	'Scale', 137,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1369526400)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(94721, 169218),
@@ -10678,7 +10717,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1502428551)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(94268, 171264),
@@ -10687,7 +10726,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1438783705)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(96797, 170305),
@@ -10707,7 +10746,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ColorModifier', RGBA(71, 70, 70, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1307656664)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(91927, 172740),
@@ -10716,7 +10755,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1725517549)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(92756, 172281),
@@ -10725,7 +10764,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1206284693)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(92325, 175425),
@@ -10773,7 +10812,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 117,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1164145567)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(105315, 137687),
@@ -10781,7 +10820,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 143,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1506243597)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(102130, 140846),
@@ -10789,7 +10828,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 115,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1846351584)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(100981, 146212),
@@ -10797,7 +10836,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 81,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1145076044)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(103345, 139975),
@@ -10805,7 +10844,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 147,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1728248642)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(103635, 140403),
@@ -10831,7 +10870,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1633467342)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(109358, 132289),
@@ -10839,7 +10878,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 101,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1099767058)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(107815, 141828, 8202),
@@ -10847,7 +10886,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 150,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1338295284)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(109981, 145419, 8227),
@@ -10873,7 +10912,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 122,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1061220037)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(102533, 148395),
@@ -10881,7 +10920,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 81,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1847684090)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(105289, 152284),
@@ -10889,15 +10928,15 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1619387323)
 PlaceObj('TropicalFillerPlants_03', {
-	'Pos', point(99229, 157972),
+	'Pos', point(100047, 157606),
 	'Angle', 15116,
 	'Scale', 133,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1549729179)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(100112, 158268),
@@ -10905,7 +10944,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 116,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1192211584)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(99359, 158795),
@@ -10913,7 +10952,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 94,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1262863498)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(100624, 159418),
@@ -10921,7 +10960,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 127,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1230676447)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(101914, 158082),
@@ -10929,23 +10968,15 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 118,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1287085102)
-PlaceObj('TropicalFillerPlants_02', {
-	'Pos', point(98759, 160876),
-	'Angle', 19937,
-	'Scale', 110,
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1063834493)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(100194, 162875),
 	'Angle', 19363,
 	'Scale', 143,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1359335426)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(102365, 160687),
@@ -10953,7 +10984,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1659656768)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(101468, 161043),
@@ -10961,7 +10992,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 118,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1506291238)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(102048, 163786),
@@ -10969,7 +11000,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 93,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1668245243)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(102739, 155657),
@@ -10977,7 +11008,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 96,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1767639844)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(103351, 160211),
@@ -10985,18 +11016,10 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 94,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1171226120)
-PlaceObj('TropicalFillerPlants_02', {
-	'Pos', point(103292, 163578),
-	'Angle', 14391,
-	'Scale', 98,
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1123466609)
 PlaceObj('TropicalPlant_02_Tree_02', {
-	'Pos', point(104356, 163111),
+	'Pos', point(103264, 162567),
 	'Angle', 20549,
 	'Scale', 114,
 	'Axis', point(-1295, 968, 3763),
@@ -11005,13 +11028,30 @@ PlaceObj('TropicalPlant_02_Tree_02', {
 	'CollectionIndex', 388,
 	'AllowedMask', 4294967279,
 }, nil, 1443915629)
+PlaceObj('TropicalFillerPlants_02', {
+	'Pos', point(103292, 163578),
+	'Angle', 14391,
+	'Scale', 98,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1123466609)
+PlaceObj('TropicalPlant_02_Tree_01', {
+	'Pos', point(104016, 163703),
+	'Angle', 18300,
+	'Scale', 105,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'CollectionIndex', 388,
+	'AllowedMask', 4294967279,
+}, nil, 1499617123)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(105009, 160609),
 	'Angle', 17047,
 	'Scale', 134,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1133253390)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(105225, 160370),
@@ -11019,7 +11059,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 102,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1252707693)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(106722, 151397),
@@ -11027,7 +11067,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1018072196)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(108435, 154033),
@@ -11035,7 +11075,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 99,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1086961251)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(113159, 153207),
@@ -11043,7 +11083,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 132,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1472538256)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(114135, 153038),
@@ -11051,7 +11091,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 101,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1228991931)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(112741, 155446),
@@ -11059,7 +11099,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 104,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1172929175)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(108419, 158710),
@@ -11067,7 +11107,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 112,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1196966786)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(109034, 159700),
@@ -11075,7 +11115,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 109,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1142502729)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(108420, 160537),
@@ -11083,7 +11123,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 89,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1119076238)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(108067, 161150),
@@ -11091,7 +11131,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 112,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1420873154)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(109243, 161162),
@@ -11099,7 +11139,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1238107672)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(110020, 162039),
@@ -11107,7 +11147,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 105,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1642814384)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(110695, 155762),
@@ -11115,7 +11155,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 105,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1718366978)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(112491, 160661),
@@ -11123,7 +11163,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 96,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1413740092)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(113094, 162278),
@@ -11131,7 +11171,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 136,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1858171860)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(114027, 162590),
@@ -11139,7 +11179,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1309096263)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(115603, 131254),
@@ -11174,7 +11214,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 88,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1310557988)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(116748, 131770),
@@ -11182,7 +11222,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 88,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1678658676)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(118401, 132736),
@@ -11190,7 +11230,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 87,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1621085983)
 PlaceObj('TropicalFillerPlants_08', {
 	'DetailClass', "Essential",
@@ -11201,7 +11241,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 53,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1727115036)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(119816, 131099),
@@ -11209,7 +11249,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1813810859)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(116077, 140130),
@@ -11218,7 +11258,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Axis', point(-400, 281, 4066),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1530071125)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(116352, 139819),
@@ -11227,7 +11267,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Axis', point(754, 2617, 3059),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1616276816)
 PlaceObj('Mist', {
 	'Pos', point(115881, 142565, 6661),
@@ -11240,7 +11280,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Axis', point(110, -1179, 3921),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1680029764)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(119790, 140350),
@@ -11248,7 +11288,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Axis', point(683, -1894, 3566),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1158201415)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(120405, 141226),
@@ -11257,7 +11297,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Axis', point(3115, 1420, 2248),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1722547965)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(120561, 142173),
@@ -11275,7 +11315,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Axis', point(0, -2620, 3148),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1561754048)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(121310, 141803),
@@ -11284,7 +11324,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Axis', point(250, 738, 4021),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1598888279)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(119322, 144210, 6234),
@@ -11293,7 +11333,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Axis', point(-507, -751, 3994),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1230441725)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(119461, 144312, 6234),
@@ -11302,7 +11342,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Axis', point(-618, -239, 4042),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1738824339)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(119815, 144271),
@@ -11311,7 +11351,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Axis', point(474, 807, 3987),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1245730291)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(120266, 144968),
@@ -11319,7 +11359,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 102,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1702043376)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(119457, 146349, 6234),
@@ -11328,7 +11368,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Axis', point(609, -3920, 1019),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1309967444)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(120014, 147070),
@@ -11336,7 +11376,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 91,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1070586105)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(121633, 143874),
@@ -11344,7 +11384,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 117,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1080424030)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(121450, 146281),
@@ -11353,7 +11393,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Axis', point(121, 696, 4034),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1223276637)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(129097, 131742),
@@ -11361,7 +11401,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1133978676)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(123021, 143735),
@@ -11369,7 +11409,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 90,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1140258244)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(115888, 153343),
@@ -11377,7 +11417,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 97,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1050060710)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(120448, 149809),
@@ -11385,7 +11425,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 88,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1170806001)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(121425, 148177),
@@ -11393,7 +11433,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 93,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1671901506)
 PlaceObj('Butterflies', {
 	'Pos', point(121649, 149772),
@@ -11406,7 +11446,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 101,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1323518488)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(115552, 162354),
@@ -11414,7 +11454,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 83,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1417547839)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(115337, 163109),
@@ -11422,7 +11462,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1262194044)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(116845, 163220),
@@ -11430,7 +11470,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 86,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1255893206)
 PlaceObj('TropicalPlant_04_Tree_02', {
 	'Pos', point(118068, 162457),
@@ -11448,7 +11488,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 85,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1742766926)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(119064, 158861),
@@ -11456,7 +11496,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 118,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1260769099)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(122120, 158630),
@@ -11464,7 +11504,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 116,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1693932698)
 PlaceObj('TropicalFillerPlants_06', {
 	'DetailClass', "Essential",
@@ -11474,7 +11514,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3953,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1610362485)
 PlaceObj('Butterflies', {
 	'Pos', point(120394, 159984),
@@ -11487,7 +11527,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 83,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1164635473)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(120764, 162397),
@@ -11495,7 +11535,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 82,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1342296883)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(122070, 160477),
@@ -11513,7 +11553,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 84,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1797024858)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(126648, 149350),
@@ -11521,7 +11561,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 89,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1603694454)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(126864, 149132),
@@ -11529,7 +11569,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 112,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1039354365)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(127493, 154914),
@@ -11537,7 +11577,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 102,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1127493028)
 PlaceObj('Butterflies', {
 	'Pos', point(123634, 159481),
@@ -11550,7 +11590,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 132,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1164132863)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(123866, 162528),
@@ -11569,14 +11609,14 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Axis', point(-1785, -471, 3656),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1054388813)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(125717, 163387),
 	'Angle', 15997,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1501657905)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(128055, 156905),
@@ -11584,7 +11624,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 102,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1556874448)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(128321, 157103),
@@ -11592,7 +11632,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 86,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1559200312)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(127668, 159096),
@@ -11600,7 +11640,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 91,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1629067083)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(128243, 158522),
@@ -11608,7 +11648,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 104,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1469313489)
 PlaceObj('Shanty_CardboardBox_02', {
 	'ColorizationPalette', "",
@@ -11636,7 +11676,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Angle', 9788,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1689453316)
 PlaceObj('TropicalPlant_06_Tree_02', {
 	'Pos', point(127693, 162393),
@@ -11670,7 +11710,7 @@ PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1315845093)
 PlaceObj('Shanty_CardboardBox_02', {
 	'ColorizationPalette', "",
@@ -11700,20 +11740,10 @@ PlaceObj('JungleCamp_NewspaperPile_01', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1117629509)
 PlaceObj('TropicalPlant_02_Tree_02', {
-	'Pos', point(98320, 165395),
-	'Angle', 18511,
-	'Scale', 101,
-	'Axis', point(-647, 1235, 3851),
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'CollectionIndex', 388,
-	'AllowedMask', 4294967279,
-}, nil, 1165685406)
-PlaceObj('TropicalPlant_02_Tree_02', {
-	'Pos', point(100064, 164673),
+	'Pos', point(98972, 164129),
 	'Angle', 12105,
 	'Scale', 87,
 	'Saturation', 0,
@@ -11721,49 +11751,8 @@ PlaceObj('TropicalPlant_02_Tree_02', {
 	'CollectionIndex', 388,
 	'AllowedMask', 4294967279,
 }, nil, 1087645366)
-PlaceObj('TropicalPlant_02_Tree_01', {
-	'Pos', point(98888, 166149),
-	'Angle', 18406,
-	'Scale', 113,
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'CollectionIndex', 388,
-	'AllowedMask', 4294967279,
-}, nil, 1431973936)
-PlaceObj('TropicalFillerPlants_06', {
-	'Pos', point(102257, 165521),
-	'Angle', 21065,
-	'Scale', 91,
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1572192926)
-PlaceObj('TropicalFillerPlants_06', {
-	'Pos', point(98308, 168132),
-	'Angle', 15194,
-	'Scale', 85,
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1444243616)
-PlaceObj('TropicalFillerPlants_08', {
-	'Pos', point(100676, 168498),
-	'Angle', 15128,
-	'Scale', 119,
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1149166104)
-PlaceObj('TropicalFillerPlants_06', {
-	'Pos', point(103403, 164081),
-	'Angle', 16851,
-	'Scale', 96,
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
-}, nil, 1014926147)
 PlaceObj('TropicalPlant_02_Tree_02', {
-	'Pos', point(103112, 165091),
+	'Pos', point(102020, 164547),
 	'Angle', 18070,
 	'Scale', 109,
 	'Saturation', 0,
@@ -11771,28 +11760,51 @@ PlaceObj('TropicalPlant_02_Tree_02', {
 	'CollectionIndex', 388,
 	'AllowedMask', 4294967279,
 }, nil, 1227316021)
+PlaceObj('TropicalFillerPlants_06', {
+	'Pos', point(102257, 165521),
+	'Angle', 21065,
+	'Scale', 91,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1572192926)
+PlaceObj('TropicalFillerPlants_06', {
+	'Pos', point(98308, 168132),
+	'Angle', 15194,
+	'Scale', 85,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1444243616)
+PlaceObj('TropicalFillerPlants_08', {
+	'Pos', point(100676, 168498),
+	'Angle', 15128,
+	'Scale', 119,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1149166104)
+PlaceObj('TropicalFillerPlants_06', {
+	'Pos', point(103403, 164081),
+	'Angle', 16851,
+	'Scale', 96,
+	'Saturation', 0,
+	'Gamma', RGBA(0, 0, 128, 255),
+	'AllowedMask', 0,
+}, nil, 1014926147)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(103269, 165506),
 	'Angle', 10807,
 	'Scale', 82,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1320968306)
 PlaceObj('Mist', {
 	'Pos', point(104146, 164399, 6576),
 	'AllowedMask', 4294966497,
 	'Preset', "Jungle_Mist",
 }, nil, 1093233946)
-PlaceObj('TropicalPlant_02_Tree_01', {
-	'Pos', point(105108, 164247),
-	'Angle', 18300,
-	'Scale', 105,
-	'Saturation', 0,
-	'Gamma', RGBA(0, 0, 128, 255),
-	'CollectionIndex', 388,
-	'AllowedMask', 4294967279,
-}, nil, 1499617123)
 PlaceObj('SoundSource', {
 	'Pos', point(105893, 168686, 11522),
 	'AllowedMask', 4294966497,
@@ -11846,7 +11858,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'Warped', true,
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1040553158)
 PlaceObj('TropicalPlant_Liana_02', {
 	'Pos', point(117285, 176583, 14438),
@@ -11867,7 +11879,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'Warped', true,
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1774890783)
 PlaceObj('TropicalPlant_Liana_01', {
 	'Pos', point(122605, 175847, 11839),
@@ -11907,7 +11919,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1890128068)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(129066, 165449, 10690),
@@ -11916,7 +11928,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Axis', point(1551, -68, 3790),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1169607515)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(123621, 174045, 12522),
@@ -11927,7 +11939,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'Warped', true,
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1344985584)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(129733, 175638, 12522),
@@ -11938,7 +11950,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'Warped', true,
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1209079671)
 PlaceObj('SoundSource', {
 	'Pos', point(126616, 193364, 22928),
@@ -11956,7 +11968,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1048090544)
 PlaceObj('TropicalPlant_Liana_01', {
 	'Pos', point(65987, 204011, 6958),
@@ -11984,7 +11996,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1030028005)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(72236, 197197),
@@ -11993,7 +12005,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1189333882)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(68592, 207235),
@@ -12063,7 +12075,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1353166282)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(89581, 198013, 20406),
@@ -12074,7 +12086,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1262367284)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(88902, 201204, 20525),
@@ -12085,7 +12097,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1254695491)
 PlaceObj('TropicalPlant_04_Tree_02', {
 	'Pos', point(92017, 199528, 19971),
@@ -12106,7 +12118,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1634289809)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(92735, 200409, 20130),
@@ -12116,7 +12128,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1027568646)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(90687, 205444, 20556),
@@ -12127,7 +12139,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1224561620)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(93456, 208485, 21229),
@@ -12137,7 +12149,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1541389802)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(96217, 220787),
@@ -12766,7 +12778,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1324711466)
 PlaceObj('CameraCollider', {
 	'Pos', point(132600, 87000, 12600),
@@ -12802,7 +12814,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1478461399)
 PlaceObj('CameraCollider', {
 	'Pos', point(135000, 89400, 12600),
@@ -12902,7 +12914,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1487132767)
 PlaceObj('CameraCollider', {
 	'Pos', point(137400, 91800, 12600),
@@ -13002,7 +13014,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1570771386)
 PlaceObj('CameraCollider', {
 	'Pos', point(147000, 87000, 12600),
@@ -13039,7 +13051,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1213035421)
 PlaceObj('CameraCollider', {
 	'Pos', point(139800, 94200, 12600),
@@ -13112,7 +13124,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1033084028)
 PlaceObj('CameraCollider', {
 	'Pos', point(147000, 91800, 12600),
@@ -13140,7 +13152,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1027652813)
 PlaceObj('CameraCollider', {
 	'Pos', point(144600, 96600, 12600),
@@ -13234,7 +13246,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1051497208)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(149200, 95300, 6300),
@@ -13289,7 +13301,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1880694006)
 PlaceObj('CameraCollider', {
 	'Pos', point(154200, 96600, 12600),
@@ -13471,7 +13483,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1140140888)
 PlaceObj('CameraCollider', {
 	'Pos', point(137400, 99000, 12600),
@@ -13595,7 +13607,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1134352822)
 PlaceObj('CameraCollider', {
 	'Pos', point(142200, 99000, 12600),
@@ -13668,7 +13680,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1096478342)
 PlaceObj('CameraCollider', {
 	'Pos', point(144600, 101400, 12600),
@@ -13786,7 +13798,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1034097089)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(141082, 110829, 12386),
@@ -13853,7 +13865,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1406558516)
 PlaceObj('CameraCollider', {
 	'Pos', point(145800, 111000, 12600),
@@ -13878,7 +13890,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1239222735)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(134398, 118770),
@@ -13886,7 +13898,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 95,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1694191186)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(132890, 120988),
@@ -13894,7 +13906,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 139,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1570733589)
 PlaceObj('Butterflies', {
 	'Pos', point(132820, 122372),
@@ -13907,7 +13919,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 95,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1071098603)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(134830, 119156),
@@ -13954,7 +13966,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1769815966)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(135025, 119713),
@@ -13981,7 +13993,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 95,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1121475663)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(131801, 123294),
@@ -13990,7 +14002,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1038082423)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(133506, 124962),
@@ -13998,7 +14010,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1396053673)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(133576, 126150),
@@ -14007,7 +14019,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1055380335)
 PlaceObj('Shanty_Canvas_02', {
 	'ColorizationPalette', "",
@@ -14019,7 +14031,7 @@ PlaceObj('Shanty_Canvas_02', {
 	'Scale', 123,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1405549128)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(134444, 130048),
@@ -14027,7 +14039,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1378298570)
 PlaceObj('Village_Basket_02', {
 	'Pos', point(134706, 130063, 7345),
@@ -14043,7 +14055,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1870541180)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(137209, 123941, 7208),
@@ -14061,7 +14073,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 82,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1848032251)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(137500, 124015),
@@ -14089,7 +14101,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 116,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1322455961)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(137750, 125050),
@@ -14097,7 +14109,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 118,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1093835213)
 PlaceObj('Village_Basket_02', {
 	'Pos', point(136634, 128559, 6847),
@@ -14125,7 +14137,7 @@ PlaceObj('Shanty_Canvas_01', {
 	'Scale', 123,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1055197681)
 PlaceObj('Shanty_CardboardBox_02', {
 	'ColorizationPalette', "",
@@ -14192,7 +14204,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1143560551)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(139638, 121090),
@@ -14228,7 +14240,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1040129048)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(139707, 122100, 7468),
@@ -14265,7 +14277,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 78,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1274849108)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(145354, 118480, 12572),
@@ -14273,7 +14285,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1048816942)
 PlaceObj('CameraCollider', {
 	'Pos', point(147000, 115800, 12600),
@@ -14463,7 +14475,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1211073961)
 PlaceObj('Scaffolding_Pillar_01', {
 	'Pos', point(147132, 118813, 12508),
@@ -14502,7 +14514,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 126,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1350421540)
 PlaceObj('CameraCollider', {
 	'Pos', point(147267, 121924, 6701),
@@ -14532,7 +14544,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1176787103)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(141198, 130958),
@@ -14540,7 +14552,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1501716931)
 PlaceObj('CameraCollider', {
 	'Pos', point(145215, 123778, 5337),
@@ -14587,7 +14599,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1166914387)
 PlaceObj('CameraCollider', {
 	'Pos', point(149400, 103800, 12600),
@@ -14854,7 +14866,7 @@ PlaceObj('Animal_Fish_School', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1278079008)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(159100, 105300, 6300),
@@ -14945,7 +14957,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1253639658)
 PlaceObj('CameraCollider', {
 	'Pos', point(163800, 106200, 12600),
@@ -15004,7 +15016,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1291233280)
 PlaceObj('CameraCollider', {
 	'Pos', point(162600, 108600, 12600),
@@ -15099,7 +15111,7 @@ PlaceObj('JungleCamp_Lantern_01', {
 	'Angle', 18440,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 	'AutoAttachMode', "Warm light A Strong",
 	'AllAttachedLightsToDetailLevel', "Essential",
 }, nil, 1304294454)
@@ -15291,7 +15303,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1037887128)
 PlaceObj('CameraCollider', {
 	'Pos', point(149400, 118095, 12400),
@@ -16096,7 +16108,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Angle', 20102,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1260977767)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(150913, 124477),
@@ -16104,7 +16116,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 106,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1767064990)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(147799, 128376, 6950),
@@ -16112,7 +16124,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1633173345)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(148274, 128000, 6950),
@@ -16120,7 +16132,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1685342973)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(151869, 123423),
@@ -16128,7 +16140,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 93,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1459777196)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(151660, 129995, 6949),
@@ -16136,7 +16148,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1038796872)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(154443, 130450),
@@ -16144,7 +16156,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 95,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1350597425)
 PlaceObj('Scaffolding_Pillar_01', {
 	'Pos', point(156000, 116400, 12400),
@@ -16683,7 +16695,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1251646491)
 PlaceObj('CameraCollider', {
 	'Pos', point(159268, 120767, 8801),
@@ -16713,7 +16725,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1861536728)
 PlaceObj('Scaffolding_Wall_04', {
 	'ColorizationPalette', "",
@@ -17011,7 +17023,7 @@ PlaceObj('BunkerInterior_AmmoBox_01', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2884,
 	'DestructionOverrideMask', 1,
-	'AllowedMask', 4294967279,
+	'AllowedMask', 782,
 }, nil, 1090205285)
 PlaceObj('FloorSlab', {
 	'Pos', point(161400, 121800, 16800),
@@ -17042,7 +17054,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1490744510)
 PlaceObj('Scaffolding_Pillar_01', {
 	'Pos', point(162000, 118800, 12400),
@@ -17319,7 +17331,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1113704733)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(156080, 125254),
@@ -17337,7 +17349,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Axis', point(41, 615, 4049),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1370194336)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(156295, 125048),
@@ -17373,7 +17385,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Axis', point(405, 29, 4075),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1543438917)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(157875, 123921),
@@ -17417,7 +17429,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1169571884)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(157198, 128807),
@@ -17425,7 +17437,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 95,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1156125182)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(158040, 128711, 6627),
@@ -17434,7 +17446,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Axis', point(1206, -389, 3895),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1584026727)
 PlaceObj('Ladder_Metal_02', {
 	'ColorizationPalette', "",
@@ -17567,7 +17579,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1736578755)
 PlaceObj('CameraCollider', {
 	'Pos', point(175800, 94200, 12600),
@@ -17603,7 +17615,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1386512939)
 PlaceObj('CameraCollider', {
 	'Pos', point(178200, 94200, 12600),
@@ -17695,7 +17707,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1566865882)
 PlaceObj('CameraCollider', {
 	'Pos', point(187800, 94200, 12600),
@@ -17742,7 +17754,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1761416292)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(189100, 95300, 6300),
@@ -17811,7 +17823,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1771874127)
 PlaceObj('CameraCollider', {
 	'Pos', point(166200, 99000, 12600),
@@ -17930,7 +17942,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1388405188)
 PlaceObj('CameraCollider', {
 	'Pos', point(171000, 101400, 12600),
@@ -17976,7 +17988,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1675414164)
 PlaceObj('CameraCollider', {
 	'Pos', point(171000, 103800, 12600),
@@ -18019,7 +18031,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1507227163)
 PlaceObj('CameraCollider', {
 	'Pos', point(165000, 111000, 12600),
@@ -18318,7 +18330,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1809899319)
 PlaceObj('CameraCollider', {
 	'Pos', point(178200, 99000, 12600),
@@ -18594,7 +18606,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 82,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1790238507)
 PlaceObj('TropicalPlant_Liana_01', {
 	'Pos', point(164560, 119494),
@@ -18770,7 +18782,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 630,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1713180542)
 PlaceObj('StairSlab', {
 	'Pos', point(166200, 121800, 13300),
@@ -18854,7 +18866,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 131,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1854296414)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(164609, 125365),
@@ -18889,7 +18901,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1383191086)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(165203, 126224),
@@ -18897,7 +18909,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 78,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1046663776)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(170296, 127722),
@@ -18905,7 +18917,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1416495392)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(170333, 128035),
@@ -18931,7 +18943,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1592779643)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(170727, 128868, 12190),
@@ -18940,7 +18952,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Axis', point(-1163, 3530, 1721),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1501453373)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(171127, 127801),
@@ -18975,7 +18987,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1536899823)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(172622, 116611),
@@ -19010,7 +19022,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 117,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1809740982)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(172233, 117861),
@@ -19018,7 +19030,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 82,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1056984744)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(173287, 117106),
@@ -19026,7 +19038,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1520164638)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(174231, 115497),
@@ -19043,7 +19055,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1203036204)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(174762, 115559),
@@ -19060,7 +19072,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1512350205)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(175755, 114781),
@@ -19077,7 +19089,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 82,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1640896482)
 PlaceObj('Flies', {
 	'Pos', point(175407, 117424),
@@ -19116,7 +19128,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1146541191)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(174420, 120373, 12549),
@@ -19153,7 +19165,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 88,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1376076932)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(175910, 118786),
@@ -19206,7 +19218,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 82,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1704321008)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(179100, 115300, 6300),
@@ -19223,7 +19235,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 109,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1063050850)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(178487, 115985),
@@ -19240,7 +19252,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 88,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1301006610)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(179106, 115893),
@@ -19248,7 +19260,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1317439927)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(172407, 127366),
@@ -19274,7 +19286,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1720051092)
 PlaceObj('CameraCollider', {
 	'Pos', point(180600, 99000, 12600),
@@ -19319,7 +19331,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1145225627)
 PlaceObj('CameraCollider', {
 	'Pos', point(180600, 103800, 12600),
@@ -19485,7 +19497,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1717248651)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(183998, 114672),
@@ -19612,7 +19624,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1604592642)
 PlaceObj('CameraCollider', {
 	'Pos', point(192600, 101400, 12600),
@@ -19766,7 +19778,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1328701373)
 PlaceObj('CameraCollider', {
 	'Pos', point(192600, 108600, 12600),
@@ -19814,7 +19826,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1640335130)
 PlaceObj('CameraCollider', {
 	'Pos', point(193800, 113400, 12600),
@@ -19885,7 +19897,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1679692302)
 PlaceObj('SoundSource', {
 	'Pos', point(182686, 121148, 12496),
@@ -19901,7 +19913,7 @@ PlaceObj('Shanty_Ball_01', {
 	'Angle', 8940,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1891737566)
 PlaceObj('SoundSource', {
 	'Pos', point(185436, 117825, 12418),
@@ -19937,14 +19949,14 @@ PlaceObj('JungleCamp_Flashlight_01', {
 	'Angle', 4080,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1325382501)
 PlaceObj('JungleCamp_Boots_02', {
 	'Pos', point(186020, 118728, 12542),
 	'Angle', 20640,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1242723725)
 PlaceObj('Scaffolding_Pillar_01', {
 	'Pos', point(186547, 116972, 12107),
@@ -19969,7 +19981,7 @@ PlaceObj('Shanty_Canvas_01', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2376,
 	'DestructionOverrideMask', 1,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1366855782)
 PlaceObj('BunkerInterior_AmmoBox_01', {
 	'ColorizationPalette', "",
@@ -20027,7 +20039,7 @@ PlaceObj('JungleCamp_NewspaperPile_02', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1382884751)
 PlaceObj('JungleCamp_NewspaperPile_01', {
 	'Pos', point(186740, 119079, 12540),
@@ -20035,7 +20047,7 @@ PlaceObj('JungleCamp_NewspaperPile_01', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1784639285)
 PlaceObj('JungleCamp_NewspaperPile_02', {
 	'Pos', point(186874, 119201, 12542),
@@ -20043,7 +20055,7 @@ PlaceObj('JungleCamp_NewspaperPile_02', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1828453069)
 PlaceObj('Shanty_Canvas_02', {
 	'ColorizationPalette', "",
@@ -20058,7 +20070,7 @@ PlaceObj('Shanty_Canvas_02', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2376,
 	'DestructionOverrideMask', 1,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1451408457)
 PlaceObj('Shanty_BottleCrate_01', {
 	'ColorizationPalette', "",
@@ -20110,7 +20122,7 @@ PlaceObj('Shanty_Canvas_02', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 1341,
 	'DestructionOverrideMask', 1,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1105817222)
 PlaceObj('Bunker_MetalBed_mattress', {
 	'ColorizationPalette', "",
@@ -20127,7 +20139,7 @@ PlaceObj('JungleCamp_Boots_01', {
 	'Angle', 12780,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1500614791)
 PlaceObj('Scaffolding_Pillar_01', {
 	'Pos', point(181091, 125482, 12172),
@@ -20209,7 +20221,7 @@ PlaceObj('Shanty_Canvas_01', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 1341,
 	'DestructionOverrideMask', 1,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1602286971)
 PlaceObj('Scaffolding_Pillar_01', {
 	'Pos', point(182921, 125879, 12172),
@@ -20254,7 +20266,7 @@ PlaceObj('JungleCamp_Boots_02', {
 	'Angle', 20280,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1094610527)
 PlaceObj('Shanty_BeerBottle_01', {
 	'Pos', point(184327, 123240, 12550),
@@ -20330,7 +20342,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 79,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1539298764)
 PlaceObj('Shanty_BeerBottle_01', {
 	'Pos', point(185158, 124456, 12550),
@@ -20389,7 +20401,7 @@ PlaceObj('JungleCamp_Boots_01', {
 	'Angle', 11820,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1786214376)
 PlaceObj('Shanty_BeerBottle_01', {
 	'Pos', point(185956, 124352, 12550),
@@ -20500,7 +20512,7 @@ PlaceObj('Shanty_Canvas_02', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3866,
 	'DestructionOverrideMask', 1,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1663206053)
 PlaceObj('Scaffolding_Pillar_01', {
 	'Pos', point(185376, 126888, 12107),
@@ -20525,7 +20537,7 @@ PlaceObj('Shanty_Canvas_01', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3866,
 	'DestructionOverrideMask', 1,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1045153151)
 PlaceObj('Scaffolding_Pillar_01', {
 	'Pos', point(187803, 125194, 12550),
@@ -20605,7 +20617,7 @@ PlaceObj('JungleCamp_Lantern_01', {
 	'Angle', 18440,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 	'AutoAttachMode', "Warm light A Strong",
 	'AllAttachedLightsToDetailLevel', "Essential",
 }, nil, 1040990883)
@@ -20627,21 +20639,21 @@ PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1807264549)
 PlaceObj('JungleCamp_FoodCanPile_03', {
 	'Pos', point(189517, 118443, 12530),
 	'Angle', 1380,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1527215530)
 PlaceObj('JungleCamp_FoodCanPile_06', {
 	'Pos', point(189838, 118752, 12526),
 	'Angle', 19560,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1899887532)
 PlaceObj('Shanty_CardboardBox_01', {
 	'ColorizationPalette', "",
@@ -20679,7 +20691,7 @@ PlaceObj('Shanty_CassetteRecorder_01', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 586,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1775524500)
 PlaceObj('Village_Basket_02', {
 	'Pos', point(191827, 118608, 13004),
@@ -20756,7 +20768,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(189165, 119311, 12540),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1622877999)
 PlaceObj('Shanty_BeerBottle_01', {
 	'Pos', point(189181, 119628, 12600),
@@ -20812,7 +20824,7 @@ PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1766578644)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(191925, 119345, 12550),
@@ -20820,7 +20832,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1465811995)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(192360, 119567, 12550),
@@ -20828,7 +20840,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 99,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1064530411)
 PlaceObj('Shanty_BeerBottle_01', {
 	'Pos', point(191592, 120323, 12552),
@@ -20845,7 +20857,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'ColorModifier', RGBA(60, 60, 60, 255),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1791785841)
 PlaceObj('JungleCamp_FirePlace_01', {
 	'Pos', point(191545, 122009, 12548),
@@ -20923,7 +20935,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 81,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1684760342)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(192699, 121454, 12562),
@@ -20931,7 +20943,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1364376790)
 PlaceObj('Village_Basket_02', {
 	'Pos', point(196310, 120698, 12904),
@@ -20978,7 +20990,7 @@ PlaceObj('Scaffolding_Planks_02', {
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
 	'CollectionIndex', 1969,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1210106180)
 PlaceObj('Shanty_BeerBottle_01', {
 	'Pos', point(196301, 121475, 13486),
@@ -21222,7 +21234,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1613132083)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(195540, 127472, 12600),
@@ -21230,7 +21242,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1492271870)
 PlaceObj('CameraCollider', {
 	'Pos', point(196200, 127800, 12600),
@@ -21828,7 +21840,7 @@ PlaceObj('Shanty_Canvas_01', {
 	'ColorModifier', RGBRM(100, 100, 100, -60, 0),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 	'SwayType', "Never Sway",
 }, nil, 1711791223)
 PlaceObj('Shanty_Tire', {
@@ -21865,7 +21877,7 @@ PlaceObj('Animal_Fish_School', {
 	'Pos', point(207131, 98282, 2370),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1883987828)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(209100, 95300, 6300),
@@ -21885,7 +21897,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1382012681)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(219100, 75300, 6300),
@@ -21945,7 +21957,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1557407536)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(229100, 95300, 6300),
@@ -21984,7 +21996,7 @@ PlaceObj('Shanty_Fan_02', {
 	'StateText', "off",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1310146053)
 PlaceObj('CameraCollider', {
 	'Pos', point(197400, 103800, 12600),
@@ -22030,7 +22042,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Axis', point(-219, 0, 4090),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1430660195)
 PlaceObj('CameraCollider', {
 	'Pos', point(199800, 106200, 12600),
@@ -22058,7 +22070,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1526347732)
 PlaceObj('CameraCollider', {
 	'Pos', point(203400, 101400, 12600),
@@ -22145,7 +22157,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1188167828)
 PlaceObj('CameraCollider', {
 	'Pos', point(203400, 108600, 12600),
@@ -22286,7 +22298,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1265963437)
 PlaceObj('CameraCollider', {
 	'Pos', point(205800, 108600, 12600),
@@ -22358,7 +22370,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1735732436)
 PlaceObj('CameraCollider', {
 	'Pos', point(210600, 111000, 12600),
@@ -22506,7 +22518,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1614049423)
 PlaceObj('BeachMarker', {
 	'Pos', point(201242, 117107, 12576),
@@ -22547,7 +22559,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1380922783)
 PlaceObj('CameraCollider', {
 	'Pos', point(201000, 120600, 12600),
@@ -22661,7 +22673,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1354866763)
 PlaceObj('CameraCollider', {
 	'Pos', point(201000, 130200, 12600),
@@ -22785,7 +22797,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1306668764)
 PlaceObj('CameraCollider', {
 	'Pos', point(210600, 120600, 12600),
@@ -22803,7 +22815,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1255455447)
 PlaceObj('CameraCollider', {
 	'Pos', point(205800, 123000, 12600),
@@ -22821,7 +22833,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1855460523)
 PlaceObj('CameraCollider', {
 	'Pos', point(205800, 125400, 12600),
@@ -23030,7 +23042,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1114921254)
 PlaceObj('WaterPlaneWaves', {
 	'Pos', point(229100, 105300, 6300),
@@ -23049,7 +23061,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1719651907)
 PlaceObj('CameraCollider', {
 	'Pos', point(213000, 115800, 12600),
@@ -23084,7 +23096,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1702560068)
 PlaceObj('CameraCollider', {
 	'Pos', point(213000, 120600, 12600),
@@ -23282,7 +23294,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1738294798)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(236340, 94892),
@@ -23379,7 +23391,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1626377289)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(238214, 91647),
@@ -24345,14 +24357,14 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1052486746)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(136027, 131542),
 	'Angle', 21360,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1008063895)
 PlaceObj('Shanty_BottleCrate_01', {
 	'ColorizationPalette', "",
@@ -24405,7 +24417,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2393,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1395305107)
 PlaceObj('Flies', {
 	'Pos', point(136896, 134515),
@@ -24512,7 +24524,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 83,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1118184613)
 PlaceObj('Shanty_BottleCrate_01', {
 	'ColorizationPalette', "",
@@ -24552,7 +24564,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 123,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1640227210)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(138253, 141777),
@@ -24560,7 +24572,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1094029896)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(136708, 143716, 6950),
@@ -24568,7 +24580,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1420017796)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(136715, 143712, 6958),
@@ -24576,7 +24588,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1110551848)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(136208, 144587),
@@ -24624,7 +24636,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 150,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1698879510)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(138388, 144570),
@@ -24632,7 +24644,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1453838516)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(139147, 145141, 6956),
@@ -24640,7 +24652,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 123,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1574763155)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(138291, 145595, 6960),
@@ -24649,7 +24661,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Axis', point(10, 84, 4095),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1077324694)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(139803, 133032),
@@ -24657,7 +24669,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1143226074)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(140993, 133408),
@@ -24665,7 +24677,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 84,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1775437594)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(139509, 138321),
@@ -24673,7 +24685,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1155734853)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(141663, 137604),
@@ -24681,7 +24693,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 101,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1262199556)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(141857, 138048),
@@ -24689,7 +24701,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 95,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1168042929)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(145234, 132588, 6950),
@@ -24697,7 +24709,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1223302912)
 PlaceObj('JungleCamp_Lantern_01', {
 	'ColorizationPalette', "",
@@ -24708,7 +24720,7 @@ PlaceObj('JungleCamp_Lantern_01', {
 	'Angle', 19449,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 	'AutoAttachMode', "Warm light A Strong",
 	'AllAttachedLightsToDetailLevel', "Essential",
 }, nil, 1566266905)
@@ -24728,7 +24740,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1805667667)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(146658, 138515),
@@ -24736,7 +24748,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 131,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1358266079)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(146868, 138483, 6993),
@@ -24782,7 +24794,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2902,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1159674556)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(142139, 141891, 6956),
@@ -24790,7 +24802,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 131,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1003506694)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(139576, 146845, 6954),
@@ -24798,7 +24810,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 90,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1702452226)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(141154, 145855, 6851),
@@ -24807,7 +24819,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Axis', point(-2307, 1319, 3116),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1436869254)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(140888, 147031, 6960),
@@ -24816,7 +24828,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Axis', point(901, 1818, 3557),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1826514304)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(141867, 147428, 6960),
@@ -24873,7 +24885,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Axis', point(889, -423, 3975),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1357897687)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(132345, 148308),
@@ -24881,7 +24893,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1281299913)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(133843, 147922),
@@ -24889,7 +24901,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 110,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1516368893)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(133760, 149091),
@@ -24897,7 +24909,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 104,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1048632829)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(134649, 151584, 6960),
@@ -24906,7 +24918,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Axis', point(-355, 151, 4077),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1520247122)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(139206, 148329, 7959),
@@ -24914,7 +24926,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Axis', point(-400, -486, 4047),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1062321092)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(135173, 152629, 6950),
@@ -24923,7 +24935,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Axis', point(92, 55, 4094),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1420091450)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(137697, 152376),
@@ -24931,7 +24943,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 134,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1140255915)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(139019, 153464),
@@ -24939,7 +24951,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 136,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1283250760)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(133207, 155862),
@@ -24948,7 +24960,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Axis', point(-26, -2, 4096),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1073314046)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(133716, 159711),
@@ -24956,7 +24968,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1173825082)
 PlaceObj('Flies', {
 	'Pos', point(131375, 159921, 6956),
@@ -24975,13 +24987,13 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Angle', 218,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1040048882)
 PlaceObj('Shanty_Ball_01', {
 	'Pos', point(131387, 160710, 7055),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1226274281)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(132013, 161555, 7469),
@@ -24990,7 +25002,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Axis', point(652, -345, 4029),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1667782443)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(132845, 160007),
@@ -24998,7 +25010,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1205411697)
 PlaceObj('Shanty_Sofa_01', {
 	'ColorizationPalette', "",
@@ -25028,7 +25040,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Angle', 5280,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1739609124)
 PlaceObj('JungleCamp_NewspaperPile_02', {
 	'Pos', point(133327, 161743, 7008),
@@ -25037,7 +25049,7 @@ PlaceObj('JungleCamp_NewspaperPile_02', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1444237265)
 PlaceObj('BunkerInterior_PlatePile_05', {
 	'Pos', point(134736, 161349, 7274),
@@ -25045,7 +25057,7 @@ PlaceObj('BunkerInterior_PlatePile_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2281,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1037630821)
 PlaceObj('Marketplace_Table_04', {
 	'Pos', point(134942, 161429),
@@ -25062,21 +25074,21 @@ PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1290503426)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(133657, 162120, 6961),
 	'Angle', 760,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1171545524)
 PlaceObj('JungleCamp_Lantern_01', {
 	'Pos', point(133870, 162701),
 	'Angle', 14760,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 	'AutoAttachMode', "Warm light B",
 	'AllAttachedLightsToDetailLevel', "Essential",
 }, nil, 1886272795)
@@ -25115,7 +25127,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1239935407)
 PlaceObj('Village_Basket_02', {
 	'Pos', point(137716, 156794, 6936),
@@ -25156,7 +25168,7 @@ PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1082013173)
 PlaceObj('Flies', {
 	'Pos', point(138652, 157206, 6956),
@@ -25177,7 +25189,7 @@ PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1382141114)
 PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Pos', point(137336, 158602),
@@ -25186,7 +25198,7 @@ PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1778533378)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(137267, 159005),
@@ -25194,7 +25206,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1861966682)
 PlaceObj('BunkerInterior_AmmoBox_01', {
 	'ColorizationPalette', "",
@@ -25213,7 +25225,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Angle', 10304,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1444102587)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(137483, 162114),
@@ -25221,14 +25233,14 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1155950773)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(137611, 163035),
 	'Angle', 2340,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1423129162)
 PlaceObj('Shanty_LaverMetal_02', {
 	'Pos', point(137537, 163726),
@@ -25256,7 +25268,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 81,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1145190419)
 PlaceObj('TropicalPlant_06_Tree_02', {
 	'Pos', point(141289, 155122),
@@ -25270,7 +25282,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Angle', 18800,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1196949531)
 PlaceObj('Shanty_BeerBottle_01', {
 	'Pos', point(139701, 157316, 6989),
@@ -25295,7 +25307,7 @@ PlaceObj('JungleCamp_NewspaperPile_02', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1534011238)
 PlaceObj('Shanty_BottleCrate_01', {
 	'ColorizationPalette', "",
@@ -25315,7 +25327,7 @@ PlaceObj('JungleCamp_NewspaperPile_03', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'SunShadow', false,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1618373294)
 PlaceObj('Shanty_PlasticChair_03', {
 	'ColorizationPalette', "",
@@ -25345,7 +25357,7 @@ PlaceObj('Shanty_CassetteRecorder_01', {
 	'Axis', point(-1766, -2675, 2549),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1247261631)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(142929, 158380, 6950),
@@ -25353,7 +25365,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 92,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1461876747)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(143219, 158468, 6950),
@@ -25361,7 +25373,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 87,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1643641010)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(139700, 163388),
@@ -25369,7 +25381,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1029934559)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(145640, 157037, 7981),
@@ -25377,7 +25389,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Axis', point(263, 698, 4027),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1603339226)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(145744, 158494, 6960),
@@ -25386,7 +25398,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Axis', point(-428, 306, 4062),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1468629281)
 PlaceObj('NoteMarker', {
 	'Pos', point(147298, 162730),
@@ -25404,7 +25416,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Axis', point(2402, -2343, 2348),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1893489987)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(148313, 142279, 6958),
@@ -25412,7 +25424,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 123,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1742834827)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(149560, 140842, 7016),
@@ -25440,7 +25452,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 123,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1606194593)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(149712, 141419, 6960),
@@ -25497,7 +25509,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Axis', point(819, -116, 4011),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1525474907)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(149565, 145856, 6958),
@@ -25514,7 +25526,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 153,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1344954106)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(157747, 135206, 6665),
@@ -25523,7 +25535,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Axis', point(95, 722, 4030),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1150712805)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(162746, 134367),
@@ -25531,7 +25543,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 86,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1260983405)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(161785, 135479),
@@ -25539,7 +25551,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 86,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1798293318)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(161798, 138629),
@@ -25547,7 +25559,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 94,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1682804089)
 PlaceObj('TropicalFillerPlants_05', {
 	'DetailClass', "Essential",
@@ -25558,7 +25570,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2916,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1537353902)
 PlaceObj('TropicalFillerPlants_05', {
 	'DetailClass', "Essential",
@@ -25569,7 +25581,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2916,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1100931106)
 PlaceObj('TropicalFillerPlants_04', {
 	'DetailClass', "Essential",
@@ -25579,7 +25591,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2916,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1340174842)
 PlaceObj('TropicalFillerPlants_05', {
 	'DetailClass', "Essential",
@@ -25590,7 +25602,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 2916,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1001063789)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(160053, 140063),
@@ -25598,7 +25610,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 99,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1025562567)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(148277, 147755),
@@ -25616,7 +25628,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Axis', point(369, -989, 3957),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1146062562)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(151011, 148209, 6959),
@@ -25671,7 +25683,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 99,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1653341749)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(153084, 148995, 6155),
@@ -25680,7 +25692,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Axis', point(417, 207, 4069),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1870720194)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(153121, 149723, 6950),
@@ -25688,7 +25700,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 160,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1294447931)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(153345, 151303, 7266),
@@ -25696,7 +25708,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Axis', point(1799, -516, 3643),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1583665999)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(151804, 152951, 6960),
@@ -25704,7 +25716,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 138,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1241075183)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(153294, 152442, 6972),
@@ -25713,7 +25725,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Axis', point(82, 564, 4056),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1750324766)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(149699, 159563, 6950),
@@ -25721,14 +25733,14 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Axis', point(-146, 142, 4090),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1689523686)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(151380, 159286, 6950),
 	'Angle', 15465,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1296433570)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(152274, 156055, 6950),
@@ -25737,7 +25749,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Axis', point(-223, 268, 4081),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1245992072)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(153000, 156600, 7000),
@@ -25745,7 +25757,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1257251296)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(152469, 158873, 6950),
@@ -25753,7 +25765,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1206623115)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(152726, 158827, 6950),
@@ -25761,7 +25773,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1829109145)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(153933, 158409),
@@ -25769,14 +25781,14 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1375201951)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(152268, 160537, 6950),
 	'Angle', 15465,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1342375299)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(154914, 159758),
@@ -25784,7 +25796,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1461888320)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(159655, 150928),
@@ -25792,7 +25804,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1675733889)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(159874, 149583),
@@ -25801,7 +25813,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 1700,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1565088645)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(159932, 149568, 6849),
@@ -25811,14 +25823,14 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 1700,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1383856731)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(156486, 157085, 6959),
 	'Angle', 10520,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1074836350)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(161594, 163545),
@@ -25826,7 +25838,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1820715061)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(132273, 166730, 9993),
@@ -25835,7 +25847,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'Axis', point(757, -1177, 3849),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1126672558)
 PlaceObj('SoundSource', {
 	'Pos', point(133519, 163923, 7915),
@@ -25854,7 +25866,7 @@ PlaceObj('JungleCamp_Radio_01', {
 	'Angle', 17040,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1479728748)
 PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Pos', point(136796, 164094),
@@ -25862,7 +25874,7 @@ PlaceObj('JungleCamp_FoodCanPile_02', {
 	'Scale', 138,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 4294967279,
 }, nil, 1744322397)
 PlaceObj('Shanty_Shelves_04', {
 	'ColorizationPalette', "",
@@ -25888,7 +25900,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1276307164)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(142186, 166482),
@@ -25919,7 +25931,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1107085116)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(144253, 169940),
@@ -25965,7 +25977,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 94,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1109692408)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(147698, 164608),
@@ -25973,7 +25985,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1266937212)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(147800, 165875),
@@ -25981,7 +25993,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 92,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1504209690)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(149502, 165618),
@@ -25989,7 +26001,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 85,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1550281043)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(149834, 166271),
@@ -25997,7 +26009,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 92,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1853145076)
 PlaceObj('Butterflies', {
 	'Pos', point(152203, 171806),
@@ -26010,7 +26022,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1566732002)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(154597, 170686),
@@ -26018,7 +26030,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1006959873)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(153945, 171023),
@@ -26026,7 +26038,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 96,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1167331550)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(155080, 171619),
@@ -26034,7 +26046,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1156723600)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(150216, 172703),
@@ -26042,7 +26054,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 87,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1591545110)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(150285, 176099),
@@ -26050,7 +26062,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 105,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1285272747)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(151308, 177943),
@@ -26058,7 +26070,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1557449935)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(152585, 175672),
@@ -26066,7 +26078,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 101,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1860437670)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(153735, 175719),
@@ -26074,7 +26086,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 99,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1209998703)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(162686, 163927, 6950),
@@ -26083,7 +26095,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Axis', point(-1034, 399, 3943),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1322590145)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(162662, 163976),
@@ -26091,7 +26103,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1536556504)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(162407, 170762),
@@ -26108,7 +26120,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 85,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1368787136)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(147712, 185576),
@@ -26116,7 +26128,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 105,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1845822116)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(150736, 186675, 6948),
@@ -26124,7 +26136,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 88,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1774636571)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(152376, 192711),
@@ -26132,7 +26144,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 105,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1010857519)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(154910, 193536),
@@ -26141,7 +26153,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1284509559)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(159589, 187640),
@@ -26149,7 +26161,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1485144909)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(156446, 196118),
@@ -26158,7 +26170,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1276146917)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(157036, 195342),
@@ -26167,7 +26179,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1836784349)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(160741, 188428),
@@ -26175,7 +26187,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1555866953)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(164097, 133212),
@@ -26183,7 +26195,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 85,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1086230900)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(166149, 135969),
@@ -26208,7 +26220,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Angle', 11468,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1044794279)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(166627, 136250),
@@ -26234,7 +26246,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 107,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1841260458)
 PlaceObj('CoastalPlant_01_Tree_03', {
 	'Pos', point(169630, 138193),
@@ -26251,7 +26263,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1337964909)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(170020, 137922),
@@ -26268,7 +26280,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 86,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1484203809)
 PlaceObj('Mist', {
 	'Pos', point(167417, 141149, 12296),
@@ -26473,7 +26485,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 86,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1795498218)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(174579, 138423),
@@ -26533,7 +26545,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 104,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1867546087)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(172409, 139829),
@@ -26568,7 +26580,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 115,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1147382712)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(172560, 142937),
@@ -26576,7 +26588,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 115,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1301431864)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(174671, 140003),
@@ -26584,7 +26596,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 84,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1172941613)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(174350, 141200),
@@ -26650,7 +26662,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1021820369)
 PlaceObj('CameraCollider', {
 	'Pos', point(175800, 147000, 12600),
@@ -26665,7 +26677,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1066363812)
 PlaceObj('CameraCollider', {
 	'Pos', point(177000, 142200, 12600),
@@ -26755,7 +26767,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1156394842)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(167464, 162730),
@@ -26763,7 +26775,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 117,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1069776207)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(167595, 162704, 6693),
@@ -26772,7 +26784,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Axis', point(339, 3939, 1069),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1052360700)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(168963, 159781),
@@ -26780,7 +26792,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 91,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1338931386)
 PlaceObj('CameraCollider', {
 	'Pos', point(173400, 149400, 12600),
@@ -26845,7 +26857,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1574510576)
 PlaceObj('CameraCollider', {
 	'Pos', point(178200, 149400, 12600),
@@ -26924,7 +26936,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 159,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1464639495)
 PlaceObj('CameraCollider', {
 	'Pos', point(181800, 137400, 12600),
@@ -27017,7 +27029,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1277532438)
 PlaceObj('CameraCollider', {
 	'Pos', point(183000, 139800, 12600),
@@ -27066,7 +27078,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1760750530)
 PlaceObj('CameraCollider', {
 	'Pos', point(183000, 147000, 12600),
@@ -27091,7 +27103,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1301872173)
 PlaceObj('CameraCollider', {
 	'Pos', point(187800, 139800, 12600),
@@ -27147,7 +27159,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 150,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1721484198)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(189401, 131116, 12550),
@@ -27241,7 +27253,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1843075725)
 PlaceObj('CameraCollider', {
 	'Pos', point(191400, 137400, 12600),
@@ -27290,7 +27302,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1716983213)
 PlaceObj('CameraCollider', {
 	'Pos', point(196200, 135000, 12600),
@@ -27347,7 +27359,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1741867308)
 PlaceObj('CameraCollider', {
 	'Pos', point(191400, 142200, 12600),
@@ -27389,7 +27401,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1760102628)
 PlaceObj('CameraCollider', {
 	'Pos', point(192600, 139800, 12600),
@@ -27469,7 +27481,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 137,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1772760645)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(182612, 148831, 12033),
@@ -27477,7 +27489,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1754527127)
 PlaceObj('CameraCollider', {
 	'Pos', point(183000, 149400, 12600),
@@ -27524,7 +27536,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 159,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1449969400)
 PlaceObj('Shanty_BottleCrate_01', {
 	'ColorizationPalette', "",
@@ -27558,7 +27570,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1351869677)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(185223, 148178, 12033),
@@ -27566,7 +27578,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1718671662)
 PlaceObj('CameraCollider', {
 	'Pos', point(185400, 149400, 12600),
@@ -27627,7 +27639,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 124,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1338259142)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(187403, 153324),
@@ -27659,7 +27671,7 @@ PlaceObj('Shanty_Canvas_02', {
 	'Scale', 23,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1257633039)
 PlaceObj('JungleCamp_Lantern_01', {
 	'ColorizationPalette', "",
@@ -27670,7 +27682,7 @@ PlaceObj('JungleCamp_Lantern_01', {
 	'Angle', 18440,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 	'AutoAttachMode', "Warm light A",
 	'AllAttachedLightsToDetailLevel', "Essential",
 }, nil, 1571925297)
@@ -27688,7 +27700,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Axis', point(-653, 544, 4006),
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1349453459)
 PlaceObj('World_AfricanTotem_04', {
 	'ColorizationPalette', "",
@@ -27696,9 +27708,11 @@ PlaceObj('World_AfricanTotem_04', {
 	'EditableColor2', RGBA(172, 44, 38, 255),
 	'Pos', point(182003, 158545, 9800),
 	'Angle', 2237,
+	'Groups', {
+		"ShrineBanter",
+	},
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'CollectionIndex', 2924,
 	'AllowedMask', 4294967279,
 }, nil, 1125324755)
 PlaceObj('World_AfricanTotem_01', {
@@ -27707,9 +27721,11 @@ PlaceObj('World_AfricanTotem_01', {
 	'EditableColor2', RGBA(172, 44, 38, 255),
 	'Pos', point(181421, 159371, 9800),
 	'Angle', 5614,
+	'Groups', {
+		"ShrineBanter",
+	},
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'CollectionIndex', 2924,
 	'AllowedMask', 4294967279,
 }, nil, 1313856361)
 PlaceObj('World_AfricanTotem_05', {
@@ -27718,9 +27734,11 @@ PlaceObj('World_AfricanTotem_05', {
 	'EditableColor2', RGBA(172, 44, 38, 255),
 	'Pos', point(182379, 159245, 9800),
 	'Angle', 2636,
+	'Groups', {
+		"ShrineBanter",
+	},
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'CollectionIndex', 2924,
 	'AllowedMask', 4294967279,
 }, nil, 1544814051)
 PlaceObj('TropicalFillerPlants_05', {
@@ -27731,7 +27749,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3058,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1556380687)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(188021, 156977, 12088),
@@ -27741,7 +27759,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3058,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1659705516)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(188151, 157087, 12542),
@@ -27750,7 +27768,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3058,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1543333955)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(187924, 163753),
@@ -27758,7 +27776,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 132,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1899888968)
 PlaceObj('CameraCollider', {
 	'Pos', point(190200, 149400, 12600),
@@ -27830,7 +27848,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 99,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1820010205)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(166014, 165073),
@@ -27838,7 +27856,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1880974263)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(166021, 168511),
@@ -27900,7 +27918,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 101,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1058191384)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(173795, 165359),
@@ -27908,7 +27926,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1336488349)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(172229, 166895),
@@ -27916,7 +27934,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1002173458)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(173289, 165977),
@@ -27933,7 +27951,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 112,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1458866370)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(174010, 170394),
@@ -27941,7 +27959,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 116,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1379796564)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(174437, 169760),
@@ -27958,7 +27976,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 111,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1549017908)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(175576, 168457),
@@ -27966,7 +27984,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 118,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1803572754)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(175536, 168744),
@@ -27974,7 +27992,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 118,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1090941174)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(175936, 169676),
@@ -27982,7 +28000,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 108,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1327760943)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(174698, 170291),
@@ -27990,7 +28008,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 82,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1035492170)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(174731, 171084),
@@ -27998,7 +28016,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 92,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1081296912)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(175043, 171924),
@@ -28006,7 +28024,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 94,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1376081809)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(175245, 170702),
@@ -28014,7 +28032,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 103,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1207342760)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(164260, 184546),
@@ -28022,7 +28040,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1054524333)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(164665, 185485),
@@ -28030,7 +28048,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 96,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1007197561)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(171235, 191879),
@@ -28038,7 +28056,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 89,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1718032486)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(171877, 192447),
@@ -28065,7 +28083,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 90,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1699530062)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(175180, 193627),
@@ -28087,7 +28105,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 84,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1373414413)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(182525, 167250),
@@ -28095,7 +28113,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 86,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1470028305)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(182875, 168324),
@@ -28103,7 +28121,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1840275579)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(183079, 168377),
@@ -28111,7 +28129,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1860315088)
 PlaceObj('Butterflies', {
 	'Pos', point(186037, 165312),
@@ -28125,7 +28143,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3248,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1189819284)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(181142, 175482),
@@ -28133,7 +28151,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1048181152)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(181672, 179334),
@@ -28141,7 +28159,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 113,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1202182444)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(181622, 179832),
@@ -28149,7 +28167,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 119,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1196609638)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(182717, 179303),
@@ -28157,7 +28175,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1716737060)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(182516, 180022),
@@ -28165,7 +28183,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 116,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1889452835)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(188308, 175469),
@@ -28173,7 +28191,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 96,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1766820762)
 PlaceObj('TropicalFillerPlants_01', {
 	'Pos', point(184579, 177149),
@@ -28181,7 +28199,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 87,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1837069260)
 PlaceObj('TropicalFillerPlants_05', {
 	'Pos', point(188648, 164189),
@@ -28189,7 +28207,7 @@ PlaceObj('TropicalFillerPlants_05', {
 	'Scale', 78,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1880098264)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(191850, 164686),
@@ -28197,7 +28215,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1810056274)
 PlaceObj('TropicalFillerPlants_04', {
 	'Pos', point(196243, 165911),
@@ -28205,7 +28223,7 @@ PlaceObj('TropicalFillerPlants_04', {
 	'Scale', 114,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1058253751)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(188960, 175132),
@@ -28213,7 +28231,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 80,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1427956281)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(189443, 176065),
@@ -28221,7 +28239,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 98,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1644015466)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(194478, 178344),
@@ -28229,7 +28247,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 101,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1789365924)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(194567, 180010),
@@ -28237,7 +28255,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 85,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1526208520)
 PlaceObj('Butterflies', {
 	'Pos', point(180586, 182907, 6938),
@@ -28250,7 +28268,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Scale', 112,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1757220951)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(188121, 182997),
@@ -28267,7 +28285,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 118,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1464755013)
 PlaceObj('SoundSource', {
 	'Pos', point(188043, 189572, 13003),
@@ -28284,7 +28302,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'Scale', 105,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1449549298)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(191737, 182583),
@@ -28315,7 +28333,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'Scale', 99,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1712734941)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(194210, 181396),
@@ -28361,7 +28379,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1899506236)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(145646, 228923, 16372),
@@ -28370,7 +28388,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1871318077)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(155657, 198325),
@@ -28453,7 +28471,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1225435415)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(148494, 227412, 15386),
@@ -28514,7 +28532,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
 	'CollectionIndex', 3162,
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1419399110)
 PlaceObj('TropicalPlant_Liana_01', {
 	'Pos', point(135302, 240410),
@@ -28533,7 +28551,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1820900452)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(142268, 233263, 17916),
@@ -28559,7 +28577,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1033321586)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(140861, 236869, 18482),
@@ -28568,7 +28586,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1123792031)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(146100, 231992, 17368),
@@ -28577,7 +28595,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1422702556)
 PlaceObj('TropicalPlant_02_Tree_02', {
 	'Pos', point(146856, 232420, 17382),
@@ -28595,7 +28613,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1506419225)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(145718, 235598, 18182),
@@ -28604,7 +28622,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1251197112)
 PlaceObj('TropicalPlant_04_Tree_02', {
 	'Pos', point(145342, 239050, 18530),
@@ -28643,7 +28661,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1536043123)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(151519, 243090),
@@ -28652,7 +28670,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1049228024)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(152285, 237943),
@@ -28662,7 +28680,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1024464925)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(153067, 240867),
@@ -28671,7 +28689,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1096942751)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(154159, 241062),
@@ -28680,7 +28698,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1004251801)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(154049, 242591),
@@ -28707,7 +28725,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1709405699)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(161936, 236885),
@@ -28717,7 +28735,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1263731461)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(158440, 238178),
@@ -28726,7 +28744,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1664565206)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(158886, 243607),
@@ -28744,7 +28762,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1080470837)
 PlaceObj('TropicalFillerPlants_03', {
 	'Pos', point(151396, 246902),
@@ -28753,7 +28771,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1795804574)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(153175, 250688),
@@ -28824,7 +28842,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1650565280)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(176137, 208261),
@@ -28834,7 +28852,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1337894523)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(179194, 206402),
@@ -28844,7 +28862,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1595611826)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(178742, 209871),
@@ -28875,7 +28893,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1757785332)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(166779, 220234),
@@ -28897,7 +28915,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1161285514)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(179581, 229347),
@@ -28907,7 +28925,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1474431311)
 PlaceObj('Mist', {
 	'Pos', point(182968, 197788, 6205),
@@ -29028,7 +29046,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1817748322)
 PlaceObj('TropicalPlant_04_Tree_01', {
 	'Pos', point(183019, 226736),
@@ -29082,7 +29100,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1477522709)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(164226, 236446),
@@ -29111,7 +29129,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1586189689)
 PlaceObj('TropicalPlant_04_Tree_02', {
 	'Pos', point(165702, 242172),
@@ -29138,7 +29156,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1571340985)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(179034, 244515),
@@ -29148,7 +29166,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1764046547)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(164620, 248922),
@@ -29167,7 +29185,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1387141727)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(179508, 248820),
@@ -29176,7 +29194,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1446476927)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(176358, 251531),
@@ -29204,7 +29222,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1805980847)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(176609, 258357),
@@ -29223,7 +29241,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1078366801)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(183648, 232160),
@@ -29233,7 +29251,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1162309829)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(182084, 236427),
@@ -29251,7 +29269,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1687115767)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(185146, 230711),
@@ -29260,7 +29278,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1364849413)
 PlaceObj('SoundSource', {
 	'Pos', point(187008, 230481, 13297),
@@ -29279,7 +29297,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1392272138)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(183462, 239642),
@@ -29289,7 +29307,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1161688948)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(181836, 242661),
@@ -29335,7 +29353,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1032667739)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(192280, 231819),
@@ -29344,7 +29362,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1807393405)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(191707, 232749),
@@ -29371,7 +29389,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1191414592)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(195434, 235125),
@@ -29389,7 +29407,7 @@ PlaceObj('TropicalFillerPlants_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1864445973)
 PlaceObj('TropicalPlant_04_Tree_02', {
 	'Pos', point(196122, 242245),
@@ -29419,7 +29437,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1302801538)
 PlaceObj('TropicalPlant_Liana_04', {
 	'Pos', point(182356, 248543),
@@ -29428,7 +29446,7 @@ PlaceObj('TropicalPlant_Liana_04', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1832969451)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(182391, 249158),
@@ -29437,7 +29455,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1399260194)
 PlaceObj('TropicalFillerPlants_02', {
 	'Pos', point(183665, 252323),
@@ -29447,7 +29465,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1811285155)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(185159, 252831),
@@ -29457,7 +29475,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1680452192)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(186072, 254958),
@@ -29476,7 +29494,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1690225633)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(190848, 247187),
@@ -29495,7 +29513,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1080264725)
 PlaceObj('CameraCollider', {
 	'Pos', point(198600, 132600, 12600),
@@ -29537,7 +29555,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1063840169)
 PlaceObj('CameraCollider', {
 	'Pos', point(201000, 132600, 12600),
@@ -29554,7 +29572,7 @@ PlaceObj('DecMoss_01', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1569197800)
 PlaceObj('CameraCollider', {
 	'Pos', point(201000, 135000, 12600),
@@ -29723,7 +29741,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1611713264)
 PlaceObj('CoastalPlant_01_Tree_02', {
 	'Pos', point(203444, 145723),
@@ -29921,7 +29939,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1150694476)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(206205, 145437),
@@ -30009,7 +30027,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1051509144)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(211428, 144555),
@@ -30018,7 +30036,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1058755320)
 PlaceObj('Mist', {
 	'Pos', point(212137, 144050),
@@ -30032,7 +30050,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1215626384)
 PlaceObj('CoastalPlant_01_Tree_04', {
 	'Pos', point(199066, 148432),
@@ -30133,7 +30151,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'Scale', 139,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1030260396)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(196994, 163439),
@@ -30141,7 +30159,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 143,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1067964419)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(201531, 156391),
@@ -30159,7 +30177,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1545454530)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(201015, 163035),
@@ -30187,7 +30205,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1044359391)
 PlaceObj('Mist', {
 	'Pos', point(205885, 152801, 8666),
@@ -30232,7 +30250,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1371878594)
 PlaceObj('SoundSource', {
 	'Pos', point(205975, 160119, 9757),
@@ -30250,7 +30268,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1237879328)
 PlaceObj('TropicalPlant_02_Tree_01', {
 	'Pos', point(212168, 156529),
@@ -30279,7 +30297,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1361472555)
 PlaceObj('CoastalPlant_01_Tree_01', {
 	'Pos', point(213213, 131605, 12104),
@@ -30524,7 +30542,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1879928912)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(219405, 163351),
@@ -30551,7 +30569,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1727794602)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(224955, 158941),
@@ -30560,7 +30578,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1164487184)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(223766, 160590),
@@ -30578,7 +30596,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1078915564)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(225726, 157692),
@@ -30587,7 +30605,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1320560145)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(225874, 157134),
@@ -30605,7 +30623,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1728091609)
 PlaceObj('TropicalPlant_06_Tree_02', {
 	'Pos', point(227469, 159065),
@@ -30632,7 +30650,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1018300888)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(226457, 162839),
@@ -30641,7 +30659,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1227874719)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(227556, 160199),
@@ -30667,7 +30685,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 158,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1772344792)
 PlaceObj('JungleCamp_Lantern_01', {
 	'ColorizationPalette', "",
@@ -30678,7 +30696,7 @@ PlaceObj('JungleCamp_Lantern_01', {
 	'Angle', 9383,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 	'AutoAttachMode', "Warm light A Strong",
 	'AllAttachedLightsToDetailLevel', "Essential",
 }, nil, 1701215046)
@@ -30688,7 +30706,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 157,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1559316678)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(203143, 178306, 6946),
@@ -30696,7 +30714,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'Scale', 150,
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1653347333)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(206590, 173614, 6944),
@@ -30705,7 +30723,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1681535038)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(211569, 175331, 6944),
@@ -30714,7 +30732,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1167797273)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(219912, 164745),
@@ -30723,7 +30741,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1601373260)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(215797, 175946, 6942),
@@ -30732,7 +30750,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1568396453)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(218774, 174366),
@@ -30741,7 +30759,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1178406197)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(221897, 171377),
@@ -30750,7 +30768,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1672548251)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(227035, 164427),
@@ -30759,7 +30777,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1695688017)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(226779, 165553),
@@ -30768,7 +30786,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1091335582)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(227250, 165224),
@@ -30777,7 +30795,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1667246258)
 PlaceObj('TropicalFillerPlants_08', {
 	'Pos', point(224840, 175460),
@@ -30786,7 +30804,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1891023307)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(223042, 177940, 6940),
@@ -30813,7 +30831,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1691205750)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(228385, 174891),
@@ -30822,7 +30840,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1614876444)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(225889, 176159),
@@ -30831,7 +30849,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1594753314)
 PlaceObj('SoundSource', {
 	'Pos', point(225872, 178190, 9757),
@@ -30926,7 +30944,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1833182210)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(233997, 161854),
@@ -31046,7 +31064,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1662342207)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(235820, 164375),
@@ -31073,7 +31091,7 @@ PlaceObj('TropicalFillerPlants_08', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1714649087)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(236751, 176000),
@@ -31082,7 +31100,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1021749157)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(238868, 164382),
@@ -31092,7 +31110,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1544919834)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(240534, 165367),
@@ -31102,7 +31120,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1071528552)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(242157, 163997),
@@ -31112,7 +31130,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1420377429)
 PlaceObj('TropicalPlant_06_Tree_01', {
 	'Pos', point(245813, 166241),
@@ -31205,7 +31223,7 @@ PlaceObj('TropicalFillerPlants_02', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1094415677)
 PlaceObj('TropicalPlant_Liana_05', {
 	'Pos', point(197487, 229048),
@@ -31214,7 +31232,7 @@ PlaceObj('TropicalPlant_Liana_05', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1323121848)
 PlaceObj('TropicalFillerPlants_06', {
 	'Pos', point(199278, 229161),
@@ -31224,7 +31242,7 @@ PlaceObj('TropicalFillerPlants_06', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1227943711)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(228764, 212588),
@@ -31587,7 +31605,7 @@ PlaceObj('TropicalFillerPlants_03', {
 	'ForcedLODState', "Minimum",
 	'Saturation', 0,
 	'Gamma', RGBA(0, 0, 128, 255),
-	'AllowedMask', 4294966497,
+	'AllowedMask', 0,
 }, nil, 1427389491)
 PlaceObj('TropicalPlant_01_Tree_01', {
 	'Pos', point(157797, 265608),
@@ -36343,20 +36361,20 @@ p("TropicalPlant_04_Sapling_04",93057,156920,1260,133,2097156)
 p("TropicalPlant_02_Shrub",93790,157131,16140,111,2097156)
 p("DecJungleForest_02",93197,159629,18913,151,163,252,4085,3232,2097236)
 p("TropicalPlant_02_Shrub",93215,159718,18000,107,2097156)
+p("TropicalPlant_Dead_01",91744,161596,7391,9558,168,4282136624,285,-53,4085,3200,2097245)
 p("TropicalPlant_04_Sapling_04",91653,162784,1260,133,2097156)
+p("TropicalRockAssembly_04",92336,163750,7493,9900,106,-39,-24,4095,3200,"terrainchunk",10,0,0,75,100,10,40,60,2228309)
+p("TropicalPlant_02_Shrub",95766,156708,5716,4980,108,2097157)
 p("TropicalPlant_02_Shrub",96229,157433,19740,109,2097156)
 p("TropicalPlant_02_Shrub",95357,157801,6077,2820,91,2097157)
 p("DecJungleForest_02",96973,155763,2137,151,46,-370,4078,32,2097236)
 p("TropicalPlant_04_Sapling_04",97090,156777,1260,133,2097156)
 p("TropicalPlant_04_Sapling_04",97689,156384,1254,112,850,867,3911,3200,2097236)
 p("TropicalPlant_04_Sapling_01",98126,156364,16700,91,3200,2097220)
-p("TropicalPlant_02_Shrub",97012,158913,5716,4980,108,2097157)
 p("TropicalPlant_04_Sapling_04",96148,161060,1260,133,2097156)
 p("TropicalPlant_04_Sapling_04",94225,161869,1260,133,2097156)
 p("ParSystem",94227,163082,"Jungle_Mist",268435456)
-p("TropicalPlant_02_Shrub",96948,161983,5716,18000,108,2097157)
 p("TropicalPlant_02_Shrub",96685,163637,11160,109,2097156)
-p("TropicalPlant_04_Shrub_01",98027,162244,6403,13178,185,2097157)
 p("TropicalPlant_04_Shrub_01",97609,163805,6036,8277,200,2097157)
 p("DecJungleForest_01",69535,166370,16680,178,3232,2097220)
 p("TropicalPlant_04_Sapling_03",66202,170328,15180,123,-258,97,4086,3200,2097236)
@@ -36559,11 +36577,22 @@ p("TropicalPlant_Grass_03",88993,177876,5760,123,3232,2097220)
 p("TropicalRockAssembly_01",89192,176315,7560,58,4286414205,3200,"terrainchunk",10,0,0,54,100,42,40,60,2228300)
 p("TropicalPlant_04_Shrub_01",89783,176588,9007,7500,200,3200,2097221)
 p("TropicalPlant_04_Shrub_01",88167,179991,4980,200,-97,111,4093,3200,2097236)
+p("TropicalRockSharp_04",90520,164465,6967,10535,130,-228,3019,2758,3200,1671,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("DecBunkerFloor_02",90871,164445,8282,10094,94,4280046104,-270,-14,4087,3202,1671,98,2098525)
+p("TropicalRockSharp_04",90912,164508,7848,7493,74,2685,1532,2686,3200,1671,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockSharp_04",90473,164970,7603,6429,65,-140,409,4073,3200,1671,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockSharp_04",90528,165189,7399,10135,69,73,3153,2613,3200,1671,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockSharp_04",90746,165180,7793,3993,83,281,993,3963,3200,1671,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
 p("TropicalRockAssembly_04",90831,165574,7982,15660,97,4287203721,-618,-703,3987,3200,"terrainchunk",10,0,0,59,100,16,40,60,2228317)
-p("TropicalPlant_04_Shrub_01",91294,164455,13125,185,-261,-855,3997,3264,2097236)
+p("DecBunkerFloor_02",91422,164692,8476,10094,119,4281287943,251,-62,4087,3202,1671,98,2098525)
+p("TropicalRockSharp_04",91963,164538,7770,856,64,811,3983,504,3200,1671,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("TropicalRockSharp_04",91455,164979,7760,10277,69,444,2828,2930,3200,1671,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
 p("TropicalRockAssembly_04",90423,166252,8156,19440,121,4287203721,-3715,-859,1495,3200,"terrainchunk",10,0,0,59,100,16,40,60,2228317)
 p("TropicalPlant_04_Shrub_02",90876,166016,8327,200,334,-766,4010,3200,2097236)
+p("TropicalPlant_04_Shrub_01",92032,167308,13125,185,-261,-855,3997,3264,2097236)
 p("TropicalPlant_01_Sapling",92702,164057,14580,110,3296,2097220)
+p("TropicalRockSharp_02",93048,164218,7295,14305,50,2404,1670,2864,3200,1671,"terrainchunk",10,0,0,75,100,10,40,60,2228565)
+p("DecBunkerFloor_02",92338,164953,8143,10155,119,4282343424,-84,-168,4091,3202,1671,98,2098525)
 p("TropicalRockAssembly_03",93117,166312,7939,4980,182,4287795858,1645,-405,3729,3200,"terrainchunk",10,0,0,56,100,42,40,60,2228317)
 p("TropicalPlant_04_Shrub_02",90440,168131,14794,200,3200,2097220)
 p("TropicalPlant_01_Sapling",92019,170032,11580,128,3296,2097220)
@@ -36577,13 +36606,13 @@ p("TropicalRockAssembly_04",92209,170848,9053,4380,4287203721,717,-60,4032,3200,
 p("TropicalPlant_01_Sapling",92986,170368,11520,110,3296,2097220)
 p("DecJungleForest_02",93101,171731,13417,151,171,-210,4087,3232,2097236)
 p("TropicalPlant_01_Sapling",93386,170159,18720,134,3296,2097220)
-p("DecJungleForest_01",95026,164200,9064,178,-11,-195,4091,3232,2097236)
+p("DecJungleForest_01",95229,164747,9064,178,-11,-195,4091,3232,2097236)
 p("TropicalRockAssembly_04",94514,165071,7153,11520,199,4287203721,399,-945,3965,3200,"terrainchunk",10,0,0,59,100,16,40,60,2228317)
 p("TropicalPlant_01_Sapling",94323,165781,12120,119,3296,2097220)
 p("TropicalRockAssembly_04",94346,167894,8290,4920,157,4287203721,1303,302,3871,3200,"terrainchunk",10,0,0,59,100,16,40,60,2228317)
 p("TropicalRockAssembly_04",95607,167302,7692,3060,151,4287203721,2572,469,3152,3200,"terrainchunk",10,0,0,59,100,16,40,60,2228317)
 p("TropicalPlant_01_Sapling",95826,166986,12660,106,3296,2097220)
-p("TropicalPlant_02_Shrub",97604,163867,6077,15840,91,2097157)
+p("TropicalPlant_02_Shrub",97915,164617,5716,18000,108,2097157)
 p("TropicalPlant_01_Sapling",96527,167764,17160,115,96,2097220)
 p("TropicalPlant_02_Shrub",98041,166542,13740,105,2097156)
 p("TropicalPlant_04_Shrub_01",94445,169360,13177,200,221,-594,4047,3200,2097236)
@@ -36741,6 +36770,7 @@ p("TropicalPlant_Grass_03",101992,156639,7496,104,32,2097220)
 p("TropicalPlant_Grass_03",101770,157401,7496,104,32,2097220)
 p("TropicalPlant_04_Sapling_04",101526,159548,1260,133,2097156)
 p("TropicalPlant_04_Sapling_04",98857,161017,1260,133,2097156)
+p("TropicalPlant_04_Shrub_01",100226,160833,6403,13178,185,2097157)
 p("ParSystem",99902,162811,"Jungle_Mist",268435456)
 p("TropicalPlant_02_Shrub",100819,162734,16860,116,2097156)
 p("TropicalPlant_Grass_01",102928,157188,18744,135,32,2097220)
@@ -37017,6 +37047,7 @@ p("Shanty_GarbagePile_01",129975,161906,6960,18180,130,2097157)
 p("TropicalPlant_04_Shrub_02",129920,163337,8508,10740,136,2097157)
 p("TropicalPlant_04_Shrub_01",131035,162684,8371,3420,136,43,-1017,3967,2097173)
 p("TropicalRockAssembly_04",99120,165746,6756,1620,121,4287203721,562,610,4011,"terrainchunk",10,0,0,59,100,16,40,60,2228253)
+p("TropicalPlant_02_Shrub",99414,165072,6077,15840,91,2097157)
 p("TropicalPlant_01_Sapling",99523,167740,19740,96,96,2097220)
 p("TropicalRockAssembly_04",100281,167030,6902,1020,97,4287203721,1783,293,3675,"terrainchunk",10,0,0,59,100,16,40,60,2228253)
 p("TropicalPlant_02_Shrub",100596,164620,19920,92,2097156)

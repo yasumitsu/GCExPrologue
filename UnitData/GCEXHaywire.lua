@@ -1,5 +1,5 @@
-UndefineClass('GCEXHaywire')
-DefineClass.GCEXHaywire = {
+UndefineClass('GCExHaywire')
+DefineClass.GCExHaywire = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -18,14 +18,14 @@ DefineClass.GCEXHaywire = {
 	Medical = 2,
 	Portrait = "Mod/GCExPrologue/Images/HaywirePortrait",
 	BigPortrait = "Mod/GCExPrologue/Images/Haywire",
-	Name = T(749871154545, --[[ModItemUnitDataCompositeDef GCEXHaywire Name]] 'Frankie "Haywire" Gordon'),
-	Nick = T(977562677594, --[[ModItemUnitDataCompositeDef GCEXHaywire Nick]] "Haywire"),
-	AllCapsNick = T(828404684603, --[[ModItemUnitDataCompositeDef GCEXHaywire AllCapsNick]] "HAYWIRE"),
+	Name = T(749871154545, --[[ModItemUnitDataCompositeDef GCExHaywire Name]] 'Frankie "Haywire" Gordon'),
+	Nick = T(977562677594, --[[ModItemUnitDataCompositeDef GCExHaywire Nick]] "Haywire"),
+	AllCapsNick = T(828404684603, --[[ModItemUnitDataCompositeDef GCExHaywire AllCapsNick]] "HAYWIRE"),
 	Affiliation = "Other",
-	Bio = T(436581784584, --[[ModItemUnitDataCompositeDef GCEXHaywire Bio]] "Killing is Frankie Gordon's speciality. He's not particular on how he kills, just as long as he has fun doing it. Haywire may not be considered a marksman, but he exhibits a certain fascination with automatic weapons and seems to handle them with ease. The same could be said for his talents with sharp knives. Additional info:\n\nFrankie is working on improving his people skills."),
+	Bio = T(436581784584, --[[ModItemUnitDataCompositeDef GCExHaywire Bio]] "Killing is Frankie Gordon's speciality. He's not particular on how he kills, just as long as he has fun doing it. Haywire may not be considered a marksman, but he exhibits a certain fascination with automatic weapons and seems to handle them with ease. The same could be said for his talents with sharp knives. Additional info:\n\nFrankie is working on improving his people skills."),
 	Nationality = "USA",
-	Title = T(440783434649, --[[ModItemUnitDataCompositeDef GCEXHaywire Title]] "Wicked"),
-	snype_nick = T(881909539454, --[[ModItemUnitDataCompositeDef GCEXHaywire snype_nick]] "hay.wire"),
+	Title = T(440783434649, --[[ModItemUnitDataCompositeDef GCExHaywire Title]] "Wicked"),
+	snype_nick = T(881909539454, --[[ModItemUnitDataCompositeDef GCExHaywire snype_nick]] "hay.wire"),
 	Refusals = {},
 	Haggles = {},
 	Mitigations = {},

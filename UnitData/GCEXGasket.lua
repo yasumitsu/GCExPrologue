@@ -1,5 +1,5 @@
-UndefineClass('GCEXGasket')
-DefineClass.GCEXGasket = {
+UndefineClass('GCExGasket')
+DefineClass.GCExGasket = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -19,13 +19,13 @@ DefineClass.GCEXGasket = {
 	Portrait = "Mod/GCExPrologue/Images/GasketPortrait",
 	BigPortrait = "Mod/GCExPrologue/Images/Gasket",
 	IsMercenary = true,
-	Name = T(949646749914, --[[ModItemUnitDataCompositeDef GCEXGasket Name]] 'Doug "Gasket" Milton'),
-	Nick = T(854815094946, --[[ModItemUnitDataCompositeDef GCEXGasket Nick]] "Gasket"),
-	AllCapsNick = T(801666550540, --[[ModItemUnitDataCompositeDef GCEXGasket AllCapsNick]] "GASKET"),
+	Name = T(949646749914, --[[ModItemUnitDataCompositeDef GCExGasket Name]] 'Doug "Gasket" Milton'),
+	Nick = T(854815094946, --[[ModItemUnitDataCompositeDef GCExGasket Nick]] "Gasket"),
+	AllCapsNick = T(801666550540, --[[ModItemUnitDataCompositeDef GCExGasket AllCapsNick]] "GASKET"),
 	Affiliation = "Secret",
-	Bio = T(242637099594, --[[ModItemUnitDataCompositeDef GCEXGasket Bio]] "Doug Milton originates from Kentucky. He quit school in the fourth grade to work in his father's gas station. When his sister/cousin started pumping gas at the garage, he transferred his focus to the repair bench, and became a good mechanic. Since he left the family business, he roamed from job to job before trying his luck as a mercenary."),
+	Bio = T(242637099594, --[[ModItemUnitDataCompositeDef GCExGasket Bio]] "Doug Milton originates from Kentucky. He quit school in the fourth grade to work in his father's gas station. When his sister/cousin started pumping gas at the garage, he transferred his focus to the repair bench, and became a good mechanic. Since he left the family business, he roamed from job to job before trying his luck as a mercenary."),
 	Nationality = "USA",
-	snype_nick = T(534857338517, --[[ModItemUnitDataCompositeDef GCEXGasket snype_nick]] "doug.milton"),
+	snype_nick = T(534857338517, --[[ModItemUnitDataCompositeDef GCExGasket snype_nick]] "doug.milton"),
 	Refusals = {},
 	Haggles = {},
 	Mitigations = {},
@@ -52,6 +52,7 @@ DefineClass.GCEXGasket = {
 		"Igor",
 	},
 	StartingPerks = {
+		"Gasket",
 		"MrFixit",
 	},
 	AppearancesList = {

@@ -15,11 +15,11 @@ DefineClass.Gaston = {
 			end,
 		}),
 	},
-	DisplayName = T(337078449531, --[[ModItemCharacterEffectCompositeDef Gaston DisplayName]] "Taunt the pussies"),
-	Description = T(730181381461, --[[ModItemCharacterEffectCompositeDef Gaston Description]] "Razor likes playing with it's targets, melee attacks also applies slow to the target."),
+	DisplayName = T(337078449531, --[[ModItemCharacterEffectCompositeDef Gaston DisplayName]] "Techniques de Furtivité"),
+	Description = T(730181381461, --[[ModItemCharacterEffectCompositeDef Gaston Description]] "Due to his special training, Gaston can use the environment to hide and prepare his attacks."),
 	OnAdded = function (self, obj)  end,
 	OnRemoved = function (self, obj)  end,
-	Icon = "Mod/GCExPrologue/Images/PerkRAZORBlu 2.png",
+	Icon = "Mod/GCExPrologue/Images/PerkRAZORBlu 2",
 	Tier = "Personal",
 }
 

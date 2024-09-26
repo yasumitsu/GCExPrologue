@@ -21,11 +21,11 @@ DefineClass.GumpySpecialPineapple = {
 			end,
 		}),
 	},
-	DisplayName = T(353051786879, --[[ModItemCharacterEffectCompositeDef GumpySpecialPineapple DisplayName]] "Taunt the pussies"),
+	DisplayName = T(353051786879, --[[ModItemCharacterEffectCompositeDef GumpySpecialPineapple DisplayName]] "Gumpy special pineapple"),
 	Description = T(937824707742, --[[ModItemCharacterEffectCompositeDef GumpySpecialPineapple Description]] "Gumpy can apply additional effects whenever he uses explosives."),
 	OnAdded = function (self, obj)  end,
 	OnRemoved = function (self, obj)  end,
-	Icon = "Mod/GCExPrologue/Images/PerkGUMPYBlu 2.png",
+	Icon = "Mod/GCExPrologue/Images/PerkGUMPYBlu 2",
 	Tier = "Personal",
 }
 
